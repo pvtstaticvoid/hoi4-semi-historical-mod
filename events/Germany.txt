@@ -202,6 +202,19 @@ country_event = {
 				}
 			}
 		}
+
+
+		# additional 3 anti-tank bonuses!
+		add_tech_bonus = {
+			name = shm_ger_sov_treaty_at
+			bonus = 1.0
+			uses = 3
+			technology = antitank3
+			technology = antitank4
+			technology = antitank5
+		}
+
+
 		add_opinion_modifier = { target = GER modifier = MR_pact }# pact		
 		custom_effect_tooltip = germany.11.a.tt
 		add_state_claim = 96
@@ -271,6 +284,18 @@ country_event = {
 	
 	option = {
 		name = germany.12.a	#neat
+
+		# additional 3 anti-tank bonuses!
+		add_tech_bonus = {
+			name = shm_ger_sov_treaty_at
+			bonus = 1.0
+			uses = 3
+			technology = antitank3
+			technology = antitank4
+			technology = antitank5
+		}
+
+
 		every_other_country = {
 			limit = {
 				NOT = { tag = GER }
@@ -3433,6 +3458,17 @@ country_event = {
 				modifier = sov_ger_treaty_trade
 			}
 		}
+
+		# additional 3 anti-tank bonuses!
+		add_tech_bonus = {
+			name = shm_ger_sov_treaty_at
+			bonus = 1.0
+			uses = 3
+			technology = interwar_antitank
+			technology = antitank1
+			technology = antitank2
+		}
+
 		# REVISIT Balance research bonus
 		give_SOV_armor_research_bonuses = yes
 	}
@@ -3472,6 +3508,17 @@ country_event = {
 			uses = 2
 			category = armor
 		}
+
+		# additional 3 anti-tank bonuses!
+		add_tech_bonus = {
+			name = shm_ger_sov_treaty_at
+			bonus = 1.0
+			uses = 3
+			technology = interwar_antitank
+			technology = antitank1
+			technology = antitank2
+		}
+
 		SOV = {
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
