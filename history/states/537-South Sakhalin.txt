@@ -5,7 +5,7 @@ state= {
 	resources={
 		
 		# buffed so japan doesn't run out of oil in 2 seconds
-		oil=20
+		oil=10
 	}
 	
 	state_category = rural
