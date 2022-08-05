@@ -1,0 +1,532 @@
+operations = {
+    steal_soviet_anti_tank_research = {
+        icon = GFX_decision_generic_tank
+
+        allowed = {
+            tag = GER
+        }
+
+        visible = {
+            tag = GER
+            has_game_rule = {
+                rule = german_anti_tank_bonus
+                option = on
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            add_tech_bonus = {
+                name = SOV_soviet_artillery_tech_bonus_name_default
+                bonus = 1.0
+                uses = 2
+                category = artillery
+            }
+        }
+    }
+    transfer_crete = {
+        icon = GFX_decision_generic_intelligence_operation
+
+        allowed = {
+            tag = ITA
+        }
+
+        available = {
+            controls_state = 182
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            BUL = {
+                transfer_state = 182
+            }
+        }
+    }
+
+    assume_control_siam = {
+        # icon = generic_operation
+
+        allowed = {
+            tag = JAP
+        }
+
+        available = {
+            SIA = { is_ai = yes }
+        }
+
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        visible = {
+            tag = JAP
+        }
+
+        targets = {SIA}
+
+        complete_effect = {
+            JAP = {
+                annex_country = {
+                    target = SIA
+                    transfer_troops = yes
+                }
+            }
+            every_state = {
+                limit = {
+                    is_core_of = SIA
+                    is_controlled_by = JAP
+                }
+                add_compliance = 100
+		    }
+        }
+    }
+
+    assume_control_manchukuo = {
+        # icon = generic_operation
+
+        allowed = {
+            tag = JAP
+        }
+
+        available = {
+            MAN = { is_ai = yes }
+        }
+
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        visible = {
+            tag = JAP
+        }
+
+        targets = {MAN}
+
+        complete_effect = {
+            JAP = {
+                annex_country = {
+                    target = MAN
+                    transfer_troops = yes
+                }
+            }
+            every_state = {
+                limit = {
+                    is_core_of = MAN
+                    is_controlled_by = JAP
+                }
+                add_compliance = 100
+		    }
+            if = {
+				limit = {
+					has_game_rule = {
+						rule = beta
+						option = on
+					}
+				}
+				JAP = {
+                    add_research_slot = 1
+                }
+			}
+        }
+    }
+
+    assume_control_new_zealand = {
+        # icon = generic_operation
+
+        allowed = {
+            tag = AST
+        }
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        available = {
+            NZL = { is_ai = yes }
+        }
+
+		targets = {NZL}
+
+        complete_effect = {
+            AST = {
+                annex_country = {
+                    target = NZL
+                    transfer_troops = yes
+                }
+            }
+            every_state = {
+                limit = {
+                    is_core_of = NZL
+                    is_controlled_by = AST
+                }
+                add_compliance = 50
+		    }
+        }
+    }
+    assume_control_canada = {
+        # icon = generic_operation
+
+        allowed = {
+            tag = ENG
+        }
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        available = {
+            CAN = { is_ai = yes }
+        }
+
+		targets = {CAN}
+
+        complete_effect = {
+            ENG = {
+                annex_country = {
+                    target = CAN
+                    transfer_troops = yes
+                }
+            }
+            every_state = {
+                limit = {
+                    is_core_of = CAN
+                    is_controlled_by = ENG
+                }
+                add_compliance = 50
+		    }
+        }
+    }
+    assume_control_south_africa = {
+        # icon = generic_operation
+
+        allowed = {
+            tag = ENG
+        }
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        available = {
+            SAF = { is_ai = yes }
+        }
+
+		targets = {NZL}
+
+        complete_effect = {
+            ENG = {
+                annex_country = {
+                    target = SAF
+                    transfer_troops = yes
+                }
+            }
+            every_state = {
+                limit = {
+                    is_core_of = SAF
+                    is_controlled_by = ENG
+                }
+                add_compliance = 50
+		    }
+        }
+    }
+    assume_control_british_raj = {
+        # icon = generic_operation
+
+        allowed = {
+            tag = ENG
+        }
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        available = {
+            RAJ = { is_ai = yes }
+        }
+
+		targets = {NZL}
+
+        complete_effect = {
+            ENG = {
+                annex_country = {
+                    target = RAJ
+                    transfer_troops = yes
+                }
+            }
+            every_state = {
+                limit = {
+                    is_core_of = RAJ
+                    is_controlled_by = ENG
+                }
+                add_compliance = 50
+		    }
+        }
+    }
+    assume_control_australia = {
+        # icon = generic_operation
+
+        allowed = {
+            tag = ENG
+        }
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        available = {
+            AST = { is_ai = yes }
+        }
+
+		targets = {NZL}
+
+        complete_effect = {
+            ENG = {
+                annex_country = {
+                    target = AST
+                    transfer_troops = yes
+                }
+            }
+            every_state = {
+                limit = {
+                    is_core_of = AST
+                    is_controlled_by = ENG
+                }
+                add_compliance = 50
+		    }
+        }
+    }
+
+}
+
+FRA_intervention_in_overseas_territories = {
+
+	FRA_take_north_africa = {
+		visible = {
+			has_completed_focus = FRA_intervention_in_north_africa
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 70
+		remove_effect = {
+			transfer_state = 513
+			transfer_state = 461
+			transfer_state = 462
+			transfer_state = 514
+			transfer_state = 459
+			transfer_state = 460
+			transfer_state = 665
+			transfer_state = 458
+			VIC = { country_event = LaR_france_vichy_notification_events.11 }
+			GER = { country_event = LaR_france_vichy_notification_events.11 }
+		}
+	}
+
+	FRA_take_west_africa = {
+		visible = {
+			has_completed_focus = FRA_intervention_in_west_africa
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 70
+		remove_effect = {
+			transfer_state = 515
+            515 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+			transfer_state = 782
+            782 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			transfer_state = 786
+            786 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			transfer_state = 557
+            557 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			transfer_state = 272
+			transfer_state = 780
+			transfer_state = 556
+			transfer_state = 779
+			transfer_state = 778
+			transfer_state = 781
+			transfer_state = 776
+			transfer_state = 777
+			VIC = { country_event = LaR_france_vichy_notification_events.10 }
+            GER = { country_event = LaR_france_vichy_notification_events.10 }
+            ITA = { country_event = LaR_france_vichy_notification_events.10 }
+		}
+	}
+
+	FRA_take_madagascar = {
+		visible = {
+			has_completed_focus = FRA_intervention_in_madagascar
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 70
+		remove_effect = {
+			transfer_state = 543
+			transfer_state = 708
+			transfer_state = 706
+			transfer_state = 713
+			VIC = { country_event = LaR_france_vichy_notification_events.12 }
+            GER = { country_event = LaR_france_vichy_notification_events.12 }
+            ITA = { country_event = LaR_france_vichy_notification_events.12 }
+		}
+	}
+
+	FRA_take_syria = {
+		visible = {
+			has_completed_focus = FRA_intervention_in_syria
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 70
+		remove_effect = {
+			transfer_state = 553
+			transfer_state = 554
+			transfer_state = 680
+			transfer_state = 677
+			transfer_state = 799
+			VIC = { country_event = LaR_france_vichy_notification_events.7 }
+            GER = { country_event = LaR_france_vichy_notification_events.7 }
+            ITA = { country_event = LaR_france_vichy_notification_events.7 }
+		}
+	}
+
+}
+
+
+FRA_prepare_gabon_c = {
+    FRA_prepare_gabon = {
+        allowed = {
+			original_tag=FRA
+		}
+		icon = ger_military_buildup
+		available = {
+			check_variable={ preparedmil > 6 }
+            check_variable={ preparedciv > 6 }
+		}
+
+		days_mission_timeout = 14
+
+		fire_only_once = no
+		is_good = yes
+		activation = {
+            always=no
+        }
+
+        timeout_effect = {	
+            FRA_prepare_mil=yes	
+            FRA_prepare_civ=yes	
+            add_to_variable={ preparedciv = 1 }
+			add_to_variable={ preparedmil = 1 }	
+            activate_mission=FRA_prepare_gabon2
+        }
+
+		complete_effect = {
+
+		}
+    }
+    FRA_prepare_gabon2 = {
+        allowed = {
+			original_tag=FRA
+		}
+		icon = ger_military_buildup
+		available = {
+            check_variable={ preparedmil > 6 }
+            check_variable={ preparedciv > 6 }
+		}
+
+		days_mission_timeout = 14
+
+		fire_only_once = no
+		is_good = yes
+		activation = {
+            always=no
+        }
+
+        timeout_effect = {	
+            FRA_prepare_mil=yes
+            FRA_prepare_civ=yes
+            add_to_variable={ preparedciv = 1 }
+			add_to_variable={ preparedmil = 1 }	
+            activate_mission=FRA_prepare_gabon
+        }
+
+		complete_effect = {
+
+		}
+    }
+}
+
+
+SOV_spain = {
+	SOV_assist_republican_spain = {
+		icon = GFX_decision_category_spr_civil_war_offensives
+
+		fire_only_once = yes
+
+		# days_remove = 70
+
+		available = {
+			has_global_flag = spanish_civil_war
+			not = {
+				has_global_flag = scw_over
+			}
+		}
+
+		modifier = {}
+
+		remove_effect = {
+			SOV = {
+				army_experience = 300
+				add_timed_idea = { idea = SPR_seized_spanish_gold_reserves days = 365 }
+			}
+		}
+	}
+}
+
+GER_spain = {
+	GER_assist_nationalist_spain = {
+		icon = GFX_decision_category_spr_civil_war_offensives
+
+		fire_only_once = yes
+
+		# days_remove = 70
+
+		available = {
+			has_global_flag = spanish_civil_war
+			not = {
+				has_global_flag = scw_over
+			}
+		}
+
+		modifier = {}
+
+		remove_effect = {
+			GER = {
+				army_experience = 300
+			}
+		}
+	}
+}
