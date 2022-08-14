@@ -1404,6 +1404,13 @@ focus_tree = {
 			factor = 1
 		}
 
+		bypass = {
+			has_game_rule = {
+				rule = germany_research_slot
+				option = on
+			}
+		}
+
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
