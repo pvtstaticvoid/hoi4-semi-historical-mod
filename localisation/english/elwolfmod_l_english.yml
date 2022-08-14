@@ -59,9 +59,9 @@
  FRA_take_syria:0 "Prepare coup in Syria"
 
  no_tradebacks:0 "No Tradebacks"
- no_tradebacks_desc:0 "You can now safely unmute AlphaA. Removed at danzig (you have to mute him again.)"
- sov_no_tradebacks:0 "No Tradebacks"
- sov_no_tradebacks_desc:0 "You can now safely unmute AlphaA. Removed at danzig (you have to mute him again.)"
+ no_tradebacks_desc:0 "We are exempt from lack of resources penalties until Germany goes to war."
+ sov_no_tradebacks:0 "No Tradebacks (USSR)"
+ sov_no_tradebacks_desc:0 "We are exempt from lack of resources penalties until we go to war with Germany."
 
  SOV_spain:0 "The Spanish Civil War"
  SOV_spain_desc:0 "Although General Secretary Joseph Stalin had signed the Non-Intervention Agreement, the Soviet Union contravened the League of Nations embargo by providing material assistance to the Republican forces, becoming their only source of major weapons."
