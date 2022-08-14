@@ -2639,7 +2639,8 @@ focus_tree = {
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
 			army_experience = 5
-			add_named_threat = { threat = 5 name = GER_rhineland }
+			# since no volunteers are allowed in the SCW, an extra 4% world tension is added onto rhineland
+			add_named_threat = { threat = 9 name = GER_rhineland }
 			if = {
 				limit = { FRA = { is_puppet = no } }
 				FRA = {
