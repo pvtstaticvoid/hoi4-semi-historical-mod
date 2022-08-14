@@ -1,6 +1,6 @@
 ; beta = {
 ; 	name = "ewof mod beta"
-; 	group = "elwolfmod Rules"
+; 	group = "Game Balance"
 ; 	icon = "GFX_decision_POL_sanation_right_opposition_4"
 ; 	default = {
 ; 		name = off
@@ -14,102 +14,117 @@
 ; 	}
 ; }
 
-sov_no_tradebacks = {
-	name = "Soviets No Tradeback"
-	group = "elwolfmod Rules"
-	icon = "GFX_decision_generic_construction"
+tradebacks = {
+	name = "No Tradebacks"
+	group = "Game Balance"
+	icon = "GFX_decision_gre_paying_ifc_debt"
 	default = {
-		name = off
-		text = "Off"
-		desc = "No soviet exclusive no-tradeback spirit"
+		name = on
+		text = "YRecommended: !Enabled"
+		desc = "All countries are exempt from lack of resources penalties until Germany goes to war."
 	}
 	option = {
-		name = on
-		text = "On"
-		desc = "Soviets get their own no-tradeback spirit (no factory resource penalty) until war with Germany"
+		name = off
+		text = "Disabled"
 	}
+	# option = {
+	# 	name = not_allies
+	# 	text = "Not Allies"
+	# 	desc = "Everyone has no tradeback idea except for Allies"
+	# }
 }
 
-sov_boost = {
-	name = "Soviet Factory Boost (AI TRADE VANILLA)"
-	group = "elwolfmod Rules"
-	icon = "GFX_decision_generic_construction"
+sov_no_tradebacks = {
+	name = "No Tradebacks (USSR)"
+	group = "Game Balance"
+	icon = "GFX_decision_gre_paying_ifc_debt"
+	option = {
+		name = on
+		text = "Enabled"
+		desc = "The USSR is exempt from lack of resources penalties until they go to war with Germany."
+	}
 	default = {
-		name = sixteen
-		text = "16"
-		desc = "16 Civ boost"
-	}
-	option = {
-		name = twelve
-		text = "12"
-		desc = "12 Civ boost"
-	}
-	option = {
-		name = eight
-		text = "8"
-		desc = "8 Civ boost"
-	}
-	option = {
-		name = four
-		text = "4"
-		desc = "4 Civ boost"
-	}
-	option = {
-		name = zero
-		text = "0"
-		desc = "0 Civ boost"
+		name = off
+		text = "YRecommended: !Disabled"
 	}
 }
 
 sov_closed_eco = {
-	name = "Soviets Closed Eco"
-	group = "elwolfmod Rules"
-	icon = "GFX_decision_generic_construction"
+	name = "Collectivized Society (USSR)"
+	group = "Game Balance"
+	icon = "GFX_decision_gre_investment_decisions"
 	default = {
-		name = off
-		text = "Off"
-		desc = "Soviets start on export focus"
+		name = on
+		text = "YRecommended: !Enabled"
+		desc = "The USSR starts the game with the Collectivized Society economy law."
 	}
 	option = {
-		name = on
-		text = "On"
-		desc = "Soviets start the game on closed eco, free trade bonuses, and 5 extra civs"
+		name = off
+		text = "Disabled"
 	}
 }
 
+japan_closed_eco = {
+	name = "Collectivized Society (Japan)"
+	group = "Game Balance"
+	icon = "GFX_decision_gre_investment_decisions"
+	default = {
+		name = on
+		text = "YRecommended: !Enabled"
+		desc = "Japan starts the game with the Collectivized Society economy law."
+	}
+	option = {
+		name = off
+		text = "Disabled"
+	}
+}
+
+sov_boost = {
+	name = "Industry Boost (USSR)"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_construction"
+	default = {
+		name = sixteen
+		text = "YRecommended: !16"
+	}
+	option = {
+		name = twelve
+		text = "12"
+	}
+	option = {
+		name = eight
+		text = "8"
+	}
+	option = {
+		name = four
+		text = "4"
+	}
+	option = {
+		name = zero
+		text = "0"
+	}
+}
+
+
+
 free_collabs = {
-	name = "Free Collabs"
-	group = "elwolfmod Rules"
+	name = "Free Collaboration Governments"
+	group = "Game Balance"
 	icon = "GFX_decision_eng_trade_unions_demand"
 	default = {
 		name = on
-		text = "On"
-		desc = "Italy free compliance on greece/yugo and Japan free compliance on China"
+		text = "YRecommended: !Enabled"
+		desc = "Italy receives 100% compliance in Yugoslavia and Greece, and Japan receives 100% compliance in China."
 	}
 	option = {
 		name = off
-		text = "Off"
-		desc = "Vanilla"
+		text = "Disabled"
 	}
 }
-japan_closed_eco = {
-	name = "Japan Closed Eco"
-	group = "elwolfmod Rules"
-	icon = "GFX_decision_gre_investment_decisions"
-	default = {
-		name = off
-		text = "Off"
-		desc = "Japan starts on limited exports"
-	}
-	option = {
-		name = on
-		text = "On"
-		desc = "Japan start the game on closed eco, free trade bonuses"
-	}
-}
+
 ; puerto_rico = {
 ; 	name = "Puerto Rico"
-; 	group = "elwolfmod Rules"
+; 	group = "Game Balance"
 ; 	icon = "GFX_decision_eng_blackshirt_march"
 ; 	default = {
 ; 		name = off
@@ -125,7 +140,7 @@ japan_closed_eco = {
 
 ; force_attack_last_stand = {
 ; 	name = "Force Attack Last Stand"
-; 	group = "elwolfmod Rules"
+; 	group = "Game Balance"
 ; 	icon = "GFX_decision_SOV_place_hq"
 ; 	default = {
 ; 		name = on
@@ -141,7 +156,7 @@ japan_closed_eco = {
 
 ; germany_research_slot = {
 ; 	name = "Extra German Research Slot"
-; 	group = "elwolfmod Rules"
+; 	group = "Game Balance"
 ; 	icon = "GFX_decision_generic_research"
 ; 	default = {
 ; 		name = off
@@ -157,7 +172,7 @@ japan_closed_eco = {
 
 ; german_anti_tank_bonus = {
 ; 	name = "German Anti-Tank Research Bonuses"
-; 	group = "elwolfmod Rules"
+; 	group = "Game Balance"
 ; 	icon = "GFX_decision_generic_tank"
 ; 	default = {
 ; 		name = off
@@ -172,24 +187,22 @@ japan_closed_eco = {
 ; }
 
 techstealing = {
-	name = "Tech Stealing"
-	group = "elwolfmod Rules"
+	name = "Technology Stealing"
+	group = "Game Balance"
 	icon = "GFX_decision_generic_research"
-	default = {
-		name = banned
-		text = "Banned"
-		desc = "No tech stealing operations"
-	}
 	option = {
 		name = enabled
 		text = "Enabled"
-		desc = "Technology stealing is enabled."
+	}
+	default = {
+		name = banned
+		text = "YRecommended: !Disabled"
 	}
 }
 
 ; max_submarine_tech = {
 ; 	name = "Max Submarine Tech"
-; 	group = "elwolfmod Rules"
+; 	group = "Game Balance"
 ; 	icon = "GFX_decision_generic_naval"
 ; 	default = {
 ; 		name = sub2
@@ -204,40 +217,21 @@ techstealing = {
 ; }
 
 
-tradebacks = {
-	name = "Tradeback Idea"
-	group = "elwolfmod Rules"
-	icon = "GFX_decision_gre_paying_ifc_debt"
-	default = {
-		name = off
-		text = "Off"
-		desc = "No tradeback idea"
-	}
-	option = {
-		name = on
-		text = "On"
-		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty until September 1939"
-	}
-	option = {
-		name = not_allies
-		text = "Not Allies"
-		desc = "Everyone has no tradeback idea except for Allies"
-	}
-}
 
 
-vichy_france = {
-	name = "Vichy France"
-	group = "elwolfmod Rules"
-	icon = "GFX_decision_generic_prepare_civil_war"
-	default = {
-		name = forced
-		text = "Force"
-		desc = "Germany has to make vichy"
-	}
-	option = {
-		name = banned
-		text = "Banned"
-		desc = "Germany can't make vichy"
-	}
-}
+
+# vichy_france = {
+# 	name = "Vichy France"
+# 	group = "Game Balance"
+# 	icon = "GFX_decision_generic_prepare_civil_war"
+# 	default = {
+# 		name = forced
+# 		text = "Force"
+# 		desc = "Germany has to make vichy"
+# 	}
+# 	option = {
+# 		name = banned
+# 		text = "Banned"
+# 		desc = "Germany can't make vichy"
+# 	}
+# }
