@@ -36,13 +36,6 @@ country_event = {
 			country_event = { days = 5 id = japan.6 }
 		}
 	}
-	option = { # Refuse
-		name = france.1.b
-		ai_chance = { factor = 25 }
-		JAP = {
-			country_event = { days = 5 id = japan.7 }
-		}
-	}
 }
 
 # Maginot Line Extension
