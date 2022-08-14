@@ -856,6 +856,9 @@ JAP_southern_expansion = {
 	JAP_pressure_france = { 
 
 		available = {
+
+		    date > 1939.9.1
+
 			286 = { 
 				CONTROLLER = { 
 					NOT = {
