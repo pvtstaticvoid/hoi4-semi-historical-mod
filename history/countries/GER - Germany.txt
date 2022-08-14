@@ -12,7 +12,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1
+	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
@@ -103,11 +103,8 @@ set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
 set_research_slots = 4
 set_convoys = 200
-set_stability = 0.75
+set_stability = 0.75 
 set_war_support = 0.3
-
-# 10 extra civs german civ boost
-add_offsite_building = { type = industrial_complex level = 10 }
 
 #Trade
 create_import = {
@@ -318,7 +315,7 @@ if = {
 		obsolete = yes
 		icon = "gfx/interface/technologies/gwtank.dds"
 	}
-
+	
 	create_equipment_variant = {
 		name = "Panzer I Ausf. A"
 		type = light_tank_chassis_1
@@ -793,7 +790,7 @@ create_equipment_variant = {
 				tank_nsb_engine_upgrade = 3
 				tank_nsb_armor_upgrade = 3
 			}
-
+			
 			icon = "gfx/interface/technologies/cze_basic_main_tank.dds"
 		}
 	}
@@ -802,7 +799,7 @@ create_equipment_variant = {
 		type = fighter_equipment_1
 		upgrades = {
 			plane_gun_upgrade = 1
-			plane_range_upgrade = 1
+			plane_range_upgrade = 1  
 			plane_engine_upgrade = 0
 			plane_reliability_upgrade = 2
 		}
@@ -812,7 +809,7 @@ create_equipment_variant = {
 		type = fighter_equipment_1
 		upgrades = {
 			plane_gun_upgrade = 2
-			plane_range_upgrade = 1
+			plane_range_upgrade = 1  
 			plane_engine_upgrade = 2
 			plane_reliability_upgrade = 4
 		}
