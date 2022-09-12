@@ -157,106 +157,239 @@ characters = {
    #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
 																							   
   
-	  SOV_georgy_zhukov = {
-		  name = SOV_georgy_zhukov
+	SOV_georgy_zhukov = {
+		name = SOV_georgy_zhukov
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
+			}
+		}
+		corps_commander = {
+			traits = { media_personality armor_officer war_hero winter_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+			legacy_id = 410
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = disabled
+				}
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = georgy_zhukov
+			ledger = army
+			allowed = { original_tag = SOV }
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = disabled
+				}
+			}
+			available = {
+				has_completed_focus = SOV_positive_heroism
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
+				}
+			}
+			traits = {
+				mass_assault_expert
+			}
+		}		
+	}
+
+	SOV_georgy_zhukov_pregrinded = {
+		name = SOV_georgy_zhukov
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger winter_specialist organizer }
+			skill = 8
+			attack_skill = 8
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+			legacy_id = 0
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = enabled
+				}
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = georgy_zhukov
+			ledger = army
+			allowed = { original_tag = SOV }
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = enabled
+				}
+			}
+			available = {
+				has_completed_focus = SOV_positive_heroism
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
+				}
+			}
+			traits = {
+				mass_assault_expert
+			}
+		}		
+	}
   
-		  portraits = {
-			  army = {
-				  small = "GFX_idea_georgy_zhukov"
-				  large = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
-			  }
-		  }
+	SOV_konstantin_rokossovsky = {
+		name = SOV_konstantin_rokossovsky
+		portraits = {
+			army = {
+				small = "GFX_idea_konstantin_rokossovsky"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds"
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist trait_cautious armor_officer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = 402
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = disabled
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = konstantin_rokossovsky
+			ledger = army
+			allowed = {
+				original_tag = SOV
+				hidden_trigger = {
+					NOT = {
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+							has_unit_leader = 403.000
+						}
+					}
+				}
+			}
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = disabled
+				}
+			}
+			available = {
+				has_completed_focus = SOV_positive_heroism
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
+				}
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
   
-		  corps_commander = {
-			  traits = { cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger winter_specialist organizer }
-			  skill = 8
-			  attack_skill = 8
-			  defense_skill = 2
-			  planning_skill = 4
-			  logistics_skill = 5
-			  legacy_id = 410
-			  visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		  }
-  
-		  advisor = {
-			  cost = 150
-			  slot = theorist
-			  idea_token = georgy_zhukov
-			  ledger = army
-			  allowed = {
-				  original_tag = SOV
-			  }
-			  available = {
-				  has_completed_focus = SOV_positive_heroism
-				  if = {
-					  limit = {
-						  has_character_flag = SOV_exiled_flag
-					  }
-					  NOT = { has_character_flag = SOV_exiled_flag }
-				  }
-			  }
-			  traits = {
-				  mass_assault_expert
-			  }
-		  }		
-	  }
-  
-	  SOV_konstantin_rokossovsky = {
-		  name = SOV_konstantin_rokossovsky
-  
-		  portraits = {
-			  army = {
-				  small = "GFX_idea_konstantin_rokossovsky"
-				  large = "gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds"
-			  }
-		  }
-  
-		  corps_commander = {
-			  traits = { cavalry_leader brilliant_strategist trait_cautious armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger  organizer}
-			  skill = 8
-			  attack_skill = 7
-			  defense_skill = 4
-			  planning_skill = 2
-			  logistics_skill = 4
-			  legacy_id = 402
-			  visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		  }
-  
-		  advisor = {
-			  slot = high_command
-			  idea_token = konstantin_rokossovsky
-			  ledger = army
-			  allowed = {
-				  original_tag = SOV
-				  hidden_trigger = {
-					  NOT = {
-						  any_other_country = {
-							  has_war_with = SOV
-							  original_tag = SOV
-							  has_unit_leader = 403.000
-						  }
-					  }
-				  }
-			  }
-			  available = {
-				  has_completed_focus = SOV_positive_heroism
-				  if = {
-					  limit = {
-						  has_character_flag = SOV_exiled_flag
-					  }
-					  NOT = { has_character_flag = SOV_exiled_flag }
-				  }
-			  }
-			  traits = {
-				  army_armored_3
-			  }
-				  cost = 200
-			  ai_will_do = {
-				  factor = 1.000
-			  }
-		  }		
-	  }
-  
+	SOV_konstantin_rokossovsky_pregrinded = {
+		name = SOV_konstantin_rokossovsky
+		portraits = {
+			army = {
+				small = "GFX_idea_konstantin_rokossovsky"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader brilliant_strategist trait_cautious armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger  organizer}
+			skill = 8
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = 0
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = enabled
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = konstantin_rokossovsky
+			ledger = army
+			allowed = {
+				original_tag = SOV
+				hidden_trigger = {
+					NOT = {
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+							has_unit_leader = 403.000
+						}
+					}
+				}
+			}
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = enabled
+				}
+			}
+			available = {
+				has_completed_focus = SOV_positive_heroism
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
+				}
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
 	  SOV_aleksandr_vasilevsky = {
 		  name = SOV_aleksandr_vasilevsky
 		  portraits = {
@@ -363,59 +496,135 @@ characters = {
 		  }
 	  }
   
-	  SOV_ivan_konev = {
-		  name = SOV_ivan_konev
-		  portraits = {
-			  army = {
-				  small = "GFX_idea_ivan_konev"
-				  large = "GFX_portrait_SOV_ivan_konev"
-			  }
-		  }
-		  advisor = {
-			  slot = high_command
-			  idea_token = ivan_konev
-			  ledger = army
-			  allowed = {
-				  original_tag = SOV
-			  }
-			  available = {
-				  custom_trigger_tooltip = {
-					  tooltip = SOV_konev_civil_war
-					  NOT = {
-						  any_other_country = {
-							  has_war_with = SOV
-							  original_tag = SOV
-							  has_unit_leader = 408.000
-						  }
-					  }
-				  }
-				  if = {
-					  limit = {
-						  has_character_flag = SOV_exiled_flag
-					  }
-					  NOT = { has_character_flag = SOV_exiled_flag }
-				  }
-			  }
-			  traits = {
-				  army_concealment_2
-			  }
-				  cost = 100
-			  ai_will_do = {
-				  factor = 1.000
-			  }
-		  }
-  
-		  corps_commander = {
-			  traits = { cavalry_leader armor_officer panzer_leader trickster trait_engineer harsh_leader politically_connected }
-			  skill = 5
-			  attack_skill = 4
-			  defense_skill = 5
-			  planning_skill = 2
-			  logistics_skill = 6
-			  legacy_id = 408
-			  visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		  }
-	  }
+	SOV_ivan_konev = {
+		name = SOV_ivan_konev
+		portraits = {
+			army = {
+				small = "GFX_idea_ivan_konev"
+				large = "GFX_portrait_SOV_ivan_konev"
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader armor_officer politically_connected }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 5
+			legacy_id = 408
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = disabled
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ivan_konev
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = disabled
+				}
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = SOV_konev_civil_war
+					NOT = {
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+							has_unit_leader = 408.000
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
+				}
+			}
+			traits = {
+				army_concealment_2
+			}
+				cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	SOV_ivan_konev_pregrinded = {
+		name = SOV_ivan_konev
+		portraits = {
+			army = {
+				small = "GFX_idea_ivan_konev"
+				large = "GFX_portrait_SOV_ivan_konev"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader armor_officer panzer_leader trickster trait_engineer harsh_leader politically_connected }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 6
+			legacy_id = 408
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = enabled
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ivan_konev
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_sov
+					option = enabled
+				}
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = SOV_konev_civil_war
+					NOT = {
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+							has_unit_leader = 408.000
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
+				}
+			}
+			traits = {
+				army_concealment_2
+			}
+				cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
   
 	  SOV_semyon_timoshenko = {
 		  name = SOV_semyon_timoshenko
