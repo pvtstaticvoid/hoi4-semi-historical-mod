@@ -101,6 +101,16 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 80
+			modifier = {
+				factor = 0.01
+				ITA = {
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_christian_democracy_ai = yes
+					}
+				}
+			}
 		}
 
 		available = {
@@ -108,6 +118,7 @@ focus_tree = {
 				NOT = { has_war_with = ROOT }
 				exists = yes
 				has_capitulated = no
+				ITA_is_kinda_fascist = yes
 			}
 		}
 
@@ -242,7 +253,7 @@ focus_tree = {
 		id = YUG_attract_axis_capital
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = YUG_friendship_treaty_with_italy focus = YUG_reinforce_old_alliances }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = YUG_friendship_treaty_with_italy
 
@@ -275,6 +286,42 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = YUG_idea_axis_capital
+		}
+	}
+	
+	focus = {
+		id = YUG_brigadistas
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = YUG_friendship_treaty_with_italy focus = YUG_reinforce_old_alliances }
+		x = 1
+		y = 1
+		relative_position_id = YUG_friendship_treaty_with_italy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			has_war = no
+			SPR_scw_in_progress = yes
+		}
+
+		bypass = {
+			OR = {
+				has_global_flag = scw_over
+				has_war = yes
+			}
+		}
+
+		cancel_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = YUG_brigadistas_idea
+			custom_effect_tooltip = will_be_removed_once_scw_is_over_tt
 		}
 	}
 	
@@ -437,6 +484,7 @@ focus_tree = {
 				controls_state = 109
 				controls_state = 103
 				controls_state = 736
+				controls_state = 852
 				controls_state = 163
 			}
 		}
@@ -955,6 +1003,125 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = YUG_idea_macedonian_opposition
 			remove_ideas = YUG_idea_serbian_general_staff
+			release_puppet = MAC
+			MAC = {
+				custom_effect_tooltip = create_two_units_tt
+			}
+			hidden_effect = {
+				MAC = { save_event_target_as = released_nation_target }
+				event_target:released_nation_target = {
+					division_template = {
+						name = "Yugoslavian Division"
+						priority = 1
+						division_names_group = YUG_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+				
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { PREV = { has_full_control_of_state = PREV } }
+						create_unit = {
+							division = "name = \"Macedonian Division\" division_template = \"Yugoslavian Division\" start_experience_factor = 0.9" 
+							owner = PREV
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { PREV = { has_full_control_of_state = PREV } }
+						create_unit = {
+							division = "name = \"Macedonian Division\" division_template = \"Yugoslavian Division\" start_experience_factor = 0.9" 
+							owner = PREV
+						}
+					}
+				}
+			}
+			release_puppet = KOS 
+			KOS = {
+				custom_effect_tooltip = create_one_units_tt
+			}
+			hidden_effect = {
+				KOS = { save_event_target_as = released_nation_target }
+				event_target:released_nation_target = {
+					division_template = {
+						name = "Yugoslavian Division"
+						priority = 1
+						division_names_group = YUG_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+				
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { PREV = { has_full_control_of_state = PREV } }
+						create_unit = {
+							division = "name = \"Kosovan Division\" division_template = \"Yugoslavian Division\" start_experience_factor = 0.9" 
+							owner = PREV
+						}
+					}
+				}
+			}
+			release_puppet = MNT
+			MNT = {
+				custom_effect_tooltip = create_one_units_tt
+			}
+			hidden_effect = {
+				MNT = { save_event_target_as = released_nation_target }
+				event_target:released_nation_target = {
+					division_template = {
+						name = "Yugoslavian Division"
+						priority = 1
+						division_names_group = YUG_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+				
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { PREV = { has_full_control_of_state = PREV } }
+						create_unit = {
+							division = "name = \"Montenegrin Division\" division_template = \"Yugoslavian Division\" start_experience_factor = 0.9" 
+							owner = PREV
+						}
+					}
+				}
+			}
+			set_autonomy = { target = MAC autonomy_state = autonomy_integrated_puppet }
+			set_autonomy = { target = KOS autonomy_state = autonomy_integrated_puppet }
+			set_autonomy = { target = MNT autonomy_state = autonomy_integrated_puppet }
+			
 		}
 	}
 	
@@ -1085,7 +1252,203 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			add_stability = 0.05
+			if = {
+				limit = {
+					controls_state = 764
+				}
+				custom_effect_tooltip = release_transylvania_tt
+				custom_effect_tooltip = transylvania_create_one_units_tt
+			}
+			if = {
+				limit = {
+					controls_state = 45
+				}
+				custom_effect_tooltip = release_vojvodina_tt
+				custom_effect_tooltip = vojvodina_create_one_units_tt
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						controls_state = 764
+					}
+					hidden_effect = {
+					764 = { add_core_of = TRA }
+					if = {
+						limit = { TRA = { exists = no } }
+						release_puppet = TRA 
+						set_autonomy = { target = TRA autonomy_state = autonomy_integrated_puppet }
+						TRA = { save_event_target_as = released_nation_target }
+					}
+					else = {
+						create_dynamic_country = {
+							original_tag = TRA
+							save_event_target_as = released_nation_target
+							PREV = {
+								every_owned_state = {
+									limit = { is_core_of = TRA }
+									PREV.PREV = { transfer_state = PREV }
+								}
+							}
+							PREV = {
+								puppet = PREV
+								set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+							}
+						}
+					}
+					event_target:released_nation_target = {
+							82 = {
+								add_core_of = PREV
+							}
+							83 = {
+								add_core_of = PREV
+							}
+							84 = {
+								add_core_of = PREV
+							}
+							76 = {
+								add_core_of = PREV
+							}
+							division_template = {
+								name = "Yugoslavian Division"
+								priority = 1
+								division_names_group = ROM_INF_01
+								regiments = {
+									infantry = { x = 0 y = 0 }
+									infantry = { x = 0 y = 1 }
+									infantry = { x = 0 y = 2 }
+						
+									infantry = { x = 1 y = 0 }
+									infantry = { x = 1 y = 1 }
+									infantry = { x = 1 y = 2 }
+						
+									infantry = { x = 2 y = 0 }
+									infantry = { x = 2 y = 1 }
+								}
+								support = {
+									engineer = { x = 0 y = 0 }
+								}
+							}
+							random_owned_controlled_state = {
+								limit = { PREV = { has_full_control_of_state = PREV } }
+								create_unit = {
+									division = "name = \"Transylvanian Division\" division_template = \"Yugoslavian Division\" start_experience_factor = 0.9" 
+									owner = PREV
+								}
+							}
+							set_party_name = { 
+								ideology = neutrality 
+								long_name = neutrality 
+								name = neutrality 
+							}
+							set_party_name = { 
+								ideology = fascism 
+								long_name = transylvania_fascism_party_long 
+								name = transylvania_fascism_party 
+							}
+							set_party_name = { 
+								ideology = democratic 
+								long_name = democratic 
+								name = democratic 
+							}
+							set_party_name = { 
+								ideology = communism 
+								long_name = communism 
+								name = communism 
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						controls_state = 45
+					}
+					create_dynamic_country = {
+						original_tag = HUN
+						
+						45 = {
+							add_core_of = PREV
+						}
+						every_state = {
+							limit = {
+								is_core_of = HUN
+								NOT = { is_controlled_by = YUG }
+							}
+							remove_core_of = PREV
+						}
+						transfer_state = 45
+						set_cosmetic_tag = vojvodina
+						PREV = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						division_template = {
+							name = "Yugoslavian Division"
+							priority = 1
+							division_names_group = HUN_INF_01
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+					
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+					
+								infantry = { x = 2 y = 0 }
+								infantry = { x = 2 y = 1 }
+							}
+							support = {
+								engineer = { x = 0 y = 0 }
+							}
+						}
+						random_owned_controlled_state = {
+							limit = { PREV = { has_full_control_of_state = PREV } }
+							create_unit = {
+								division = "name = \"Vojvodinian Division\" division_template = \"Yugoslavian Division\" start_experience_factor = 0.9" 
+								owner = PREV
+							}
+						}
+						set_party_name = { 
+							ideology = neutrality 
+							long_name = neutrality 
+							name = neutrality 
+						}
+						set_party_name = { 
+							ideology = fascism 
+							long_name = fascism 
+							name = fascism 
+						}
+						set_party_name = { 
+							ideology = democratic 
+							long_name = democratic 
+							name = democratic 
+						}
+						set_party_name = { 
+							ideology = communism 
+							long_name = communism 
+							name = communism 
+						}
+					}
+				}
+				set_cosmetic_tag = SER
+				every_state = {
+					limit = {
+						is_core_of = YUG
+						NOT = { is_core_of = SER }
+					}
+					remove_core_of = YUG
+				}
+				45 = {
+					remove_core_of = YUG
+				}
+				every_state = {
+					limit = {
+						is_core_of = SER
+					}
+					remove_core_of = SER
+				}
+			}
 		}
 	}
 	
@@ -1176,7 +1539,7 @@ focus_tree = {
 	##############################
 	##### CRUSH NATIONALISM ######
 	##############################
-
+	
 	focus = {
 		id = YUG_evolution
 		icon = GFX_goal_anschluss
@@ -1215,7 +1578,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = YUG_crush_the_ustasa
 		icon = GFX_goal_generic_political_pressure
@@ -1401,6 +1764,31 @@ focus_tree = {
 					transfer_state = 102
 				}
 			}
+
+			if = { #Same stuff but for the new state of Ljubljana (BBA)
+				limit = {
+					any_other_country = {
+						is_subject_of = ITA
+						853 = {
+							is_core_of = PREV
+						}
+					}
+				}
+				random_other_country = {
+					limit = {
+						is_subject_of = ITA
+						853 = {
+							is_core_of = PREV
+						}
+					}
+					transfer_state = 853
+				}
+			}
+			else = {
+				ITA = {
+					transfer_state = 853
+				}
+			}
 			ITA = {
 				add_opinion_modifier = { 
 					target = ROOT
@@ -1414,6 +1802,9 @@ focus_tree = {
 				}
 			}
 			102 = {
+				remove_core_of = ROOT
+			}
+			853 = {
 				remove_core_of = ROOT
 			}
 		}
@@ -1554,6 +1945,15 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = anti_german_military
+			add_tech_bonus = {
+				name = YUG_german_military_mission
+				bonus = 1.0
+				uses = 1
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				technology = mechanised_infantry
+			}
 		}
 	}
 
@@ -1677,7 +2077,15 @@ focus_tree = {
 		available = {
 			ITA = {
 				NOT = { has_war_with = ROOT }
-				has_government = fascism
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					ITA_is_kinda_fascist = yes
+				}
+				else = { 
+					has_government = fascism
+				}
 				has_capitulated = no
 				controls_state = 163
 				is_in_faction = yes
@@ -1686,8 +2094,11 @@ focus_tree = {
 		}
 
 		bypass = {
-			is_in_faction_with = ITA
-			controls_state = 163
+			OR = {
+				is_in_faction_with = ITA
+				is_subject_of = ITA
+				controls_state = 163
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1750,6 +2161,7 @@ focus_tree = {
 		completion_reward = {
 			163 = { remove_core_of = ROOT }
 			736 = { remove_core_of = ROOT }
+			852 = { remove_core_of = ROOT }
 			if = {
 				limit = {
 					GER = {
@@ -2356,15 +2768,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			if = {
-				limit = {
+				limit = { #Controls both Slovenian states
 					controls_state = 102
+					controls_state = 853
 				}
 				102 = {
-					add_building_construction = { type = bunker province = 9627 level = 3 instant_build = yes }
 					add_building_construction = { type = bunker province = 3631 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 9596 level = 3 instant_build = yes }
 					add_building_construction = { type = bunker province = 596 level = 3 instant_build = yes }
 					add_building_construction = { type = bunker province = 665 level = 3 instant_build = yes }
 					add_building_construction = { type = bunker province = 6672 level = 3 instant_build = yes }
+				}
+				853 = {
+					add_building_construction = { type = bunker province = 9627 level = 3 instant_build = yes }
 				}
 				103 = {
 					add_building_construction = { type = bunker province = 11564 level = 3 instant_build = yes }
@@ -2377,6 +2793,29 @@ focus_tree = {
 					add_building_construction = { type = bunker province = 11594 level = 3 instant_build = yes }
 					add_building_construction = { type = bunker province = 9611 level = 3 instant_build = yes }
 					add_building_construction = { type = bunker province = 3627 level = 3 instant_build = yes }
+				}
+			}
+			else_if = {
+				limit = {
+					controls_state = 853
+				}
+				853 = {
+					add_building_construction = { type = bunker province = 9627 level = 3 instant_build = yes }
+				}
+				103 = {
+					add_building_construction = { type = bunker province = 11564 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 11901 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 984 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 3974 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 3924 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 3601 level = 3 instant_build = yes }
+				}
+				109 = {
+					add_building_construction = { type = bunker province = 11564 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 9611 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 3627 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 11581 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 3592 level = 3 instant_build = yes }
 				}
 			}
 			else = {
@@ -2579,6 +3018,63 @@ focus_tree = {
 					is_in_faction = no
 				}
 				create_faction = YUGOSLAV_DEFENCE_LEAGUE
+			}
+			set_division_template_lock = {
+				division_template = "Yugoslavian Defence Army"
+				is_locked = no
+			}
+			random_owned_controlled_state = {
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"Yugoslavian Defence Army\" division_template = \"Yugoslavian Defence Army\" start_experience_factor = 0.9" 
+					owner = PREV
+				}
+			}
+			every_other_country = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+					NOT = { original_tag = YUG }
+					is_subject_of = ROOT
+				}
+				PREV = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_free
+					}
+				}
+				if = {
+					limit = { PREV = { is_faction_leader = no } }
+					random_other_country = {
+						limit = {
+							is_in_faction_with = PREV.PREV
+							is_faction_leader = yes
+						}
+						add_to_faction = PREV
+					}
+				}
+				else = {
+					PREV = { add_to_faction = PREV }
+				}
+				hidden_effect = {
+					add_ai_strategy = {
+						type = alliance
+						id = ROOT
+						value = 200
+					}
+				}
+				set_division_template_lock = {
+					division_template = "Yugoslavian Defence Army"
+					is_locked = no
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"Yugoslavian Defence Army\" division_template = \"Yugoslavian Defence Army\" start_experience_factor = 0.9" 
+						owner = PREV
+					}
+				}
 			}
 		}
 	}
@@ -3846,7 +4342,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 102 }
+				prioritize = { 853 102 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 				}
@@ -4099,7 +4595,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					102 = {
+					853 = {
 						owner = {
 							OR = {
 								tag = ROOT
@@ -4112,7 +4608,7 @@ focus_tree = {
 						}
 					}
 				}
-				102 = {
+				853 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
@@ -4128,7 +4624,7 @@ focus_tree = {
 			}
 			else = {
 				random_owned_controlled_state = {
-					prioritize = { 102 }
+					prioritize = { 853 102 }
 					limit = {
 						ROOT = { has_full_control_of_state = PREV }
 					}
@@ -4872,12 +5368,31 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = YUG_the_ik_3
-				bonus = 3.0
-				ahead_reduction = 2
-				uses = 1
-				category = light_fighter
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				add_tech_bonus = {
+					name = YUG_the_ik_3
+					bonus = 3.0
+					ahead_reduction = 2
+					uses = 1
+					category = light_fighter
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					name = "Ikarus IK-3" #
+					type = small_plane_airframe_1
+					modules = {
+						fixed_main_weapon_slot = light_mg_2x
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+						engine_type_slot = engine_2_1x
+						special_type_slot_1 = empty
+					}
+				}
 			}
 		}
 	}
@@ -5400,7 +5915,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = YUG_motorize_the_cavalry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -5479,7 +5994,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = YUG_motorize_the_cavalry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -5921,6 +6436,45 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = YUG_artillery_regiments
+		}
+	}
+	
+	focus = {
+		id = YUG_medal_for_extreme_bravery
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = YUG_artillery_regiments }
+		x = 0
+		y = 3
+		relative_position_id = YUG_army_maneuvers
+
+		cost = 10
+		
+		allow_branch = {
+			has_dlc = "By Blood Alone"
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {
+			any_neighbor_country = {
+				is_major = yes
+				has_war_with = ROOT
+			}
+		}
+
+		bypass = {
+
+		}
+
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+
+
+		completion_reward = {
+			custom_effect_tooltip = yug_extreme_bravery_medal
 		}
 	}
 

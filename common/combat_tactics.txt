@@ -708,28 +708,28 @@ tactic_defender_hb_skillful_defence = {
 	defender = 0.05
 }
 
-# tactic_guerrilla_tactics = { #People's army defender tactic. also for German volksturm branch.
-# 	is_attacker = no
-# 	trigger = {
-# 		is_attacker = no
-# 		phase = no
-# 		OR = {
-# 			skill > 2
-# 			has_trait = trickster
-# 		}
-# 	}
-# 	
-# 	active = no
-# 	
-# 	base =  {
-# 		factor = 4
-# 	}
-# 	picture = tactic_guerrilla_tactics
-# 	
-# 	combat_width = -0.5
-# 	attacker = -0.7
-# 	defender = -0.6
-# }
+tactic_guerrilla_tactics = { #People's army defender tactic. also for German volksturm branch.
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			skill > 2
+			has_trait = trickster
+		}
+	}
+	
+	active = no
+	
+	base =  {
+		factor = 4
+	}
+	picture = tactic_guerrilla_tactics
+	
+	combat_width = -0.5
+	attacker = -0.7
+	defender = -0.6
+}
 
 tactic_human_wave_tactics = { #People's army attacker tactic
 	is_attacker = yes

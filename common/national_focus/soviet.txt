@@ -2222,7 +2222,53 @@ focus_tree = {
 
 			custom_effect_tooltip = SOV_night_witches_nsb_tt
 			hidden_effect = {
-				if = { #ALT IDEOLOGY
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					create_equipment_variant = {
+						name = "U-2" #
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = empty
+							engine_type_slot = engine_1_1x
+							special_type_slot_1 = non_strategic_materials_small
+						}
+					}
+					create_equipment_variant = {
+						name = "Pe-2" #
+						type = small_plane_cas_airframe_2
+						modules = {
+							fixed_main_weapon_slot = small_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							engine_type_slot = engine_2_2x
+							special_type_slot_1 = lmg_defense_turret
+							special_type_slot_2 = dive_brakes_small
+						}
+					}
+					create_equipment_variant = {
+						name = "Yak-1" #
+						type = small_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_1_1x
+							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = non_strategic_materials_small
+						}
+					}
+					if = {
+						limit = {
+							NOT = { has_government = communism }
+						}
+						
+						load_oob = "SOV_night_witches_nsb_alt_bba"
+						else = {
+							load_oob = "SOV_night_witches_nsb_bba" #nested here because otherwise it is considered a nested else for the higher level if
+						}
+					}
+				}
+				else_if = { #ALT IDEOLOGY
 					limit = {
 						NOT = { has_government = communism }
 					}
@@ -3476,6 +3522,16 @@ focus_tree = {
 					limit = {
 						has_tech = improved_submarine
 					}
+					create_equipment_variant = {
+						name = "K Class"
+						type = submarine_3
+						upgrades = {
+							ship_reliability_upgrade = 3
+							sub_engine_upgrade = 3
+							sub_stealth_upgrade = 2
+							sub_torpedo_upgrade = 3
+						}
+					}
 					add_equipment_production = {
 						equipment = {
 							type = submarine_3
@@ -3498,6 +3554,16 @@ focus_tree = {
 					}
 				}
 				else = { #Submarine 2 as default
+					create_equipment_variant = {
+						name = "K Class"
+						type = submarine_2
+						upgrades = {
+							ship_reliability_upgrade = 2
+							sub_engine_upgrade = 2
+							sub_stealth_upgrade = 2
+							sub_torpedo_upgrade = 2
+						}
+					}
 					add_equipment_production = {
 						equipment = {
 							type = submarine_2
@@ -3729,6 +3795,16 @@ focus_tree = {
 					limit = { #Carrier 4 
 						has_tech = advanced_carrier
 					}
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = carrier_4
+						upgrades = {
+							ship_deckspace_upgrade = 4
+							carrier_armor_upgrade = 4
+							ship_engine_upgrade = 3
+							ship_reliability_upgrade = 3
+						}
+					}
 					add_equipment_production = {
 						equipment = {
 							type = carrier_4
@@ -3744,6 +3820,16 @@ focus_tree = {
 					limit = { #Carrier 3
 						has_tech = improved_carrier
 					}
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = carrier_3
+						upgrades = {
+							ship_deckspace_upgrade = 3
+							carrier_armor_upgrade = 3
+							ship_engine_upgrade = 3
+							ship_reliability_upgrade = 2
+						}
+					}
 					add_equipment_production = {
 						equipment = {
 							type = carrier_3
@@ -3758,6 +3844,16 @@ focus_tree = {
 				else_if = {
 					limit = { #Carrier 2
 						has_tech = basic_carrier
+					}
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = carrier_2
+						upgrades = {
+							ship_deckspace_upgrade = 2
+							carrier_armor_upgrade = 2
+							ship_engine_upgrade = 2
+							ship_reliability_upgrade = 2
+						}
 					}
 					add_equipment_production = {
 						equipment = {
@@ -3776,6 +3872,16 @@ focus_tree = {
 							NOT = { has_tech = early_carrier }
 						}
 						set_technology = { early_carrier = 1 }
+					}
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = carrier_1
+						upgrades = {
+							ship_deckspace_upgrade = 2
+							carrier_armor_upgrade = 1
+							ship_engine_upgrade = 2
+							ship_reliability_upgrade = 1
+						}
 					}
 					add_equipment_production = {
 						equipment = {
@@ -6435,6 +6541,8 @@ focus_tree = {
 			custom_effect_tooltip = SOV_the_glory_of_the_red_army_ns_tt
 
 			army_experience = 75
+
+			show_unit_leaders_tooltip = SOV_pavel_rybalko
 
 			#New
 			hidden_effect = {
@@ -17324,9 +17432,20 @@ ai_will_do = {
 				category = cv_tech
 				category = ss_tech
 			}
-			add_timed_idea = {
-				idea = SOV_modernize_the_far_eastern_fleet
-				days = 730
+			if = { #Modifiers in this NS are MTG-locked
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_timed_idea = {
+					idea = SOV_modernize_the_far_eastern_fleet
+					days = 730
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = SOV_modernize_the_far_eastern_fleet_vanilla
+					days = 730
+				}
 			}
 		}
 	}

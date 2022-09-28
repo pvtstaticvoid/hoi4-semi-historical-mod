@@ -136,13 +136,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12730;2098;impassable;-1;-1;-1;-1;-1;;Himalayas
 12730;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 10810;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
-12892;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
-12892;4900;impassable;-1;-1;-1;-1;-1;;Himalayas
-4435;4900;impassable;-1;-1;-1;-1;-1;;Himalayas
-4435;2014;impassable;-1;-1;-1;-1;-1;;Himalayas
-8010;2014;impassable;-1;-1;-1;-1;-1;;Himalayas
-12860;2014;impassable;-1;-1;-1;-1;-1;;Himalayas
-12860;2098;impassable;-1;-1;-1;-1;-1;;Himalayas
+1996;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;8041;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
 4318;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -150,18 +144,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1898;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 3989;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 1129;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
-12884;10802;impassable;-1;-1;-1;-1;-1;;Himalayas
-12884;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
-7273;10802;impassable;-1;-1;-1;-1;-1;;Himalayas
-5042;10802;impassable;-1;-1;-1;-1;-1;;Himalayas
-5042;12801;impassable;-1;-1;-1;-1;-1;;Himalayas
-5042;4973;impassable;-1;-1;-1;-1;-1;;Himalayas
-5042;8112;impassable;-1;-1;-1;-1;-1;;Himalayas
-5042;1970;impassable;-1;-1;-1;-1;-1;;Himalayas
-10821;1970;impassable;-1;-1;-1;-1;-1;;Himalayas
-10821;5087;impassable;-1;-1;-1;-1;-1;;Himalayas
-7519;5087;impassable;-1;-1;-1;-1;-1;;Himalayas
-5018;1996;impassable;-1;-1;-1;-1;-1;;Himalayas
 4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
@@ -192,6 +174,27 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
+611;3612;impassable;-1;-1;-1;-1;-1;;western alps
+11570;3612;impassable;-1;-1;-1;-1;-1;;western alps
+11570;9587;impassable;-1;-1;-1;-1;-1;;western alps
+6635;9587;impassable;-1;-1;-1;-1;-1;;western alps
+3641;11601;impassable;-1;-1;-1;-1;-1;;central alps
+3641;658;impassable;-1;-1;-1;-1;-1;;central alps
+6661;3662;impassable;-1;-1;-1;-1;-1;;eastern alps
+3662;11587;impassable;-1;-1;-1;-1;-1;;eastern alps
+11587;3660;impassable;-1;-1;-1;-1;-1;;eastern alps
+3660;6675;impassable;-1;-1;-1;-1;-1;;eastern alps
+6675;9633;impassable;-1;-1;-1;-1;-1;;eastern alps
+9633;9630;impassable;-1;-1;-1;-1;-1;;eastern alps
+9630;11618;impassable;-1;-1;-1;-1;-1;;eastern alps
+671;11634;impassable;-1;-1;-1;-1;-1;;austrian alps
+671;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
+3675;668;impassable;-1;-1;-1;-1;-1;;austrian alps
+3674;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
+3674;6691;impassable;-1;-1;-1;-1;-1;;austrian alps
+6691;6687;impassable;-1;-1;-1;-1;-1;;austrian alps
+6691;9650;impassable;-1;-1;-1;-1;-1;;austrian alps
+9650;3684;impassable;-1;-1;-1;-1;-1;;austrian alps
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 13228;1048;impassable;-1;-1;-1;-1;-1;;gibraltar
 13228;10094;impassable;-1;-1;-1;-1;-1;;gibraltar

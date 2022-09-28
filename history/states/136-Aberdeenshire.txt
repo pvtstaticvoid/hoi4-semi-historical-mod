@@ -4,13 +4,14 @@ state={
 	name="STATE_136"
 	manpower = 745466
 	
-	state_category = city
+	state_category = town
 	resources={
 		tungsten=4 # was: 6
 		aluminium=3 # was: 4
 	}
 
 	history={
+		add_core_of = SCO
 		owner = ENG
 		victory_points = {
 			200 5 #Aberdeen
@@ -21,7 +22,7 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 6
 			dockyard = 2
-			industrial_compelx = 2
+			industrial_complex = 2
 		}
 		add_core_of = ENG
 	}

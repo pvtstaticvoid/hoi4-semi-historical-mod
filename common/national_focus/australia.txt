@@ -708,15 +708,35 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = AST_cac_boomerang
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+			if = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_tech_bonus = {
+					name = AST_cac_boomerang
+					bonus = 1.0
+					ahead_reduction = 2
+					uses = 1
+					category = light_fighter
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = AST_cac_boomerang
+					bonus = 0.75
+					uses = 1
+					category = light_fighter
+				}
+				create_equipment_variant = {
+					name = "CAC Boomerang" #
+					type = small_plane_airframe_1
+					modules = {
+						fixed_main_weapon_slot = light_mg_4x
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+						engine_type_slot = engine_2_1x
+						special_type_slot_1 = drop_tanks
+					}
+				}	
 			}
 		}
 	}
@@ -771,7 +791,7 @@
 		completion_reward = {
 			air_experience = 25
 			random_owned_controlled_state = {
-				prioritize = { 521 520 }
+				prioritize = { 521 520 872}
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -822,19 +842,47 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = AST_cac_woomera
-				bonus = 3.0
-				uses = 1
-				category = cat_strategic_bomber
-				category = tactical_bomber
-				category = naval_air
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				add_tech_bonus = {
+					name = AST_cac_woomera
+					bonus = 3.0
+					uses = 1
+					category = cat_strategic_bomber
+					category = tactical_bomber
+					category = naval_air
+				}
+				add_tech_bonus = {
+					name = AST_cac_woomera
+					bonus = 1.0
+					uses = 1
+					category = cat_strategic_bomber
+				}
 			}
-			add_tech_bonus = {
-				name = AST_cac_woomera
-				bonus = 1.0
-				uses = 1
-				category = cat_strategic_bomber
+			else = {
+				add_tech_bonus = {
+					name = AST_cac_woomera
+					bonus = 2
+					uses = 2
+					category = tactical_bomber
+					category = naval_air
+				}
+				create_equipment_variant = {
+					name = "CAC Woomera" #
+					type = medium_plane_airframe_1
+					modules = {
+						fixed_main_weapon_slot = medium_bomb_bay
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+						fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+						fixed_auxiliary_weapon_slot_3 = bomb_locks
+						engine_type_slot = engine_3_2x
+						special_type_slot_1 = lmg_defense_turret_2x
+					}
+				}
 			}
 		}
 	}
@@ -915,7 +963,7 @@
 			if = {
 				limit = { has_tech = radio_detection }
 				random_owned_controlled_state = {
-					prioritize = { 521 }
+					prioritize = { 521 872 }
 					limit = {
 						is_in_home_area = yes
 						free_building_slots = {
@@ -973,7 +1021,7 @@
 					}
 					effect_tooltip = {
 						random_owned_controlled_state = {
-							prioritize = { 521 }
+							prioritize = { 521 872 }
 							limit = {
 								is_in_home_area = yes
 							}
@@ -998,7 +1046,7 @@
 						}
 					}
 					random_owned_controlled_state = {
-						prioritize = { 521 }
+						prioritize = { 521 872 }
 						limit = {
 							is_in_home_area = yes
 							free_building_slots = {
@@ -1679,7 +1727,7 @@
 		x = 14
 		y = 0
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -1762,6 +1810,7 @@
 			NOT = {
 				controls_state = 522
 				controls_state = 519
+				controls_state = 871
 			}
 		}
 
@@ -1771,38 +1820,11 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			if = {
-				limit = {
-				    522 = {
-					    owner = {
-							}
-						}
-					}
-				}
-				522 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			if = {
-			    limit = {
-				    519 = {
-					    owner = {
-						    }
-						}
-					}
-				}
-				519 = {
-				add_building_construction = {
-				    type = infrastructure
-					level = 2
-					instant_build = yes
-				}
+			build_railway = {
+				path = { 1652 2157 10983 1526 10949 8200 10969 2191 12948 5197 8165 10927 8186 }
 			}
 		}
-	} 
+	}
 
 	focus = {
 		id = AST_south_australian_housing_trust
@@ -2102,7 +2124,6 @@
 
 		available = {
 			controls_state = 520
-			controls_state = 521
 		}
 		
 		bypass = {
@@ -2115,38 +2136,12 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			if = {
-				limit = {
-				    520 = {
-					    owner = {
-							}
-						}
-					}
-				}
-				520 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			if = {
-			    limit = {
-				    521 = {
-					    owner = {
-						    }
-						}
-					}
-				}
-				521 = {
-				add_building_construction = {
-				    type = infrastructure
-					level = 1
-					instant_build = yes
-				}
+			build_railway = {
+				level = 2
+				path = { 7669 1431 12104 1454 }
 			}
 		}
-	} 
+	}
 
 	focus = {
 		id = AST_australian_arms_production
@@ -2963,7 +2958,7 @@
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = AST_support_the_policy_of_appeasement }
 		relative_position_id = AST_support_the_policy_of_appeasement
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 10
@@ -3022,9 +3017,62 @@
 		}
 
 	focus = {
+		id = AST_the_singapore_strategy
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = AST_support_the_policy_of_appeasement }
+		x = 1
+		y = 1
+		relative_position_id = AST_support_the_policy_of_appeasement
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0.2
+		}
+
+		available = {
+			is_in_faction_with = ENG
+			ENG = { has_government = ROOT }
+			MAL = {
+				is_puppet_of = ENG
+			}
+		}
+		
+		bypass = {
+			OR = {
+				NOT = {
+					OR = {
+						336 = {
+							is_owned_by = MAL
+						}
+						333 = {
+							is_owned_by = MAL
+						}
+					}
+				}
+				NOT = {
+					MAL = {
+						is_puppet_of = ENG
+					}
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ENG = {
+				country_event = { id = tfv_australia.1 }
+			}
+		}
+	}
+
+	focus = {
 		id = AST_adopt_westminster
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = AST_strengthen_ties_with_uk }
+		prerequisite = { focus = AST_strengthen_ties_with_uk focus = AST_the_singapore_strategy }
 		x = 0
 		y = 2
 		relative_position_id = AST_support_the_policy_of_appeasement
@@ -4409,9 +4457,67 @@
 	}
 
 	focus = {
+		id = AST_delegation_to_china
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = AST_empower_the_workers }
+		x = 0
+		y = 1
+		relative_position_id = AST_empower_the_workers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ROOT = {
+				communism > 0.3
+			}
+			event_target:WTT_communist_china = { exists = yes }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			event_target:WTT_communist_china = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = AST_delegation_to_china
+				}
+			}
+			add_opinion_modifier = {
+				target = event_target:WTT_communist_china
+				modifier = AST_delegation_to_china
+			}
+			event_target:WTT_communist_china = {
+				ROOT = {
+					add_ai_strategy = {
+						type = support
+						id = PREV
+						value = 100
+					}
+					add_ai_strategy = {
+						type = protect
+						id = PREV
+						value = 100
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = AST_commitment_to_the_cause
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = AST_empower_the_workers }
+		prerequisite = { focus = AST_delegation_to_china }
 		x = 0
 		y = 2
 		relative_position_id = AST_empower_the_workers
@@ -4509,15 +4615,25 @@
 		}
 
 		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
-			CHI = {
+			PRC = {
 				OR = {
 					exists = no
 					is_puppet = yes
 				}
+			}
+		}
+		select_effect = {
+			send_equipment = {
+				target = event_target:WTT_communist_china
+				type = infantry_equipment
+				amount = 500
 			}
 		}
 

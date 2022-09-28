@@ -210,6 +210,7 @@ country_event = {
 					NOT = { state = 1 }
 					NOT = { state = 735 }
 					NOT = { state = 21 }
+					NOT = { state = 851 }
 					NOT = { state = 31 }
 					is_owned_by = ROOT
 					is_controlled_by = PREV
@@ -353,7 +354,11 @@ country_event = {
 						owner = { original_tag = FRA }
 						is_controlled_by = ITA
 					}
-					21 = { #Provence
+					21 = { #Provence (Bouches-du-Rhone)
+						owner = { original_tag = FRA }
+						is_controlled_by = ITA
+					}
+					851 = { #Provence (Var)
 						owner = { original_tag = FRA }
 						is_controlled_by = ITA
 					}
@@ -368,7 +373,18 @@ country_event = {
 		if = {
 			limit = {
 				AND = {
-					21 = { #Provence
+					851 = { #Provence (Var)
+						owner = { original_tag = FRA }
+						is_controlled_by = ITA
+					}
+				}
+			}
+			ITA = { transfer_state = 851 }
+		}
+		if = {
+			limit = {
+				AND = {
+					21 = { #Provence (Bouches-du-Rhone)
 						owner = { original_tag = FRA }
 						is_controlled_by = ITA
 					}
@@ -416,7 +432,7 @@ country_event = {
 			}
 		}
 		FRA = {
-			set_capital = 539
+			set_capital = { state = 539 }
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -424,105 +440,113 @@ country_event = {
 				
 			}
 			hidden_effect = {
-					set_state_controller = 26
-					set_state_controller = 22
-					set_state_controller = 25
-					set_state_controller = 20
-					set_state_controller = 33
-					#tunisia
-					if = {
-						limit = {
-							458 = {
-								owner = { original_tag = FRA }
-								controller = { 
-									original_tag = FRA
-								}
+				set_state_controller = 26
+				set_state_controller = 22
+				set_state_controller = 25
+				set_state_controller = 20
+				set_state_controller = 33
+				#tunisia
+				if = {
+					limit = {
+						458 = {
+							owner = { original_tag = FRA }
+							controller = { 
+								original_tag = FRA
 							}
 						}
-						set_state_controller = 458
-					}					
+					}
+					set_state_controller = 458
+				}
 
-					#syria
-					if = {
-						limit = {
-							677 = {
-								owner = { original_tag = FRA }
-								controller = { 
-									original_tag = FRA
-								}
+				#syria
+				if = {
+					limit = {
+						677 = {
+							owner = { original_tag = FRA }
+							controller = { 
+								original_tag = FRA
 							}
 						}
-						set_state_controller = 677
 					}
-					if = {
-						limit = {
-							680 = {
-								owner = { original_tag = FRA }
-								controller = { 
-									original_tag = FRA
-								}
+					set_state_controller = 677
+				}
+				if = {
+					limit = {
+						680 = {
+							owner = { original_tag = FRA }
+							controller = { 
+								original_tag = FRA
 							}
 						}
-						set_state_controller = 680
 					}
-					if = {
-						limit = {
-							554 = {
-								owner = { original_tag = FRA }
-								controller = { 
-									original_tag = FRA
-								}
+					set_state_controller = 680
+				}
+				if = {
+					limit = {
+						554 = {
+							owner = { original_tag = FRA }
+							controller = { 
+								original_tag = FRA
 							}
 						}
-						set_state_controller = 554 
 					}
+					set_state_controller = 554 
+				}
 
-					if = {
-						limit = {
-							1 = {
-								owner = { original_tag = FRA }
-							}
+				if = {
+					limit = {
+						1 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 1
 					}
-					if = {
-						limit = {
-							32 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 1
+				}
+				if = {
+					limit = {
+						32 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 32
 					}
-					if = {
-						limit = {
-							735 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 32
+				}
+				if = {
+					limit = {
+						735 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 735
 					}
-					if = {
-						limit = {
-							21 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 735
+				}
+				if = {
+					limit = {
+						21 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 21
 					}
-					if = {
-						limit = {
-							31 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 21
+				}
+				if = {
+					limit = {
+						851 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 31
 					}
+					set_state_controller = 851
+				}
+				if = {
+					limit = {
+						31 = {
+							owner = { original_tag = FRA }
+						}
+					}
+					set_state_controller = 31
+				}
 			}
 			start_civil_war = {
 				ideology = fascism
 				size = 0.9
 				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 776 777 778 779 780 781 782 786 }
+				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 776 777 778 779 780 781 782 786 851 }
 				states_filter = {
 					owner = { original_tag = FRA }
 					OR = {		
@@ -553,7 +577,7 @@ country_event = {
 		random_other_country = {
 			limit = { original_tag = FRA has_government = fascism }
 			ROOT = { puppet = PREV }
-			set_capital = 26
+			set_capital = { state = 26 }
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
@@ -575,6 +599,7 @@ country_event = {
 				change_tag_from = FRA
 			}
 			save_event_target_as = vichy_france
+			set_country_flag = vichy_france
 		}
 		country_event = { hours = 6 id = news.34 }
 		hidden_effect =  {
@@ -659,7 +684,11 @@ country_event = {
 						owner = { original_tag = FRA }
 						is_controlled_by = ITA
 					}
-					21 = { #Provence
+					851 = { #Provence (Var)
+						owner = { original_tag = FRA }
+						is_controlled_by = ITA
+					}
+					21 = { #Provence (Bouches-du-Rhone)
 						owner = { original_tag = FRA }
 						is_controlled_by = ITA
 					}
@@ -674,7 +703,18 @@ country_event = {
 		if = {
 			limit = {
 				AND = {
-					21 = { #Provence
+					851 = { #Provence (Var)
+						owner = { original_tag = FRA }
+						is_controlled_by = ITA
+					}
+				}
+			}
+			ITA = { transfer_state = 851 }
+		}
+		if = {
+			limit = {
+				AND = {
+					21 = { #Provence (Bouches-du-Rhone)
 						owner = { original_tag = FRA }
 						is_controlled_by = ITA
 					}
@@ -740,7 +780,7 @@ country_event = {
             }
         }
 		FRA = {
-			set_capital = 539
+			set_capital = { state = 539 }
 			hidden_effect = {
 					set_state_controller = 26
 					set_state_controller = 22
@@ -822,6 +862,14 @@ country_event = {
 					}
 					if = {
 						limit = {
+							851 = {
+								owner = { original_tag = FRA }
+							}
+						}
+						set_state_controller = 851
+					}
+					if = {
+						limit = {
 							21 = {
 								owner = { original_tag = FRA }
 							}
@@ -841,7 +889,7 @@ country_event = {
 				ideology = neutrality
 				size = 0.5
 				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 }
+				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 851 }
 				states_filter = {
 					owner = { original_tag = FRA }
 					OR = {		
@@ -872,7 +920,7 @@ country_event = {
 		random_other_country = {
 			limit = { original_tag = FRA has_government = neutrality }
 			ROOT = { puppet = PREV }
-			set_capital = 26
+			set_capital = { state = 26 }
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
@@ -889,6 +937,7 @@ country_event = {
 				change_tag_from = FRA
 			}
 			save_event_target_as = vichy_france
+			set_country_flag = vichy_france
 		}
 		country_event = { hours = 6 id = news.34 }
 		hidden_effect =  {
@@ -918,7 +967,7 @@ country_event = {
 					}
 					controls_state = 635
 				}
-				set_capital = 635
+				set_capital = { state = 635 }
 			}
 			country_event = france.20
 			every_owned_state = {
@@ -934,6 +983,7 @@ country_event = {
 			create_dynamic_country = {
 				original_tag = FRA
 				save_event_target_as = vichy_france
+				set_country_flag = vichy_france
 				every_state = { #transfer French colonial empire
 					limit = {
 						is_controlled_by = FRA
@@ -954,6 +1004,7 @@ country_event = {
 						OR = {
 							state = 735
 							state = 21
+							state = 851
 							state = 32
 							state = 20
 							state = 26
@@ -990,6 +1041,7 @@ country_event = {
 								state = 21
 								state = 1
 								state = 735
+								state = 851
 							}
 							has_state_flag = vichy_italian_conquest
 						}
@@ -999,18 +1051,27 @@ country_event = {
 					if = {
 						limit = {
 							21 = { is_controlled_by = ITA }
+							851 = { is_controlled_by = ITA }
 							735 = { is_controlled_by = ITA } 
 						}
 						ITA = { transfer_state = 32 }
 					}
 					
 				}
+				every_owned_state = {
+					limit = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+					FRA = { add_state_claim = PREV } #Free France gets claims on all of Vichy, primarily so they can demand that shit back in a peacedeal
+				}
 				set_rule = { 
 					can_join_factions = no 
 					can_create_factions = no
 					can_not_declare_war = yes
 				}
-				set_capital = 26
+				set_capital = { state = 26 }
 				set_politics = {
 					ruling_party = fascism
 					elections_allowed = no
@@ -1022,16 +1083,24 @@ country_event = {
 					communism = 2
 				}
 				set_cosmetic_tag = FRA_VICHY
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-					picture = "Portrait_France_Philippe_Petain.dds"
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-						
+				FRA = {
+					FRA_philippe_petain= {
+						set_nationality = event_target:vichy_france	
 					}
 				}
+				FRA_philippe_petain= {
+					add_country_leader_role = {
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = fascism_ideology
+							traits = {
+								
+							}
+						}
+						promote_leader = yes
+					}
+				}
+				
 				add_ideas = FRA_occupation_costs_4
 				load_focus_tree = vichy_french_focus
 				FRA = {
@@ -1219,18 +1288,17 @@ country_event = {
 		custom_effect_tooltip = france.20.a_tt
 		set_country_flag = france_de_gaulle
 		hidden_effect =  {
-			create_country_leader = {
-				name = "Charles de Gaulle"
-				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-				picture = "Portrait_France_Charles_De_Gaulle.dds"
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-					
+			add_country_leader_role = {
+				character = FRA_charles_de_gaulle
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+					}	
 				}
-			}
+				promote_leader = yes				
+			}		
 		}
-		
 		name = france.20.a
 	}
 }
@@ -1405,7 +1473,7 @@ country_event = {
 			limit = {
 				ITA = {
 					OR = {
-						NOT = { has_completed_focus = ITA_yugoslavia_friend }						
+						NOT = { has_completed_focus = ITA_balkan_ambition }						
 						is_in_faction_with = GER
 						exists = no
 					}
@@ -1419,7 +1487,7 @@ country_event = {
 		if = {
 			limit = { 
 				ITA = {
-					has_completed_focus = ITA_yugoslavia_friend
+					has_completed_focus = ITA_balkan_ambition
 					NOT = { is_in_faction_with = GER }
 					NOT = { has_war_with = YUG }
 				}
@@ -1455,7 +1523,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = YUG
-					generator = { 102 }
+					generator = { 102 853 }
 				}
 			}
 		}
@@ -1573,7 +1641,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = YUG
-					generator = { 102 }
+					generator = { 102 853 }
 				}
 			}
 		}		
@@ -1724,44 +1792,45 @@ country_event = {
 
 # Édouard Daladier Resigns
 country_event = {
-    id = france.31
-    title = france.31.t
-    desc = france.31.d
-    picture = GFX_report_event_german_parade_paris
- 
-    fire_only_once = yes
- 
-    trigger = {
-        original_tag = FRA
-        has_government = democratic
-        has_global_flag = fall_of_france
-        NOT = { has_country_flag = france_de_gaulle }
-    } 
+	id = france.31
+	title = france.31.t
+	desc = france.31.d
+	picture = GFX_report_event_german_parade_paris
 
-    mean_time_to_happen = {
-        days = 7
-    }
+	fire_only_once = yes
 
-    option = {
-        name = france.31.a
-        retire_country_leader = yes
-        create_country_leader = {
-        	name = "Paul Reynaud"
-        	desc = "POLITICS_PAUL_REYNAUD_DESC"
-        	picture = "Portrait_France_Paul_Reynaud.dds"
-        	expire = "1965.1.1"
-        	ideology = liberalism
-        	traits = {
-            }
-        }
-        set_country_flag = daladier_resigned
-      }
+	trigger = {
+		original_tag = FRA
+		has_government = democratic
+		has_global_flag = fall_of_france
+		NOT = { has_country_flag = france_de_gaulle }
+	} 
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = france.31.a
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = FRA_paul_reynaud
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+				}
+			}
+			promote_leader = yes
+		}
+		set_country_flag = daladier_resigned
+	}
 }
 
 # Hidden event to add AI values for nationalist spain if France is going fascist
 country_event = {
-    id = france.32
-    hidden = yes
+	id = france.32
+	hidden = yes
  
     fire_only_once = yes
 
@@ -1801,8 +1870,8 @@ country_event = {
     }
 
     option = {
-        name = france.32.a
-     }
+		name = france.32.a
+    }
 }
 
 # Britain is at peace after annexing France in the Franco-British Union

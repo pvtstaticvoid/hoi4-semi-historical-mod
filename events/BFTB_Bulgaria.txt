@@ -2980,7 +2980,7 @@ country_event = {
 	immediate = {
 
 	}
-
+	
 	option = { #Accept
 		name = bftb_bulgaria_rearmament.1.c
 
@@ -4453,10 +4453,20 @@ country_event = {
 		set_country_flag = BUL_german_aircraft_donation_flag
 
 		GER = {
-			send_equipment = {
-				type = fighter_equipment
-				amount = 12
-				target = ROOT
+			if = {
+				limit = { NOT = { has_dlc = "By Blood Alone" } }
+				send_equipment = {
+					type = fighter_equipment_1
+					amount = 12
+					target = ROOT
+				}
+			}
+			else = {
+				send_equipment = {
+					type = small_plane_airframe
+					amount = 12
+					target = ROOT
+				}
 			}
 		}
 		if = {
@@ -4512,7 +4522,7 @@ country_event = {
 				}
 			}
 			send_equipment = {
-				type = fighter_equipment
+				type = small_plane_airframe
 				amount = 12
 				target = ROOT
 			}
@@ -5111,13 +5121,13 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-	  				archetype = fighter_equipment
+	  				archetype = small_plane_airframe
 	  				ratio < 0.76
 	  			}
 			}
 		}
 
-		set_variable = { BUL_aircraft_type = token:fighter_equipment }
+		set_variable = { BUL_aircraft_type = token:small_plane_airframe }
 		var:BUL_aircraft_seller = { set_country_flag = BUL_producing_fighters_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.4.a_tt
 	}
@@ -5130,7 +5140,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-	  				archetype = nav_bomber_equipment
+	  				archetype = small_plane_naval_bomber_airframe
 	  				ratio < 0.76
 	  			}
 			}
@@ -5138,11 +5148,11 @@ country_event = {
 
 		trigger = {
 			var:BUL_aircraft_seller = {
-				has_tech = naval_bomber1
+				has_tech = naval_bomber1 #this won't work for BBA, because we can not guarantee that the sender country has a naval bomber design
 			}
 		}
 
-		set_variable = { BUL_aircraft_type = token:nav_bomber_equipment }
+		set_variable = { BUL_aircraft_type = token:small_plane_naval_bomber_airframe }
 		var:BUL_aircraft_seller = { set_country_flag = BUL_producing_naval_bombers_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.4.b_tt
 	}
@@ -5155,7 +5165,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-	  				archetype = tac_bomber_equipment
+	  				archetype = medium_plane_airframe
 	  				ratio < 0.76
 	  			}
 			}
@@ -5163,11 +5173,14 @@ country_event = {
 
 		trigger = {
 			var:BUL_aircraft_seller = {
-				has_tech = early_bomber
+				OR = {
+					has_tech = early_bomber
+					has_tech = iw_medium_airframe
+				}
 			}
 		}
 
-		set_variable = { BUL_aircraft_type = token:tac_bomber_equipment }
+		set_variable = { BUL_aircraft_type = token:medium_plane_airframe }
 		var:BUL_aircraft_seller = { set_country_flag = BUL_producing_tactical_bombers_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.4.c_tt
 	}
@@ -7886,14 +7899,14 @@ country_event = {
 					limit = {
 						any_country = {
 							BUL_is_balkan_nation = yes
-							country_exists = yes
+							exists = yes
 							PREV = { is_core_of = THIS }
 						}
 					}
 					random_country = {
 						limit = {
 							BUL_is_balkan_nation = yes
-							country_exists = yes
+							exists = yes
 							PREV = { is_core_of = THIS }
 						}
 						transfer_state = PREV
@@ -8430,10 +8443,6 @@ country_event = {
 				country_event = bftb_bulgaria_fate_of_the_balkans.10
 			}
 		}
-		add_autonomy_score = {
-			value = 300
-			localization = BUL_transferred_bulgarian_state_autonomy_desc
-		}
 	}
 
 	option = { # Refuse
@@ -8542,6 +8551,10 @@ country_event = {
 				hidden_effect = {
 					set_state_controller = FROM.FROM
 				}
+				add_autonomy_score = {
+					value = 300
+					localization = BUL_transferred_bulgarian_state_autonomy_desc
+				}
 			}
 		}
 		hidden_effect = {
@@ -8585,6 +8598,12 @@ country_event = {
 		transfer_state = FROM.FROM.FROM
 		hidden_effect = {
 			set_state_controller = FROM.FROM.FROM
+		}
+		FROM = {
+			add_autonomy_score = {
+				value = 300
+				localization = BUL_transferred_bulgarian_state_autonomy_desc
+			}
 		}
 	}
 }
