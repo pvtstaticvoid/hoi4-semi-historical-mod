@@ -1,0 +1,112 @@
+﻿air_wings = {
+	282 = { 
+		# 216 Fighter 0s
+		small_plane_airframe_0 = {
+			owner = "JAP" 
+			amount = 100
+			version_name = "Ki-10"
+		}
+		small_plane_airframe_0 = {
+			owner = "JAP" 
+			amount = 100
+			version_name = "Ki-10"
+		}
+		small_plane_airframe_0 = {
+			owner = "JAP" 
+			amount = 16
+			version_name = "Ki-10"
+		}
+
+		# 108 CAS 0 (Ki-3)
+		small_plane_cas_airframe_0 =  {
+			owner = "JAP" 
+			amount = 100
+			version_name = "Ki-3"
+		}
+		small_plane_cas_airframe_0 =  {
+			owner = "JAP" 
+			amount = 8
+			version_name = "Ki-3"
+		}
+
+		# 54 CAS 0 (Ki-2)
+		small_plane_cas_airframe_0 =  {
+			owner = "JAP" 
+			amount = 54
+			version_name = "Ki-2"
+		}
+
+		# 54 Tactical Bomber 0s
+		medium_plane_airframe_0 =  {
+			owner = "JAP" 
+			amount = 54
+			version_name = "Ki-1"
+		}
+
+		# 121 Carrier Fighter 0s
+		cv_small_plane_airframe_0 = {
+			owner = "JAP" 
+			amount = 100
+			version_name = "A4N"
+		}
+		cv_small_plane_airframe_0 = {
+			owner = "JAP" 
+			amount = 21
+			version_name = "A4N"
+		}
+
+		# 165 Carrier CAS 0s
+		cv_small_plane_cas_airframe_0 = {
+			owner = "JAP" 
+			amount = 100
+			version_name = "Aichi D1A2"
+		}
+		cv_small_plane_cas_airframe_0 = {
+			owner = "JAP" 
+			amount = 65
+			version_name = "Aichi D1A2"
+		}
+
+		# 113 Carrier Naval Bomber 0s
+		cv_small_plane_naval_bomber_airframe_0 = { 
+			owner = "JAP" 
+			amount = 100 
+			version_name = "B2M" 
+		}
+		cv_small_plane_naval_bomber_airframe_0 = { 
+			owner = "JAP" 
+			amount = 13 
+			version_name = "B2M" 
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = 
+{
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			creator = "JAP" 
+			version_name = "Ki-10"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_small_plane_naval_bomber_airframe_1
+			creator = "JAP" 
+			version_name = "B4Y"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+}

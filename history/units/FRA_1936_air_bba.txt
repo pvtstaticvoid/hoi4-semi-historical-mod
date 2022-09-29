@@ -1,0 +1,74 @@
+air_wings = {
+	16 = { 
+		# 192 Fighter 0s (D.510)
+		small_plane_airframe_0 = {
+			owner = "FRA" 
+			amount = 100
+			version_name = "D.510"
+		}
+		small_plane_airframe_0 = {
+			owner = "FRA" 
+			amount = 92
+			version_name = "D.510"
+		}
+
+		# 96 Fighter 0s (D.500)
+		small_plane_airframe_0 = {
+			owner = "FRA" 
+			amount = 96
+			version_name = "D.500"
+		}
+
+		# 144 Fighter 0s (NiD 62)
+		small_plane_airframe_0 = {
+			owner = "FRA" 
+			amount = 100
+			version_name = "NiD 62"
+		}
+		small_plane_airframe_0 = {
+			owner = "FRA" 
+			amount = 44
+			version_name = "NiD 62"
+		}
+
+		# 120 Tactical Bomber 0s
+		medium_plane_airframe_0 = {
+			owner = "FRA" 
+			amount = 100
+			version_name = "Amiot 143"
+		}
+		medium_plane_airframe_0 = {
+			owner = "FRA" 
+			amount = 20
+			version_name = "Amiot 143"
+		}
+
+		# 84 Strategic Bomber 0s
+		large_plane_airframe_0 = {
+			owner = "FRA" 
+			amount = 84
+			version_name = "F.222"
+		}
+
+		# 24 Naval Bomber 0s
+		small_plane_naval_bomber_airframe_0 = {
+			owner = "FRA" 
+			amount = 24
+			version_name = "Latécoère 296"
+		}
+
+		# 20 Carrier Fighter 0s
+		cv_small_plane_airframe_0 =  { 
+			owner = "FRA" 
+			amount = 20 
+			version_name = "D.371"
+		}
+
+		# 20 Carrier Naval Bomber 0s
+		cv_small_plane_naval_bomber_airframe_0 = { 
+			owner = "FRA" 
+			amount = 20 
+			version_name = "PL.7"
+		}
+	}
+}
