@@ -1,0 +1,87 @@
+FRA_move_capital
+{
+	FRA_move_capital_to_Paris = {
+		available = {
+			AND = {
+				NOT = {
+					capital_scope = {
+						state = 16
+					}
+				}
+				16 = {
+					is_controlled_by = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			FRA = {
+				set_capital = {
+					state = 16
+				}
+			}
+		}
+	}
+	FRA_move_capital_to_Casablanca = {
+		available = {
+			AND = {
+				NOT = {
+					capital_scope = {
+						state = 461
+					}
+				}
+				461 = {
+					is_controlled_by = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			FRA = {
+				set_capital = {
+					state = 461
+				}
+			}
+		}
+	}
+	FRA_move_capital_to_Beirut = {
+		available = {
+			AND = {
+				NOT = {
+					capital_scope = {
+						state = 553
+					}
+				}
+				553 = {
+					is_controlled_by = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			FRA = {
+				set_capital = {
+					state = 553
+				}
+			}
+		}
+	}
+	FRA_move_capital_to_Libreville = {
+		available = {
+			AND = {
+				NOT = {
+					capital_scope = {
+						state = 539
+					}
+				}
+				539 = {
+					is_controlled_by = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			FRA = {
+				set_capital = {
+					state = 539
+				}
+			}
+		}
+	}
+}
