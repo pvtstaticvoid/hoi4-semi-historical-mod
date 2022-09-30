@@ -51,7 +51,7 @@ on_actions = {
 						tag = HOL
 					}
 				}
-
+				
 				ENG = {
 					add_to_faction = HOL
 				}
@@ -62,7 +62,7 @@ on_actions = {
 						tag = BEL
 					}
 				}
-
+				
 				ENG = {
 					add_to_faction = BEL
 				}
@@ -109,14 +109,14 @@ on_actions = {
     		}
         }
 			every_country={
-				limit = {
+				limit = { 
 					is_playable_country=yes
 					NOT = {
 						OR = {
 							has_war = yes
-							has_idea = peace_training
+							has_idea = peace_training 
 						}
-					}
+					} 
 				}
 				add_ideas = peace_training
 			}
@@ -125,7 +125,7 @@ on_actions = {
 	}
 
 	on_capitulation = {
-		effect = {
+		effect = { 
 			if = {
 				limit = {
 					has_game_rule = {
@@ -142,272 +142,43 @@ on_actions = {
 	on_startup = {
 		effect = {
 
-			# every_country = {
-			# 	limit = {
-			# 		OR = {
-			# 			tag = CAN
-			# 			tag = USA
-			# 			tag = MEX
-			# 			tag = BRA
-			# 			tag = ENG
-			# 			tag = FRA
-			# 			tag = NOR
-			# 			tag = SAF
-			# 			tag = RAJ
-			# 			tag = AST
-			# 			tag = NZL
-			# 			tag = IRE
-			# 			tag = SOV
-			# 		}
+			234 = {
+				add_resource = {
+					type = tungsten
+					amount = 112
+				}
+			}
+
+			790 = {
+				add_resource = {
+					type = tungsten
+					amount = 200
+				}
+			}
+			
+
+			# every_country={
+			# 	limit = { 
+			# 		is_limited_country=yes 
 			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = ENG }}
-			# 		add_operation_token = {
-			# 			tag = ENG
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = ENG
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = ENG
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = ENG
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = USA }}
-			# 		add_operation_token = {
-			# 			tag = USA
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = USA
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = USA
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = USA
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = FRA }}
-			# 		add_operation_token = {
-			# 			tag = FRA
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = FRA
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = FRA
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = FRA
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = NOR }}
-			# 		add_operation_token = {
-			# 			tag = NOR
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = NOR
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = NOR
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = NOR
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = SOV }}
-			# 		add_operation_token = {
-			# 			tag = SOV
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = SOV
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = SOV
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = SOV
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = CAN }}
-			# 		add_operation_token = {
-			# 			tag = CAN
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = CAN
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = CAN
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = CAN
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = MEX }}
-			# 		add_operation_token = {
-			# 			tag = MEX
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = MEX
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = MEX
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = MEX
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = BRA }}
-			# 		add_operation_token = {
-			# 			tag = BRA
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = BRA
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = BRA
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = BRA
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = SAF }}
-			# 		add_operation_token = {
-			# 			tag = SAF
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = SAF
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = SAF
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = SAF
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = RAJ }}
-			# 		add_operation_token = {
-			# 			tag = RAJ
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = RAJ
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = RAJ
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = RAJ
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = IRE }}
-			# 		add_operation_token = {
-			# 			tag = IRE
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = IRE
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = IRE
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = IRE
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = AST }}
-			# 		add_operation_token = {
-			# 			tag = AST
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = AST
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = AST
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = AST
-			# 			token = team_airforce
-			# 		}
-			# 	}
-			# 	if = {
-			# 		limit = { NOT = { tag = NZL }}
-			# 		add_operation_token = {
-			# 			tag = NZL
-			# 			token = team_civilian
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = NZL
-			# 			token = team_army
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = NZL
-			# 			token = team_navy
-			# 		}
-			# 		add_operation_token = {
-			# 			tag = NZL
-			# 			token = team_airforce
-			# 		}
-			# 	}
+			# 	add_ideas = ai_limiter
 			# }
+
+			# every_country={
+			# 	limit = { 
+			# 		AND = {
+			# 			is_playable_country=yes
+			# 			NOT = {
+			# 				original_tag = SPR
+			# 				original_tag = FIN
+			# 			}
+			# 		}
+			# 	}
+			# 	add_ideas = elwolfmod_novols
+			# }
+
+			
+
 			# every_country = {
 			# 	limit = {
 			# 		OR = {
@@ -614,7 +385,27 @@ on_actions = {
 			# 		}
 			# 	}
 			# }
-			
+			# German boost
+
+			# if = {
+			# 	limit = {has_game_rule = {rule = ger_boost option = twelve}}
+			# 	GER = {
+			# 		add_offsite_building = { type = industrial_complex level = 12 } # from ai trade in vanilla
+			# 	}
+			# }
+			# else_if = {
+			# 	limit = {has_game_rule = {rule = ger_boost option = eight}}
+			# 	GER = {
+			# 		add_offsite_building = { type = industrial_complex level = 8 } # from ai trade in vanilla
+			# 	}
+			# }
+			# else_if = {
+			# 	limit = {has_game_rule = {rule = ger_boost option = four}}
+			# 	GER = {
+			# 		add_offsite_building = { type = industrial_complex level = 4 } # from ai trade in vanilla
+			# 	}
+			# }
+
 			# Soviet boost
 
 			if = {
@@ -626,7 +417,7 @@ on_actions = {
 			else_if = {
 				limit = {has_game_rule = {rule = sov_boost option = twelve}}
 				SOV = {
-					add_offsite_building = { type = industrial_complex level = 16 } # from ai trade in vanilla
+					add_offsite_building = { type = industrial_complex level = 12 } # from ai trade in vanilla
 				}
 			}
 			else_if = {
@@ -659,7 +450,7 @@ on_actions = {
 			769 = {
 				add_extra_state_shared_building_slots = 2
 			}
-
+			
 			#When adding the extra civs that these minors would go from focus u remove the building slots so have to add them
 			812 = {
 				add_extra_state_shared_building_slots = 7
@@ -711,7 +502,7 @@ on_actions = {
 				JAP = {
 					add_ideas = SOV_collectivized_society
 				}
-
+				
 			}
 
 			if = {
@@ -733,30 +524,6 @@ on_actions = {
 					}
 				}
 			}
-
-			# if = {
-			# 	limit = {
-			# 		has_game_rule = {
-			# 			rule = puerto_rico
-			# 			option = on
-			# 		}
-			# 	}
-			# 	PUE = {
-			# 		add_state_core = 686
-			# 		transfer_state = 686
-			# 		set_capital = {
-			# 			state = 686
-			# 		}
-			# 		add_offsite_building = { type = industrial_complex level = 25 }
-			# 		add_offsite_building = { type = arms_factory level = 5 }
-			# 		load_oob = "PTR_1936"
-			# 		army_experience = 250
-			# 	}
-			# 	686 = {
-			# 		add_extra_state_shared_building_slots = 20
-			# 		add_building_construction = { type = coastal_bunker province = 1440 level = 10 instant_build = yes }
-			# 	}
-			# }
 
 			if = {
 				limit = {
@@ -961,14 +728,14 @@ on_actions = {
 			ENG = {
 				country_event = { id = britain.16 days = 20 }
 				country_event = { id = mtg_britain.1 days = 190 }
-				country_event = { id = britain.22 days = 513 }
+				country_event = { id = britain.22 days = 513 } 
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 12200 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 259 }
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 }
 
 				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = ENG variant_name = "Light Tank Mk. VI" }
-
+			
 				add_equipment_to_stockpile = {
 					type = train_equipment
 					amount = 300
@@ -986,7 +753,7 @@ on_actions = {
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 349 }
 
 				add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 720 producer = GER variant_name = "Panzer II Ausf. A" }
-
+			
 				add_equipment_to_stockpile = {
 					type = train_equipment
 					amount = 300
@@ -1002,7 +769,7 @@ on_actions = {
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 766 }
 				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 }
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 217 }
-
+				
 				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 480 producer = FRA variant_name = "FT mod. 31" }
 				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 240 producer = FRA variant_name = "FT Char Cannon" }
 				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 480 producer = FRA variant_name = "H-35" }
@@ -1023,7 +790,7 @@ on_actions = {
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 25 }
 
 				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = JAP variant_name = "Type 95 Ha-Go" }
-
+				
 			}
 			USA = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 11100 }
@@ -1064,12 +831,12 @@ on_actions = {
 
 				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 1300 producer = SOV variant_name = "T-26TU mod. 1933" }
 				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 1000 producer = SOV variant_name = "BT-5" }
-
+			
 				add_equipment_to_stockpile = {
 					type = train_equipment
 					amount = 300
 				}
-
+				
 			}
 			BUL = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3138 }
@@ -1108,7 +875,7 @@ on_actions = {
 			NZL = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 700 }
 			}
-
+			
 			SAF = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 815 }
 			}
