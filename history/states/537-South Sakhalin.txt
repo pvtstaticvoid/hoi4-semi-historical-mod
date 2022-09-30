@@ -3,9 +3,7 @@ state= {
 	name="STATE_537"
 	manpower = 295196
 	resources={
-		
-		# buffed so japan doesn't run out of oil in 2 seconds
-		oil=10
+		oil=3 # was: 4
 	}
 	
 	state_category = rural
