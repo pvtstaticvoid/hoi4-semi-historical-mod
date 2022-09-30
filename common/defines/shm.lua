@@ -1,0 +1,2 @@
+NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.0
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.0
