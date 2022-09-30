@@ -92,6 +92,7 @@ scripted_gui = {
 						if={limit={check_variable={Root.selected_cheat=9}} add_offsite_building = { type = industrial_complex level = -1 }}
 						if={limit={check_variable={Root.selected_cheat=10}} army_experience = 100 }
 						if={limit={check_variable={Root.selected_cheat=11}} air_experience = 100 }
+						if={limit={check_variable={Root.selected_cheat=100}} production_efficiency_growth_cheat = yes }
 						}
 					}
 					GER={
@@ -168,6 +169,7 @@ scripted_gui = {
 					cheat9_click={set_variable={Root.selected_cheat=9} ROOT={clr_country_flag=cheating}}
 					cheat10_click={set_variable={Root.selected_cheat=10} ROOT={clr_country_flag=cheating}}
 					cheat11_click={set_variable={Root.selected_cheat=11} ROOT={clr_country_flag=cheating}}
+					cheat100_click={set_variable={Root.selected_cheat=100} ROOT={clr_country_flag=cheating}}
 				}
 				properties = {
 					toogle_mark={ frame = mark_status }
@@ -201,6 +203,8 @@ scripted_gui = {
 				cheat11_visible={ROOT={has_country_flag=cheating}}
 				cheat10_text_visible={ROOT={has_country_flag=cheating}}
 				cheat11_text_visible={ROOT={has_country_flag=cheating}}
+				cheat100_visible={ROOT={has_country_flag=cheating}}
+				cheat100_text_visible={ROOT={has_country_flag=cheating}}
 				clear_all_markings_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }	
 			}
 			
