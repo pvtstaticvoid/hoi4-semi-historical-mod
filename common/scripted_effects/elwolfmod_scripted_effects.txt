@@ -175,3 +175,11 @@ generic_bonus_999 = {
 	}
 }
 
+production_efficiency_growth_cheat = {
+
+	add_timed_idea = { 
+		idea = production_efficiency_growth_cheat 
+		days = 7 
+	}
+
+}

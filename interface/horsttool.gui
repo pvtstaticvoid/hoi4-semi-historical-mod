@@ -30,7 +30,8 @@ guiTypes = {
 		
 	containerWindowType = {
 		name = "horsttool_container"
-		position = {x=1200 y=20}
+		orientation = CENTER
+		position = {x=-263 y=-157}
 		size = { width=650 height=550}
 		
 		fade_time = 300
@@ -65,7 +66,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "observer" 
-			position = {x=40 y=200}
+			position = {x=20 y=200}
 			spriteType = "GFX_observer_button"
 				pdx_tooltip = "OBSERVER"
 			pdx_tooltip_delayed = "OBSERVER_DELAYED"
@@ -106,80 +107,87 @@ guiTypes = {
 #######################################################################
 		buttonType = {
 			name = "cheat1"
-			position = {x=40 y=90}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=90}
+			spriteType = "GFX_generic_text_bg_203"
 		}
 		buttonType = {
 			name = "cheat2"
-			position = {x=40 y=116}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=116}
+			spriteType = "GFX_generic_text_bg_203"
 			scale= 1
 		}
 		buttonType = {
 			name = "cheat3"
-			position = {x=40 y=142}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=142}
+			spriteType = "GFX_generic_text_bg_203"
 			scale= 1
 		}
 		buttonType = {
 			name = "cheat4"
-			position = {x=40 y=168}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=168}
+			spriteType = "GFX_generic_text_bg_203"
 			scale= 1
 			
 		}
 		buttonType = {
 			name = "cheat5"
-			position = {x=40 y=194}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=194}
+			spriteType = "GFX_generic_text_bg_203"
 			scale= 1
 			
 		}
 		buttonType = {
 			name = "cheat6"
-			position = {x=40 y=220}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=220}
+			spriteType = "GFX_generic_text_bg_203"
 			scale= 1
 			
 		}
 		buttonType = {
 			name = "cheat7"
-			position = {x=40 y=246}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=246}
+			spriteType = "GFX_generic_text_bg_203"
 			scale= 1
 			
 		}
 		buttonType = {
 			name = "cheat8"
-			position = {x=40 y=272}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=272}
+			spriteType = "GFX_generic_text_bg_203"
 			scale= 1
 			
 		}
 		buttonType = {
 			name = "cheat9"
-			position = {x=40 y=298}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=298}
+			spriteType = "GFX_generic_text_bg_203"
 			scale= 1
 			
 		}
 		buttonType = {
 			name = "cheat10"
-			position = {x=40 y=324}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=324}
+			spriteType = "GFX_generic_text_bg_203"
 			scale= 1
 			
 		}
 		buttonType = {
 			name = "cheat11"
-			position = {x=40 y=350}
-			spriteType = "GFX_generic_box_125"
+			position = {x=20 y=350}
+			spriteType = "GFX_generic_text_bg_203"
+			scale= 1
+			
+		}
+		buttonType = {
+			name = "cheat100"
+			position = {x=20 y=376}
+			spriteType = "GFX_generic_text_bg_203"
 			scale= 1
 			
 		}
 		instantTextboxType = {
 			name = "cheat1_text"
-			position = {x=45 y=95}
+			position = {x=25 y=95}
 			font = "hoi_18mbs"
 			text = "[cheat_selected]"
 			maxWidth = 340
@@ -190,7 +198,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cheat2_text"
-			position = {x=45 y=121}
+			position = {x=25 y=121}
 			font = "hoi_18mbs"
 			text = "CHEAT2"
 			maxWidth = 340
@@ -201,7 +209,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cheat3_text"
-			position = {x=45 y=147}
+			position = {x=25 y=147}
 			font = "hoi_18mbs"
 			text = "CHEAT3"
 			maxWidth = 340
@@ -212,7 +220,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cheat4_text"
-			position = {x=45 y=173}
+			position = {x=25 y=173}
 			font = "hoi_18mbs"
 			text = "CHEAT4"
 			maxWidth = 340
@@ -222,7 +230,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "cheat5_text"
-			position = {x=45 y=199}
+			position = {x=25 y=199}
 			font = "hoi_18mbs"
 			text = "CHEAT5"
 			maxWidth = 340
@@ -232,7 +240,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "cheat6_text"
-			position = {x=45 y=225}
+			position = {x=25 y=225}
 			font = "hoi_18mbs"
 			text = "CHEAT6"
 			maxWidth = 340
@@ -242,7 +250,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "cheat7_text"
-			position = {x=45 y=251}
+			position = {x=25 y=251}
 			font = "hoi_18mbs"
 			text = "CHEAT7"
 			maxWidth = 340
@@ -252,7 +260,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "cheat8_text"
-			position = {x=45 y=277}
+			position = {x=25 y=277}
 			font = "hoi_18mbs"
 			text = "CHEAT8"
 			maxWidth = 340
@@ -262,7 +270,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "cheat9_text"
-			position = {x=45 y=303}
+			position = {x=25 y=303}
 			font = "hoi_18mbs"
 			text = "CHEAT9"
 			maxWidth = 340
@@ -272,7 +280,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "cheat10_text"
-			position = {x=45 y=329}
+			position = {x=25 y=329}
 			font = "hoi_18mbs"
 			text = "CHEAT10"
 			maxWidth = 340
@@ -282,11 +290,21 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "cheat11_text"
-			position = {x=45 y=355}
+			position = {x=25 y=355}
 			font = "hoi_18mbs"
 			text = "CHEAT11"
 			maxWidth = 340
 			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "cheat100_text"
+			position = {x=25 y=381}
+			font = "hoi_18mbs"
+			text = "CHEAT100"
+			maxWidth = 1340
+			maxHeight = 123
 			format = left
 			alwaystransparent = yes
 		}
@@ -301,7 +319,7 @@ guiTypes = {
 ####################################################################
 		containerWindowType = {
 		name = "st_state_manager_powers_container"
-		position = {x=230 y=100}
+		position = {x=240 y=100}
 		size = { width=600 height=300}
 
 		fade_time = 300
