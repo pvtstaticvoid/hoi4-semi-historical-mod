@@ -191,32 +191,15 @@ characters={
 		}
 	}
 
-	GER_erich_von_manstein = {
-		name = GER_erich_von_manstein
-		portraits = {
-			army = {
-				large = "gfx/leaders/GER/Portrait_Germany_Erich_von_Manstein.dds"
-				small = "GFX_idea_manstein"
+	GER_erich_von_manstein={
+		name=GER_erich_von_manstein
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Erich_von_Manstein.dds"
+				small="GFX_idea_manstein"
 			}
 		}
-		corps_commander = {
-			traits = {
-				brilliant_strategist armor_officer trickster trait_engineer
-			}
-			skill = 4
-			attack_skill = 2
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 4
-			legacy_id = 5
-			visible = {
-				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
-					option = disabled
-				}
-			}
-		}
-		advisor = {
+		advisor={
 			cost = 150
 			slot = theorist
 			idea_token = manstein
@@ -224,89 +207,31 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
-			visible = {
-				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
-					option = disabled
-				}
-			}
 			traits = {
 				mobile_warfare_expert
 			}
 		}
-	}
-
-	GER_erich_von_manstein_pregrinded = {
-		name = GER_erich_von_manstein
-		portraits = {
-			army = {
-				large = "gfx/leaders/GER/Portrait_Germany_Erich_von_Manstein.dds"
-				small = "GFX_idea_manstein"
-			}
-		}
-		corps_commander = {
-			traits = {
-				brilliant_strategist armor_officer cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer
-			}
-			skill = 8
-			attack_skill = 8
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 6
-			legacy_id = 0
-			visible = {
-				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
-					option = enabled
-				}
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = manstein
-			ledger = army
-			allowed = {
-				original_tag = GER
-			}
-			visible = {
-				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
-					option = enabled
-				}
-			}
-			traits = {
-				mobile_warfare_expert
-			}
+		
+		corps_commander={
+			traits={ brilliant_strategist armor_officer trickster trait_engineer }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=5
 		}
 	}
 
-	GER_heinz_guderian = {
-		name = GER_heinz_guderian
-		portraits = {
-			army = {
-				large = "gfx/leaders/GER/Portrait_Germany_Heinz_Guderian.dds"
-				small = "GFX_idea_heinz_guderian"
+	GER_heinz_guderian={
+		name=GER_heinz_guderian
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Heinz_Guderian.dds"
+				small="GFX_idea_heinz_guderian"
 			}
 		}
-		corps_commander = {
-			traits = {
-				brilliant_strategist career_officer armor_officer trickster panzer_leader
-			}
-			skill = 4
-			attack_skill = 2
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 3
-			legacy_id = 6
-			visible = {
-				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
-					option = disabled
-				}
-			}
-		}
-		advisor = {
+		advisor={
 			cost = 100
 			slot = theorist
 			idea_token = heinz_guderian
@@ -314,60 +239,19 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
-			visible = {
-				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
-					option = disabled
-				}
-			}
 			traits = {
 				blitzkrieg_theorist
 			}
 		}
-	}
-
-	GER_heinz_guderian_pregrinded = {
-		name = GER_heinz_guderian
-		portraits = {
-			army = {
-				large = "gfx/leaders/GER/Portrait_Germany_Heinz_Guderian.dds"
-				small = "GFX_idea_heinz_guderian"
-			}
-		}
-		corps_commander = {
-			traits = {
-				brilliant_strategist career_officer armor_officer cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer
-			}
-			skill = 8
-			attack_skill = 6
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 4
-			legacy_id = 6
-			visible = {
-				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
-					option = enabled
-				}
-			}
-		}
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = heinz_guderian
-			ledger = army
-			allowed = {
-				original_tag = GER
-			}
-			visible = {
-				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
-					option = enabled
-				}
-			}
-			traits = {
-				blitzkrieg_theorist
-			}
+		
+		corps_commander={
+			traits={ brilliant_strategist career_officer armor_officer trickster panzer_leader }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=6
 		}
 	}
 
@@ -409,50 +293,46 @@ characters={
 		}
 	}
 
-	GER_fedor_von_bock = {
-		name = GER_fedor_von_bock
-		portraits = {
-			army = {
-				large = "gfx/leaders/GER/Portrait_Germany_Fedor_von_Bock.dds"
-				small = "gfx/interface/ideas/idea_GER_fedor_von_bock.dds"
+	GER_fedor_von_bock={
+		name=GER_fedor_von_bock
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Fedor_von_Bock.dds"
+				small="gfx/interface/ideas/idea_GER_fedor_von_bock.dds"
 			}
 		}
-		corps_commander = {
-			traits = {trait_cautious harsh_leader}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 2
-			legacy_id = 9
+		advisor={
+			slot = high_command
+			idea_token = erwin_rommel
+			ledger = army
+			allowed = {
+				original_tag = GER
+				
+			}
+			available = {
+				has_game_rule = {
+					rule = beta
+					option = on
+				}
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		corps_commander={
+			traits = { cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer }
+			skill=8
+			attack_skill=8
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=9
 		}
 	}
-
-	# GER_fedor_von_bock_pregrinded = {
-	# 	name = GER_fedor_von_bock
-	# 	portraits = {
-	# 		army = {
-	# 			large = "gfx/leaders/GER/Portrait_Germany_Fedor_von_Bock.dds"
-	# 			small = "gfx/interface/ideas/idea_GER_fedor_von_bock.dds"
-	# 		}
-	# 	}
-	# 	corps_commander = {
-	# 		traits = {cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer}
-	# 		skill = 8
-	# 		attack_skill = 8
-	# 		defense_skill = 3
-	# 		planning_skill = 4
-	# 		logistics_skill = 6
-	# 		legacy_id = 0
-	# 		visible = {
-	# 			has_game_rule = {
-	# 				rule = pregrinded_tank_generals_ger
-	# 				option = enabled
-	# 			}
-	# 		}
-	# 	}
-	# }
-	
 
 	GER_walter_model={
 		name=GER_walter_model
@@ -716,49 +596,46 @@ characters={
 		}
 	}
 
-	GER_sepp_dietrich = {
-		name = GER_sepp_dietrich
-		portraits = {
-			army = {
-				large = "gfx/leaders/GER/Portrait_Germany_Josef_Dietrich.dds"
-				small = "gfx/interface/ideas/idea_GER_josef_dietrich.dds"
+	GER_sepp_dietrich={
+		name=GER_sepp_dietrich
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Josef_Dietrich.dds"
+				small="gfx/interface/ideas/idea_GER_josef_dietrich.dds"
 			}
 		}
-		corps_commander = {
-			traits = {brilliant_strategist trait_reckless armor_officer politically_connected}
-			skill = 4
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 4
-			legacy_id = 24
+		advisor={
+			slot = high_command
+			idea_token = erwin_rommel
+			ledger = army
+			allowed = {
+				original_tag = GER
+				
+			}
+			available = {
+				has_game_rule = {
+					rule = beta
+					option = on
+				}
+			}
+			traits = {
+				army_CombinedArms_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		corps_commander={
+			traits = { cavalry_leader brilliant_strategist trait_reckless armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer }
+			skill=8
+			attack_skill=6
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=24
 		}
 	}
-
-	# GER_sepp_dietrich_pregrinded = {
-	# 	name = GER_sepp_dietrich
-	# 	portraits = {
-	# 		army = {
-	# 			large = "gfx/leaders/GER/Portrait_Germany_Josef_Dietrich.dds"
-	# 			small = "gfx/interface/ideas/idea_GER_josef_dietrich.dds"
-	# 		}
-	# 	}
-	# 	corps_commander = {
-	# 		traits = {cavalry_leader brilliant_strategist trait_reckless armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer}
-	# 		skill = 8
-	# 		attack_skill = 6
-	# 		defense_skill = 3
-	# 		planning_skill = 4
-	# 		logistics_skill = 4
-	# 		legacy_id = 0
-	# 		visible = {
-	# 			has_game_rule = {
-	# 				rule = pregrinded_tank_generals_ger
-	# 				option = enabled
-	# 			}
-	# 		}
-	# 	}
-	# }
 
 	GER_hasso_von_manteuffel={
 		name=GER_hasso_von_manteuffel
