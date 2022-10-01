@@ -33,7 +33,7 @@ NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 2
 NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING = 0.65		-- Base training done each day during deployment.
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0				-- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 9999999				-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 170				-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 
 ---Free Templates
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
