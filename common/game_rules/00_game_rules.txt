@@ -337,9 +337,9 @@ allow_paratroopers = {
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_PARATROOPERS_ALLOWED_DESC"
 	}
-	default = {
+	option = {
 		name = no
-		text = "YRecommended: !Blocked"
+		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_PARATROOPERS_BLOCKED_DESC"
 	}
 }
@@ -424,9 +424,9 @@ maximum_fort_level = {
 		text = "RULE_OPTION_4"
 		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
 	}
-	default = {
+	option = {
 		name = level_5
-		text = "YRecommended: !Level 5"
+		text = "RULE_OPTION_5"
 		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
 	}
 	option = {
@@ -460,9 +460,9 @@ allow_scorched_earth = {
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_SCORCHED_EARTH_ALLOWED_DESC"
 	}
-	default = {
+	option = {
 		name = no
-		text = "YRecommended: !Blocked"
+		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_SCORCHED_EARTH_BLOCKED_DESC"
 	}
 }
