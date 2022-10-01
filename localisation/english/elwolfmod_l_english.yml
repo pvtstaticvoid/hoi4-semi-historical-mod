@@ -67,10 +67,6 @@
  SOV_spain_desc:0 "Although General Secretary Joseph Stalin had signed the Non-Intervention Agreement, the Soviet Union contravened the League of Nations embargo by providing material assistance to the Republican forces, becoming their only source of major weapons."
  SOV_assist_republican_spain:0 "Assist Republican Spain"
 
- GER_spain:0 "The Spanish Civil War"
- GER_spain_desc:0 "Although Chancellor Adolf Hitler had signed the Non-Intervention Agreement, Nazi Germany withdrew from it on June 23rd, 1937 and provided substantial material assistance to the Nationalist forces, becoming a major source of weapons."
- GER_assist_nationalist_spain:0 "Assist Nationalist Spain"
-
  # Vichy shit
  VIC_fascism:2 "Vichy France"
  VIC_fascism_DEF:2 "Vichy France"
