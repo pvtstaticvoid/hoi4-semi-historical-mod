@@ -666,7 +666,7 @@ focus_tree = {
 					has_dlc = "Man the Guns"
 				}
 				OR = {
-					date > 1938.1.1
+					date > 1938.3.1
 					threat > 0.15
 					has_war = yes
 					has_idea = ENG_no_further_appeasement_idea
