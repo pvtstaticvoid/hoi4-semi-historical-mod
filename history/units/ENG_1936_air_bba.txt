@@ -1,6 +1,6 @@
 ﻿air_wings = {
 
-	126 = {
+	129 = {
 
 		# 634 Fighter 0s
 		small_plane_airframe_0 = {
