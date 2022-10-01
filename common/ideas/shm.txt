@@ -1,8 +1,0 @@
-ideas = {
-	country = {
-		production_efficiency_growth_cheat = {
-			name = "Instant Efficiency"
-			modifier = {production_factory_efficiency_gain_factor = 10000}
-		}
-	}
-}
