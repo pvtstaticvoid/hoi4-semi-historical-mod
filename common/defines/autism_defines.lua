@@ -141,12 +141,3 @@ NDefines_Graphics.NGraphics.ROOT_FRONT_OFFSET = 2
 --NDefines_Graphics.NGraphics.WATER_MAP_MODE_COLOR_B = 0.0
 
 --NDefines_Graphics.NGraphics.BORDER_WIDTH = 2
-
-
-
-
-
---- stuff copied from elwolf
-NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0					-- Free license
-NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                        -- Free license
-NDefines.NProduction.BASE_LICENSE_IC_COST = 0						    -- Base IC cost for lended license
