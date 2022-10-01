@@ -157,25 +157,6 @@ if = {
 	recruit_character = SOV_anton_denikin
 }
 
-# Don't purge tank generals.
-SOV_georgy_zhukov = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
-SOV_georgy_zhukov_pregrinded = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
-SOV_konstantin_rokossovsky = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
-SOV_konstantin_rokossovsky_pregrinded = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
-SOV_ivan_konev = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
-SOV_ivan_konev_pregrinded = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
 
 #Initialize character flags Part I (aka who's safe)
 SOV_mikhail_kalinin = {
