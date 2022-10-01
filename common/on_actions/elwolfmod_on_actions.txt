@@ -156,12 +156,6 @@ on_actions = {
 				}
 			}
 			
-			537 = {
-				add_resource = {
-					type = oil
-					amount = 10
-				}
-			}
 
 			# every_country={
 			# 	limit = { 
