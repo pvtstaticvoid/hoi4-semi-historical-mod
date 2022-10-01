@@ -171,21 +171,21 @@ japan_closed_eco = {
 ; 	}
 ; }
 
-techstealing = {
-	name = "Tech Stealing"
-	group = "elwolfmod Rules"
-	icon = "GFX_decision_generic_research"
-	default = {
-		name = banned
-		text = "Banned"
-		desc = "No tech stealing operations"
-	}
-	option = {
-		name = enabled
-		text = "Enabled"
-		desc = "Technology stealing is enabled."
-	}
-}
+; techstealing = {
+; 	name = "Tech Stealing"
+; 	group = "elwolfmod Rules"
+; 	icon = "GFX_decision_generic_research"
+; 	default = {
+; 		name = banned
+; 		text = "Banned"
+; 		desc = "No tech stealing operations"
+; 	}
+; 	option = {
+; 		name = onehundred
+; 		text = "100%"
+; 		desc = "Only tech steal 100%'s"
+; 	}
+; }
 
 ; max_submarine_tech = {
 ; 	name = "Max Submarine Tech"
