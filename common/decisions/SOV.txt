@@ -3843,7 +3843,7 @@ SOV_propaganda_campaigns = {
 		}
 
 		remove_effect = {
-			every_state = {
+			every_controlled_state = {
 				limit = {
 					has_dynamic_modifier = { modifier = SOV_invaders_must_die }
 				}
@@ -3913,7 +3913,7 @@ SOV_propaganda_campaigns = {
 		modifier = {
 			political_power_factor = 0.07
 			command_power_gain_mult = 0.1
-			war_support_weekly = 0.002
+			war_support_weekly = 0.007
 			communism_drift = 0.1
 		}
 
@@ -6691,860 +6691,7 @@ SOV_diplomacy_asia_decision_category = {
 			}
 		}
 	}
-
-	SOV_sinkiang_mineral_prospection_sik = {
-		priority = 50
-
-		icon = generic_construction
-
-		ai_will_do = {
-			base = 1
-		}
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			SIK = {
-				SOV_is_valid_subject = yes
-				NOT = { has_war_with = ROOT }
-				has_full_control_of_state = 617 #URUMQI
-				has_full_control_of_state = 619 #YARKAND
-			}
-			num_of_civilian_factories_available_for_projects > 0
-			NOT = { has_country_flag = SOV_sinkiang_investment_ongoing_flag }
-		}
-
-		visible = {
-			has_completed_focus = SOV_the_gobi_gambit
-			SIK = { #Relevant states under Sinkiang control
-				SOV_is_valid_subject = yes
-				NOT = { has_war_with = ROOT }
-				has_full_control_of_state = 617 #URUMQI
-				has_full_control_of_state = 619 #YARKAND
-			}
-			is_subject = no
-			has_capitulated = no
-			NOT = { has_country_flag = SOV_sinkiang_prospection_rejected_flag }
-			NOT = { has_country_flag = SOV_sinkiang_prospection_flag } #Do not do this twice, one with SIK one without SIK
-		}
-
-		cancel_trigger = {
-			OR = {
-				SIK = { #Relevant states under Sinkiang control
-					OR = {
-						SOV_is_valid_subject = no
-						has_war_with = ROOT
-						NOT = { has_full_control_of_state = 617 } #URUMQI
-						NOT = { has_full_control_of_state = 619 } #YARKAND
-					}
-				}
-				is_subject = yes
-				has_capitulated = yes
-				has_country_flag = SOV_sinkiang_prospection_rejected_flag
-			}
-		}
-
-		cancel_effect = {
-			clr_country_flag = SOV_sinkiang_investment_ongoing_flag
-			hidden_effect = {
-				SIK = {
-					remove_mission = SOV_sinkiang_mineral_prospection_mission_dummy
-				}
-			}
-		}
-
-		days_remove = SOV_sinkiang_mineral_prospection_days
-
-		cost = SOV_sinkiang_proposal_cost
-
-		modifier = {
-			civilian_factory_use = 1
-		}
-
-		complete_effect = {
-			set_country_flag = SOV_sinkiang_investment_ongoing_flag
-			SIK = {
-				country_event = { id = NSB_soviet_foreign_politics_events.273 hours = 2 }
-			}
-			# IF THEY ACCEPT
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				add_opinion_modifier = {
-					target = SIK
-					modifier = SOV_complied_with_our_demands
-				}
-				custom_effect_tooltip = SOV_sinikiang_influence_cg_tt_sov
-			}
-			# IF THEY REFUSE
-			custom_effect_tooltip = if_they_refuse_tt
-			effect_tooltip = {
-				add_opinion_modifier = {
-					target = SIK
-					modifier = SOV_rejected_our_demands
-				}
-				custom_effect_tooltip = SOV_sinikiang_influence_refuse_tt
-			}
-		}
-
-		remove_effect = {
-			hidden_effect = { #Decrease SIK's desire to join Chinese faction (and other AI strategies)
-				SOV_approach_sinkiang_diplomacy_effect = yes
-				SIK = {
-					add_ai_strategy = { #This is added in Gobi Gambit + all 3 investment decisions
-						type = alliance
-						id = SOV
-						value = 4
-					}
-				}
-			}
-			619 = { #YARKAND - Minerals and Infra
-				add_resource = {
-					type = aluminium
-					amount = 3
-				}
-				add_resource = {
-					type = chromium
-					amount = 3
-				}
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			617 = { #URUMQI
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			# Urumqi - Kashgar
-			build_railway = {
-				path = { 4709 4770 7702 4682 7949 2015 }
-			}
-
-			#Supply Hub in Kashgar
-			619 = {
-				add_building_construction = {
-					type = supply_node
-					level = 1
-					province = 2015
-					instant_build = yes
-				}
-			}
-
-			clr_country_flag = SOV_sinkiang_investment_ongoing_flag
-			set_country_flag = SOV_sinkiang_prospection_flag
-		}
-	}
-
-	SOV_sinkiang_oil_prospection_sik = {
-		priority = 50
-
-		icon = generic_construction
-
-		ai_will_do = {
-			base = 1
-		}
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			SIK = {
-				SOV_is_valid_subject = yes
-				NOT = { has_war_with = ROOT }
-				has_full_control_of_state = 617 #URUMQI
-				has_full_control_of_state = 618 #DZUNGARIA
-			}
-			num_of_civilian_factories_available_for_projects > 1
-			NOT = { has_country_flag = SOV_sinkiang_investment_ongoing_flag }
-		}
-
-		visible = {
-			has_completed_focus = SOV_the_gobi_gambit
-			SIK = { #Relevant states under Sinkiang control
-				SOV_is_valid_subject = yes
-				NOT = { has_war_with = ROOT }
-				has_full_control_of_state = 617 #URUMQI
-				has_full_control_of_state = 618 #DZUNGARIA
-			}
-			is_subject = no
-			has_capitulated = no
-			NOT = { has_country_flag = SOV_sinkiang_oil_prospection_rejected_flag }
-			NOT = { has_country_flag = SOV_sinkiang_oil_prospection_flag } #Do not do this twice, one with SIK one without SIK
-		}
-
-		cancel_trigger = {
-			OR = {
-				SIK = { #Relevant states under Sinkiang control
-					OR = {
-						SOV_is_valid_subject = no
-						has_war_with = ROOT
-						NOT = { has_full_control_of_state = 617 } #URUMQI
-						NOT = { has_full_control_of_state = 618 } #DZUNGARIA
-					}
-				}
-				is_subject = yes
-				has_capitulated = yes
-				has_country_flag = SOV_sinkiang_oil_prospection_rejected_flag
-			}
-		}
-
-		cancel_effect = {
-			clr_country_flag = SOV_sinkiang_investment_ongoing_flag
-			hidden_effect = {
-				SIK = {
-					remove_mission = SOV_sinkiang_oil_prospection_mission_dummy
-				}
-			}
-		}
-
-		days_remove = SOV_sinkiang_oil_prospection_days
-
-		cost = SOV_sinkiang_proposal_cost
-
-		modifier = {
-			civilian_factory_use = 2
-		}
-
-		complete_effect = {
-			set_country_flag = SOV_sinkiang_investment_ongoing_flag
-			SIK = {
-				country_event = { id = NSB_soviet_foreign_politics_events.276 hours = 2 }
-			}
-			# IF THEY ACCEPT
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				add_opinion_modifier = {
-					target = SIK
-					modifier = SOV_complied_with_our_demands
-				}
-				custom_effect_tooltip = SOV_sinikiang_influence_cg_tt_sov
-			}
-			# IF THEY REFUSE
-			custom_effect_tooltip = if_they_refuse_tt
-			effect_tooltip = {
-				add_opinion_modifier = {
-					target = SIK
-					modifier = SOV_rejected_our_demands
-				}
-				custom_effect_tooltip = SOV_sinikiang_influence_refuse_tt
-			}
-		}
-
-		remove_effect = {
-			hidden_effect = { #Decrease SIK's desire to join Chinese faction (and other AI strategies)
-				SOV_approach_sinkiang_diplomacy_effect = yes
-				SIK = {
-					add_ai_strategy = { #This is added in Gobi Gambit + all 3 investment decisions
-						type = alliance
-						id = SOV
-						value = 4
-					}
-				}
-			}
-			618 = { #DZUNGARIA - Minerals, oil and Infra
-				add_resource = {
-					type = aluminium
-					amount = 3
-				}
-				add_resource = {
-					type = tungsten
-					amount = 3
-				}
-				add_resource = {
-					type = oil
-					amount = 6
-				}
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			SIK = { give_resource_rights = { receiver = SOV state = 618 } } # Grant Resource rights to SOV
-			617 = { #URUMQI - Infra
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			# Urumqi - Altay
-			build_railway = {
-				path = { 4709 10674 1783 1844 12737 4823 }
-			}
-			#Supply Hub in Altay
-			618 = {
-				add_building_construction = {
-					type = supply_node
-					level = 1
-					province = 4823
-					instant_build = yes
-				}
-			}
-
-			SIK = { add_ideas = SOV_expanded_exploitation_of_gold_mines }
-
-			clr_country_flag = SOV_sinkiang_investment_ongoing_flag
-			set_country_flag = SOV_sinkiang_oil_prospection_flag
-		}
-	}
-
-	SOV_sinkiang_military_aid_sik = {
-		priority = 50
-
-		icon = generic_military
-
-		ai_will_do = {
-			base = 1
-		}
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			SIK = {
-				SOV_is_valid_subject = yes
-				NOT = { has_war_with = ROOT }
-				has_full_control_of_state = 617 #URUMQI
-				has_full_control_of_state = 618 #DZUNGARIA
-			}
-			num_of_civilian_factories_available_for_projects > 0
-			has_equipment = { small_plane_airframe > 39 }
-			has_equipment = { infantry_equipment > 499 }
-			NOT = { has_country_flag = SOV_sinkiang_investment_ongoing_flag }
-		}
-
-		visible = {
-			has_completed_focus = SOV_the_gobi_gambit
-			SIK = { #Relevant states under Sinkiang control
-				SOV_is_valid_subject = yes
-				NOT = { has_war_with = ROOT }
-				has_full_control_of_state = 617 #URUMQI
-				has_full_control_of_state = 759 #KUNLUN SHAN
-			}
-			is_subject = no
-			has_capitulated = no
-			NOT = { has_country_flag = SOV_sinkiang_military_aid_rejected_flag }
-			NOT = { has_country_flag = SOV_sinkiang_military_aid_flag } #Do not do this twice, one with SIK one without SIK
-		}
-
-		cancel_trigger = {
-			OR = {
-				SIK = { #Relevant states under Sinkiang control
-					OR = {
-						SOV_is_valid_subject = no
-						has_war_with = ROOT
-						NOT = { has_full_control_of_state = 617 } #URUMQI
-						NOT = { has_full_control_of_state = 759 } #KUNLUN SHAN
-					}
-				}
-				is_subject = yes
-				has_capitulated = yes
-				has_country_flag = SOV_sinkiang_military_aid_rejected_flag
-			}
-		}
-
-		cancel_effect = {
-			clr_country_flag = SOV_sinkiang_investment_ongoing_flag
-			hidden_effect = {
-				SIK = {
-					remove_mission = SOV_sinkiang_military_aid_mission_dummy
-				}
-			}
-		}
-
-		days_remove = SOV_sinkiang_military_aid_days
-
-		cost = SOV_sinkiang_proposal_cost
-
-		modifier = {
-			civilian_factory_use = 1
-		}
-
-		complete_effect = {
-			set_country_flag = SOV_sinkiang_investment_ongoing_flag
-			SIK = {
-				country_event = { id = NSB_soviet_foreign_politics_events.278 hours = 2 }
-			}
-			# IF THEY ACCEPT
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				add_opinion_modifier = {
-					target = SIK
-					modifier = SOV_complied_with_our_demands
-				}
-				custom_effect_tooltip = SOV_sinikiang_influence_cg_tt_sov
-
-				send_equipment = {
-					type = small_plane_airframe
-					amount = 40
-					target = SIK
-				}
-				send_equipment = {
-					type = infantry_equipment
-					amount = 500
-					target = SIK
-				}
-			}
-			# IF THEY REFUSE
-			custom_effect_tooltip = if_they_refuse_tt
-			effect_tooltip = {
-				add_opinion_modifier = {
-					target = SIK
-					modifier = SOV_rejected_our_demands
-				}
-				custom_effect_tooltip = SOV_sinikiang_influence_refuse_tt
-			}
-		}
-
-		remove_effect = {
-			hidden_effect = { #Decrease SIK's desire to join Chinese faction (and other AI strategies)
-				SOV_approach_sinkiang_diplomacy_effect = yes
-				SIK = {
-					add_ai_strategy = { #This is added in Gobi Gambit + all 3 investment decisions
-						type = alliance
-						id = SOV
-						value = 4
-					}
-				}
-			}
-			617 = { #URUMQI - Mil
-				if = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			759 = { #KUNLUN SHAN - Infra + Air base + Forts
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				if = {
-					limit = {
-						air_base < 9
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-				else_if = {
-					limit = {
-						air_base < 10
-					}
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = {
-						id = 10315
-						id = 2074
-						id = 1698
-						id = 4947
-					}
-					instant_build = yes
-				}
-			}
-			if = {  #DABANCHENG - Forts
-				limit = {
-					SIK = { has_full_control_of_state = 760 }
-				}
-				760 = {
-					add_building_construction = {
-						type = bunker
-						level = 1
-						province = {
-							id = 1838
-							id = 4843
-						}
-						instant_build = yes
-					}
-				}
-			}
-
-			SIK = {
-				add_tech_bonus = {
-					name = NSB_soviet_foreign_politics_events.278.t
-					bonus = 1
-					uses = 2
-					category = air_equipment
-				}
-				air_experience = 50
-				army_experience = 50
-			}
-
-			clr_country_flag = SOV_sinkiang_investment_ongoing_flag
-			set_country_flag = SOV_sinkiang_military_aid_flag
-		}
-	}
-
-	SOV_sinkiang_support_expansion_sik = {
-		priority = 50
-
-		icon = infiltrate_state
-
-		ai_will_do = {
-			base = 1
-		}
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			SIK = {
-				SOV_is_valid_subject = yes
-				is_in_faction_with = ROOT
-				has_full_control_of_state = 604 #QINGHAI
-				has_full_control_of_state = 755 #HAIXI
-				has_full_control_of_state = 756 #JIUQUAN
-				has_full_control_of_state = 754 #GOLOG
-				has_full_control_of_state = 753 #GANNAN
-				has_full_control_of_state = 283 #GANSU
-				has_full_control_of_state = 616 #NINGXIA
-			}
-			num_of_civilian_factories_available_for_projects > 2
-			has_equipment = { motorized_equipment > 299 }
-			NOT = { has_country_flag = SOV_sinkiang_investment_ongoing_flag }
-		}
-
-		visible = {
-			has_completed_focus = SOV_the_gobi_gambit
-			SIK = { #Relevant states under Sinkiang control
-				SOV_is_valid_subject = yes
-				NOT = { has_war_with = ROOT }
-				has_full_control_of_state = 617 #URUMQI
-				has_full_control_of_state = 759 #KUNLUN SHAN
-			}
-			is_subject = no
-			has_capitulated = no
-			NOT = { has_country_flag = SOV_sinkiang_support_expansion_rejected_flag }
-			NOT = { has_country_flag = SOV_sinkiang_support_expansion_flag } #Do not do this twice, one with SIK one without SIK
-		}
-
-		cancel_trigger = {
-			OR = {
-				SIK = { #Relevant states under Sinkiang control
-					OR = {
-						SOV_is_valid_subject = no
-						has_war_with = ROOT
-						NOT = { is_in_faction_with = ROOT }
-						NOT = { has_full_control_of_state = 604 } #QINGHAI
-						NOT = { has_full_control_of_state = 755 } #HAIXI
-						NOT = { has_full_control_of_state = 756 } #JIUQUAN
-						NOT = { has_full_control_of_state = 754 } #GOLOG
-						NOT = { has_full_control_of_state = 753 } #GANNAN
-						NOT = { has_full_control_of_state = 283 } #GANSU
-						NOT = { has_full_control_of_state = 616 } #NINGXIA
-					}
-				}
-				is_subject = yes
-				has_capitulated = yes
-				has_country_flag = SOV_sinkiang_support_expansion_rejected_flag
-			}
-		}
-
-		cancel_effect = {
-			clr_country_flag = SOV_sinkiang_investment_ongoing_flag
-			hidden_effect = {
-				SIK = {
-					remove_mission = SOV_sinkiang_support_expansion_mission_dummy
-				}
-			}
-		}
-
-		days_remove = SOV_sinkiang_support_expansion_days
-
-		cost = SOV_sinkiang_proposal_cost
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		complete_effect = {
-			set_country_flag = SOV_sinkiang_investment_ongoing_flag
-			SIK = {
-				country_event = { id = NSB_soviet_foreign_politics_events.280 hours = 2 }
-			}
-			# IF THEY ACCEPT
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				add_opinion_modifier = {
-					target = SIK
-					modifier = SOV_complied_with_our_demands
-				}
-				send_equipment = {
-					type = motorized_equipment
-					amount = 300
-					target = SIK
-				}
-				custom_effect_tooltip = SOV_sinikiang_influence_cg_tt_sov
-			}
-			# IF THEY REFUSE
-			custom_effect_tooltip = if_they_refuse_tt
-			effect_tooltip = {
-				add_opinion_modifier = {
-					target = SIK
-					modifier = SOV_rejected_our_demands
-				}
-				custom_effect_tooltip = SOV_sinikiang_influence_refuse_tt
-			}
-		}
-
-		remove_effect = {
-			hidden_effect = { #Decrease SIK's desire to join Chinese faction (and other AI strategies)
-				SOV_approach_sinkiang_diplomacy_effect = yes
-				SIK = {
-					add_ai_strategy = { #This is added in Gobi Gambit + all 3 investment decisions
-						type = alliance
-						id = SOV
-						value = 4
-					}
-				}
-			}
-			755 = { #HAIXI - Infra
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			756 = { #JIUQUAN - Infra + Oil
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_resource = {
-					type = oil
-					amount = 12
-				}
-			}
-			604 = { #QINGHAI (Golmud) - Infra
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = {
-						id = 7940
-					}
-					instant_build = yes
-				}
-			}
-			754 = { #GOLOG (Lanzhou) - Infra
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = {
-						id = 12732
-					}
-					instant_build = yes
-				}
-			}
-			283 = { #GANSU - Infra + Air Base + Fort
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				if = {
-					limit = {
-						air_base < 9
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-				else_if = {
-					limit = {
-						air_base < 10
-					}
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = {
-						id = 531
-					}
-					instant_build = yes
-				}
-			}
-
-			clr_country_flag = SOV_sinkiang_investment_ongoing_flag
-			set_country_flag = SOV_sinkiang_support_expansion_flag
-		}
-	}
-
-	SOV_formalize_of_the_soviet_republic_of_sinkiang = {
-		priority = 20
-
-		icon = generic_nationalism
-
-		ai_will_do = {
-			base = 0.8
-		}
-
-		fire_only_once = yes
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			has_country_flag = SOV_sinkiang_prospection_flag
-			has_country_flag = SOV_sinkiang_oil_prospection_flag
-			has_country_flag = SOV_sinkiang_military_aid_flag
-			SIK = {
-				is_in_faction_with = ROOT
-				has_opinion = {
-					target = ROOT
-					value > 80
-				}
-				has_government = communism
-			}
-			has_country_flag = { flag = SOV_sinkiang_joined_comintern_counter_flag days > 730 }
-			custom_trigger_tooltip = {
-				tooltip = SOV_sinkiang_joined_comintern_days_tt
-				has_country_flag = {
-					flag = SOV_sinkiang_joined_comintern_counter_flag
-					days > 730
-				}
-			}
-			strength_ratio = {
-			    tag = SIK
-			    ratio > 2
-			}
-		}
-
-		visible = {
-			has_completed_focus = SOV_the_gobi_gambit
-			country_exists = SIK
-			SIK = {
-				is_subject = no
-			}
-			NOT = { has_war_with = FROM }
-		}
-
-		cost = 100
-
-		complete_effect = {
-			SIK = {
-				country_event = { id = NSB_soviet_foreign_politics_events.282 hours = 2 }
-			}
-			# IF THEY ACCEPT
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				puppet = SIK
-				add_opinion_modifier = {
-					target = SIK
-					modifier = SOV_complied_with_our_demands
-				}
-			}
-
-			# IF THEY REFUSE
-			custom_effect_tooltip = if_they_refuse_tt
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = SOV_rejected_our_demands
-			}
-
-			custom_effect_tooltip = SOV_formalize_of_the_soviet_republic_of_sinkiang_only_once_tt
-		}
-	}
 }
-
 
  ######  #### ##    ## ##    ## ####    ###    ##    ##  ######   ####  ######     ########  ##     ## ##     ## ##     ## #### ########  ######
 ##    ##  ##  ###   ## ##   ##   ##    ## ##   ###   ## ##    ##  #### ##    ##    ##     ## ##     ## ###   ### ###   ###  ##  ##       ##    ##
@@ -9854,90 +9001,6 @@ SOV_national_academy_of_sciences_dec_cat = {
 		}
 	}
 
-	SOV_build_national_academy_of_sciences_integrated_republic_GEO = {
-		priority = 1
-
-		icon = GFX_decision_SOV_academy_of_sciences
-
-		ai_will_do = { #Integrated republics go after puppets
-			base = 0.5
-		}
-
-		cosmetic_tag = GEO
-		cosmetic_ideology = communism
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			num_of_civilian_factories_available_for_projects > 0
-		}
-
-		visible = {
-			has_completed_focus = SOV_national_academies_of_sciences
-			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_GEO_flag }
-			NOT = { country_exists = GEO }
-		}
-
-		fire_only_once = yes
-
-		cost = SOV_national_academy_of_sciences_construction_cost
-
-		days_remove = SOV_national_academy_of_sciences_construction_time
-
-		modifier = {
-			civilian_factory_use = 1
-		}
-
-		remove_effect = {
-			GEO = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
-			set_country_flag = SOV_national_academy_of_sciences_built_GEO_flag
-		}
-	}
-
-	SOV_build_national_academy_of_sciences_integrated_republic_ARM = {
-		priority = 1
-
-		icon = GFX_decision_SOV_academy_of_sciences
-
-		ai_will_do = { #Integrated republics go after puppets
-			base = 0.5
-		}
-
-		cosmetic_tag = ARM
-		cosmetic_ideology = communism
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			num_of_civilian_factories_available_for_projects > 0
-		}
-
-		visible = {
-			has_completed_focus = SOV_national_academies_of_sciences
-			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_ARM_flag }
-			NOT = { country_exists = ARM }
-		}
-
-		fire_only_once = yes
-
-		cost = SOV_national_academy_of_sciences_construction_cost
-
-		days_remove = SOV_national_academy_of_sciences_construction_time
-
-		modifier = {
-			civilian_factory_use = 1
-		}
-
-		remove_effect = {
-			ARM = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
-			set_country_flag = SOV_national_academy_of_sciences_built_ARM_flag
-		}
-	}
-
 	SOV_build_national_academy_of_sciences_integrated_republic_AZR = {
 		priority = 1
 
@@ -9977,174 +9040,6 @@ SOV_national_academy_of_sciences_dec_cat = {
 		remove_effect = {
 			AZR = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
 			set_country_flag = SOV_national_academy_of_sciences_built_AZR_flag
-		}
-	}
-
-	SOV_build_national_academy_of_sciences_integrated_republic_UZB = {
-		priority = 1
-
-		icon = GFX_decision_SOV_academy_of_sciences
-
-		ai_will_do = { #Integrated republics go after puppets
-			base = 0.5
-		}
-
-		cosmetic_tag = UZB
-		cosmetic_ideology = communism
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			num_of_civilian_factories_available_for_projects > 0
-		}
-
-		visible = {
-			has_completed_focus = SOV_national_academies_of_sciences
-			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_UZB_flag }
-			NOT = { country_exists = UZB }
-		}
-
-		fire_only_once = yes
-
-		cost = SOV_national_academy_of_sciences_construction_cost
-
-		days_remove = SOV_national_academy_of_sciences_construction_time
-
-		modifier = {
-			civilian_factory_use = 1
-		}
-
-		remove_effect = {
-			UZB = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
-			set_country_flag = SOV_national_academy_of_sciences_built_UZB_flag
-		}
-	}
-
-	SOV_build_national_academy_of_sciences_integrated_republic_TMS = {
-		priority = 1
-
-		icon = GFX_decision_SOV_academy_of_sciences
-
-		ai_will_do = { #Integrated republics go after puppets
-			base = 0.5
-		}
-
-		cosmetic_tag = TMS
-		cosmetic_ideology = communism
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			num_of_civilian_factories_available_for_projects > 0
-		}
-
-		visible = {
-			has_completed_focus = SOV_national_academies_of_sciences
-			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_TMS_flag }
-			NOT = { country_exists = TMS }
-		}
-
-		fire_only_once = yes
-
-		cost = SOV_national_academy_of_sciences_construction_cost
-
-		days_remove = SOV_national_academy_of_sciences_construction_time
-
-		modifier = {
-			civilian_factory_use = 1
-		}
-
-		remove_effect = {
-			TMS = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
-			set_country_flag = SOV_national_academy_of_sciences_built_TMS_flag
-		}
-	}
-
-	SOV_build_national_academy_of_sciences_integrated_republic_KYR = {
-		priority = 1
-
-		icon = GFX_decision_SOV_academy_of_sciences
-
-		ai_will_do = { #Integrated republics go after puppets
-			base = 0.5
-		}
-
-		cosmetic_tag = KYR
-		cosmetic_ideology = communism
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			num_of_civilian_factories_available_for_projects > 0
-		}
-
-		visible = {
-			has_completed_focus = SOV_national_academies_of_sciences
-			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_KYR_flag }
-			NOT = { country_exists = KYR }
-		}
-
-		fire_only_once = yes
-
-		cost = SOV_national_academy_of_sciences_construction_cost
-
-		days_remove = SOV_national_academy_of_sciences_construction_time
-
-		modifier = {
-			civilian_factory_use = 1
-		}
-
-		remove_effect = {
-			KYR = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
-			set_country_flag = SOV_national_academy_of_sciences_built_KYR_flag
-		}
-	}
-
-	SOV_build_national_academy_of_sciences_integrated_republic_TAJ = {
-		priority = 1
-
-		icon = GFX_decision_SOV_academy_of_sciences
-
-		ai_will_do = { #Integrated republics go after puppets
-			base = 0.5
-		}
-
-		cosmetic_tag = TAJ
-		cosmetic_ideology = communism
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			num_of_civilian_factories_available_for_projects > 0
-		}
-
-		visible = {
-			has_completed_focus = SOV_national_academies_of_sciences
-			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_TAJ_flag }
-			NOT = { country_exists = TAJ }
-		}
-
-		fire_only_once = yes
-
-		cost = SOV_national_academy_of_sciences_construction_cost
-
-		days_remove = SOV_national_academy_of_sciences_construction_time
-
-		modifier = {
-			civilian_factory_use = 1
-		}
-
-		remove_effect = {
-			TAJ = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
-			set_country_flag = SOV_national_academy_of_sciences_built_TAJ_flag
 		}
 	}
 
@@ -10440,48 +9335,6 @@ SOV_national_academy_of_sciences_dec_cat = {
 		remove_effect = {
 			FIN = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
 			set_country_flag = SOV_national_academy_of_sciences_built_FIN_flag
-		}
-	}
-
-	SOV_build_national_academy_of_sciences_integrated_republic_TAN = {
-		priority = 1
-
-		icon = GFX_decision_SOV_academy_of_sciences
-
-		ai_will_do = { #Integrated republics go after puppets
-			base = 0.5
-		}
-
-		cosmetic_tag = TAN
-		cosmetic_ideology = communism
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			num_of_civilian_factories_available_for_projects > 0
-		}
-
-		visible = {
-			has_completed_focus = SOV_national_academies_of_sciences
-			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_TAN_flag }
-			NOT = { country_exists = TAN }
-		}
-
-		fire_only_once = yes
-
-		cost = SOV_national_academy_of_sciences_construction_cost
-
-		days_remove = SOV_national_academy_of_sciences_construction_time
-
-		modifier = {
-			civilian_factory_use = 1
-		}
-
-		remove_effect = {
-			TAN = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
-			set_country_flag = SOV_national_academy_of_sciences_built_TAN_flag
 		}
 	}
 
@@ -13251,7 +12104,7 @@ SOV_soviet_civil_war_dec_cat = {
 				hidden_effect = {
 					random_controlled_state = {
 						damage_building = {
-							type = rail_way
+							type = railway
 							damage = 1
 						}
 						set_state_flag = railway_damaged_flag
@@ -13260,7 +12113,7 @@ SOV_soviet_civil_war_dec_cat = {
 					random_controlled_state = {
 						limit = { NOT = { has_state_flag = railway_damaged_flag }}
 						damage_building = {
-							type = rail_way
+							type = railway
 							damage = 1
 						}
 						set_state_flag = railway_damaged_flag
@@ -13269,7 +12122,7 @@ SOV_soviet_civil_war_dec_cat = {
 					random_controlled_state = {
 						limit = { NOT = { has_state_flag = railway_damaged_flag }}
 						damage_building = {
-							type = rail_way
+							type = railway
 							damage = 1
 						}
 						set_state_flag = railway_damaged_flag
@@ -14591,14 +13444,7 @@ SOV_soviet_civil_war_dec_cat = {
 				OR = {
 					#region = 155 # Manchuria
 					region = 151
-					region = 261 
-					region = 262 
 					region = 149
-					region = 256
-					region = 257
-					region = 258
-					region = 259
-					region = 260
 					region = 152
 				}
 			}
@@ -15269,16 +14115,8 @@ SOV_soviet_civil_war_dec_cat = {
 			FROM = {
 				OR = {
 					region = 147
-					region = 263
 					region = 151
-					region = 261 
-					region = 262 
 					region = 149
-					region = 256
-					region = 257
-					region = 258
-					region = 259
-					region = 260
 				}
 			}
 		}
@@ -15388,10 +14226,7 @@ SOV_soviet_civil_war_dec_cat = {
 
 		target_trigger = {
 			FROM = {
-				OR = {
-					region = 148
-					region = 255
-				}
+				region = 148
 			}
 		}
 		available = {
@@ -15529,8 +14364,8 @@ SOV_soviet_civil_war_dec_cat = {
 				OR = {
 					region = 12
 					region = 150
-					region = 264
-					region = 265
+					state = 215
+					state = 216
 				}
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
@@ -15793,10 +14628,7 @@ SOV_soviet_civil_war_dec_cat = {
 			FROM = {
 				OR = {
 					region = 136
-					region = 267
-					region = 268
-					region = 269
-					region = 270
+					# region = 137
 				}
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
@@ -16164,13 +14996,7 @@ SOV_soviet_civil_war_dec_cat = {
 
 		visible = {
 			any_owned_state = {
-				OR = {
-					region = 136
-					region = 267
-					region = 268
-					region = 269
-					region = 270
-				}
+				region = 136
 				SOV_is_unaligned_state = yes
 			}
 		}
@@ -16185,13 +15011,7 @@ SOV_soviet_civil_war_dec_cat = {
 						NOT = { has_state_flag = SOV_is_aligning_right }
 						NOT = { has_state_flag = SOV_is_aligning_exiles	}
 						SOV_is_unaligned_state = yes
-						OR = {
-							region = 136
-							region = 267
-							region = 268
-							region = 269
-							region = 270
-						}
+						region = 136
 					}
 					set_state_flag = SOV_stalinist_state
 				}
@@ -16230,8 +15050,6 @@ SOV_soviet_civil_war_dec_cat = {
 				OR = {
 					region = 12
 					region = 150
-					region = 264
-					region = 265
 					state = 215
 					state = 216
 				}
@@ -16252,8 +15070,8 @@ SOV_soviet_civil_war_dec_cat = {
 						OR = {
 							region = 12
 							region = 150
-							region = 264
-							region = 265
+							state = 215
+							state = 216
 						}
 					}
 					set_state_flag = SOV_stalinist_state
@@ -16292,16 +15110,8 @@ SOV_soviet_civil_war_dec_cat = {
 			any_owned_state = {
 				OR = {
 					region = 147
-					region = 263
 					region = 151
-					region = 261 
-					region = 262 
 					region = 149
-					region = 256
-					region = 257
-					region = 258
-					region = 259
-					region = 260
 				}
 				NOT = { SOV_is_unaligned_state = yes  }
 			}
@@ -16316,16 +15126,8 @@ SOV_soviet_civil_war_dec_cat = {
 						SOV_is_unaligned_state = yes
 						OR = {
 							region = 147
-							region = 263
 							region = 151
-							region = 261 
-							region = 262 
 							region = 149
-							region = 256
-							region = 257
-							region = 258
-							region = 259
-							region = 260
 						}
 					}
 					set_state_flag = SOV_stalinist_state
@@ -17363,215 +16165,6 @@ operations = {
 
 political_actions = {
 
-	SOV_return_manchuria = {
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			OR = {
-				AND = {
-					owns_state = 610
-					owns_state = 716
-					owns_state = 328
-					owns_state = 715
-					owns_state = 714
-					owns_state = 717
-				}
-				AND = {
-					MAN = { is_puppet_of = SOV }
-					owns_state = 610
-					owns_state = 716
-					owns_state = 328
-					owns_state = 715
-					owns_state = 714
-					owns_state = 717
-				}
-			}
-		}
-		cost = 0
-		fire_only_once = yes
-		visible = {
-			JAP = { has_completed_focus = JAP_strengthen_civilian_government }
-			PRC = { exists = yes }
-		}
-
-		complete_effect = {
-			PRC = {
-				transfer_state = 609
-				transfer_state = 610
-				transfer_state = 716
-				transfer_state = 715
-				transfer_state = 328
-				transfer_state = 717
-				transfer_state = 714
-				country_event = { id = wtt_japan.125 }
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-}
-
-political_actions = {
-
-	demand_tribute_from_new_communist_china = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			tag = SOV
-		}
-
-		icon = generic_political_actions
-
-		available = {
-
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 150
-					#Has somewhat won against CHI and JAP
-				count_triggers = {
-					amount = 10
-					595 = { is_controlled_by = FROM }
-					596 = { is_controlled_by = FROM }
-					597 = { is_controlled_by = FROM }
-					598 = { is_controlled_by = FROM }
-					600 = { is_controlled_by = FROM }
-					601 = { is_controlled_by = FROM }
-					602 = { is_controlled_by = FROM }
-					603 = { is_controlled_by = FROM }
-					605 = { is_controlled_by = FROM }
-					606 = { is_controlled_by = FROM }
-					607 = { is_controlled_by = FROM }
-					608 = { is_controlled_by = FROM }
-					613 = { is_controlled_by = FROM }
-					614 = { is_controlled_by = FROM }
-					620 = { is_controlled_by = FROM }
-				}
-			}
-
-		}
-
-		cost = 10
-
-		visible = {
-			has_government = communism
-			FROM = {
-				has_country_flag = WTT_support_from_soviet
-				NOT = { has_war_with = ROOT }
-				NOT = { is_subject_of = ROOT }
-				NOT = {	has_idea = PRC_soviet_tribute_6 }
-			}
-		}
-
-		targets = { CHI PRC GXC YUN SHX XSM SIK }
-		targets_dynamic = yes
-
-		target_trigger = {
-			FROM = {
-				tag = event_target:WTT_communist_china
-				has_country_flag = WTT_support_from_soviet
-			}
-		}
-
-		fire_only_once = no
-
-		days_re_enable = 180
-
-		complete_effect = {
-			FROM = {
-				country_event = { id = wtt_warlord_vs_prc.21 }
-				custom_effect_tooltip = if_they_accept
-				effect_tooltip = {
-					PRC_soviet_tribute_level_up = yes
-				}
-			}
-		}
-	}
-
-	demand_full_integration = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			tag = SOV
-		}
-
-		icon = generic_political_actions
-
-		available = {
-			FROM = { has_soviet_tribute = yes }
-		}
-
-		cost = WTT_communist_china_integration_cost?300
-
-		visible = {
-			has_government = communism
-			FROM = { has_country_flag = WTT_support_from_soviet }
-		}
-
-		targets = { CHI PRC GXC YUN SHX XSM SIK }
-		targets_dynamic = yes
-
-		target_trigger = {
-			FROM = { has_country_flag = WTT_support_from_soviet }
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 100
-				#Has won against CHI and JAP
-				595 = { is_controlled_by = FROM }
-				596 = { is_controlled_by = FROM }
-				597 = { is_controlled_by = FROM }
-				598 = { is_controlled_by = FROM }
-				600 = { is_controlled_by = FROM }
-				601 = { is_controlled_by = FROM }
-				602 = { is_controlled_by = FROM }
-				603 = { is_controlled_by = FROM }
-				605 = { is_controlled_by = FROM }
-				606 = { is_controlled_by = FROM }
-				607 = { is_controlled_by = FROM }
-				608 = { is_controlled_by = FROM }
-				613 = { is_controlled_by = FROM }
-				614 = { is_controlled_by = FROM }
-				620 = { is_controlled_by = FROM }
-			}
-			modifier = {
-				add = 50
-				FROM = {
-					check_variable = { WTT_communist_china_integration_cost < 200 }
-				}
-			}
-			modifier = {
-				add = 50
-				FROM = {
-					check_variable = { WTT_communist_china_integration_cost < 150 }
-				}
-			}
-			modifier = {
-				add = 50
-				FROM = {
-					check_variable = { WTT_communist_china_integration_cost < 100 }
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		complete_effect = {
-			FROM = { country_event = { id = wtt_warlord_vs_prc.31 } }
-		}
-	}
-
 	#SOVIET MISSION TO OCCUPY TURKEY
 	SOV_set_up_puppet_state_in_turkey = {
 
@@ -17804,13 +16397,9 @@ SOV_panslavic_nationalism = {
 			has_full_control_of_state = 108
 			has_full_control_of_state = 107
 			has_full_control_of_state = 102
-			has_full_control_of_state = 853
 			has_full_control_of_state = 803
 			has_full_control_of_state = 45
 			has_full_control_of_state = 764
-			has_full_control_of_state = 736
-			has_full_control_of_state = 852
-			has_full_control_of_state = 163
 		}
 
 		visible = {
@@ -17835,13 +16424,9 @@ SOV_panslavic_nationalism = {
 			add_state_core = 108
 			add_state_core = 107
 			add_state_core = 102
-			add_state_core = 853
 			add_state_core = 803
 			add_state_core = 45
 			add_state_core = 764
-			add_state_core = 736
-			add_state_core = 852
-			add_state_core = 163
 			set_country_flag = SOV_integrated_yugoslavia_flag
 		}
 
@@ -17898,7 +16483,6 @@ SOV_panslavic_nationalism = {
 			has_full_control_of_state = 108
 			has_full_control_of_state = 107
 			has_full_control_of_state = 102
-			has_full_control_of_state = 853
 			has_full_control_of_state = 803
 			has_full_control_of_state = 45
 			has_full_control_of_state = 764

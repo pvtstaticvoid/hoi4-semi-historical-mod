@@ -271,7 +271,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
+		
 		completion_reward = {
 			if = {
 				limit = {
@@ -304,7 +304,7 @@
 				}
 			}
 		}
-	}
+	} 
 
 	focus = {
 		id = CAN_maritime_colonial_railway
@@ -382,7 +382,7 @@
 				}
 			}
 		}
-	}
+	} 
 
 	focus = {
 		id = CAN_retool_angus_shops
@@ -2702,7 +2702,7 @@
 
 		available = {
 			controls_state = 682
-			controls_state = 863
+			controls_state = 466
 			controls_state = 468
 		}
 		
@@ -2722,7 +2722,7 @@
 					amount = 20
 				}
 			}
-			863 = {
+			466 = {
 				add_resource = {
 					type = aluminium
 					amount = 8
@@ -3114,10 +3114,7 @@
 
 		available = {
 			has_government = fascism
-			GER = { 
-				has_government = fascism 
-				is_subject = no
-			}
+			GER = { has_government = fascism }
 
 			NOT = {
 				has_war_with = GER
@@ -3839,7 +3836,10 @@
 				name = CAN_we_have_the_hurricane
 				bonus = 1.0
 				uses = 1
-				category = light_fighter
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
 			}
 		}
 	}

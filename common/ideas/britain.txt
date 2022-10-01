@@ -209,10 +209,7 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				cv_small_plane_airframe = {
+				fighter_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -317,7 +314,6 @@ ideas = {
 			}
 
 			modifier = {
-				special_forces_cap = 0.05
 				special_forces_training_time_factor = -0.1
 			}
 
@@ -559,7 +555,7 @@ ideas = {
 
 			modifier = {
 				democratic_drift = -0.1
-				war_support_factor = 0.1
+				war_support_weekly = 0.002
 				political_power_factor = 0.1
 			}
 

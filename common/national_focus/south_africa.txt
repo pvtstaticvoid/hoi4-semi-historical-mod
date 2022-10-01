@@ -3008,7 +3008,10 @@
 				name = SAF_improve_the_hawker_hartbees
 				bonus = 1.0
 				uses = 1
-				category = light_fighter
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
 			}
 		}
 	}

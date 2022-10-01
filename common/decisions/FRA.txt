@@ -140,7 +140,7 @@ FRA_vichy_france = {
 		available = {
 			has_government = fascism
 			NOT = {
-				GER = { divisions_in_state = { state = 851 size > 0 } } #BBA: Replaced state 21 (Provence - Bouches-du-Rhone) by stat 851 (Provence - Var), where Toulon is
+				GER = { divisions_in_state = { state = 21 size > 0 } }
 			}
 			has_country_flag = {
 				flag = case_anton
@@ -335,7 +335,6 @@ category_test_decisions = {
 						OR = {
 							state = 735
 							state = 21
-							state = 851
 							state = 32
 							state = 20
 							state = 26
@@ -358,7 +357,7 @@ category_test_decisions = {
 					}
 					add_core_of = PREV
 				}
-				set_capital = { state = 26 }
+				set_capital = 26
 				set_politics = {
 					ruling_party = fascism
 					elections_allowed = no
@@ -369,24 +368,17 @@ category_test_decisions = {
 					fascism = 80
 					communism = 0
 				}
-				FRA = {
-					FRA_philippe_petain= {
-						set_nationality = event_target:france_vichy	
-					}
-				}
-				FRA_philippe_petain= {
-					add_country_leader_role = {
-						country_leader = {
-							expire = "1965.1.1"
-							ideology = fascism_ideology
-							traits = {
-								
-							}
-						}
-						promote_leader = yes
-					}
-				}
 				set_cosmetic_tag = FRA_VICHY
+				create_country_leader = {
+					name = "Philippe Pétain"
+					desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+					picture = "Portrait_France_Philippe_Petain.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						
+					}
+				}
 				add_ideas = FRA_occupation_costs_4
 				load_focus_tree = vichy_french_focus
 				FRA = {
@@ -399,8 +391,6 @@ category_test_decisions = {
 						air_ratio = 1.0
 					}
 				}
-				event_target:france_vichy = {set_country_flag  = vichy_france}
-				
 				change_tag_from = FRA
 			}
 		}
@@ -572,7 +562,7 @@ FRA_weapons_purchases_category = {
 			factor = 1
 			modifier = {
 				has_equipment = {
-					small_plane_airframe < 1
+					fighter_equipment < 1
 				}
 				factor = 5
 			}
@@ -589,23 +579,9 @@ FRA_weapons_purchases_category = {
 			}
 		}
 		remove_effect = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
-				}
-				add_equipment_to_stockpile = {
-					type = fighter_equipment_1
-					amount = 50
-					producer = USA
-				}
-			}
-			else = {
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_1
-					amount = 50
-					producer = USA
-					variant_name = "P-36A"
-				}	
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 50
 			}
 			USA = {
 				add_offsite_building = { type = industrial_complex level = -5 }
@@ -626,7 +602,7 @@ FRA_weapons_purchases_category = {
 			factor = 1
 			modifier = {
 				has_equipment = {
-					medium_plane_airframe < 1
+					tac_bomber_equipment < 1
 				}
 				factor = 5
 			}
@@ -644,23 +620,9 @@ FRA_weapons_purchases_category = {
 			}
 		}
 		remove_effect = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
-				}
-				add_equipment_to_stockpile = {
-					type = tac_bomber_equipment_1
-					amount = 25
-					producer = USA
-				}
-			}
-			else = {
-				add_equipment_to_stockpile = {
-					type = medium_plane_airframe_1
-					amount = 25
-					producer = USA
-					variant_name = "B-18"
-				}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment
+				amount = 25
 			}
 			USA = {
 				add_offsite_building = { type = industrial_complex level = -5 }
@@ -729,7 +691,7 @@ FRA_spanish_intervention_category = {
 		complete_effect = { 
 			set_country_flag = FRA_non_military_aid_allowed 
 			clr_country_flag = FRA_non_intervention
-			custom_effect_tooltip = FRA_non_military_aid_tt
+			unlock_decision_tooltip = { decision = FRA_send_non_military_aid_to_FROM show_effect_tooltip = yes }
 			unlock_decision_tooltip = FRA_ban_non_military_aid
 		}
 
@@ -911,70 +873,7 @@ FRA_spanish_intervention_category = {
 			}
 		}
 	}
-	FRA_allow_volunteer_work = {
-		available = {  }
 
-		visible = { not = { has_country_flag = FRA_volunteer_work_allowed } }
-
-		cancel_trigger = {
-			OR = {
-				has_global_flag = scw_over
-				not = { has_country_flag = FRA_volunteer_work_allowed }
-			}
-		}
-
-		complete_effect = { 
-			set_country_flag = FRA_volunteer_work_allowed 
-			clr_country_flag = FRA_non_intervention
-			unlock_decision_tooltip = FRA_ban_volunteer_work
-			every_other_country = {
-				limit = {
-					OR = {
-						tag = SPA
-						tag = SPD
-						tag = SPB
-						tag = SPC
-					}
-					exists = yes
-					NOT = { has_country_flag = FRA_has_received_volunteers }
-				}
-				country_event = lar_france_volunteers.1
-			}
-			custom_effect_tooltip = FRA_allow_volunteer_work_tt
-		}
-
-		cost = 25
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_stability < 0.5
-				factor = 0
-			}
-		}
-		days_remove = -1
-		modifier = {
-			stability_factor = -0.2
-			war_support_factor = 0.1
-		}
-	}
-
-	FRA_ban_volunteer_work = {
-		available = {  }
-
-		visible = { has_country_flag = FRA_volunteer_work_allowed }
-
-		complete_effect = { 
-			clr_country_flag = FRA_volunteer_work_allowed 
-		}
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				has_stability < 0.5
-				add = 5
-			}
-		}
-		cost = 0
-	}
 	FRA_allow_covert_intervention = {
 		available = {  }
 
@@ -1090,7 +989,6 @@ economy_decisions = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1127,7 +1025,6 @@ economy_decisions = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1165,7 +1062,6 @@ economy_decisions = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1194,7 +1090,6 @@ economy_decisions = {
 						state = 32
 						state = 20
 						state = 21
-						state = 851
 					}
 					is_fully_controlled_by = ROOT 
 					free_building_slots = {
@@ -1203,7 +1098,6 @@ economy_decisions = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1240,7 +1134,6 @@ economy_decisions = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1

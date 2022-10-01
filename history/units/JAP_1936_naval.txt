@@ -7,23 +7,23 @@ units = {
 	#Yokosuka (Tokyo)
 	fleet = {
 		name = "Dai 1 Kantai"			
-		naval_base = 9998  #Yokosuka
+        naval_base = 9950
 		task_force = {
 			name = "1 Kantai"
-			location = 9998  #Yokosuka
+            location = 9950
 			#Dai 1 Sentai
 			ship = { name = "Nagato"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class" } } }
 			ship = { name = "Haruna" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Kongo Class"} } }
 			ship = { name = "Fuso" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Fuso/Ise Class"} } }
 			ship = { name = "Yamashiro" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class"} } }
 			#Dai 8 Sentai
-			ship = { name = "Sendai" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Sendai Class"} } }
-			ship = { name = "Jintsu" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Sendai Class"} } }
+			ship = { name = "Sendai" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Sendai Class"} } }
+			ship = { name = "Jintsu" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Sendai Class"} } }
 			ship = { name = "Nagara" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class"} } }
 		}
 		task_force = {
 			name = "1 Suirai Sentai" #A part of "Dai 1 Kantai"
-			location = 9998  #Yokosuka
+            location = 9950
 			#Flagship
 			ship = { name = "Abukuma" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class"} } }
 			#Dai 9 Kuchikutai
@@ -42,7 +42,7 @@ units = {
 		}
 		task_force = {
 			name = "1 Sensui Sentai" # A part of "Dai 1 Kantai"
-			location = 9998  #Yokosuka
+            location = 9950
 			#Kaidai-class Submarines
 			ship = { name = "I-51" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class"} } }
 			ship = { name = "I-152" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class"} } }		
@@ -68,9 +68,12 @@ units = {
 		}
 		task_force = {
 			name = "1 Koku Sentai" # A part of "Dai 1 Kantai"
-			location = 9998  #Yokosuka
+            location = 9950
 			ship = { name = "Ryujo" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = JAP version_name = "Ryujo Class" } } 				
-				
+				air_wings = { 
+					cv_fighter_equipment_0 =  { owner = "JAP" amount = 24 } # historical 24
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } 	# historical 12
+				}
 			}
 			#Dai 5 Kuchikutai
 			ship = { name = "Asakaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
@@ -80,7 +83,7 @@ units = {
 		}
 		task_force = {
 			name = "Yokosuka Yobikantai" # Patrol and reserve fleet, including ships under modernization
-			location = 9998  #Yokosuka
+            location = 9950
 			ship = { name = "Mutsu" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class" } } }
 			ship = { name = "Takao" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
 			ship = { name = "Chokai" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
@@ -101,10 +104,10 @@ units = {
 	#Sasebo (Nagasaki)
 	fleet = {
 		name = "Dai 2 Kantai"			
-		naval_base = 9950  #Sasebo
+        naval_base = 9950
 		task_force = {	
 			name = "2 Kantai"
-			location = 9950  #Sasebo
+            location = 9950
 			#Dai 5 Sentai
 			ship = { name = "Haguro" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }	
 			ship = { name = "Nachi" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
@@ -116,14 +119,18 @@ units = {
 			ship = { name = "Kinugasa" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Aoba Class"} } }
 			# Dai 2 Koku Sentai
 			ship = { name = "Kaga" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "Kaga Class"} } 			
-				
+				air_wings = { 
+					cv_fighter_equipment_0 =  { owner = "JAP" amount = 16 } # historical 16
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 16 } # historical 16
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 28 } # historical 28
+				}
 			}
 		}
 		task_force = {	
 			name = "2 Suirai Sentai" #A part of "Dai 2 Kantai"
-			location = 9950  #Sasebo
+            location = 9950
 			#Flagship
-			ship = { name = "Naka" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Sendai Class"} } }
+			ship = { name = "Naka" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Sendai Class"} } }
 			#Dai 6 Kuchikutai, Type III Fubuki-class destroyers
 			ship = { name = "Akatsuki" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }
 			ship = { name = "Hibiki" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class"} } }		
@@ -146,7 +153,7 @@ units = {
 		}
 		task_force = {	
 			name = "2 Sensui Sentai" #A part of "Dai 2 Kantai"
-			location = 9950  #Sasebo
+            location = 9950
 			#Flagship
 			ship = { name = "Kinu" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class"} } }	
 			#Junsen-class Submarines
@@ -159,7 +166,7 @@ units = {
 		}
 		task_force = {
 			name = "3 Sensui Sentai"
-			location = 9950 #Sasebo
+            location = 9950
 			ship = { name = "I-121" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "I-121 Class"} } }	
 			ship = { name = "I-122" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "I-121 Class"} } }		
 			ship = { name = "I-123" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "I-121 Class"} } }	
@@ -167,14 +174,21 @@ units = {
 		}
 		task_force = {
 			name = "Sasebo Yobikantai" # Patrol and reserve fleet, including ships under modernization
-			location = 9950  #Sasebo
+            location = 9950
 			ship = { name = "Kongo" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Kongo Class"} } }
 			ship = { name = "Kirishima" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Kongo Class"} } }
 			ship = { name = "Akagi" definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "Akagi Class"} } 				
-			
+				air_wings = { 
+					cv_fighter_equipment_0 =  { owner = "JAP" amount = 12 } 	# historical 12
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } 			# historical 18
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 36 } 	# historical 36
+				}
 			}	
 			ship = { name = "Hosho" definition = carrier equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = JAP version_name = "Hosho Class"} } 				
-				
+				air_wings = { 
+					cv_fighter_equipment_0 =  { owner = "JAP" amount = 10 } 	
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 5 } 	
+				}
 			}
 			ship = { name = "Natori" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class"} } }
 			ship = { name = "Yura" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class"} } }
@@ -196,10 +210,10 @@ units = {
 	#Taiwan (Goaxing)
 	fleet = {
 		name = "Dai 3 Kantai"			
-		naval_base = 12068	# Taiwan
+        naval_base = 9950
 		task_force = {
 			name = "3 Kantai" #Later assigned for the Chinese theater
-			location = 12068	# Taiwan
+            location = 9950
 			#Dai 10 Sentai
 			ship = { name = "Izumo" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = JAP version_name = "Izumo Class"} } }
 			ship = { name = "Kuma" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class" } } }
@@ -235,9 +249,9 @@ units = {
 		}
 		task_force = {
 			name = "5 Suirai Sentai" #A part of "Dai 3 Kantai"
-			location = 12068	# Taiwan
+            location = 9950
 			#Flagship
-			ship = { name = "Yubari" definition = light_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Yubari Class"} } }
+			ship = { name = "Yubari" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Yubari Class"} } }
 			##Dai 13 Kuchikutai
 			ship = { name = "Kuretake" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Momi Class"} } }
 			ship = { name = "Wakatake" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Momi Class"} } }
@@ -249,7 +263,7 @@ units = {
 		}
 		task_force = {
 			name = "Makou Keibi Sentai"
-			location = 12068	# Taiwan
+            location = 9950
 			#Dai 4 Kuchikutai
 			ship = { name = "Shimakaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
 			ship = { name = "Nadakaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
@@ -261,10 +275,10 @@ units = {
 	#Hiroshima (Kure)
 	fleet = {
 		name = "Kure Kantai"			
-		naval_base = 1092  # Hiroshima
+        naval_base = 9950
 		task_force = {
 			name = "Kure Yobikantai" # Patrol and reserve fleet, including ships under modernization
-			location = 1092  # Hiroshima
+            location = 9950
 			ship = { name = "Ise" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class"} } }		
 			ship = { name = "Hyuga" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class"} } }
 			ship = { name = "Mogami" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Mogami Class"} } }
@@ -289,7 +303,7 @@ units = {
 		}
 		task_force = {
 			name = "3 Sensui Kantai"
-			location = 1092  # Hiroshima
+            location = 9950
 			#Kaichu-class Submarines
 			ship = { name = "Ro-26" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class"} } }
 			ship = { name = "Ro-27" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class"} } }
@@ -319,11 +333,11 @@ units = {
 	# Naval District Forces #
 	fleet = {
 		name = "Kaigun Yobikantai"
-		naval_base = 9859  #Ominato
+        naval_base = 9950
 		#Ominato
 		task_force = {
 			name = "Ominato Keibi Sentai"
-			location = 9859  #Ominato
+            location = 9950
 			#Dai 1 Kuchikutai
 			ship = { name = "Kamikaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
 			ship = { name = "Nokaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
@@ -333,7 +347,7 @@ units = {
 		#Pusan
 		task_force = {
 			name = "Bogojunyokan Kantai"
-			location = 4056  # Pusan
+            location = 9950
 			#Mutsuki-class destroyers
 			ship = { name = "Iwate" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = JAP version_name = "Izumo Class"} } }
 			ship = { name = "Hirado" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Chikuma Class"} } }
@@ -344,11 +358,11 @@ units = {
 	### Pacific Forces ###
 	fleet = {
 		name = "Taiheiyo Kantai"			
-		naval_base = 2489  # Truk
+        naval_base = 9950
 		#Truk
 		task_force = {
 			name = "Nanpo Yuso Sendan"
-			location = 2489  # Truk
+            location = 9950
 			ship = { name = "Oite" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
 			ship = { name = "Hayate" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
 			ship = { name = "Yugao" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }

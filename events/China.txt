@@ -108,7 +108,7 @@ country_event = {
 	trigger = {
 		tag = PRC
 		num_of_controlled_states > 3
-		has_country_leader = { ruling_only = yes character = PRC_mao_zedong }
+		has_country_leader = { ruling_only = yes name = "Mao Zedong" }
 	}
 	
 	option = {
@@ -1400,7 +1400,7 @@ country_event = {
 		trigger = {
 			owns_state = 608
 		}
-		set_capital = { state = 608 }
+		set_capital = 608
 	}
 
 	#Move to Nanjing
@@ -1418,7 +1418,7 @@ country_event = {
 		}
 		custom_effect_tooltip = CHI_nanjing_tt
 		hidden_effect = {
-			set_capital = { state = 613 }
+			set_capital = 613
 		}
 	}
 

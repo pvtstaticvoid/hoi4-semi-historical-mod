@@ -1420,7 +1420,6 @@ country_event = {
 				size = 0.7
 				capital = 357
 				states = { 357 685 }
-				keep_unit_leaders = { 57 }
 			}
 			division_template = {
 				name = "Local Volunteers"
@@ -1464,6 +1463,12 @@ country_event = {
 					set_variable = { var = quorum_low value = 39 }
 					set_variable = { var = quorum_medium value = 49 }
 					set_variable = { var = quorum_high value = 58 }
+				}
+				every_unit_leader = {
+					limit = {
+						has_id = 57
+					}
+					set_nationality = USA
 				}
 			}
 			if = {
@@ -2351,34 +2356,33 @@ country_event = {
 			factor = 100
 		}
 		name = mtg_usa_civil_war_democrats.40.a
-		
-		USA_douglas_macarthur = {
-			#Non-Aligned country leader role
-			
-			add_country_leader_role = {
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						american_caesar
-					}
-				}
-				promote_leader = yes
+		create_country_leader = {
+			name = "Douglas MacArthur"
+			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+			picture = "Portrait_USA_Douglas_MacArthur.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				american_caesar
 			}
-			#Fascism country leader role
-			add_country_leader_role = {
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = rexism
-					traits = {
-						american_caesar
-					}
+		}
+		hidden_effect = { #to make sure he doesn't disappear when country flips fascist
+			create_country_leader = {
+				name = "Douglas MacArthur"
+				desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+				picture = "Portrait_USA_Douglas_MacArthur.dds"
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+					american_caesar
 				}
-				promote_leader = yes
 			}
-
-			#Remove Army Leader Role
-			remove_unit_leader_role = yes
+		}
+		random_unit_leader = {
+			limit = {
+				has_id = 57
+			}
+			retire = yes
 		}
 	}
 	#no thanks
@@ -2402,7 +2406,7 @@ country_event = {
 		has_government = fascism
 		has_civil_war = no
 		has_global_flag = USA_civil_war_fired_democrats
-		has_country_leader = { ruling_only = yes character = USA_douglas_macarthur }
+		has_country_leader = { ruling_only = yes name = "Douglas MacArthur" }
 	}
 	mean_time_to_happen = { days = 20 }
 	fire_only_once = yes
@@ -2560,7 +2564,6 @@ country_event = {
 				transfer_state = 473
 				transfer_state = 739
 				transfer_state = 471
-				transfer_state = 864
 			}
 		}
 	}
@@ -2593,7 +2596,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state
 					target = CAN
-					generator = { 740 473 739 471 864}
+					generator = { 740 473 739 471 }
 				}
 			}
 		}
@@ -2614,7 +2617,6 @@ country_event = {
 		transfer_state = 473
 		transfer_state = 739
 		transfer_state = 471
-		transfer_state = 864
 	}
 }
 
@@ -2638,7 +2640,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state
 			target = CAN
-			generator = { 740 473 739 471 864 }
+			generator = { 740 473 739 471 }
 		}
 	}
 	option = { #no war!
@@ -3831,10 +3833,7 @@ country_event = {
 			factor = 10	
 		}
 		trigger = {
-			OR = {
-				has_tech = basic_light_tank
-				has_tech = basic_light_tank_chassis
-			}
+			has_tech = basic_light_tank
 		}
 		add_political_power = 25
 		FROM = {
@@ -3843,7 +3842,7 @@ country_event = {
 		effect_tooltip = {
 			FROM = {
 				add_equipment_to_stockpile = { 
-					type = light_tank_chassis
+					type = light_tank_equipment
 					amount = 50
 				}
 			}
@@ -4351,43 +4350,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { #Pull forces out of China - low war support
-		name = panay_incident.2.a
-		custom_effect_tooltip = panay_incident.2.a.tt
-		trigger = { has_war_support < 0.4 }
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				USA_is_on_historical_plan_trigger = yes
-			}
-		}
-		add_war_support = -0.05
-		add_stability = 0.05
-		if = {
-			limit = {
-				has_completed_focus = USA_neutrality_act
-			}
-			add_political_power = 50
-		}
-		add_opinion_modifier = { target = JAP modifier = panay_inc_opinion_modifier }
-		hidden_effect = { JAP = { country_event = { id = panay_incident.6 days = 2 } } } #Info event for Japan
-	}
-	option = { #Pull forces out of China - medium or above war support
-		name = panay_incident.2.a
-		custom_effect_tooltip = panay_incident.2.e.tt
-		trigger = { has_war_support > 0.39 }
-		ai_chance = {
-			factor = 2
-			modifier = {
-				factor = 0
-				USA_is_on_historical_plan_trigger = yes
-			}
-		}
-		add_war_support = -0.05
-		add_opinion_modifier = { target = JAP modifier = panay_inc_opinion_modifier }
-		hidden_effect = { JAP = { country_event = { id = panay_incident.6 days = 2 } } } #Info event for Japan
-	}
 	option = { #Demand compensation
 		name = panay_incident.2.b
 		custom_effect_tooltip = panay_incident.2.b.tt
@@ -4396,36 +4358,6 @@ country_event = {
 		set_country_flag = { flag = USA_panay_window days = 90 value = 1 }
 		hidden_effect = { JAP = { country_event = { id = panay_incident.3 days = 2 } } } #Delay added so events are spaced out - historically it took months to get JAP to agree to compensation, but that'd be a bit hard to follow in-game, so timelines compressed.
 		add_opinion_modifier = { target = JAP modifier = panay_inc_opinion_modifier }
-	}
-	option = { #War
-		name = panay_incident.2.c
-		custom_effect_tooltip = panay_incident.2.c.tt
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 0
-				USA_is_on_historical_plan_trigger = yes
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = USA_neutrality_act
-			}
-			add_war_support = -0.1
-			add_stability = -0.3
-		}
-		add_opinion_modifier = { target = JAP modifier = panay_inc_opinion_modifier }
-		create_wargoal = {
-				target = JAP
-				type = topple_government
-			}
-		add_state_claim = 633
-		add_state_claim = 684
-		add_state_claim = 645
-		add_state_claim = 646
-		add_state_claim = 647
-		add_state_claim = 648
-		hidden_effect = { news_event = { id = news.335 } } #Triggers news event for war between JAP and USA
 	}
 }
 

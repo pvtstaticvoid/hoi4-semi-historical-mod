@@ -33,99 +33,93 @@ division_template = {
 	}
 }
 
+division_template = {
+	name = "MP"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		cavalry = { x = 2 y = 4 }
+
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 3 y = 2 }
+		cavalry = { x = 3 y = 3 }
+		cavalry = { x = 3 y = 4 }
+
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+		cavalry = { x = 4 y = 2 }
+		cavalry = { x = 4 y = 3 }
+		cavalry = { x = 4 y = 4 }
+
+	}
+	support = {
+
+	}
+}
+
+division_template = {
+	name = "50W"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		infantry = { x = 3 y = 4 }
+
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+		infantry = { x = 4 y = 3 }
+		infantry = { x = 4 y = 4 }
+
+	}
+	support = {
+
+	}
+}
 
 ##### OOB #####
 units = {
-	division = { # "1 Qu Jun"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 800
-		division_template = "Qu Jun"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "2 Qu Jun"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 11771
-		division_template = "Qu Jun"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "3 Qu Jun"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 3944
-		division_template = "Qu Jun"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = {
-		name = "4 Qu Jun"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 4809
-		division_template = "Qu Jun"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "5 Qu Jun"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 3877
-		division_template = "Qu Jun"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "1 Qibing Shi"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 800
-		division_template = "Qibing Shi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "2 Qibing Shi"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 11771
-		division_template = "Qibing Shi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "3 Qibing Shi"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 3944
-		division_template = "Qibing Shi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "4 Qibing Shi"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 4809
-		division_template = "Qibing Shi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+	division= {
+		location = 4572
+		division_template = "50W"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
 	}
 }
 

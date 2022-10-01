@@ -1,30 +1,30 @@
 operations = {
-    # ; steal_soviet_anti_tank_research = {
-    # ;     icon = GFX_decision_generic_tank
-    # ; 
-    # ;     allowed = {
-    # ;         tag = GER
-    # ;     }
-    # ; 
-    # ;     visible = {
-    # ;         tag = GER
-    # ;         has_game_rule = {
-    # ;             rule = german_anti_tank_bonus
-    # ;             option = on
-    # ;         }
-    # ;     }
-    # ; 
-    # ;     fire_only_once = yes
-    # ; 
-    # ;     complete_effect = {
-    # ;         add_tech_bonus = {
-    # ;             name = SOV_soviet_artillery_tech_bonus_name_default
-    # ;             bonus = 1.0
-    # ;             uses = 2
-    # ;             category = artillery
-    # ;         }
-    # ;     }
-    # ; }
+    ; steal_soviet_anti_tank_research = {
+    ;     icon = GFX_decision_generic_tank
+    ; 
+    ;     allowed = {
+    ;         tag = GER
+    ;     }
+    ; 
+    ;     visible = {
+    ;         tag = GER
+    ;         has_game_rule = {
+    ;             rule = german_anti_tank_bonus
+    ;             option = on
+    ;         }
+    ;     }
+    ; 
+    ;     fire_only_once = yes
+    ; 
+    ;     complete_effect = {
+    ;         add_tech_bonus = {
+    ;             name = SOV_soviet_artillery_tech_bonus_name_default
+    ;             bonus = 1.0
+    ;             uses = 2
+    ;             category = artillery
+    ;         }
+    ;     }
+    ; }
     transfer_crete = {
         icon = GFX_decision_generic_intelligence_operation
 
@@ -323,161 +323,161 @@ operations = {
 
 }
 
-# FRA_intervention_in_overseas_territories = {
+FRA_intervention_in_overseas_territories = {
 
-# 	FRA_take_north_africa = {
-# 		visible = {
-# 			has_completed_focus = FRA_intervention_in_north_africa
-# 		}
-# 		fire_only_once = yes
-# 		cost = 50
-# 		days_remove = 70
-# 		remove_effect = {
-# 			transfer_state = 513
-# 			transfer_state = 461
-# 			transfer_state = 462
-# 			transfer_state = 514
-# 			transfer_state = 459
-# 			transfer_state = 460
-# 			transfer_state = 665
-# 			transfer_state = 458
-# 			VIC = { country_event = LaR_france_vichy_notification_events.11 }
-# 			GER = { country_event = LaR_france_vichy_notification_events.11 }
-# 		}
-# 	}
+	FRA_take_north_africa = {
+		visible = {
+			has_completed_focus = FRA_intervention_in_north_africa
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 70
+		remove_effect = {
+			transfer_state = 513
+			transfer_state = 461
+			transfer_state = 462
+			transfer_state = 514
+			transfer_state = 459
+			transfer_state = 460
+			transfer_state = 665
+			transfer_state = 458
+			VIC = { country_event = LaR_france_vichy_notification_events.11 }
+			GER = { country_event = LaR_france_vichy_notification_events.11 }
+		}
+	}
 
-# 	FRA_take_west_africa = {
-# 		visible = {
-# 			has_completed_focus = FRA_intervention_in_west_africa
-# 		}
-# 		fire_only_once = yes
-# 		cost = 50
-# 		days_remove = 70
-# 		remove_effect = {
-# 			transfer_state = 515
-#             515 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
-# 			transfer_state = 782
-#             782 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-# 			transfer_state = 786
-#             786 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-# 			transfer_state = 557
-#             557 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-# 			transfer_state = 272
-# 			transfer_state = 780
-# 			transfer_state = 556
-# 			transfer_state = 779
-# 			transfer_state = 778
-# 			transfer_state = 781
-# 			transfer_state = 776
-# 			transfer_state = 777
-# 			VIC = { country_event = LaR_france_vichy_notification_events.10 }
-#             GER = { country_event = LaR_france_vichy_notification_events.10 }
-#             ITA = { country_event = LaR_france_vichy_notification_events.10 }
-# 		}
-# 	}
+	FRA_take_west_africa = {
+		visible = {
+			has_completed_focus = FRA_intervention_in_west_africa
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 70
+		remove_effect = {
+			transfer_state = 515
+            515 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+			transfer_state = 782
+            782 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			transfer_state = 786
+            786 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			transfer_state = 557
+            557 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			transfer_state = 272
+			transfer_state = 780
+			transfer_state = 556
+			transfer_state = 779
+			transfer_state = 778
+			transfer_state = 781
+			transfer_state = 776
+			transfer_state = 777
+			VIC = { country_event = LaR_france_vichy_notification_events.10 }
+            GER = { country_event = LaR_france_vichy_notification_events.10 }
+            ITA = { country_event = LaR_france_vichy_notification_events.10 }
+		}
+	}
 
-# 	FRA_take_madagascar = {
-# 		visible = {
-# 			has_completed_focus = FRA_intervention_in_madagascar
-# 		}
-# 		fire_only_once = yes
-# 		cost = 50
-# 		days_remove = 70
-# 		remove_effect = {
-# 			transfer_state = 543
-# 			transfer_state = 708
-# 			transfer_state = 706
-# 			transfer_state = 713
-# 			VIC = { country_event = LaR_france_vichy_notification_events.12 }
-#             GER = { country_event = LaR_france_vichy_notification_events.12 }
-#             ITA = { country_event = LaR_france_vichy_notification_events.12 }
-# 		}
-# 	}
+	FRA_take_madagascar = {
+		visible = {
+			has_completed_focus = FRA_intervention_in_madagascar
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 70
+		remove_effect = {
+			transfer_state = 543
+			transfer_state = 708
+			transfer_state = 706
+			transfer_state = 713
+			VIC = { country_event = LaR_france_vichy_notification_events.12 }
+            GER = { country_event = LaR_france_vichy_notification_events.12 }
+            ITA = { country_event = LaR_france_vichy_notification_events.12 }
+		}
+	}
 
-# 	FRA_take_syria = {
-# 		visible = {
-# 			has_completed_focus = FRA_intervention_in_syria
-# 		}
-# 		fire_only_once = yes
-# 		cost = 50
-# 		days_remove = 70
-# 		remove_effect = {
-# 			transfer_state = 553
-# 			transfer_state = 554
-# 			transfer_state = 680
-# 			transfer_state = 677
-# 			transfer_state = 799
-# 			VIC = { country_event = LaR_france_vichy_notification_events.7 }
-#             GER = { country_event = LaR_france_vichy_notification_events.7 }
-#             ITA = { country_event = LaR_france_vichy_notification_events.7 }
-# 		}
-# 	}
+	FRA_take_syria = {
+		visible = {
+			has_completed_focus = FRA_intervention_in_syria
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 70
+		remove_effect = {
+			transfer_state = 553
+			transfer_state = 554
+			transfer_state = 680
+			transfer_state = 677
+			transfer_state = 799
+			VIC = { country_event = LaR_france_vichy_notification_events.7 }
+            GER = { country_event = LaR_france_vichy_notification_events.7 }
+            ITA = { country_event = LaR_france_vichy_notification_events.7 }
+		}
+	}
 
-# }
+}
 
 
-# FRA_prepare_gabon_c = {
-#     FRA_prepare_gabon = {
-#         allowed = {
-# 			original_tag=FRA
-# 		}
-# 		icon = ger_military_buildup
-# 		available = {
-# 			check_variable={ preparedmil > 6 }
-#             check_variable={ preparedciv > 6 }
-# 		}
+FRA_prepare_gabon_c = {
+    FRA_prepare_gabon = {
+        allowed = {
+			original_tag=FRA
+		}
+		icon = ger_military_buildup
+		available = {
+			check_variable={ preparedmil > 6 }
+            check_variable={ preparedciv > 6 }
+		}
 
-# 		days_mission_timeout = 14
+		days_mission_timeout = 14
 
-# 		fire_only_once = no
-# 		is_good = yes
-# 		activation = {
-#             always=no
-#         }
+		fire_only_once = no
+		is_good = yes
+		activation = {
+            always=no
+        }
 
-#         timeout_effect = {	
-#             FRA_prepare_mil=yes	
-#             FRA_prepare_civ=yes	
-#             add_to_variable={ preparedciv = 1 }
-# 			add_to_variable={ preparedmil = 1 }	
-#             activate_mission=FRA_prepare_gabon2
-#         }
+        timeout_effect = {	
+            FRA_prepare_mil=yes	
+            FRA_prepare_civ=yes	
+            add_to_variable={ preparedciv = 1 }
+			add_to_variable={ preparedmil = 1 }	
+            activate_mission=FRA_prepare_gabon2
+        }
 
-# 		complete_effect = {
+		complete_effect = {
 
-# 		}
-#     }
-#     FRA_prepare_gabon2 = {
-#         allowed = {
-# 			original_tag=FRA
-# 		}
-# 		icon = ger_military_buildup
-# 		available = {
-#             check_variable={ preparedmil > 6 }
-#             check_variable={ preparedciv > 6 }
-# 		}
+		}
+    }
+    FRA_prepare_gabon2 = {
+        allowed = {
+			original_tag=FRA
+		}
+		icon = ger_military_buildup
+		available = {
+            check_variable={ preparedmil > 6 }
+            check_variable={ preparedciv > 6 }
+		}
 
-# 		days_mission_timeout = 14
+		days_mission_timeout = 14
 
-# 		fire_only_once = no
-# 		is_good = yes
-# 		activation = {
-#             always=no
-#         }
+		fire_only_once = no
+		is_good = yes
+		activation = {
+            always=no
+        }
 
-#         timeout_effect = {	
-#             FRA_prepare_mil=yes
-#             FRA_prepare_civ=yes
-#             add_to_variable={ preparedciv = 1 }
-# 			add_to_variable={ preparedmil = 1 }	
-#             activate_mission=FRA_prepare_gabon
-#         }
+        timeout_effect = {	
+            FRA_prepare_mil=yes
+            FRA_prepare_civ=yes
+            add_to_variable={ preparedciv = 1 }
+			add_to_variable={ preparedmil = 1 }	
+            activate_mission=FRA_prepare_gabon
+        }
 
-# 		complete_effect = {
+		complete_effect = {
 
-# 		}
-#     }
-# }
+		}
+    }
+}
 
 
 SOV_spain = {

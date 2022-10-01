@@ -787,12 +787,12 @@ focus_tree = {
 
 		available = {
 			not = {
-				has_war_with = SOU
+				has_war_with = SOV
 			}
 		}
 		
 		bypass = {
-			SOU = {
+			SOV = {
 				OR = {
 					exists = no
 					has_war_with = USA
@@ -806,7 +806,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			SOU = { add_to_tech_sharing_group = USA_SOV_tech_group }
+			SOV = { add_to_tech_sharing_group = USA_SOV_tech_group }
 			add_to_tech_sharing_group = USA_SOV_tech_group
 		}	
 	}
@@ -816,9 +816,13 @@ focus_tree = {
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = USA_us_ussr_economic_cooperation }
 		available = {
+			not = {
+				has_war_with = SOV
+			}
+			SOV = {
+				is_faction_leader = yes
+			}
 			is_in_faction = no
-			not = { has_war_with = SOU }
-			SOV_comintern_joinable = yes 
 		}
 
 		x = 0
@@ -834,7 +838,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			SOU = {
+			SOV = {
 				country_event = generic.2
 			}
 		}
@@ -5226,7 +5230,9 @@ focus_tree = {
 				name = USA_escort_fighters
 				bonus = 3.0
 				uses = 1
-				category = cat_heavy_fighter
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
 			}
 		}
 	}
@@ -5860,6 +5866,9 @@ focus_tree = {
 
 	
 
+	
+
+	
 
 	
 }

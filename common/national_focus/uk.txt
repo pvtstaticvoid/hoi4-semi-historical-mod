@@ -667,7 +667,7 @@ focus_tree = {
 				}
 				OR = {
 					date > 1938.3.1
-					threat > 0.1 
+					threat > 0.15 
 					has_war = yes
 					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
@@ -684,7 +684,7 @@ focus_tree = {
 					NOT = { has_dlc = "Man the Guns" }
 				}
 				OR = {
-					threat > 0.1 
+					threat > 0.15 
 					has_war = yes
 					NOT = { has_government = democratic }
 				}
@@ -1718,7 +1718,7 @@ focus_tree = {
 			has_tech = advanced_ship_hull_heavy
 			has_full_control_of_state = 133
 			#has_tech = improved_heavy_battery
-			#has_tech = dp_light_battery_3
+			#has_tech = dp_secondary_battery
 			#has_tech = antiair5
 		}
 
@@ -1736,11 +1736,11 @@ focus_tree = {
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_3
 					fixed_ship_radar_slot = ship_radar_3
 					fixed_ship_engine_slot = heavy_ship_engine_4
-					fixed_ship_secondaries_slot = dp_ship_secondaries_3
+					fixed_ship_secondaries_slot = dp_ship_secondaries
 					fixed_ship_armor_slot = ship_armor_bb_3
 					front_1_custom_slot = ship_heavy_battery_3
 					mid_1_custom_slot = ship_anti_air_4
-					mid_2_custom_slot = dp_ship_secondaries_3
+					mid_2_custom_slot = dp_ship_secondaries
 					mid_3_custom_slot = ship_airplane_launcher_2
 					rear_1_custom_slot = ship_heavy_battery_3
 				}
@@ -2474,7 +2474,7 @@ focus_tree = {
 				OR = {
 					has_completed_focus = ENG_global_defense
 					has_country_leader = {
-					    character = ENG_winston_churchill
+					    name = "Winston Churchill"
 					    ruling_only = yes
 					}
 				}

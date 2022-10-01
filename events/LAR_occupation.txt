@@ -1,54 +1,6 @@
 ﻿
 add_namespace = occupied_countries
 
-#instantiate a collabration government
-country_event = {
-	id = occupied_countries.1
-	title = occupied_countries.1.title
-	desc = occupied_countries.1.desc
-	
-	# todo lar
-	picture = GFX_report_event_canadian_soldiers
-	
-	is_triggered_only = yes
-
-	option = {
-		name = occupied_countries.1.a
-
-		if = {
-			limit = {
-				has_core_occupation_modifier = {
-					occupied_country_tag = FROM.FROM
-					modifier = compliance_80
-				}
-				NOT = {
-					any_country_with_original_tag = { #copy of is_available_to_collaboration_government but from from scope because of events
-						original_tag_to_check = FROM.FROM
-						is_puppet_of = PREV # if already created one do not create another
-						has_autonomy_state = autonomy_collaboration_government
-					}
-				}
-			}
-			set_temp_variable = { country_to_initiate = FROM.FROM }
-			instantiate_collaboration_government = yes
-		}
-		
-		ai_chance = {
-			base = 0
-		}
-	}
-
-	option = {
-		name = occupied_countries.1.b
-		# do nothing
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-}
-
-
 # create uprising
 country_event = {
 	id = occupied_countries.2
@@ -292,57 +244,7 @@ country_event = {
 				# create war if necesarry
 				if = {
 					limit = { NOT = { has_war_with = new_occupied_country } }
-					
-					### BBA ETHIOPIA 
-					IF = { 
-						limit = {
-							has_dlc = "By Blood Alone"
-							ETH = { has_country_flag = ETH_anti_colonialism_flag } # Ethiopia is on anti-colonialism run
-							var:occupier_country = { NOT = { tag = ETH } } # just a sanity check
-							var:new_occupied_country = {
-								capital_scope = { is_on_continent = africa } # African country
-								any_owned_state = {
-									has_dynamic_modifier = {
-										modifier = ETH_state_supporting_resistance_modifier # Ethiopia has supported resistance movement
-										scope = occupier_country
-									}
-								}
-							}
-						}
-						var:new_occupied_country = {
-							set_politics = { ruling_party = ETH } # Overriding standard so give them the same political set up as Ethiopia, little bit of cheating perhaps, but it gives the right effect. 
-							set_popularities = {
-								democratic = ETH.party_popularity_100@democratic
-								neutrality = ETH.party_popularity_100@neutrality
-								fascism = ETH.party_popularity_100@fascism
-								communism = ETH.party_popularity_100@communism
-							}
-							set_country_flag = ETH_supported_this_uprising_flag 
-								declare_war_on = { target = occupier_country type = independence_wargoal # swapping the direction of the DoW 
-							}
-							add_opinion_modifier = {
-								target = ETH
-								modifier = ETH_supported_independence # make new country like Ethiopia
-							}
-							set_variable = { previous_overlord = var:occupier_country } # For use in decisions
-							set_rule = { can_join_factions = no } # To ensure they don't randomly join any faction. IF making generic; convert this to an idea that is removed once they have peace. 
-
-							# add a few Ethiopian supported units 
-							random_owned_state = {
-								create_unit = {
-									division = "division_template = \"Resistance\" start_experience_factor = 1 start_equipment_factor = 1"
-									owner = new_occupied_country
-									count = 3
-								}
-							}
-						}
-					}
-
-					### END BBA ETHIOPIA 
-					ELSE = {
-						declare_war_on = { target = new_occupied_country type = annex_everything 
-						}
-					}
+					declare_war_on = { target = new_occupied_country type = annex_everything }
 				}
 				
 				var:occupier_country = {

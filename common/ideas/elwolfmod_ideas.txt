@@ -72,25 +72,25 @@ ideas = {
 
 		}
 
-		# YUG_air_payment = {
+		YUG_air_payment = {
 			
-		# 	picture = generic_fighter_production_diverted
+			picture = generic_fighter_production_diverted
 
-		# 	allowed = {
-		# 		original_tag = YUG
-		# 		always = no
-		# 	}
+			allowed = {
+				original_tag = YUG
+				always = no
+			}
 
-		# 	allowed_civil_war = {
-		# 		always = yes
-		# 	}
+			allowed_civil_war = {
+				always = yes
+			}
 
-		# 	removal_cost = -1
+			removal_cost = -1
 			
-		# 	modifier = {
-		# 		consumer_goods_factor = -0.05
-		# 	}
-		# }
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
 
 		no_tradebacks = {
 			cancel = { GER = { has_war = yes } }

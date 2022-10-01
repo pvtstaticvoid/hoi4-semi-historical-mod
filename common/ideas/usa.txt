@@ -102,7 +102,6 @@ ideas = {
 				join_faction_tension = 0.25
 				send_volunteers_tension = 0.5
 				guarantee_tension = 0.5
-				embargo_threshold_factor = 1.5
 			}
 		}
 		# version if player went down limited intervention
@@ -146,7 +145,6 @@ ideas = {
 				join_faction_tension = 0.25
 				send_volunteers_tension = 0.5
 				guarantee_tension = 0.5
-				embargo_threshold_factor = 1.5
 			}
 		}
 		USA_lend_lease_act_dummy = { #dummy version to show effects
@@ -783,7 +781,7 @@ ideas = {
 			picture = generic_air_bonus
 			
 			equipment_bonus = {
-				large_plane_airframe = {
+				strat_bomber_equipment = {
 					air_range = 0.5 instant = yes
 				}	
 			}
@@ -917,11 +915,11 @@ ideas = {
 			removal_cost = -1
 		
 			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
+				fighter_equipment = {
+					build_cost_ic = -0.05 instant = yes
 				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = -0.1 instant = yes
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 		}
@@ -939,11 +937,11 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				small_plane_cas_airframe = {
-					build_cost_ic = -0.1 instant = yes
+				CAS_equipment = {
+					build_cost_ic = -0.05 instant = yes
 				}
-				medium_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
+				tac_bomber_equipment = {
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 		}
@@ -961,8 +959,8 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				large_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
+				strat_bomber_equipment = {
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 		}
@@ -1007,7 +1005,6 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.2
 				ai_badass_factor = 0.03 # cares for 3% of normal threat
-				ai_desired_divisions_factor = 0.5 
 			}
 		}
 

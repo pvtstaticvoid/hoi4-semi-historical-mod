@@ -1,0 +1,357 @@
+ideas = {
+
+    country = {
+		BRA_brazilian_industrial_planning = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				global_building_slots_factor = 0.1
+			}
+		}	
+		
+		BRA_small_arms_industry = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_infantry_bonus
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		BRA_democracy_support = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				democratic_drift = 0.10
+			}
+		}	
+
+		BRA_communist = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_intel_bonus
+			
+			modifier = {
+				communism_drift = 0.10
+			}
+		}
+		
+		BRA_fascist_support = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascism_drift = 0.10
+			}
+		}
+		
+		BRA_brazilian_socialist_economy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		BRA_mobilize_peasantry = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.015
+			}
+		}
+		
+		BRA_labour_camps = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ast_all_in
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		BRA_compliance = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_constitutional_guarantees
+			
+			modifier = {
+				compliance_growth = 0.15
+			}
+		}
+		
+		BRA_guyana_occupied = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_war_of_resistance
+			
+			modifier = {
+				political_power_factor = -0.15
+				army_org_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		
+		BRA_gave_up_guyana = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				war_support_factor = -0.3
+			}
+		}
+		
+		BRA_guyana_liberated = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				political_power_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+		
+		BRA_volunteers_to_spain = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = por_volunteers_in_the_war
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.75
+				send_volunteer_size = 3
+				send_volunteers_tension = -1
+			} 
+		}
+		
+		BRA_american_scientists = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		
+		BRA_estado_novo = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_exploit_mines
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		
+		BRA_expeditionary_forces = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = MEX_politicised_army
+			
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		BRA_lend_lease = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				lend_lease_tension = -1
+			}
+		}
+		
+		BRA_banned_communism = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = anti_soviet_pact
+			
+			modifier = {
+				communism_drift = -0.05
+			}
+		}
+		
+		BRA_militarized_youth = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+	}
+}

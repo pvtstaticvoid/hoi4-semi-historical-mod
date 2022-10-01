@@ -330,7 +330,6 @@ ideas = {
 				justify_war_goal_time = -0.2
 				research_speed_factor = -0.05
 				production_speed_industrial_complex_factor = -0.1
-				ai_desired_divisions_factor = 0.25
 			}
 		}
 
@@ -974,10 +973,10 @@ ideas = {
 			
 
 			equipment_bonus = {
-				small_plane_cas_airframe = {
+				CAS_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				medium_plane_airframe = {
+				tac_bomber_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -998,16 +997,16 @@ ideas = {
 			
 
 			equipment_bonus = {
-				cv_small_plane_airframe = {
+				cv_fighter_equipment = {
 					build_cost_ic = -0.2 instant = yes
 				}
-				cv_small_plane_cas_airframe = {
+				cv_CAS_equipment = {
 					build_cost_ic = -0.2 instant = yes
 				}
-				cv_small_plane_naval_bomber_airframe = {
+				cv_nav_bomber_equipment = {
 					build_cost_ic = -0.2 instant = yes
 				}
-				small_plane_naval_bomber_airframe = {
+				nav_bomber_equipment = {
 					build_cost_ic = -0.2 instant = yes
 				}
 			}

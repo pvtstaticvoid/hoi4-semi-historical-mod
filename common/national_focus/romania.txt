@@ -50,7 +50,7 @@
 #		completion_reward = {
 #
 #		}
-#	} 
+#	}
 
 	############################
 	##### CATEGORY HERE ! ######
@@ -107,11 +107,10 @@
 		}
 
 		available = {
-			NOT = { has_war_with = SOU }
-			SOU = {
+			NOT = { has_war_with = SOV }
+			SOV = {
 				exists = yes
 				is_puppet = no
-				has_civil_war = no
 			}
 		}
 
@@ -185,7 +184,6 @@
 				NOT = {
 					has_war_with = ROOT
 				}
-				has_civil_war = no 
 			}
 		}
 
@@ -256,8 +254,9 @@
 		}
 
 		available = {
-			SOV_comintern_joinable = yes 
+			SOV = { is_faction_leader = yes }
 			is_in_faction = no
+			NOT = { has_war_with = SOV }
 			is_subject = no
 			NOT = {
 				any_other_country = {
@@ -522,7 +521,11 @@
 		}
 
 		available = {
-			834 = {
+			192 = {
+				is_owned_by = SOV
+				is_controlled_by = SOV
+			}
+			198 = {
 				is_owned_by = SOV
 				is_controlled_by = SOV
 			}
@@ -541,7 +544,7 @@
 			create_wargoal = {
 				type = take_state_focus
 				target = SOV
-				generator = { 834 }
+				generator = { 192 198 }
 			}
 		}
 	}
@@ -2900,55 +2903,25 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			#Give generic fighter bonus if fighter_2 already researched
 			if = {
-				limit = { NOT = { has_dlc = "By Blood Alone" } }
-				if = {
-					limit = {
-						has_tech = fighter2
-					}
+				limit = {
+					has_tech = fighter2
+				}
+				add_tech_bonus = {
+					name = ROM_iar_80
+					bonus = 1.0
+					ahead_reduction = 2
+					uses = 1
+					category = light_fighter
+				}
+				else = {
 					add_tech_bonus = {
 						name = ROM_iar_80
 						bonus = 1.0
 						ahead_reduction = 2
 						uses = 1
-						category = light_fighter
-					}
-					else = {
-						add_tech_bonus = {
-							name = ROM_iar_80
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							technology = fighter2
-						}
-					}
-				}
-			}
-			if = {
-				limit = { has_dlc = "By Blood Alone" }
-				if = {
-					limit = {
-						has_tech = improved_small_airframe
-					}
-					create_equipment_variant = {
-						name = "IAR 80"
-						type = small_plane_airframe_2
-						modules = {
-							fixed_main_weapon_slot = light_mg_4x
-							fixed_auxiliary_weapon_slot_1 = light_mg_2x
-							engine_type_slot = engine_2_1x
-							special_type_slot_1 = empty
-						}
-						icon = "GFX_ROM_fighter2_medium"
-					}
-					else = {
-						add_tech_bonus = {
-							name = ROM_iar_80
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							technology = improved_small_airframe
-						}
+						technology = fighter2
 					}
 				}
 			}
@@ -3507,10 +3480,7 @@
 			hidden_effect = {
 				if = {
 					limit = {
-						OR = {
-							has_tech = basic_medium_tank
-							has_tech = basic_medium_tank_chassis
-						}
+						has_tech = basic_medium_tank
 						has_tech = tech_recon
 					}
 					division_template = {
@@ -3539,10 +3509,7 @@
 					else = {
 						if = {
 							limit = {
-								OR = {
-									has_tech = basic_medium_tank
-									has_tech = basic_medium_tank_chassis
-								}
+								has_tech = basic_medium_tank
 							}
 							division_template = {
 								name = "Armored Division"

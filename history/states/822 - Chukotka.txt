@@ -9,15 +9,18 @@ state = {
 		}
 		buildings = {
 			infrastructure = 1
+			13204 ={
+				naval_base = 1
+			}
 		}
 		add_core_of = SOV
 
 	}
 
 	provinces = {
-		4744 5264 13062 13063 
+		4744 5264 13062 13063 13204
 	}
-	manpower = 31182
+	manpower = 34182
 	buildings_max_level_factor = 1
 	state_category = "pastoral"
 
