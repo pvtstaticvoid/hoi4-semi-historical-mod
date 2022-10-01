@@ -972,10 +972,10 @@ on_actions = {
 					type = train_equipment
 					amount = 300
 				}
-				# if = {
-				# 	limit = {has_game_rule = {rule = beta option = off}}
-				# 	country_event = { id = DOD_yugoslavia.20 days = 912 }
-				# }
+				if = {
+					limit = {has_game_rule = {rule = beta option = off}}
+					country_event = { id = DOD_yugoslavia.20 days = 912 }
+				}
 
 			}
 			GER = {
@@ -990,10 +990,10 @@ on_actions = {
 					type = train_equipment
 					amount = 300
 				}
-				# if = {
-				# 	limit = {has_game_rule = {rule = beta option = off}}
-				# 	country_event = { id = DOD_yugoslavia.20 days = 912 }
-				# }
+				if = {
+					limit = {has_game_rule = {rule = beta option = off}}
+					country_event = { id = DOD_yugoslavia.20 days = 912 }
+				}
 			}
 			FRA = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 14400 }
@@ -1009,10 +1009,10 @@ on_actions = {
 					type = train_equipment
 					amount = 100
 				}
-				# if = {
-				# 	limit = {has_game_rule = {rule = beta option = off}}
-				# 	country_event = { id = DOD_yugoslavia.20 days = 912 }
-				# }
+				if = {
+					limit = {has_game_rule = {rule = beta option = off}}
+					country_event = { id = DOD_yugoslavia.20 days = 912 }
+				}
 			}
 			JAP = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 7700 }
@@ -1049,10 +1049,10 @@ on_actions = {
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 60 }
 
 				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = ITA variant_name = "L3/35" }
-				# if = {
-				# 	limit = {has_game_rule = {rule = beta option = off}}
-				# 	country_event = { id = DOD_yugoslavia.20 days = 912 }
-				# }
+				if = {
+					limit = {has_game_rule = {rule = beta option = off}}
+					country_event = { id = DOD_yugoslavia.20 days = 912 }
+				}
 			}
 			SOV = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 16200 }
