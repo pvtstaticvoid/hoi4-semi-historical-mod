@@ -31,9 +31,6 @@ NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {300, 500, 1500
 --- Allow people to spawn out shits of stuff with only one div
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 100000000
 
---- Hold focus for 30 days instead of 10.
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30
-
 ---Training
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 2
