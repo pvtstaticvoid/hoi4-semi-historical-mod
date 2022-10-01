@@ -757,17 +757,17 @@ on_actions = {
 			; 	}
 			; }
 
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = germany_research_slot
-						option = on
-					}
-				}
-				GER = {
-					add_research_slot = 1
-				}
-			}
+			; if = {
+			; 	limit = {
+			; 		has_game_rule = {
+			; 			rule = germany_research_slot
+			; 			option = on
+			; 		}
+			; 	}
+			; 	GER = {
+			; 		add_research_slot = 1
+			; 	}
+			; }
 
 			if = {
 				limit = {
