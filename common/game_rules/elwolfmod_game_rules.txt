@@ -249,14 +249,14 @@ pregrinded_tank_generals_fra = {
 	name = "Pre-Grinded Tank Generals (France)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
-	option = {
+	default = {
 		name = enabled
-		text = "Enabled"
+		text = "YRecommended: !Enabled"
 		desc = "France receives 2 pre-grinded tank generals."
 	}
-	default = {
+	option = {
 		name = disabled
-		text = "YRecommended: !Disabled"
+		text = "Disabled"
 	}
 }
 
@@ -264,14 +264,14 @@ pregrinded_tank_generals_can = {
 	name = "Pre-Grinded Tank Generals (Canada)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
-	option = {
+	default = {
 		name = enabled
-		text = "Enabled"
+		text = "YRecommended: !Enabled"
 		desc = "Canada receives 2 pre-grinded tank generals."
 	}
-	default = {
+	option = {
 		name = disabled
-		text = "YRecommended: !Disabled"
+		text = "Disabled"
 	}
 }
 
