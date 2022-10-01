@@ -1925,7 +1925,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 0
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2143,7 +2143,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 0
+		cost = 10
 
 		available = {
 
@@ -2274,7 +2274,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 0
+		cost = 10
 
 		available = {
 
@@ -12894,7 +12894,7 @@ ai_will_do = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_respect_baltic_self_determination
-		cost = 0
+		cost = 10
 		
 		ai_will_do = {
 			factor = 1
@@ -13355,7 +13355,7 @@ ai_will_do = {
 		x = 3
 		y = 1
 		relative_position_id = SOV_claims_on_poland
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 2.5
