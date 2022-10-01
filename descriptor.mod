@@ -5,5 +5,5 @@ tags={
 	"Balance"
 }
 name="Semi-Historical Mod"
-supported_version="1.12.2"
+supported_version="1.12.1"
 remote_file_id="2843237571"
