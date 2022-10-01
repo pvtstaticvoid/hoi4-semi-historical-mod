@@ -1,6 +1,0 @@
-FRA_move_capital = {
-	visible = {
-		tag = FRA
-		has_war = yes
-	}
-}
