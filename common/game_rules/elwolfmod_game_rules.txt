@@ -105,19 +105,6 @@ sov_boost = {
 	}
 }
 
-germany_research_slot = {
-	name = "Extra Research Slot (Germany)"
-	group = "Game Balance"
-	icon = "GFX_decision_generic_research"
-	default = {
-		name = on
-		text = "YRecommended: !Enabled"
-	}
-	option = {
-		name = off
-		text = "Disabled"
-	}
-}
 
 
 free_collabs = {
@@ -167,7 +154,21 @@ free_collabs = {
 ; 	}
 ; }
 
-
+germany_research_slot = {
+	name = "Extra German Research Slot"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = off
+		text = "Off"
+		desc = "No Extra Research Slot"
+	}
+	option = {
+		name = on
+		text = "On"
+		desc = "Germany starts the game with an extra research slot, their focus for an extra one bypasses and they cannot get 6."
+	}
+}
 
 ; german_anti_tank_bonus = {
 ; 	name = "German Anti-Tank Research Bonuses"
