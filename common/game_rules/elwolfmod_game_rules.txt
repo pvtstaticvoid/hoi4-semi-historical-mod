@@ -1,18 +1,18 @@
-; beta = {
-; 	name = "ewof mod beta"
-; 	group = "elwolfmod Rules"
-; 	icon = "GFX_decision_POL_sanation_right_opposition_4"
-; 	default = {
-; 		name = off
-; 		text = "Off"
-; 		desc = "normal ewof"
-; 	}
-; 	option = {
-; 		name = on
-; 		text = "On"
-; 		desc = "preview upcoming ewof mod changes"
-; 	}
-; }
+beta = {
+	name = "ewof mod beta"
+	group = "elwolfmod Rules"
+	icon = "GFX_decision_POL_sanation_right_opposition_4"
+	default = {
+		name = off
+		text = "Off"
+		desc = "normal ewof"
+	}
+	option = {
+		name = on
+		text = "On"
+		desc = "preview upcoming ewof mod changes"
+	}
+}
 
 sov_no_tradebacks = {
 	name = "Soviets No Tradeback"
@@ -107,101 +107,101 @@ japan_closed_eco = {
 		desc = "Japan start the game on closed eco, free trade bonuses"
 	}
 }
-; puerto_rico = {
-; 	name = "Puerto Rico"
-; 	group = "elwolfmod Rules"
-; 	icon = "GFX_decision_eng_blackshirt_march"
-; 	default = {
-; 		name = off
-; 		text = "Off"
-; 		desc = "No troll meme country"
-; 	}
-; 	option = {
-; 		name = on
-; 		text = "On"
-; 		desc = "Troll meme country"
-; 	}
-; }
+puerto_rico = {
+	name = "Puerto Rico"
+	group = "elwolfmod Rules"
+	icon = "GFX_decision_eng_blackshirt_march"
+	default = {
+		name = off
+		text = "Off"
+		desc = "No troll meme country"
+	}
+	option = {
+		name = on
+		text = "On"
+		desc = "Troll meme country"
+	}
+}
 
-; force_attack_last_stand = {
-; 	name = "Force Attack Last Stand"
-; 	group = "elwolfmod Rules"
-; 	icon = "GFX_decision_SOV_place_hq"
-; 	default = {
-; 		name = on
-; 		text = "On"
-; 		desc = "Normal like vanilla"
-; 	}
-; 	option = {
-; 		name = off
-; 		text = "Off"
-; 		desc = "Banned"
-; 	}
-; }
+force_attack_last_stand = {
+	name = "Force Attack Last Stand"
+	group = "elwolfmod Rules"
+	icon = "GFX_decision_SOV_place_hq"
+	default = {
+		name = on
+		text = "On"
+		desc = "Normal like vanilla"
+	}
+	option = {
+		name = off
+		text = "Off"
+		desc = "Banned"
+	}
+}
 
-; germany_research_slot = {
-; 	name = "Extra German Research Slot"
-; 	group = "elwolfmod Rules"
-; 	icon = "GFX_decision_generic_research"
-; 	default = {
-; 		name = off
-; 		text = "Off"
-; 		desc = "No Extra Research Slot"
-; 	}
-; 	option = {
-; 		name = on
-; 		text = "On"
-; 		desc = "Germany starts the game with an extra research slot, their focus for an extra one bypasses and they cannot get 6."
-; 	}
-; }
+germany_research_slot = {
+	name = "Extra German Research Slot"
+	group = "elwolfmod Rules"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = off
+		text = "Off"
+		desc = "No Extra Research Slot"
+	}
+	option = {
+		name = on
+		text = "On"
+		desc = "Germany starts the game with an extra research slot, their focus for an extra one bypasses and they cannot get 6."
+	}
+}
 
-; german_anti_tank_bonus = {
-; 	name = "German Anti-Tank Research Bonuses"
-; 	group = "elwolfmod Rules"
-; 	icon = "GFX_decision_generic_tank"
-; 	default = {
-; 		name = off
-; 		text = "Off"
-; 		desc = "No German Anti-Tank bonuses"
-; 	}
-; 	option = {
-; 		name = on
-; 		text = "On"
-; 		desc = "Germany has a decision to give them 2 Anti-Tank 100% research bonuses"
-; 	}
-; }
+german_anti_tank_bonus = {
+	name = "German Anti-Tank Research Bonuses"
+	group = "elwolfmod Rules"
+	icon = "GFX_decision_generic_tank"
+	default = {
+		name = off
+		text = "Off"
+		desc = "No German Anti-Tank bonuses"
+	}
+	option = {
+		name = on
+		text = "On"
+		desc = "Germany has a decision to give them 2 Anti-Tank 100% research bonuses"
+	}
+}
 
-; techstealing = {
-; 	name = "Tech Stealing"
-; 	group = "elwolfmod Rules"
-; 	icon = "GFX_decision_generic_research"
-; 	default = {
-; 		name = banned
-; 		text = "Banned"
-; 		desc = "No tech stealing operations"
-; 	}
-; 	option = {
-; 		name = onehundred
-; 		text = "100%"
-; 		desc = "Only tech steal 100%'s"
-; 	}
-; }
+techstealing = {
+	name = "Tech Stealing"
+	group = "elwolfmod Rules"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = banned
+		text = "Banned"
+		desc = "No tech stealing operations"
+	}
+	option = {
+		name = onehundred
+		text = "100%"
+		desc = "Only tech steal 100%'s"
+	}
+}
 
-; max_submarine_tech = {
-; 	name = "Max Submarine Tech"
-; 	group = "elwolfmod Rules"
-; 	icon = "GFX_decision_generic_naval"
-; 	default = {
-; 		name = sub2
-; 		text = "1936"
-; 		desc = "Submarine 3 and Snorkel 1 banned"
-; 	}
-; 	option = {
-; 		name = sub3
-; 		text = "1940"
-; 		desc = "Submarine 3 and Snorkel 1 allowed"
-; 	}
-; }
+max_submarine_tech = {
+	name = "Max Submarine Tech"
+	group = "elwolfmod Rules"
+	icon = "GFX_decision_generic_naval"
+	default = {
+		name = sub2
+		text = "1936"
+		desc = "Submarine 3 and Snorkel 1 banned"
+	}
+	option = {
+		name = sub3
+		text = "1940"
+		desc = "Submarine 3 and Snorkel 1 allowed"
+	}
+}
 
 
 tradebacks = {
