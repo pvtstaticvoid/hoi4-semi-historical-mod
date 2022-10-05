@@ -139,24 +139,15 @@ operations = {
     }
 
     assume_control_new_zealand = {
-        # icon = generic_operation
 
-        allowed = {
-            tag = ENG
-        }
-        fire_only_once = yes
+        ai_will_do = { factor = 0 }
+		fire_only_once = yes
+		targets = {NZL}
 
-        cost = 0
-
-        ai_will_do = {
-            factor = 0
-        }
-
-        available = {
+        visible = {
+			tag = ENG
             NZL = { is_ai = yes }
         }
-
-		targets = {NZL}
 
         complete_effect = {
             ENG = {
@@ -177,26 +168,15 @@ operations = {
         }
     }
     assume_control_canada = {
-        # icon = generic_operation
 
-        allowed = {
-			OR = {
-				tag = ENG
-			}
-        }
-        fire_only_once = yes
+        ai_will_do = { factor = 0 }
+		fire_only_once = yes
+		targets = {CAN}
 
-        cost = 0
-
-        ai_will_do = {
-            factor = 0
-        }
-
-        available = {
+        visible = {
+			tag = ENG
             CAN = { is_ai = yes }
         }
-
-		targets = {CAN}
 
         complete_effect = {
             ENG = {
@@ -218,24 +198,15 @@ operations = {
     }
 
     assume_control_south_africa = {
-        # icon = generic_operation
 
-        allowed = {
-            tag = ENG
-        }
-        fire_only_once = yes
+        ai_will_do = { factor = 0 }
+		fire_only_once = yes
+		targets = {SAF}
 
-        cost = 0
-
-        ai_will_do = {
-            factor = 0
-        }
-
-        available = {
+        visible = {
+			tag = ENG
             SAF = { is_ai = yes }
         }
-
-		targets = {SAF}
 
         complete_effect = {
             ENG = {
@@ -256,24 +227,15 @@ operations = {
         }
     }
     assume_control_british_raj = {
-        # icon = generic_operation
 
-        allowed = {
-            tag = ENG
-        }
-        fire_only_once = yes
+        ai_will_do = { factor = 0 }
+		fire_only_once = yes
+		targets = {RAJ}
 
-        cost = 0
-
-        ai_will_do = {
-            factor = 0
-        }
-
-        available = {
+        visible = {
+			tag = ENG
             RAJ = { is_ai = yes }
         }
-
-		targets = {RAJ}
 
         complete_effect = {
             ENG = {
@@ -294,24 +256,15 @@ operations = {
         }
     }
     assume_control_australia = {
-        # icon = generic_operation
 
-        allowed = {
-            tag = ENG
-        }
-        fire_only_once = yes
+        ai_will_do = { factor = 0 }
+		fire_only_once = yes
+		targets = {AST}
 
-        cost = 0
-
-        ai_will_do = {
-            factor = 0
-        }
-
-        available = {
+        visible = {
+			tag = ENG
             AST = { is_ai = yes }
         }
-
-		targets = {AST}
 
         complete_effect = {
             ENG = {
