@@ -1,0 +1,20 @@
+add_namespace = shm
+
+news_event = {
+	id = shm.1000
+	title = shm.1000.t
+	desc = shm.1000.desc
+	picture = GFX_news_event_usa_japan_at_war
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "This leaves us free to build capital ships."
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = "That's a lot of convoys."
+		trigger = { 
+			NOT = { TAG = ENG } 
+		}
+	}
+}
