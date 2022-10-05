@@ -74,7 +74,6 @@ operations = {
             JAP = {
                 annex_country = {
                     target = SIA
-                    transfer_troops = yes
                 }
             }
             every_state = {
@@ -116,7 +115,6 @@ operations = {
             JAP = {
                 annex_country = {
                     target = MAN
-                    transfer_troops = yes
                 }
             }
             every_state = {
@@ -144,7 +142,7 @@ operations = {
         # icon = generic_operation
 
         allowed = {
-            tag = AST
+            tag = ENG
         }
         fire_only_once = yes
 
@@ -161,16 +159,18 @@ operations = {
 		targets = {NZL}
 
         complete_effect = {
-            AST = {
+            ENG = {
+				hidden_effect = {
+					news_event = { id = shm_transfer_countries.103 }
+				}
                 annex_country = {
                     target = NZL
-                    transfer_troops = yes
                 }
             }
             every_state = {
                 limit = {
                     is_core_of = NZL
-                    is_controlled_by = AST
+                    is_controlled_by = ENG
                 }
                 add_compliance = 50
 		    }
@@ -180,7 +180,9 @@ operations = {
         # icon = generic_operation
 
         allowed = {
-            tag = ENG
+			OR = {
+				tag = ENG
+			}
         }
         fire_only_once = yes
 
@@ -198,20 +200,23 @@ operations = {
 
         complete_effect = {
             ENG = {
+				hidden_effect = {
+					news_event = { id = shm_transfer_countries.102 }
+				}
                 annex_country = {
                     target = CAN
-                    transfer_troops = yes
                 }
             }
             every_state = {
                 limit = {
                     is_core_of = CAN
-                    is_controlled_by = ENG
+                    is_controlled_by = ROOT
                 }
                 add_compliance = 50
 		    }
         }
     }
+
     assume_control_south_africa = {
         # icon = generic_operation
 
@@ -230,13 +235,15 @@ operations = {
             SAF = { is_ai = yes }
         }
 
-		targets = {NZL}
+		targets = {SAF}
 
         complete_effect = {
             ENG = {
+				hidden_effect = {
+					news_event = { id = shm_transfer_countries.105 }
+				}
                 annex_country = {
                     target = SAF
-                    transfer_troops = yes
                 }
             }
             every_state = {
@@ -266,13 +273,15 @@ operations = {
             RAJ = { is_ai = yes }
         }
 
-		targets = {NZL}
+		targets = {RAJ}
 
         complete_effect = {
             ENG = {
+				hidden_effect = {
+					news_event = { id = shm_transfer_countries.104 }
+				}
                 annex_country = {
                     target = RAJ
-                    transfer_troops = yes
                 }
             }
             every_state = {
@@ -302,13 +311,15 @@ operations = {
             AST = { is_ai = yes }
         }
 
-		targets = {NZL}
+		targets = {AST}
 
         complete_effect = {
             ENG = {
+				hidden_effect = {
+					news_event = { id = shm_transfer_countries.101 }
+				}
                 annex_country = {
                     target = AST
-                    transfer_troops = yes
                 }
             }
             every_state = {
@@ -320,6 +331,112 @@ operations = {
 		    }
         }
     }
+
+    request_control_Australia = {
+
+		ai_will_do = { factor = 0 }
+		targets = { AST }
+
+        visible = {
+			is_in_faction_with = ENG
+			NOT = { 
+				tag = ENG
+				tag = AST 
+			}
+            AST = { is_ai = yes }
+        }
+
+        complete_effect = {
+			ENG = {
+				country_event = { id = shm_transfer_countries.1 }
+			}
+        }
+    }
+
+    request_control_Canada = {
+
+		ai_will_do = { factor = 0 }
+		targets = { CAN }
+
+        visible = {
+			is_in_faction_with = ENG
+			NOT = { 
+				tag = ENG
+				tag = CAN 
+			}
+            CAN = { is_ai = yes }
+        }
+
+        complete_effect = {
+			ENG = {
+				country_event = { id = shm_transfer_countries.2 }
+			}
+        }
+    }
+
+	request_control_New_Zealand = {
+
+		ai_will_do = { factor = 0 }
+		targets = { NZL }
+
+        visible = {
+			is_in_faction_with = ENG
+			NOT = { 
+				tag = ENG
+				tag = NZL 
+			}
+            NZL = { is_ai = yes }
+        }
+
+        complete_effect = {
+			ENG = {
+				country_event = { id = shm_transfer_countries.3 }
+			}
+        }
+    }
+
+	request_control_British_Raj = {
+
+		ai_will_do = { factor = 0 }
+		targets = { RAJ }
+
+        visible = {
+			is_in_faction_with = ENG
+			NOT = { 
+				tag = ENG
+				tag = RAJ 
+			}
+            RAJ = { is_ai = yes }
+        }
+
+        complete_effect = {
+			ENG = {
+				country_event = { id = shm_transfer_countries.4 }
+			}
+        }
+    }
+
+	request_control_South_Africa = {
+
+		ai_will_do = { factor = 0 }
+		targets = { SAF }
+
+        visible = {
+			is_in_faction_with = ENG
+			NOT = { 
+				tag = ENG
+				tag = SAF 
+			}
+            SAF = { is_ai = yes }
+        }
+
+        complete_effect = {
+			ENG = {
+				country_event = { id = shm_transfer_countries.5 }
+			}
+        }
+    }
+
 
 }
 

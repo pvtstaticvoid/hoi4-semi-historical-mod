@@ -1,0 +1,367 @@
+add_namespace = shm_transfer_countries
+
+country_event = {
+
+	id = shm_transfer_countries.1
+	title = "[From.GetNameDefCap] Requests Control of Australia"
+	desc = "As we struggle with military coverage of the entire Empire, [From.GetNameDef] has approached us about an administrative agreement. Some of our colonies should be handed over to them, with full rights and responsibilities towards their defense."
+	picture = GFX_report_event_saf_soldiers
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can hold these colonies just fine."
+		FROM = {
+			country_event = { id = shm_transfer_countries.11 }
+		}
+	}
+
+	option = {
+		name = "Our energies are needed elsewhere."
+		ai_chance = { base = 0 }
+		FROM = {
+			hidden_effect = {
+				news_event = { id = shm_transfer_countries.101 }
+			}
+			country_event = { id = shm_transfer_countries.10 }
+			annex_country = {
+			    target = AST
+			    transfer_troops = no
+			}
+
+		}
+		every_state = {
+			limit = {
+				is_core_of = AST
+				is_controlled_by = FROM
+			}
+			add_compliance = 50
+		}
+	}
+}
+
+country_event = {
+
+	id = shm_transfer_countries.2
+	title = "[From.GetNameDefCap] Requests Control of Canada"
+	desc = "As we struggle with military coverage of the entire Empire, [From.GetNameDef] has approached us about an administrative agreement. Some of our colonies should be handed over to them, with full rights and responsibilities towards their defense."
+	picture = GFX_report_event_saf_soldiers
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can hold these colonies just fine."
+		FROM = {
+			country_event = { id = shm_transfer_countries.11 }
+		}
+	}
+
+	option = {
+		name = "Our energies are needed elsewhere."
+		ai_chance = { base = 0 }
+		FROM = {
+			hidden_effect = {
+				news_event = { id = shm_transfer_countries.102 }
+			}
+			country_event = { id = shm_transfer_countries.10 }
+			annex_country = {
+			    target = CAN
+			    transfer_troops = no
+			}
+
+		}
+		every_state = {
+			limit = {
+				is_core_of = CAN
+				is_controlled_by = FROM
+			}
+			add_compliance = 50
+		}
+	}
+}
+
+country_event = {
+
+	id = shm_transfer_countries.3
+	title = "[From.GetNameDefCap] Requests Control of New Zealand"
+	desc = "As we struggle with military coverage of the entire Empire, [From.GetNameDef] has approached us about an administrative agreement. Some of our colonies should be handed over to them, with full rights and responsibilities towards their defense."
+	picture = GFX_report_event_saf_soldiers
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can hold these colonies just fine."
+		FROM = {
+			country_event = { id = shm_transfer_countries.11 }
+		}
+	}
+
+	option = {
+		name = "Our energies are needed elsewhere."
+		ai_chance = { base = 0 }
+		FROM = {
+			hidden_effect = {
+				news_event = { id = shm_transfer_countries.103 }
+			}
+			country_event = { id = shm_transfer_countries.10 }
+			annex_country = {
+			    target = NZL
+			    transfer_troops = no
+			}
+
+		}
+		every_state = {
+			limit = {
+				is_core_of = NZL
+				is_controlled_by = FROM
+			}
+			add_compliance = 50
+		}
+	}
+}
+
+country_event = {
+
+	id = shm_transfer_countries.4
+	title = "[From.GetNameDefCap] Requests Control of the British Raj"
+	desc = "As we struggle with military coverage of the entire Empire, [From.GetNameDef] has approached us about an administrative agreement. Some of our colonies should be handed over to them, with full rights and responsibilities towards their defense."
+	picture = GFX_report_event_saf_soldiers
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can hold these colonies just fine."
+		FROM = {
+			country_event = { id = shm_transfer_countries.11 }
+		}
+	}
+
+	option = {
+		name = "Our energies are needed elsewhere."
+		ai_chance = { base = 0 }
+		FROM = {
+			hidden_effect = {
+				news_event = { id = shm_transfer_countries.104 }
+			}
+			country_event = { id = shm_transfer_countries.10 }
+			annex_country = {
+			    target = RAJ
+			    transfer_troops = no
+			}
+
+		}
+		every_state = {
+			limit = {
+				is_core_of = RAJ
+				is_controlled_by = FROM
+			}
+			add_compliance = 50
+		}
+	}
+}
+
+country_event = {
+
+	id = shm_transfer_countries.5
+	title = "[From.GetNameDefCap] Requests Control of South Africa"
+	desc = "As we struggle with military coverage of the entire Empire, [From.GetNameDef] has approached us about an administrative agreement. Some of our colonies should be handed over to them, with full rights and responsibilities towards their defense."
+	picture = GFX_report_event_saf_soldiers
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can hold these colonies just fine."
+		FROM = {
+			country_event = { id = shm_transfer_countries.11 }
+		}
+	}
+
+	option = {
+		name = "Our energies are needed elsewhere."
+		ai_chance = { base = 0 }
+		FROM = {
+			hidden_effect = {
+				news_event = { id = shm_transfer_countries.105 }
+			}
+			country_event = { id = shm_transfer_countries.10 }
+			annex_country = {
+			    target = SAF
+			    transfer_troops = no
+			}
+
+		}
+		every_state = {
+			limit = {
+				is_core_of = SAF
+				is_controlled_by = FROM
+			}
+			add_compliance = 50
+		}
+	}
+}
+
+country_event = {
+
+	id = shm_transfer_countries.10
+	title = "[From.GetNameDefCap] Approves"
+	desc = "With growing commitments closer to home, [From.GetNameDef] has agreed that some of her colonies should be administered by us for the time being."
+	picture = GFX_report_event_saf_soldiers_2
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will be benevolent overlords."
+	}
+}
+
+country_event = {
+
+	id = shm_transfer_countries.11
+	title = "[From.GetNameDefCap] Refuses"
+	desc = "Citing a lack of direct threat to her colonies, [From.GetNameDef] has made it very clear that they do not intend to hand over the administration of her holdings to us."
+	picture = GFX_report_event_saf_soldiers_3
+	is_triggered_only = yes
+	
+	option = {
+		name = "Don't they trust us?"
+	}
+}
+
+news_event = {
+	id = shm_transfer_countries.101
+	title = "[ROOT.GetNameDefCap] assumes responsibilities for [AST.GetNameDef]"
+	desc = shm_transfer_countries.101.desc
+	picture = GFX_news_event_south_africa_patrol
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Very sensible indeed."
+		trigger = { TAG = ROOT }
+	}
+	option = {
+		name = "It is for the benefit of the empire."
+		trigger = { 
+			TAG = ENG
+			NOT = { TAG = ROOT } 
+		}
+	}
+	option = {
+		name = "Interesting."
+		trigger = {
+			NOT = { 
+				TAG = ROOT 
+				TAG = ENG
+			}
+		}
+	}
+}
+
+news_event = {
+	id = shm_transfer_countries.102
+	title = "[ROOT.GetNameDefCap] assumes responsibilities for [CAN.GetNameDef]"
+	desc = shm_transfer_countries.102.desc
+	picture = GFX_news_event_south_africa_patrol
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Very sensible indeed."
+		trigger = { TAG = ROOT }
+	}
+	option = {
+		name = "It is for the benefit of the empire."
+		trigger = { 
+			TAG = ENG
+			NOT = { TAG = ROOT } 
+		}
+	}
+	option = {
+		name = "Interesting."
+		trigger = {
+			NOT = { 
+				TAG = ROOT 
+				TAG = ENG
+			}
+		}
+	}
+}
+
+news_event = {
+	id = shm_transfer_countries.103
+	title = "[ROOT.GetNameDefCap] assumes responsibilities for [NZL.GetNameDef]"
+	desc = shm_transfer_countries.103.desc
+	picture = GFX_news_event_south_africa_patrol
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Very sensible indeed."
+		trigger = { TAG = ROOT }
+	}
+	option = {
+		name = "It is for the benefit of the empire."
+		trigger = { 
+			TAG = ENG
+			NOT = { TAG = ROOT } 
+		}
+	}
+	option = {
+		name = "Interesting."
+		trigger = {
+			NOT = { 
+				TAG = ROOT 
+				TAG = ENG
+			}
+		}
+	}
+}
+
+news_event = {
+	id = shm_transfer_countries.104
+	title = "[ROOT.GetNameDefCap] assumes responsibilities for [RAJ.GetNameDef]"
+	desc = shm_transfer_countries.104.desc
+	picture = GFX_news_event_south_africa_patrol
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Very sensible indeed."
+		trigger = { TAG = ROOT }
+	}
+	option = {
+		name = "It is for the benefit of the empire."
+		trigger = { 
+			TAG = ENG
+			NOT = { TAG = ROOT } 
+		}
+	}
+	option = {
+		name = "Interesting."
+		trigger = {
+			NOT = { 
+				TAG = ROOT 
+				TAG = ENG
+			}
+		}
+	}
+}
+
+news_event = {
+	id = shm_transfer_countries.105
+	title = "[ROOT.GetNameDefCap] assumes responsibilities for [SAF.GetNameDef]"
+	desc = shm_transfer_countries.105.desc
+	picture = GFX_news_event_south_africa_patrol
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Very sensible indeed."
+		trigger = { TAG = ROOT }
+	}
+	option = {
+		name = "It is for the benefit of the empire."
+		trigger = { 
+			TAG = ENG
+			NOT = { TAG = ROOT } 
+		}
+	}
+	option = {
+		name = "Interesting."
+		trigger = {
+			NOT = { 
+				TAG = ROOT 
+				TAG = ENG
+			}
+		}
+	}
+}
