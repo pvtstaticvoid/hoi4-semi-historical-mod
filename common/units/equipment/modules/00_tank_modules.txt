@@ -1411,20 +1411,20 @@ equipment_modules = {
 		}
 	}
 
-	dozer_blade = {
-		abbreviation = "dozer"
-		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
+	# dozer_blade = {
+	# 	abbreviation = "dozer"
+	# 	category = tank_special_module
+	# 	sfx = sfx_ui_sd_module_turret
 
-		add_stats = {
-			entrenchment = 1
-			build_cost_ic = 1
-		}
-		xp_cost = 0
-		multiply_stats = {
+	# 	add_stats = {
+	# 		entrenchment = 1
+	# 		build_cost_ic = 1
+	# 	}
+	# 	xp_cost = 0
+	# 	multiply_stats = {
 			
-		}
-	}
+	# 	}
+	# }
 
 	auto_loader = {
 		abbreviation = "auto"
