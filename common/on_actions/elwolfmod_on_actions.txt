@@ -393,24 +393,30 @@ on_actions = {
 			# }
 			# German boost
 
-			# if = {
-			# 	limit = {has_game_rule = {rule = ger_boost option = twelve}}
-			# 	GER = {
-			# 		add_offsite_building = { type = industrial_complex level = 12 } # from ai trade in vanilla
-			# 	}
-			# }
-			# else_if = {
-			# 	limit = {has_game_rule = {rule = ger_boost option = eight}}
-			# 	GER = {
-			# 		add_offsite_building = { type = industrial_complex level = 8 } # from ai trade in vanilla
-			# 	}
-			# }
-			# else_if = {
-			# 	limit = {has_game_rule = {rule = ger_boost option = four}}
-			# 	GER = {
-			# 		add_offsite_building = { type = industrial_complex level = 4 } # from ai trade in vanilla
-			# 	}
-			# }
+			if = {
+				limit = {has_game_rule = {rule = ger_boost option = sixteen}}
+				GER = {
+					add_offsite_building = { type = industrial_complex level = 16 } # from ai trade in vanilla
+				}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = ger_boost option = twelve}}
+				GER = {
+					add_offsite_building = { type = industrial_complex level = 12 } # from ai trade in vanilla
+				}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = ger_boost option = eight}}
+				GER = {
+					add_offsite_building = { type = industrial_complex level = 8 } # from ai trade in vanilla
+				}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = ger_boost option = four}}
+				GER = {
+					add_offsite_building = { type = industrial_complex level = 4 } # from ai trade in vanilla
+				}
+			}
 
 			# Soviet boost
 
