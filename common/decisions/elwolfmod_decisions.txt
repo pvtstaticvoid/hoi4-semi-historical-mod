@@ -73,6 +73,7 @@ operations = {
         complete_effect = {
             JAP = {
                 annex_country = {
+					transfer_troops = yes
                     target = SIA
                 }
             }
@@ -114,6 +115,7 @@ operations = {
         complete_effect = {
             JAP = {
                 annex_country = {
+					transfer_troops = yes
                     target = MAN
                 }
             }
@@ -155,6 +157,7 @@ operations = {
 					news_event = { id = shm_transfer_countries.103 }
 				}
                 annex_country = {
+					transfer_troops = yes
                     target = NZL
                 }
             }
@@ -184,6 +187,7 @@ operations = {
 					news_event = { id = shm_transfer_countries.102 }
 				}
                 annex_country = {
+					transfer_troops = yes
                     target = CAN
                 }
             }
@@ -214,6 +218,7 @@ operations = {
 					news_event = { id = shm_transfer_countries.105 }
 				}
                 annex_country = {
+					transfer_troops = yes
                     target = SAF
                 }
             }
@@ -243,6 +248,7 @@ operations = {
 					news_event = { id = shm_transfer_countries.104 }
 				}
                 annex_country = {
+					transfer_troops = yes
                     target = RAJ
                 }
             }
@@ -272,6 +278,7 @@ operations = {
 					news_event = { id = shm_transfer_countries.101 }
 				}
                 annex_country = {
+					transfer_troops = yes
                     target = AST
                 }
             }
