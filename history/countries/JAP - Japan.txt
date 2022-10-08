@@ -211,11 +211,11 @@ if = {
 	}
 }
 
-create_import = {
-		resource = oil
-		factories = 2
-		exporter = USA
-}
+# create_import = {
+# 		resource = oil
+# 		factories = 2
+# 		exporter = USA
+# }
 
 1939.1.1 = {
 
