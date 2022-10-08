@@ -138,6 +138,10 @@ ideas = {
 				mobilization_speed = 100.0
 				army_fuel_consumption_factor = -0.99
 				air_fuel_consumption_factor = -1.0
+
+				# one div training xp for a 50w with support arty, at, aa, shovels, and cav recon
+				experience_gain_army = 0.28
+
 			}
 		}
 		# ai_limiter = {
