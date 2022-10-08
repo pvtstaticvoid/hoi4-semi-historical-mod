@@ -56,7 +56,7 @@ country_event = {
 
 	option = {
 		name = "Our energies are needed elsewhere."
-		ai_chance = { base = 100 }
+		ai_chance = { base = 0 }
 		FROM = {
 			hidden_effect = {
 				news_event = { id = shm_transfer_countries.102 }
