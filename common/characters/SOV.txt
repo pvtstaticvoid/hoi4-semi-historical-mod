@@ -225,7 +225,7 @@ characters = {
 			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 5
-			legacy_id = 0
+			legacy_id = 10410
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
 				has_game_rule = {
@@ -343,7 +343,7 @@ characters = {
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 4
-			legacy_id = 0
+			legacy_id = 10402
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
 				has_game_rule = {
@@ -580,7 +580,7 @@ characters = {
 			defense_skill = 5
 			planning_skill = 2
 			logistics_skill = 5
-			legacy_id = 408
+			legacy_id = 10408
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
 				has_game_rule = {

@@ -140,7 +140,27 @@ on_actions = {
 	}
 
 	on_startup = {
+
 		effect = {
+
+			# unproven talent trait
+			every_country = {
+				every_army_leader = {
+					limit = {
+						OR = {
+							has_id = 10005
+							has_id = 10006
+							has_id = 10402
+							has_id = 10408
+							has_id = 10410
+						}
+					}
+					add_timed_unit_leader_trait = {
+						trait = unproven_talent
+						days = 1095
+					}
+				}
+			}
 
 			234 = {
 				add_resource = {
