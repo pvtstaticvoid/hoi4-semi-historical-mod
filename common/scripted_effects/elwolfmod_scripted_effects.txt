@@ -1,127 +1,127 @@
 
 elwolfmod_capitulations_on_actions_collab = {
 
-	# Yugoslavia
-	if = {
-		limit = { 
-			original_tag = YUG 
-			ITA = { has_war_with = YUG }
-		} 
+	# # Yugoslavia
+	# if = {
+	# 	limit = { 
+	# 		original_tag = YUG 
+	# 		ITA = { has_war_with = YUG }
+	# 	} 
 		
-		ITA = {
-			if = {
-				limit = {
-					ENG = {
-						has_idea = elwolfmod_noasia_inf_discount
-					}
-				}
-				WST = { add_threat = 40 }
-				add_named_threat = { 
-					threat = 6.3 
-					name = elwolf_yug
-				}
-			} 
-			else = {
-				add_named_threat = { 
-					threat = 6.3 
-					name = elwolf_yug
-				}
-			}
+	# 	ITA = {
+	# 		if = {
+	# 			limit = {
+	# 				ENG = {
+	# 					has_idea = elwolfmod_noasia_inf_discount
+	# 				}
+	# 			}
+	# 			WST = { add_threat = 40 }
+	# 			add_named_threat = { 
+	# 				threat = 6.3 
+	# 				name = elwolf_yug
+	# 			}
+	# 		} 
+	# 		else = {
+	# 			add_named_threat = { 
+	# 				threat = 6.3 
+	# 				name = elwolf_yug
+	# 			}
+	# 		}
 			
-			transfer_state = 103
-			transfer_state = 102
-			transfer_state = 104
-			transfer_state = 105
-			transfer_state = 109
-			transfer_state = 107
-			transfer_state = 108
-			transfer_state = 802
-			transfer_state = 804
-			every_state = {
-                limit = {
-                    is_core_of = YUG
-                    is_controlled_by = ITA
-                }
-                add_compliance = 100
-		    }
-		}
-		BUL = {
-			transfer_state = 106
-			add_state_core = 106
-			transfer_state = 803
-			add_state_core = 803
-			if = {
-				limit = { NOT = { has_idea = peace_training } }
-				add_ideas = peace_training
-			}
-		}
-		HUN = {
-			transfer_state = 764
-			add_state_core = 764
-			transfer_state = 45
-			add_state_core = 45
-			add_ideas = peace_training
-		}
-	} 
-	# Greece
-	if = {
-		limit = { 
-			original_tag = GRE 
-			ITA = { has_war_with = GRE }
-		} 
+	# 		transfer_state = 103
+	# 		transfer_state = 102
+	# 		transfer_state = 104
+	# 		transfer_state = 105
+	# 		transfer_state = 109
+	# 		transfer_state = 107
+	# 		transfer_state = 108
+	# 		transfer_state = 802
+	# 		transfer_state = 804
+	# 		every_state = {
+    #             limit = {
+    #                 is_core_of = YUG
+    #                 is_controlled_by = ITA
+    #             }
+    #             add_compliance = 100
+	# 	    }
+	# 	}
+	# 	BUL = {
+	# 		transfer_state = 106
+	# 		add_state_core = 106
+	# 		transfer_state = 803
+	# 		add_state_core = 803
+	# 		if = {
+	# 			limit = { NOT = { has_idea = peace_training } }
+	# 			add_ideas = peace_training
+	# 		}
+	# 	}
+	# 	HUN = {
+	# 		transfer_state = 764
+	# 		add_state_core = 764
+	# 		transfer_state = 45
+	# 		add_state_core = 45
+	# 		add_ideas = peace_training
+	# 	}
+	# } 
+	# # Greece
+	# if = {
+	# 	limit = { 
+	# 		original_tag = GRE 
+	# 		ITA = { has_war_with = GRE }
+	# 	} 
 		
-		ITA = {
-			add_named_threat = { 
-				threat = 3.7 
-				name = elwolf_gre
-			}
-			transfer_state = 185
-			185 = { add_compliance = 80 }
-			transfer_state = 47
-			47 = { add_compliance = 80 }
-			transfer_state = 186
-			186 = { add_compliance = 80 }
-			transfer_state = 109
-			109 = { add_compliance = 80 }
-			transfer_state = 187
-			187 = { add_compliance = 80 }
-			transfer_state = 182
-			182 = { add_compliance = 80 }
-		}
-		BUL = {
-			transfer_state = 184
-			add_state_core = 184
-			transfer_state = 731
-			add_state_core = 731
-			transfer_state = 77
-			add_state_core = 77
-		}
-	} 
-	# China
-	if = {
-		limit = { 
-			original_tag = CHI
-			JAP = { has_war_with = CHI }
-		} 
+	# 	ITA = {
+	# 		add_named_threat = { 
+	# 			threat = 3.7 
+	# 			name = elwolf_gre
+	# 		}
+	# 		transfer_state = 185
+	# 		185 = { add_compliance = 80 }
+	# 		transfer_state = 47
+	# 		47 = { add_compliance = 80 }
+	# 		transfer_state = 186
+	# 		186 = { add_compliance = 80 }
+	# 		transfer_state = 109
+	# 		109 = { add_compliance = 80 }
+	# 		transfer_state = 187
+	# 		187 = { add_compliance = 80 }
+	# 		transfer_state = 182
+	# 		182 = { add_compliance = 80 }
+	# 	}
+	# 	BUL = {
+	# 		transfer_state = 184
+	# 		add_state_core = 184
+	# 		transfer_state = 731
+	# 		add_state_core = 731
+	# 		transfer_state = 77
+	# 		add_state_core = 77
+	# 	}
+	# } 
+	# # China
+	# if = {
+	# 	limit = { 
+	# 		original_tag = CHI
+	# 		JAP = { has_war_with = CHI }
+	# 	} 
 		
-		JAP = {
-			add_named_threat = { 
-				threat = 11.9
-				name = elwolf_chi
-			}
-			annex_country = {
-				target = CHI
-				transfer_troops = no
-			}
-            every_state = {
-                limit = {
-                    is_core_of = CHI
-                    is_controlled_by = JAP
-                }
-                add_compliance = 100
-		    }
-		}
-	}
+	# 	JAP = {
+	# 		add_named_threat = { 
+	# 			threat = 11.9
+	# 			name = elwolf_chi
+	# 		}
+	# 		annex_country = {
+	# 			target = CHI
+	# 			transfer_troops = no
+	# 		}
+    #         every_state = {
+    #             limit = {
+    #                 is_core_of = CHI
+    #                 is_controlled_by = JAP
+    #             }
+    #             add_compliance = 100
+	# 	    }
+	# 	}
+	# }
 }
 
 generic_bonus_1 = {
