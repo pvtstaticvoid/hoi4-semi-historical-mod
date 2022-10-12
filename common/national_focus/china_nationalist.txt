@@ -728,52 +728,52 @@
 		}
 	}
 
-	focus = {
-		id = CHI_united_front
-		icon = GFX_focus_chi_united_front
-		prerequisite = { focus = CHI_foreign_threats }
-		x = 0
-		y = 1
-		relative_position_id = CHI_foreign_threats
+	# focus = {
+	# 	id = CHI_united_front
+	# 	icon = GFX_focus_chi_united_front
+	# 	prerequisite = { focus = CHI_foreign_threats }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = CHI_foreign_threats
 
-		cost = 10
+	# 	cost = 10
 
-		ai_will_do = {
-			factor = 1
-		}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
 
-		available = {
-			is_subject = no
-			is_in_faction = no
-		}
+	# 	available = {
+	# 		is_subject = no
+	# 		is_in_faction = no
+	# 	}
 
-		bypass = {
-			is_in_faction_with = PRC
-		}
+	# 	bypass = {
+	# 		is_in_faction_with = PRC
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
 
-		complete_tooltip = {
+	# 	complete_tooltip = {
 
-		}
+	# 	}
 
-		completion_reward = {
-			CHI = {
-				set_rule = { can_create_factions = yes }
-				create_faction = chinese_united_front
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		CHI = {
+	# 			set_rule = { can_create_factions = yes }
+	# 			create_faction = chinese_united_front
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = CHI_pick_a_fight_with_japan
 		icon = GFX_focus_AST_war_japan
-		prerequisite = { focus = CHI_united_front }
+		prerequisite = { focus = CHI_foreign_threats }
 		x = 0
 		y = 1
-		relative_position_id = CHI_united_front
+		relative_position_id = CHI_foreign_threats
 
 		cost = 10
 
