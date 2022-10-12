@@ -2023,11 +2023,11 @@ focus_tree = {
 					 }
 				 }
 				 has_war_support > 0.40
-				 NOT = {
-				     CAN = {
-					     controls_state = 276
-					 }
-				 }
+				#  NOT = {
+				#      CAN = {
+				# 	     controls_state = 276
+				# 	 }
+				#  }
 			}
 			democratic > 0.95
 		}
