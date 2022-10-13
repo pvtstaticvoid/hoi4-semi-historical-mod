@@ -85,7 +85,7 @@ CHI_nationalist_historical_plan = {
 
 
 
-		CHI_mission_to_germany #May 20 1936
+		# CHI_mission_to_germany #May 20 1936
 		
 
 		
