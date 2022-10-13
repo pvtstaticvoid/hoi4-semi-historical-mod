@@ -44,7 +44,7 @@ CHI_nationalist_historical_plan = {
 
 		CHI_unified_industrial_planning #March 10 1936
 		CHI_expand_the_academica_sinica #July 20 1937
-		CHI_chemical_research_institute
+		CHI_chemical_research_institute #foo
 
 		CHI_military_affairs_commission #May 10 1937
 		CHI_army_reform #July 10 1938
