@@ -114,7 +114,6 @@ CHI_nationalist_historical_plan = {
 	}
 
 	research = {
-		infantry_tech = 1000
 	}
 
 	ideas = {
