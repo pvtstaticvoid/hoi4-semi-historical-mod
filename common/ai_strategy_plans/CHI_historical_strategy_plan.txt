@@ -114,6 +114,112 @@ CHI_nationalist_historical_plan = {
 	}
 
 	research = {
+
+		# light_air = 0.0
+		# medium_air = 0.0
+		# heavy_air = 0.0
+		# armor = 0.0
+		# cat_light_armor = 0.0
+		# cat_medium_armor = 0.0
+		# cat_heavy_armor = 0.0
+		# artillery = 0.0
+		# cat_anti_tank = 0.0
+		# cat_anti_air = 0.0
+		# naval_air = 0.0
+		# # infantry_weapons
+		# motorized_equipment = 0.0
+		# cat_mechanized_equipment = 0.0
+		# naval_equipment = 0.0
+		# rocketry = 0.0
+		# nuclear = 0.0
+		# electronics = 0.0
+		# # land_doctrine
+		# # air_doctrine
+		# # naval_doctrine
+		# # strategic_destruction_tree
+		# # battlefield_support_tree
+		# # operational_integrity_tree
+		# jet_technology = 0.0
+		# # trade_interdiction_tree
+		# # convoy_defense_tree
+		# light_fighter = 0.0
+		# cat_heavy_fighter = 0.0
+		# tactical_bomber = 0.0
+		# cat_strategic_bomber = 0.0
+		# naval_bomber = 0.0
+		# cas_bomber = 0.0
+		# ship_modules_tech = 0.0
+		# dd_tech = 0.0
+		# cl_tech = 0.0
+		# ca_tech = 0.0
+		# cv_tech = 0.0
+		# bc_tech = 0.0
+		# bb_tech = 0.0
+		# shbb_tech = 0.0
+		# ss_tech = 0.0
+		# tp_tech = 0.0
+		# synth_resources = 0.0
+		# # fleet_in_being_tree
+		# encryption_tech = 0.0
+		# decryption_tech = 0.0
+		# computing_tech = 0.0
+		# radar_tech = 0.0
+		# # infantry_tech
+		# marine_tech = 0.0
+		# construction_tech = 0.0
+		# excavation_tech = 0.0
+		# # submarine_doctrine
+		# air_equipment = 0.0
+		# # cat_mobile_warfare
+		# # cat_superior_firepower
+		# # cat_grand_battle_plan
+		# # cat_mass_assault
+		# # cat_base_strike
+		# # cat_trade_interdiction
+		# # cat_fleet_in_being
+		# # cat_strategic_destruction
+		# # cat_battlefield_support
+		# # cat_operational_integrity
+		# # night_vision
+		# # base_strike_main
+		# mot_rockets = 0.0
+		# support_tech = 0.0
+		# para_tech = 0.0
+		# engineers_tech = 0.0
+		# recon_tech = 0.0
+		# mountaineers_tech = 0.0
+		# military_police_tech = 0.0
+		# hospital_tech = 0.0
+		# logistics_tech = 0.0
+		# signal_company_tech = 0.0
+		# maintenance_company_tech = 0.0
+		# naval_mines = 0.0
+		# # concentrated_industry_category
+		# # dispersed_industry_category
+		# asw_tech = 0.0
+		# naval_minesweeping = 0.0
+		# naval_minelaying = 0.0
+		# cat_scout_plane = 0.0
+		# train_tech = 0.0
+		# # cat_production
+		# cat_synth_rubber = 0.0
+		# cat_synth_oil = 0.0
+		# cat_armored_cars = 0.0
+		# cat_special_forces_generic = 0.0
+		# cat_torpedoes = 0.0
+		# cat_ship_light_battery = 0.0
+		# cat_ship_medium_battery = 0.0
+		# cat_ship_heavy_battery = 0.0
+		# air_equipment = 0.0
+		# plane_modules_tech = 0.0
+		# cat_air_guns = 0.0
+		# cat_air_engine = 0.0
+		# cat_air_bombs = 0.0
+
+		# prioritize
+		shm_chi_infantry_weapons_1 	= 1000000.0
+		shm_chi_industry 			= 100000.0
+		infantry_weapons 			= 10000.0
 	}
 
 	ideas = {
