@@ -121,7 +121,9 @@ ideas = {
 				always = no
 			}
 			cancel = {
-				has_war = yes
+				any_enemy_country = {
+					has_capitulated = no
+				}
 			}
 			removal_cost = -1
 			picture = generic_infantry_bonus
