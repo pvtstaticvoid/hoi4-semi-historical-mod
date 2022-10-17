@@ -397,29 +397,29 @@ operations = {
         }
     }
 
-	seize_Canadian_convoys = {
+	# seize_Canadian_convoys = {
 
-		ai_will_do = { factor = 0 }
-		fire_only_once = yes
-		icon = generic_naval
+	# 	ai_will_do = { factor = 0 }
+	# 	fire_only_once = yes
+	# 	icon = generic_naval
 
-        visible = {
-			TAG = ENG
-			CAN = { is_ai = yes }
-        }
+    #     visible = {
+	# 		TAG = ENG
+	# 		CAN = { is_ai = yes }
+    #     }
 
-        complete_effect = {
-			ENG = {
-				hidden_effect = {
-					news_event = { id = shm.1000 }
-				}
-				add_equipment_to_stockpile = {
-					type = convoy_1
-					amount = 10000
-				}
-			}
-        }
-    }
+    #     complete_effect = {
+	# 		ENG = {
+	# 			hidden_effect = {
+	# 				news_event = { id = shm.1000 }
+	# 			}
+	# 			add_equipment_to_stockpile = {
+	# 				type = convoy_1
+	# 				amount = 10000
+	# 			}
+	# 		}
+    #     }
+    # }
 
 
 }
