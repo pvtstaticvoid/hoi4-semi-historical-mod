@@ -89,13 +89,14 @@ infantry_CHI = {
 			}
 			
 			regiments = {
-				penal_battalion = 10
+				militia = 10
 			}
 		}
 		
 		allowed_types = {
 			infantry
-			penal_battalion	
+			penal_battalion
+			militia
 			engineer
 			recon
 			field_hospital

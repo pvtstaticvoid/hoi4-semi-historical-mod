@@ -163,6 +163,20 @@ on_actions = {
 					}
 				}
 			}
+			every_country = {
+				every_army_leader = {
+					limit = {
+						OR = {
+							has_id = 20000
+							has_id = 20001
+						}
+					}
+					add_timed_unit_leader_trait = {
+						trait = unproven_talent
+						days = 730
+					}
+				}
+			}
 			234 = {
 				add_resource = {
 					type = tungsten

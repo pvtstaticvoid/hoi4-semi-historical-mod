@@ -442,7 +442,10 @@ recruit_character = JAP_akira_muto
 recruit_character = JAP_kanji_ishiwara
 recruit_character = JAP_shizuichi_tanaka
 recruit_character = JAP_yasuji_okamura
+
 recruit_character = JAP_toshizo_nishio
+recruit_character = JAP_toshizo_nishio_pregrinded
+
 recruit_character = JAP_rikichi_ando
 recruit_character = JAP_naruhiko_higashikuni
 recruit_character = JAP_seishiro_itagaki
@@ -460,7 +463,10 @@ recruit_character = JAP_kiichiro_higuchi
 recruit_character = JAP_masaharu_homma
 recruit_character = JAP_harukichi_hyakutake
 recruit_character = JAP_jo_iimura
+
 recruit_character = JAP_hitoshi_imamura
+recruit_character = JAP_hitoshi_imamura_pregrinded
+
 recruit_character = JAP_masatane_kanda
 recruit_character = JAP_kuniaki_koiso
 recruit_character = JAP_isoroku_yamamoto
