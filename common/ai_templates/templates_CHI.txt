@@ -84,12 +84,10 @@ infantry_CHI = {
 			match_value = 3000.0
 			
 			support = {
-				engineer = 1
-				artillery = 1
 			}
 			
 			regiments = {
-				militia = 10
+				infantry = 10
 			}
 		}
 		
