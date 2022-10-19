@@ -45,56 +45,11 @@ operations = {
         }
     }
 
-    assume_control_siam = {
-        # icon = generic_operation
-
-        allowed = {
-            tag = JAP
-        }
-
-        available = {
-            SIA = { is_ai = yes }
-        }
-
-        fire_only_once = yes
-
-        cost = 0
-
-        ai_will_do = {
-            factor = 0
-        }
-
-        visible = {
-            tag = JAP
-        }
-
-        targets = {SIA}
-
-        complete_effect = {
-            JAP = {
-                annex_country = {
-					transfer_troops = yes
-                    target = SIA
-                }
-            }
-            every_state = {
-                limit = {
-                    is_core_of = SIA
-                    is_controlled_by = JAP
-                }
-                add_compliance = 100
-		    }
-        }
-    }
-
     assume_control_manchukuo = {
         # icon = generic_operation
 
-        allowed = {
-            tag = JAP
-        }
-
-        available = {
+        visible = {
+			tag = JAP
             MAN = { is_ai = yes }
         }
 
@@ -106,14 +61,13 @@ operations = {
             factor = 0
         }
 
-        visible = {
-            tag = JAP
-        }
-
         targets = {MAN}
 
         complete_effect = {
             JAP = {
+				hidden_effect = {
+					news_event = { id = shm_transfer_countries.110 }
+				}
                 annex_country = {
 					transfer_troops = yes
                     target = MAN
@@ -126,17 +80,44 @@ operations = {
                 }
                 add_compliance = 100
 		    }
-            if = {
-				limit = {
-					has_game_rule = {
-						rule = beta
-						option = on
-					}
+        }
+    }
+
+    assume_control_siam = {
+        # icon = generic_operation
+
+        visible = {
+			tag = JAP
+            SIA = { is_ai = yes }
+        }
+
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        targets = {SIA}
+
+        complete_effect = {
+            JAP = {
+				hidden_effect = {
+					news_event = { id = shm_transfer_countries.111 }
 				}
-				JAP = {
-                    add_research_slot = 1
+                annex_country = {
+					transfer_troops = yes
+                    target = SIA
                 }
-			}
+            }
+            every_state = {
+                limit = {
+                    is_core_of = SIA
+                    is_controlled_by = JAP
+                }
+                add_compliance = 100
+		    }
         }
     }
 
@@ -397,29 +378,29 @@ operations = {
         }
     }
 
-	seize_Canadian_convoys = {
+	# seize_Canadian_convoys = {
 
-		ai_will_do = { factor = 0 }
-		fire_only_once = yes
-		icon = generic_naval
+	# 	ai_will_do = { factor = 0 }
+	# 	fire_only_once = yes
+	# 	icon = generic_naval
 
-        visible = {
-			TAG = ENG
-			CAN = { is_ai = yes }
-        }
+    #     visible = {
+	# 		TAG = ENG
+	# 		CAN = { is_ai = yes }
+    #     }
 
-        complete_effect = {
-			ENG = {
-				hidden_effect = {
-					news_event = { id = shm.1000 }
-				}
-				add_equipment_to_stockpile = {
-					type = convoy_1
-					amount = 10000
-				}
-			}
-        }
-    }
+    #     complete_effect = {
+	# 		ENG = {
+	# 			hidden_effect = {
+	# 				news_event = { id = shm.1000 }
+	# 			}
+	# 			add_equipment_to_stockpile = {
+	# 				type = convoy_1
+	# 				amount = 10000
+	# 			}
+	# 		}
+    #     }
+    # }
 
 
 }

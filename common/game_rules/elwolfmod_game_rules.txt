@@ -301,6 +301,21 @@ pregrinded_tank_generals_can = {
 	}
 }
 
+pregrinded_infantry_generals_jap = {
+	name = "Pre-Grinded Infantry Generals (Japan)"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_prepare_civil_war"
+	default = {
+		name = enabled
+		text = "YRecommended: !Enabled"
+		desc = "Japan receives 2 pre-grinded infantry generals."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+	}
+}
+
 
 
 

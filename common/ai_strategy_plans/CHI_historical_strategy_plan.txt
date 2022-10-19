@@ -42,78 +42,151 @@ CHI_nationalist_historical_plan = {
 
 	ai_national_focuses = {
 
-		CHI_unified_industrial_planning #March 10 1936
-		CHI_expand_the_academica_sinica #July 20 1937
-		CHI_chemical_research_institute #foo
+		CHI_unified_industrial_planning
+		CHI_expand_the_academica_sinica
+		CHI_chemical_research_institute
 
-		CHI_military_affairs_commission #May 10 1937
-		CHI_army_reform #July 10 1938
+		CHI_military_affairs_commission
+		CHI_army_reform
 
-		CHI_three_principles_of_the_people #June 30 1939
-		CHI_nationalism #September 10 1939
-		CHI_foreign_threats #January 30 1940
-		CHI_war_of_resistance #April 10 1940
+		CHI_three_principles_of_the_people
+		CHI_nationalism
+		CHI_foreign_threats
+		CHI_war_of_resistance
 		CHI_war_of_national_liberation
 		CHI_war_of_anti_imperialism
-		CHI_scorched_earth_tactics #June 20 1940
-
-		CHI_rural_reconstruction_movement #July 30 1936
-		CHI_mining_commission #August 30 1940
-		CHI_taiyuan_arsenal
-		CHI_develop_the_hanyan_arsenal
 
 		CHI_financial_policy
 		CHI_price_controls
+
+		CHI_welfare
+		CHI_land_tax_reform
+		CHI_unemployment_assistance
+		
 		CHI_reform_the_national_bank
 
 		CHI_invite_foreign_investors
-		
-		CHI_british_cooperation #October 10 1936
+		CHI_british_cooperation
 		CHI_burma_road
-		CHI_mission_to_the_us #February 30 1937
+		CHI_mission_to_the_us
 		CHI_fighter_purchases
 		CHI_camco
-		CHI_hire_chennault #December 10 1937
-		CHI_the_hump #March 20 1942
-		CHI_ledo_road #December 30 1942
+		CHI_hire_chennault
+		CHI_the_hump
+		CHI_ledo_road
 		CHI_modern_logistics
 		CHI_renegotiate_the_unequal_treaties
+		CHI_anti_imperialism
 
-
-
-		# Rest is whatever...
-
-
-
-		# CHI_mission_to_germany #May 20 1936
-		
-
-		
-		
-		CHI_mission_to_the_soviet_union #September 30 1937
-
-		CHI_rapprochement_with_soviet_union #February 20 1938
-		CHI_invite_soviet_advisers #April 30 1938
-
-		CHI_the_soviet_volunteer_group #November 30 1938
-		
-		CHI_welfare #November 10 1940
-		CHI_refugee_relief_agency #January 20 1941
-		CHI_forced_conscription #March 30 1941
-		CHI_purchase_tanks #June 10 1941
-		CHI_experimental_mechanised_unit #August 20 1941
-		CHI_land_tax_reform #October 30 1941
-		CHI_invite_the_flying_tigers #January 10 1942
-
-		CHI_chinese_expeditionary_force #May 30 1942
-		CHI_sino_american_cooperative_organization #August 10 1942
-		 #October 20 1942
-
-		CHI_the_chu_x_po #March 10 1943
-		CHI_new_life_movement #May 20 1943
 	}
 
 	research = {
+
+		# light_air = 0.0
+		# medium_air = 0.0
+		# heavy_air = 0.0
+		# armor = 0.0
+		# cat_light_armor = 0.0
+		# cat_medium_armor = 0.0
+		# cat_heavy_armor = 0.0
+		# artillery = 0.0
+		# cat_anti_tank = 0.0
+		# cat_anti_air = 0.0
+		# naval_air = 0.0
+		# # infantry_weapons
+		# motorized_equipment = 0.0
+		# cat_mechanized_equipment = 0.0
+		# naval_equipment = 0.0
+		# rocketry = 0.0
+		# nuclear = 0.0
+		# electronics = 0.0
+		# # land_doctrine
+		# # air_doctrine
+		# # naval_doctrine
+		# # strategic_destruction_tree
+		# # battlefield_support_tree
+		# # operational_integrity_tree
+		# jet_technology = 0.0
+		# # trade_interdiction_tree
+		# # convoy_defense_tree
+		# light_fighter = 0.0
+		# cat_heavy_fighter = 0.0
+		# tactical_bomber = 0.0
+		# cat_strategic_bomber = 0.0
+		# naval_bomber = 0.0
+		# cas_bomber = 0.0
+		# ship_modules_tech = 0.0
+		# dd_tech = 0.0
+		# cl_tech = 0.0
+		# ca_tech = 0.0
+		# cv_tech = 0.0
+		# bc_tech = 0.0
+		# bb_tech = 0.0
+		# shbb_tech = 0.0
+		# ss_tech = 0.0
+		# tp_tech = 0.0
+		# synth_resources = 0.0
+		# # fleet_in_being_tree
+		# encryption_tech = 0.0
+		# decryption_tech = 0.0
+		# computing_tech = 0.0
+		# radar_tech = 0.0
+		# # infantry_tech
+		# marine_tech = 0.0
+		# construction_tech = 0.0
+		# excavation_tech = 0.0
+		# # submarine_doctrine
+		# air_equipment = 0.0
+		# # cat_mobile_warfare
+		# # cat_superior_firepower
+		# # cat_grand_battle_plan
+		# # cat_mass_assault
+		# # cat_base_strike
+		# # cat_trade_interdiction
+		# # cat_fleet_in_being
+		# # cat_strategic_destruction
+		# # cat_battlefield_support
+		# # cat_operational_integrity
+		# # night_vision
+		# # base_strike_main
+		# mot_rockets = 0.0
+		# support_tech = 0.0
+		# para_tech = 0.0
+		# engineers_tech = 0.0
+		# recon_tech = 0.0
+		# mountaineers_tech = 0.0
+		# military_police_tech = 0.0
+		# hospital_tech = 0.0
+		# logistics_tech = 0.0
+		# signal_company_tech = 0.0
+		# maintenance_company_tech = 0.0
+		# naval_mines = 0.0
+		# # concentrated_industry_category
+		# # dispersed_industry_category
+		# asw_tech = 0.0
+		# naval_minesweeping = 0.0
+		# naval_minelaying = 0.0
+		# cat_scout_plane = 0.0
+		# train_tech = 0.0
+		# # cat_production
+		# cat_synth_rubber = 0.0
+		# cat_synth_oil = 0.0
+		# cat_armored_cars = 0.0
+		# cat_special_forces_generic = 0.0
+		# cat_torpedoes = 0.0
+		# cat_ship_light_battery = 0.0
+		# cat_ship_medium_battery = 0.0
+		# cat_ship_heavy_battery = 0.0
+		# air_equipment = 0.0
+		# plane_modules_tech = 0.0
+		# cat_air_guns = 0.0
+		# cat_air_engine = 0.0
+		# cat_air_bombs = 0.0
+
+		# prioritize
+		shm_chi_infantry_weapons_1 	= 1000000.0
+		shm_chi_industry 			= 100000.0
+		infantry_weapons 			= 10000.0
 	}
 
 	ideas = {

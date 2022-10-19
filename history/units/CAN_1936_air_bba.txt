@@ -1,11 +1,10 @@
-﻿
-
-air_wings = {
-	### Royal Canadian Air Force (RCAF)-- New South Wales
+﻿air_wings = {
 	276 = {
-		# RCAF Station Trenton (ONT) -- Westland Wapitis
-		small_plane_cas_airframe_0 =  { owner = "CAN" amount = 24 creator = "ENG" version_name = "Fairey Gordon"}
+		small_plane_cas_airframe_0 = {
+			owner = "CAN"
+			amount = 24
+			creator = "ENG"
+			version_name = "Fairey Gordon"
+		}
 	}
 }
-
-
