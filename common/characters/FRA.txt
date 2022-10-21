@@ -180,6 +180,33 @@ characters={
 		}
 	}
 
+	FRA_jean_de_lattre_de_tassigny_pregrinded_partial = {
+		name = FRA_jean_de_lattre_de_tassigny
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_jean_de_lattre_de_tassigny
+				small = GFX_portrait_FRA_jean_de_lattre_de_tassigny_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist war_hero panzer_leader trickster organizer
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 2
+			planning_skill = 7
+			logistics_skill = 4
+			legacy_id = 0
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_fra
+					option = partial
+				}
+			}
+		}
+	}
+
 	FRA_alphonse_juin={
 		name=FRA_alphonse_juin
 		portraits={
@@ -433,6 +460,66 @@ characters={
 				has_game_rule = {
 					rule = pregrinded_tank_generals_fra
 					option = enabled
+				}
+			}
+			available = {
+				has_completed_focus = FRA_battle_of_maneuver
+			}
+			traits = {
+				blitzkrieg_theorist
+			}
+			ai_will_do = {
+				factor = 1.000
+				modifier = {
+					factor = 0.000
+					GER = {
+						is_ai = yes
+					}
+					date < 1939.08.01
+				}
+			}
+		}
+	}
+
+	FRA_charles_de_gaulle_pregrinded_partial = {
+		name = FRA_charles_de_gaulle
+		portraits = {
+			army = {
+				small = "GFX_idea_charles_de_gaulle"
+			}
+			civilian = {
+				large = GFX_portrait_FRA_charles_de_gaulle
+			}
+		}
+		corps_commander = {
+			traits = {
+				media_personality harsh_leader armor_officer panzer_leader organizer
+			}
+			skill = 6
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = 0
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_fra
+					option = partial
+				}
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = charles_de_gaulle
+			ledger = army
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_fra
+					option = partial
 				}
 			}
 			available = {

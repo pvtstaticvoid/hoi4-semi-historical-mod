@@ -281,8 +281,13 @@ pregrinded_tank_generals_fra = {
 		desc = "France receives 2 pre-grinded tank generals."
 	}
 	default = {
+		name = partial
+		text = "YRecommended: !Partial"
+		desc = "France receives 2 partially pre-grinded tank generals."
+	}
+	option = {
 		name = disabled
-		text = "YRecommended: !Disabled"
+		text = "Disabled"
 	}
 }
 
@@ -296,8 +301,53 @@ pregrinded_tank_generals_can = {
 		desc = "Canada receives 2 pre-grinded tank generals."
 	}
 	default = {
+		name = partial
+		text = "YRecommended: !Partial"
+		desc = "Canada receives 2 partially pre-grinded tank generals."
+	}
+	option = {
 		name = disabled
-		text = "YRecommended: !Disabled"
+		text = "Disabled"
+	}
+}
+
+pregrinded_tank_generals_saf = {
+	name = "Pre-Grinded Tank Generals (South Africa)"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_tank"
+	option = {
+		name = enabled
+		text = "Enabled"
+		desc = "South Africa receives 2 pre-grinded tank generals."
+	}
+	default = {
+		name = partial
+		text = "YRecommended: !Partial"
+		desc = "South Africa receives 2 partially pre-grinded tank generals."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+	}
+}
+
+pregrinded_tank_generals_hun = {
+	name = "Pre-Grinded Tank Generals (Hungary)"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_tank"
+	option = {
+		name = enabled
+		text = "Enabled"
+		desc = "Hungary receives 2 pre-grinded tank generals."
+	}
+	default = {
+		name = partial
+		text = "YRecommended: !Partial"
+		desc = "Hungary receives 2 partially pre-grinded tank generals."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
 	}
 }
 

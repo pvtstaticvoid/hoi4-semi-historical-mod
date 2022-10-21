@@ -124,6 +124,33 @@ characters={
 		}
 	}
 
+	CAN_charles_foulkes_pregrinded_partial = {
+		name = CAN_charles_foulkes
+		portraits = {
+			army = {
+				large = "GFX_CAN_charles_foulkes"
+				small = GFX_portrait_CAN_charles_foulkes_small
+			}
+		}
+		field_marshal = {
+			traits = {
+				panzer_leader organizer
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+			legacy_id = -1
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_can
+					option = partial
+				}
+			}
+		}
+	}
+
 	CAN_percival_john_montague={
 		name=CAN_percival_john_montague
 		portraits={
@@ -191,6 +218,33 @@ characters={
 				has_game_rule = {
 					rule = pregrinded_tank_generals_can
 					option = enabled
+				}
+			}
+		}
+	}
+
+	CAN_bert_hoffmeister_pregrinded_partial = {
+		name = CAN_bert_hoffmeister
+		portraits = {
+			army = {
+				large = "GFX_CAN_bert_hoffmeister"
+				small = GFX_portrait_CAN_bert_hoffmeister_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				hill_fighter panzer_leader organizer
+			}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id = -1
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_can
+					option = partial
 				}
 			}
 		}
