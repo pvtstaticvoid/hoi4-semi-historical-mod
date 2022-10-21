@@ -326,6 +326,18 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" } 
 	### Ship Variants ###
+	# War Support Cruiser #
+	create_equipment_variant = {
+		name = "War Support Cruiser"
+		type = ship_hull_cruiser_1
+		name_group = CAN_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+		}
+	}
 	# Destroyers #
 	create_equipment_variant = {
 		name = "S Class"
