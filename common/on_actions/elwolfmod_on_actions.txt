@@ -127,6 +127,25 @@ on_actions = {
 					id = elwolfmod.1
 				}
 			}
+			# give tungsten resource rights to italy
+			if = {
+				limit = {
+					original_tag = SPR
+					check_variable = {
+						delayed_on_startup_did_happen = 0
+					}
+				}
+				set_variable = {
+					var = delayed_on_startup_did_happen
+					value = 1
+				}
+				SPR = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 790
+					}
+				}
+			}
 		}
 	}
 	
