@@ -242,7 +242,7 @@ techstealing = {
 # }
 
 pregrinded_tank_generals_ger = {
-	name = "Pre-Grinded Tank Generals (Germany)"
+	name = "Tank Generals (Germany)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
 	default = {
@@ -257,7 +257,7 @@ pregrinded_tank_generals_ger = {
 }
 
 pregrinded_tank_generals_sov = {
-	name = "Pre-Grinded Tank Generals (USSR)"
+	name = "Tank Generals (USSR)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
 	default = {
@@ -272,7 +272,7 @@ pregrinded_tank_generals_sov = {
 }
 
 pregrinded_tank_generals_fra = {
-	name = "Pre-Grinded Tank Generals (France)"
+	name = "Tank Generals (France)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
 	option = {
@@ -292,7 +292,7 @@ pregrinded_tank_generals_fra = {
 }
 
 pregrinded_tank_generals_can = {
-	name = "Pre-Grinded Tank Generals (Canada)"
+	name = "Tank Generals (Canada)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
 	option = {
@@ -312,7 +312,7 @@ pregrinded_tank_generals_can = {
 }
 
 pregrinded_tank_generals_saf = {
-	name = "Pre-Grinded Tank Generals (South Africa)"
+	name = "Tank Generals (South Africa)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
 	option = {
@@ -332,7 +332,7 @@ pregrinded_tank_generals_saf = {
 }
 
 pregrinded_tank_generals_hun = {
-	name = "Pre-Grinded Tank Generals (Hungary)"
+	name = "Tank Generals (Hungary)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
 	option = {
@@ -352,7 +352,7 @@ pregrinded_tank_generals_hun = {
 }
 
 pregrinded_infantry_generals_jap = {
-	name = "Pre-Grinded Infantry Generals (Japan)"
+	name = "Infantry Generals (Japan)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_prepare_civil_war"
 	default = {
