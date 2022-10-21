@@ -41,24 +41,16 @@
 units = {
 }
 
-### Starting Production ###
+##### No Notable Air Forces #####
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
-			creator = "HUN"
-		}
-		requested_factories = 2
-		progress = 0.68
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "HUN"
+			type = infantry_equipment_0
+			creator = "CUB"
 		}
 		requested_factories = 1
-		progress = 0.60
+		progress = 0.54
 		efficiency = 100
 	}
 }

@@ -1272,6 +1272,12 @@ on_actions = {
 					amount = 18
 				}
 			}
+			CUB = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 264
+				}
+			}
 		}
 	}
 }

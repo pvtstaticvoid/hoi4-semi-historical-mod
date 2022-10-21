@@ -9,8 +9,6 @@ air_wings = {
 			amount = 48
 			version_name = "PZL P.11"
 		}
-	}
-	79 = {
 		# Grup 2 Avion de Vanatoare -- IAR 14, 15 fighters
 		small_plane_airframe_0 = {
 			owner = "ROM" 
