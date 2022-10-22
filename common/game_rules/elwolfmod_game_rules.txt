@@ -153,7 +153,7 @@ free_collabs = {
 	default = {
 		name = on
 		text = "YRecommended: !Enabled"
-		desc = "Italy receives 100% compliance in Yugoslavia and Greece, and Japan receives 100% compliance in China."
+		desc = "Various countries receive free 100% collaboration governments on AI countries they would normally infiltrate."
 	}
 	option = {
 		name = off
@@ -242,7 +242,7 @@ techstealing = {
 # }
 
 pregrinded_tank_generals_ger = {
-	name = "Pre-Grinded Tank Generals (Germany)"
+	name = "Tank Generals (Germany)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
 	default = {
@@ -257,7 +257,7 @@ pregrinded_tank_generals_ger = {
 }
 
 pregrinded_tank_generals_sov = {
-	name = "Pre-Grinded Tank Generals (USSR)"
+	name = "Tank Generals (USSR)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
 	default = {
@@ -272,7 +272,7 @@ pregrinded_tank_generals_sov = {
 }
 
 pregrinded_tank_generals_fra = {
-	name = "Pre-Grinded Tank Generals (France)"
+	name = "Tank Generals (France)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
 	option = {
@@ -281,13 +281,18 @@ pregrinded_tank_generals_fra = {
 		desc = "France receives 2 pre-grinded tank generals."
 	}
 	default = {
+		name = partial
+		text = "YRecommended: !Partial"
+		desc = "France receives 2 partially pre-grinded tank generals."
+	}
+	option = {
 		name = disabled
-		text = "YRecommended: !Disabled"
+		text = "Disabled"
 	}
 }
 
 pregrinded_tank_generals_can = {
-	name = "Pre-Grinded Tank Generals (Canada)"
+	name = "Tank Generals (Canada)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
 	option = {
@@ -296,13 +301,58 @@ pregrinded_tank_generals_can = {
 		desc = "Canada receives 2 pre-grinded tank generals."
 	}
 	default = {
+		name = partial
+		text = "YRecommended: !Partial"
+		desc = "Canada receives 2 partially pre-grinded tank generals."
+	}
+	option = {
 		name = disabled
-		text = "YRecommended: !Disabled"
+		text = "Disabled"
+	}
+}
+
+pregrinded_tank_generals_saf = {
+	name = "Tank Generals (South Africa)"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_tank"
+	option = {
+		name = enabled
+		text = "Enabled"
+		desc = "South Africa receives 2 pre-grinded tank generals."
+	}
+	default = {
+		name = partial
+		text = "YRecommended: !Partial"
+		desc = "South Africa receives 2 partially pre-grinded tank generals."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+	}
+}
+
+pregrinded_tank_generals_hun = {
+	name = "Tank Generals (Hungary)"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_tank"
+	option = {
+		name = enabled
+		text = "Enabled"
+		desc = "Hungary receives 2 pre-grinded tank generals."
+	}
+	default = {
+		name = partial
+		text = "YRecommended: !Partial"
+		desc = "Hungary receives 2 partially pre-grinded tank generals."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
 	}
 }
 
 pregrinded_infantry_generals_jap = {
-	name = "Pre-Grinded Infantry Generals (Japan)"
+	name = "Infantry Generals (Japan)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_prepare_civil_war"
 	default = {

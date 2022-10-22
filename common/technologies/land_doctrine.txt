@@ -5,7 +5,7 @@ technologies = {
 		doctrine_name = "MOBILE_WARFARE_DOCTRINE"
 		
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 0
 		
 		xor = { superior_firepower trench_warfare mass_assault } 
 
@@ -916,7 +916,7 @@ technologies = {
 		doctrine_name = "SUPERIOR_FIREPOWER_DOCTRINE"
 		
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 0
 		
 		xor = { mobile_warfare trench_warfare mass_assault } 
 
@@ -1761,7 +1761,7 @@ technologies = {
 		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
 
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 0
 		
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
@@ -2611,7 +2611,7 @@ technologies = {
 		doctrine_name = "MASS_ASSAULT_DOCTRINE"
 		
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 0
 		xor = { mobile_warfare superior_firepower trench_warfare } 
 
 		path = {
@@ -2926,6 +2926,18 @@ technologies = {
 		supply_consumption_factor = -0.10
 		
 		infantry = {
+			combat_width = -0.4
+		}
+		bicycle_battalion = {
+			combat_width = -0.4
+		}
+		penal_battalion = {
+			combat_width = -0.4
+		}
+		irregular_infantry = {
+			combat_width = -0.4
+		}
+		militia = {
 			combat_width = -0.4
 		}
 
@@ -3318,6 +3330,18 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		infantry = {
+			combat_width = -0.4
+		}
+		bicycle_battalion = {
+			combat_width = -0.4
+		}
+		penal_battalion = {
+			combat_width = -0.4
+		}
+		irregular_infantry = {
+			combat_width = -0.4
+		}
+		militia = {
 			combat_width = -0.4
 		}
 

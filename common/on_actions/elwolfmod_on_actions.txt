@@ -127,10 +127,32 @@ on_actions = {
 					id = elwolfmod.1
 				}
 			}
+			# give tungsten resource rights to italy
+			if = {
+				limit = {
+					original_tag = SPR
+					check_variable = {
+						delayed_on_startup_did_happen = 0
+					}
+				}
+				set_variable = {
+					var = delayed_on_startup_did_happen
+					value = 1
+				}
+				SPR = {
+					give_resource_rights = {
+						receiver = ITA
+						state = 790
+					}
+				}
+			}
 		}
 	}
-	on_capitulation = {
+	
+	on_startup = {
 		effect = {
+
+			# free collabs
 			if = {
 				limit = {
 					has_game_rule = {
@@ -138,13 +160,53 @@ on_actions = {
 						option = on
 					}
 				}
-				elwolfmod_capitulations_on_actions_collab = yes
+
+				JAP = {
+					add_collaboration = {
+						target = CHI
+						value = 1.0
+					}
+				}
+				
+				SOV = {
+					add_collaboration = {
+						target = LIT
+						value = 1.0
+					}
+					add_collaboration = {
+						target = LAT
+						value = 1.0
+					}
+					add_collaboration = {
+						target = EST
+						value = 1.0
+					}
+				}
+
+				ITA = {
+					add_collaboration = {
+						target = YUG
+						value = 1.0
+					}
+					add_collaboration = {
+						target = ALB
+						value = 1.0
+					}
+					add_collaboration = {
+						target = GRE
+						value = 1.0
+					}
+				}
+
+				GER = {
+					add_collaboration = {
+						target = POL
+						value = 1.0
+					}
+				}
+
 			}
-			elwolfmod_capitulations_on_actions = yes
-		}
-	}
-	on_startup = {
-		effect = {
+
 			# unproven talent trait
 			every_country = {
 				every_army_leader = {
@@ -1270,6 +1332,12 @@ on_actions = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
 					amount = 18
+				}
+			}
+			CUB = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 264
 				}
 			}
 		}
