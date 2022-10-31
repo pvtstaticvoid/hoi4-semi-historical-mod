@@ -31,7 +31,7 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0
 
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.0
 
-COMBAT_LOG_MAX_MONTHS = 6
+COMBAT_LOG_MAX_MONTHS = 12
 
 
 
@@ -45,3 +45,7 @@ NDefines.NAI.MAX_AHEAD_RESEARCH_PENALTY = 100.0
 
 
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0
+
+
+
+NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0                     -- Removed for game stability/reducing chance of desync
