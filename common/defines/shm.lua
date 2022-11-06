@@ -49,3 +49,7 @@ NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0
 
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0                     -- Removed for game stability/reducing chance of desync
+
+
+NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 1000000.0
+NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0
