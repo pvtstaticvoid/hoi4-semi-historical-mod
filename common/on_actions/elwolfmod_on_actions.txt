@@ -217,6 +217,22 @@ on_actions = {
 				every_army_leader = {
 					limit = {
 						OR = {
+							has_id = 100000
+							has_id = 100001
+							has_id = 100002
+							has_id = 100003
+						}
+					}
+					add_timed_unit_leader_trait = {
+						trait = unproven_talent
+						days = 1460
+					}
+				}
+			}
+			every_country = {
+				every_army_leader = {
+					limit = {
+						OR = {
 							has_id = 10005
 							has_id = 10006
 							has_id = 10402
