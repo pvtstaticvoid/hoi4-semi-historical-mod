@@ -1932,7 +1932,9 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1942.1.1
+			any_enemy_country = {
+				is_major = yes
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -6012,47 +6014,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_military_reorganization
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = SOV_desperate_measures}
-		x = 0
-		y = 1
-		relative_position_id = SOV_desperate_measures
-		cost = 10
-
-		select_effect = {
-			add_ideas = SOV_military_reorganization_ns
-		}
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_ARMY_XP}
-
-		completion_reward = {
-			#Tooltip purposes (Select Effect)
-			custom_effect_tooltip = SOV_focus_select_effect_tt
-			effect_tooltip = {
-				add_ideas = SOV_military_reorganization_ns
-			}
-
-			#(Complete Effect)
-			custom_effect_tooltip = SOV_focus_complete_effect_tt
-			hidden_effect = {
-				remove_ideas = SOV_military_reorganization_ns
-			}
-
-			add_to_variable = { SOV_the_red_army_unit_infantry_design_cost_factor = -0.1 }
-			add_to_variable = { SOV_the_red_army_unit_artillery_brigade_design_cost_factor = -0.1 }
-			custom_effect_tooltip = SOV_military_reorganization_ns_tt
-
-			army_experience = 50
-			add_command_power = 25
-		}
-	}
-
-	focus = {
 		id = SOV_desperate_measures
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_rehabilitated_military }
@@ -6080,27 +6041,43 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_an_adaptable_army
-		icon = GFX_focus_prc_infiltration
-		prerequisite = { focus = SOV_lessons_of_war}
-		x = -3
+		id = SOV_military_reorganization
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = SOV_desperate_measures }
+		x = 0
 		y = 1
-		relative_position_id = SOV_lessons_of_war
-		cost = 1
+		relative_position_id = SOV_desperate_measures
+		cost = 10
+
+		select_effect = {
+			add_ideas = SOV_military_reorganization_ns
+		}
 
 		available = {
-
+			date > 1942.7.1
 		}
 		
-		search_filters = {}
+		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_red_army_heat_attrition_factor = -0.1 }
-			add_to_variable = { SOV_the_red_army_winter_attrition_factor = -0.1 }
-			add_to_variable = { SOV_the_red_army_acclimatization_cold_climate_gain_factor = 0.15 }
-			add_to_variable = { SOV_the_red_army_acclimatization_hot_climate_gain_factor = 0.15 }
-			add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
-			custom_effect_tooltip = SOV_an_adaptable_army_ns_tt
+			#Tooltip purposes (Select Effect)
+			custom_effect_tooltip = SOV_focus_select_effect_tt
+			effect_tooltip = {
+				add_ideas = SOV_military_reorganization_ns
+			}
+
+			#(Complete Effect)
+			custom_effect_tooltip = SOV_focus_complete_effect_tt
+			hidden_effect = {
+				remove_ideas = SOV_military_reorganization_ns
+			}
+
+			add_to_variable = { SOV_the_red_army_unit_infantry_design_cost_factor = -0.1 }
+			add_to_variable = { SOV_the_red_army_unit_artillery_brigade_design_cost_factor = -0.1 }
+			custom_effect_tooltip = SOV_military_reorganization_ns_tt
+
+			army_experience = 50
+			add_command_power = 25
 		}
 	}
 
@@ -6111,10 +6088,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_military_reorganization
-		cost = 10
+		cost = 5
 
 		available = {
-			date > 1942.1.1
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -6144,6 +6120,31 @@ focus_tree = {
 					remove_unit_leader_trait =  trait_SOV_cowed_by_stalin_navy
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = SOV_an_adaptable_army
+		icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = SOV_lessons_of_war }
+		x = -3
+		y = 1
+		relative_position_id = SOV_lessons_of_war
+		cost = 1
+
+		available = {
+
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_to_variable = { SOV_the_red_army_heat_attrition_factor = -0.1 }
+			add_to_variable = { SOV_the_red_army_winter_attrition_factor = -0.1 }
+			add_to_variable = { SOV_the_red_army_acclimatization_cold_climate_gain_factor = 0.15 }
+			add_to_variable = { SOV_the_red_army_acclimatization_hot_climate_gain_factor = 0.15 }
+			add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
+			custom_effect_tooltip = SOV_an_adaptable_army_ns_tt
 		}
 	}
 
@@ -6333,7 +6334,7 @@ focus_tree = {
 	focus = {
 		id = SOV_experts_in_camouflage
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = SOV_lessons_of_war}
+		prerequisite = { focus = SOV_lessons_of_war }
 		x = -5
 		y = 1
 		relative_position_id = SOV_lessons_of_war
@@ -6403,57 +6404,57 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_adjoined_battle_priests
-		icon = GFX_focus_GRE_an_orthodox_state
-		prerequisite = { focus = SOV_military_reorganization }
-		prerequisite = { focus = SOV_lessons_of_war }
-		x = 1
-		y = 1
-		relative_position_id = SOV_military_reorganization
-		cost = 10
+	# focus = {
+	# 	id = SOV_adjoined_battle_priests
+	# 	icon = GFX_focus_GRE_an_orthodox_state
+	# 	prerequisite = { focus = SOV_military_reorganization }
+	# 	prerequisite = { focus = SOV_lessons_of_war }
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = SOV_military_reorganization
+	# 	cost = 10
 
-		mutually_exclusive = { focus = SOV_swap_to_political_advisors }
+	# 	mutually_exclusive = { focus = SOV_swap_to_political_advisors }
 
-		allow_branch = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
-		}
+	# 	allow_branch = {
+	# 		OR = {
+	# 			has_government = fascism
+	# 			has_government = neutrality
+	# 		}
+	# 	}
 
-		available = {
-			has_completed_focus = SOV_church_candidates
-		}
+	# 	available = {
+	# 		has_completed_focus = SOV_church_candidates
+	# 	}
 
-		bypass = {
-			has_completed_focus = SOV_depoliticize_the_military
-			has_completed_focus = SOV_socialist_humanism
-		}
+	# 	bypass = {
+	# 		has_completed_focus = SOV_depoliticize_the_military
+	# 		has_completed_focus = SOV_socialist_humanism
+	# 	}
 		
-		search_filters = {}
+	# 	search_filters = {}
 
-		completion_reward = {
-			if = {
-				limit = {
-					has_idea = SOV_politicized_military
-				}
-				swap_ideas = {
-					remove_idea = SOV_politicized_military
-					add_idea = SOV_politicized_military_battle_priests
-				}
-			}
-			else_if = { #Just in case weird shit happens
-				limit = {
-					has_idea = SOV_politicized_military_humanism
-				}
-				swap_ideas = {
-					remove_idea = SOV_politicized_military_humanism
-					add_idea = SOV_politicized_military_battle_priests
-				}
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = SOV_politicized_military
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = SOV_politicized_military
+	# 				add_idea = SOV_politicized_military_battle_priests
+	# 			}
+	# 		}
+	# 		else_if = { #Just in case weird shit happens
+	# 			limit = {
+	# 				has_idea = SOV_politicized_military_humanism
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = SOV_politicized_military_humanism
+	# 				add_idea = SOV_politicized_military_battle_priests
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = SOV_swap_to_political_advisors
