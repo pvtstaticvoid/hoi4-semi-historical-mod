@@ -1041,6 +1041,27 @@ country_event = {
 		#RANDOM GENERALS COWED
 		SOV_paranoia_daunt_generals_effect = yes
 
+		# cow tank generals
+		hidden_effect = {
+			every_country = {
+				every_army_leader = {
+					limit = {
+						OR = {
+							has_id = 402
+							has_id = 408
+							has_id = 410
+							has_id = 10402
+							has_id = 10408
+							has_id = 10410
+						}
+					}
+					add_trait = {
+						trait = trait_SOV_cowed_by_stalin_army
+					}
+				}
+			}
+		}
+
 		#PARANOIA decreases
 		SOV_paranoia_very_high_decrease_effect = yes
 

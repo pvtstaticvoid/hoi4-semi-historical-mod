@@ -91,13 +91,13 @@ ger_boost = {
 		name = twelve
 		text = "12"
 	}
-	default = {
-		name = eight
-		text = "YRecommended: !8"
-	}
 	option = {
+		name = eight
+		text = "8"
+	}
+	default = {
 		name = four
-		text = "4"
+		text = "YRecommended: !4"
 	}
 	option = {
 		name = zero
@@ -109,17 +109,17 @@ sov_boost = {
 	name = "Industry Boost (USSR)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_construction"
-	default = {
+	option = {
 		name = sixteen
-		text = "YRecommended: !16"
+		text = "16"
 	}
 	option = {
 		name = twelve
 		text = "12"
 	}
-	option = {
+	default = {
 		name = eight
-		text = "8"
+		text = "YRecommended: !8"
 	}
 	option = {
 		name = four

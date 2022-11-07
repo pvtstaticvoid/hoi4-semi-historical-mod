@@ -100,14 +100,6 @@ country_event = {
 	option = { # Our Navy shall be strong
 		name = "Our Navy shall be strong"
 		ai_chance = { factor = 100 }
-			if = {
-				limit = {
-					random_owned_controlled_state = {
-						owner = {
-						}
-					}
-				}
-			}
 			random_owned_controlled_state = {
 			add_building_construction = {
 				type = dockyard
@@ -115,21 +107,14 @@ country_event = {
 				instant_build = yes
 				}
 			}
-			if = {
-				limit = {
-					random_owned_controlled_state = {
-						owner = {
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = dockyard
 					level = 2
 					instant_build = yes
 			}
 		}
+
 	}
 }
 
@@ -145,14 +130,6 @@ country_event = {
 	option = { # Our Militairy will be feared across the Globe
 		name = "Our Militairy will be feared across the Globe"
 		ai_chance = { factor = 100 }
-			if = {
-				limit = {
-					random_owned_controlled_state = {
-						owner = {
-						}
-					}
-				}
-			}
 			random_owned_controlled_state = {
 			add_building_construction = {
 				type = arms_factory
@@ -160,15 +137,7 @@ country_event = {
 				instant_build = yes
 				}
 			}
-			if = {
-				limit = {
-					random_owned_controlled_state = {
-						owner = {
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -189,14 +158,6 @@ country_event = {
 	option = { # Our Economy will grow stronger
 		name = "Our Economy will grow stronger"
 		ai_chance = { factor = 100 }
-			if = {
-				limit = {
-					random_owned_controlled_state = {
-						owner = {
-						}
-					}
-				}
-			}
 			random_owned_controlled_state = {
 			add_building_construction = {
 				type = industrial_complex
@@ -204,15 +165,7 @@ country_event = {
 				instant_build = yes
 				}
 			}
-			if = {
-				limit = {
-					random_owned_controlled_state = {
-						owner = {
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -265,7 +218,7 @@ country_event = {
 country_event = {
 	id = brazil.9
 	title = "Uruguay accept"
-	desc = brazil.9.d h
+	desc = brazil.9.d
 	picture = GFX_report_event_german_speech
 	
 	is_triggered_only = yes
@@ -288,7 +241,7 @@ country_event = {
 	id = brazil.10
 	title = "Uruguay defiant"
 	desc = brazil.10.d 
-	picture = picture = GFX_report_event_german_speech
+	picture = GFX_report_event_german_speech
 	
 	is_triggered_only = yes
 	
@@ -303,29 +256,3 @@ country_event = {
 		}
 	}
 }
-		
-	
-		
-		
-
-
-
-	
-	
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
