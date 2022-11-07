@@ -4712,13 +4712,19 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+					has_war_support < 0.1
+				}
+				set_war_support = 0.1
+			}
+			if = {
+				limit = {
 					has_war_support < 0.4 
 				}
 				USA_congress_medium_opposition = yes
 			}
-			add_war_support = 0.1
 		}
 	}
+
 	focus = {
 		id = USA_first_special_service_force
 		icon = GFX_goal_generic_special_forces
