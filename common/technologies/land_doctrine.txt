@@ -879,7 +879,7 @@ technologies = {
 		#Increased Partisan effect on your land occupied by others
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 
 
-	#	enable_tactic = tactic_guerrilla_tactics
+		enable_tactic = tactic_guerrilla_tactics
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -3392,7 +3392,7 @@ technologies = {
 		
 		resistance_growth_on_our_occupied_states = 0.25 
 		
-	#	enable_tactic = tactic_guerrilla_tactics
+		enable_tactic = tactic_guerrilla_tactics
 		
 		doctrine = yes	
 		research_cost = 4.5
