@@ -191,6 +191,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_continuous_naval_production
 		
 		available = {
+			always = no
 		}
 		
 		idea = continuous_naval_production
@@ -217,6 +218,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_continuous_air_production
 		
 		available = {
+			always = no
 		}
 		
 		idea = continuous_air_production
