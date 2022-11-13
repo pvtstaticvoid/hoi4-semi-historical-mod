@@ -1645,7 +1645,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_grosraumwirtschaft
-		cost = 3
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1717,7 +1717,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_grosraumwirtschaft
-		cost = 3
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -3159,7 +3159,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_end_of_czechoslovakia
-		cost = 0
+		cost = 1
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -3201,49 +3201,22 @@ focus_tree = {
 		will_lead_to_war_with = DEN
 		will_lead_to_war_with = NOR
 		bypass = {
-			AND = {
-				DEN = {
-					OR = {
-						is_in_faction_with = ROOT
-						exists = no
-					}
-				}
-				NOR = {
-					OR = {
-						is_in_faction_with = ROOT
-						exists = no
-					}
-				}
+			DEN = {
+				exists = no
+			}
+			NOR = {
+				exists = no
 			}
 		}
 		available = {
-			10 = {
-				controller = {
-					OR = {
-						is_in_faction_with = ROOT
-						original_tag = GER
-					}
-				}
-			}
-			85 = {
-				controller = {
-					OR = {
-						is_in_faction_with = ROOT
-						original_tag = GER
-					}
-				}
-			}
-			OR = {
-				has_war_with = ENG
-				NOT = {
-					country_exists = ENG
-				}
+			POL = {
+				has_capitulated = yes
 			}
 		}
 		x = 2
 		y = 1
 		relative_position_id = GER_danzig_or_war
-		cost = 0
+		cost = 1
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -3313,45 +3286,19 @@ focus_tree = {
 			focus = GER_danzig_or_war
 		}
 		available = {
-			OR = {
-				NOT = {
-					HOL = {
-						is_in_faction_with = GER
-					}
-				}
-				NOT = {
-					BEL = {
-						is_in_faction_with = GER
-					}
-				}
-				NOT = {
-					LUX = {
-						is_in_faction_with = GER
-					}
-				}
+			POL = {
+				has_capitulated = yes
 			}
 		}
 		bypass = {
 			HOL = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
+				exists = no
 			}
 			BEL = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
+				exists = no
 			}
 			LUX = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
+				exists = no
 			}
 		}
 		historical_ai = {
@@ -3373,7 +3320,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_danzig_or_war
-		cost = 0
+		cost = 1
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -3502,21 +3449,17 @@ focus_tree = {
 			focus = GER_danzig_or_war
 		}
 		available = {
-			is_subject = no
-			NOT = {
-				is_in_faction_with = FRA
+			POL = {
+				has_capitulated = yes
 			}
 		}
 		x = 0
 		y = 1
 		relative_position_id = GER_danzig_or_war
-		cost = 0
+		cost = 1
 		bypass = {
-			OR = {
-				NOT = {
-					country_exists = FRA
-				}
-				has_war_with = FRA
+			NOT = {
+				country_exists = FRA
 			}
 		}
 		historical_ai = {
@@ -3685,7 +3628,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_reintegrate_luxemburg_and_alsace_lorraine
-		cost = 0
+		cost = 1
 		historical_ai = {
 			NOT = {
 				any_home_area_neighbor_country = {
