@@ -383,6 +383,8 @@
  GER_end_of_czechoslovakia:0 "Fate of Czechoslovakia"
  GER_end_of_czechoslovakia_desc:0 "The time has come to divide the old Czech lands between those who can govern them properly. We should also consider the creation of a separate Slovak puppet state to the east."
  end_of_czechoslovakia_mefo_bills_tt:0 "Uses Czechoslovak gold to reduce the cost of §YMEFO bills§!.\n"
+ GER_slovakia_puppet_tt:0 "Sets up §YSlovakia§! as a puppet state.\nUses Czechoslovak gold to reduce the cost of §YMEFO bills§!.\n"
+ GER_partition_czechoslovakia_with_hungary_tt:0 "Partitions §YCzechoslovakia§! with §YHungary§!.\nUses Czechoslovak gold to reduce the cost of §YMEFO bills§!.\n"
  GER_second_vienna_award:0 "Second Vienna Award"
  GER_second_vienna_award_desc:0 "Transylvania has a Hungarian majority and should rightly belong to our friends in Hungary. However, it is hard to say how the Romanian regime and people will react to this demand."
  GER_italy_ally:0 "Alliance with Italy"
