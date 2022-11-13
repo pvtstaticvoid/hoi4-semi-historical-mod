@@ -157,33 +157,28 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = free_collabs
+						rule = free_collabs_germany
 						option = on
 					}
 				}
-
-				JAP = {
+				GER = {
 					add_collaboration = {
-						target = CHI
+						target = POL
+						value = 1.0
+					}
+					add_collaboration = {
+						target = FRA
 						value = 1.0
 					}
 				}
-				
-				SOV = {
-					add_collaboration = {
-						target = LIT
-						value = 1.0
-					}
-					add_collaboration = {
-						target = LAT
-						value = 1.0
-					}
-					add_collaboration = {
-						target = EST
-						value = 1.0
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = free_collabs_italy
+						option = on
 					}
 				}
-
 				ITA = {
 					add_collaboration = {
 						target = YUG
@@ -198,18 +193,42 @@ on_actions = {
 						value = 1.0
 					}
 				}
-
-				GER = {
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = free_collabs_ussr
+						option = on
+					}
+				}
+				SOV = {
 					add_collaboration = {
-						target = POL
+						target = LIT
 						value = 1.0
 					}
 					add_collaboration = {
-						target = FRA
+						target = LAT
+						value = 1.0
+					}
+					add_collaboration = {
+						target = EST
 						value = 1.0
 					}
 				}
-
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = free_collabs_japan
+						option = on
+					}
+				}
+				JAP = {
+					add_collaboration = {
+						target = CHI
+						value = 1.0
+					}
+				}
 			}
 
 			# unproven talent trait
