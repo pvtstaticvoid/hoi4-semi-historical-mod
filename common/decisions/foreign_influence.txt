@@ -499,6 +499,7 @@ foreign_influence = {
 				occupied_country_tag = FROM
 				modifier = compliance_60
 			}
+			always = no
         }
 
 		complete_effect = {

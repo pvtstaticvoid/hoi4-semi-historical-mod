@@ -145,15 +145,59 @@ germany_research_slot = {
 	}
 }
 
+free_collabs_germany = {
+	name = "Free Collaborations (Germany)"
+	group = "Game Balance"
+	icon = "GFX_decision_eng_trade_unions_demand"
+	option = {
+		name = on
+		text = "Enabled"
+		desc = "Germany receives free 100% collaboration governments on Poland and France."
+	}
+	default = {
+		name = off
+		text = "YRecommended: !Disabled"
+	}
+}
 
-free_collabs = {
-	name = "Free Collaboration Governments"
+free_collabs_italy = {
+	name = "Free Collaborations (Italy)"
+	group = "Game Balance"
+	icon = "GFX_decision_eng_trade_unions_demand"
+	option = {
+		name = on
+		text = "Enabled"
+		desc = "Italy receives free 100% collaboration governments on Yugoslavia, Greece, and Albania."
+	}
+	default = {
+		name = off
+		text = "YRecommended: !Disabled"
+	}
+}
+
+free_collabs_ussr = {
+	name = "Free Collaborations (USSR)"
+	group = "Game Balance"
+	icon = "GFX_decision_eng_trade_unions_demand"
+	option = {
+		name = on
+		text = "Enabled"
+		desc = "The USSR receives free 100% collaboration governments on Lithuania, Latvia, and Estonia."
+	}
+	default = {
+		name = off
+		text = "YRecommended: !Disabled"
+	}
+}
+
+free_collabs_japan = {
+	name = "Free Collaborations (Japan)"
 	group = "Game Balance"
 	icon = "GFX_decision_eng_trade_unions_demand"
 	default = {
 		name = on
 		text = "YRecommended: !Enabled"
-		desc = "Various countries receive free 100% collaboration governments on AI countries they would normally infiltrate."
+		desc = "Japan receives a free 100% collaboration government on China."
 	}
 	option = {
 		name = off
