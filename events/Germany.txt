@@ -3718,8 +3718,6 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		add_war_support = 0.1
-		add_to_faction = HUN
 		hidden_effect = {
 			transfer_state = 9
 			transfer_state = 75
@@ -3765,11 +3763,6 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = GER_slovakia_puppet_tt
-		add_to_variable = {
-			var = GER_mefo_bill_counter
-			value = -5
-		}
-		GER_mefo_bills_level_down = yes
 		hidden_effect = {
 			country_event = {
 				id = news.60
@@ -3789,20 +3782,12 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_political_power = -20
-		add_war_support = 0.1
-		add_to_faction = HUN
 		hidden_effect = {
 			HUN = {
 				transfer_state = 70
 				transfer_state = 71
 				transfer_state = 73
 				transfer_state = 664
-				add_ai_strategy = {
-					type = alliance
-					id = "GER"
-					value = 200
-				}
 			}
 			POL = {
 				transfer_state = 72
@@ -3822,11 +3807,6 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = GER_partition_czechoslovakia_with_hungary_tt
-		add_to_variable = {
-			var = GER_mefo_bill_counter
-			value = -5
-		}
-		GER_mefo_bills_level_down = yes
 		hidden_effect = {
 			country_event = {
 				id = news.61
