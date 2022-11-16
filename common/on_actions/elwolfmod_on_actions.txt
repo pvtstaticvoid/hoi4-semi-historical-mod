@@ -751,6 +751,17 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = romania_closed_eco
+						option = on
+					}
+				}
+				ROM = {
+					add_ideas = SOV_collectivized_society
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = sov_closed_eco
 						option = on
 					}
