@@ -275,6 +275,22 @@ allied_engine_bonus = {
 	icon = "GFX_decision_generic_research"
 	default = {
 		name = on
+		desc = "The UK and USA receive 100% research bonuses for the engines 4 technology."
+		text = "YRecommended: !Enabled"
+	}
+	option = {
+		name = off
+		text = "Disabled"
+	}
+}
+
+german_at_bonus = {
+	name = "German Anti-Tank Bonus"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = on
+		desc = "Germany receives 100% research bonuses for the 1941 and 1942 anti-tank technologies."
 		text = "YRecommended: !Enabled"
 	}
 	option = {

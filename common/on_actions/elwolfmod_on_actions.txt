@@ -148,10 +148,8 @@ on_actions = {
 			}
 		}
 	}
-	
 	on_startup = {
 		effect = {
-
 			# allied engine bonus
 			every_country = {
 				if = {
@@ -167,15 +165,34 @@ on_actions = {
 					}
 					add_tech_bonus = {
 						name = elwolf_allied_engine_bonus_name
-						bonus = 1.0
+						bonus = 1
 						uses = 1
 						technology = engines_4
 					}
 				}
 			}
-			
-			295 = { add_extra_state_shared_building_slots = 6 }
-
+			# german at bonus
+			every_country = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = german_at_bonus
+							option = on
+						}
+						original_tag = GER
+					}
+					add_tech_bonus = {
+						name = elwolf_german_at_bonus
+						bonus = 1
+						uses = 2
+						technology = antitank3
+						technology = antitank4
+					}
+				}
+			}
+			295 = {
+				add_extra_state_shared_building_slots = 6
+			}
 			# free collabs
 			if = {
 				limit = {
@@ -187,11 +204,11 @@ on_actions = {
 				GER = {
 					add_collaboration = {
 						target = POL
-						value = 1.0
+						value = 1
 					}
 					add_collaboration = {
 						target = FRA
-						value = 1.0
+						value = 1
 					}
 				}
 			}
@@ -205,15 +222,15 @@ on_actions = {
 				ITA = {
 					add_collaboration = {
 						target = YUG
-						value = 1.0
+						value = 1
 					}
 					add_collaboration = {
 						target = ALB
-						value = 1.0
+						value = 1
 					}
 					add_collaboration = {
 						target = GRE
-						value = 1.0
+						value = 1
 					}
 				}
 			}
@@ -227,15 +244,15 @@ on_actions = {
 				SOV = {
 					add_collaboration = {
 						target = LIT
-						value = 1.0
+						value = 1
 					}
 					add_collaboration = {
 						target = LAT
-						value = 1.0
+						value = 1
 					}
 					add_collaboration = {
 						target = EST
-						value = 1.0
+						value = 1
 					}
 				}
 			}
@@ -249,11 +266,10 @@ on_actions = {
 				JAP = {
 					add_collaboration = {
 						target = CHI
-						value = 1.0
+						value = 1
 					}
 				}
 			}
-
 			# unproven talent trait
 			every_country = {
 				every_army_leader = {
@@ -556,7 +572,8 @@ on_actions = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 16
-					}					# from ai trade in vanilla
+					}
+					# from ai trade in vanilla
 				}
 			}
 			else_if = {
@@ -570,7 +587,8 @@ on_actions = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 12
-					}					# from ai trade in vanilla
+					}
+					# from ai trade in vanilla
 				}
 			}
 			else_if = {
@@ -584,7 +602,8 @@ on_actions = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 8
-					}					# from ai trade in vanilla
+					}
+					# from ai trade in vanilla
 				}
 			}
 			else_if = {
@@ -598,7 +617,8 @@ on_actions = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 4
-					}					# from ai trade in vanilla
+					}
+					# from ai trade in vanilla
 				}
 			}
 			# Soviet boost
@@ -613,7 +633,8 @@ on_actions = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 16
-					}					# from ai trade in vanilla
+					}
+					# from ai trade in vanilla
 				}
 			}
 			else_if = {
@@ -627,7 +648,8 @@ on_actions = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 12
-					}					# from ai trade in vanilla
+					}
+					# from ai trade in vanilla
 				}
 			}
 			else_if = {
@@ -641,7 +663,8 @@ on_actions = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 8
-					}					# from ai trade in vanilla
+					}
+					# from ai trade in vanilla
 				}
 			}
 			else_if = {
@@ -655,7 +678,8 @@ on_actions = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 4
-					}					# from ai trade in vanilla
+					}
+					# from ai trade in vanilla
 				}
 			}
 			# # Greece dockyards
