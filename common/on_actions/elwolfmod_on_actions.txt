@@ -151,6 +151,29 @@ on_actions = {
 	
 	on_startup = {
 		effect = {
+
+			# allied engine bonus
+			every_country = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = allied_engine_bonus
+							option = on
+						}
+						OR = {
+							original_tag = ENG
+							original_tag = USA
+						}
+					}
+					add_tech_bonus = {
+						name = elwolf_allied_engine_bonus_name
+						bonus = 1.0
+						uses = 1
+						technology = engines_4
+					}
+				}
+			}
+			
 			295 = { add_extra_state_shared_building_slots = 6 }
 
 			# free collabs

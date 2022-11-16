@@ -269,6 +269,20 @@ techstealing = {
 	}
 }
 
+allied_engine_bonus = {
+	name = "Allied Engine Bonus"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = on
+		text = "YRecommended: !Enabled"
+	}
+	option = {
+		name = off
+		text = "Disabled"
+	}
+}
+
 # max_submarine_tech = {
 # 	name = "Max Submarine Tech"
 # 	group = "Game Balance"
