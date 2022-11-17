@@ -2,10 +2,10 @@
 
 	##### NAVAL UNITS #####
 	fleet = {
-		name = "Kungliga Svenska Marinen"			
+		name = "Main Fleet"			
 		naval_base = 6050 # Stockholm
 		task_force = {				
-			name = "Kustflottan"
+			name = "Task Force 1"
 			location = 6050 # Stockholm
 			ship = { name = "HMS Dristigheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Äran Class" } } }				
 			ship = { name = "HMS Örnen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Örnen Class" } } }		

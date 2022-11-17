@@ -1,0 +1,73 @@
+GRE_historical_plan = {
+	name = "Greece Historical Plan"
+	desc = "Greece will pursue neutrality while developing the ideas of Metaxism"
+
+	allowed = {
+		original_tag = GRE
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = DEFAULT
+				}	
+			}
+			has_country_flag = GRE_AI_NEUTRALITY_HISTORICAL
+			has_game_rule = {
+				rule = GRE_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = ENG
+			is_in_faction_with = ITA
+			is_in_faction_with = GER
+			has_government = communism
+			has_government = democratic
+			has_government = fascism
+		}
+	}
+
+	ai_national_focuses = {
+		GRE_reevaluating_the_drachma #March 10 1936
+		GRE_the_kings_government #May 20 1936
+		GRE_utilize_our_strengths #July 30 1936
+		GRE_open_foreign_subsidized_factories #October 10 1936
+		GRE_connecting_our_prefectures #February 30 1937
+		GRE_exporting_more_luxury_commodoties #May 10 1937
+		GRE_the_hellenic_navy #July 20 1937
+		GRE_expand_our_tobacco_industry #September 30 1937
+		GRE_mobilise_our_economy #December 10 1937
+		GRE_rejuvenating_athens #February 20 1938
+		GRE_hellenic_armed_forces #April 30 1938
+		GRE_the_hellenic_air_force #July 10 1938
+		GRE_the_hellenic_navy #September 20 1938
+		GRE_metaxism_focus #November 30 1938
+		GRE_the_hellenic_spirit #February 10 1938
+		GRE_the_national_youth_organisation #April 20 1939
+		GRE_crack_down_on_the_republicans #June 30 1939
+		GRE_use_the_military #September 10 1939
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		GRE_alexandros_papagos = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
