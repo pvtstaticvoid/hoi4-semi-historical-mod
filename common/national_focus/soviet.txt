@@ -1925,7 +1925,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 1
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -1952,7 +1952,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 1
+		cost = 3
 
 		available = {
 			any_owned_state = {
@@ -2021,7 +2021,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 1
+		cost = 3
 
 		available = {
 
@@ -2045,7 +2045,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SOV_modernize_aircraft_facilities
-		cost = 1
+		cost = 3
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -2067,7 +2067,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_merge_aircraft_plants
-		cost = 1
+		cost = 3
 
 		available = {
 
@@ -2093,7 +2093,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 1
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_intensify_pilot_training_program }
 
@@ -2145,7 +2145,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 1
+		cost = 3
 
 		available = {
 
@@ -2172,7 +2172,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 1
+		cost = 3
 
 		available = {
 			OR = {
@@ -2205,7 +2205,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_women_in_aviation
-		cost = 1
+		cost = 3
 
 		available = {
 			any_enemy_country = {
@@ -2291,7 +2291,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 1
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_increase_aircraft_production }
 
@@ -2322,7 +2322,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 1
+		cost = 3
 
 		available = {
 
@@ -2347,7 +2347,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_increase_aircraft_production
-		cost = 1
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_long_range_aircraft }
 
@@ -2379,7 +2379,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_intensify_pilot_training_program
-		cost = 1
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_ground_support }
 
@@ -2412,7 +2412,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_ground_support
-		cost = 1
+		cost = 3
 
 		available = {
 
