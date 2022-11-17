@@ -1069,27 +1069,13 @@ economy_decisions = {
 	}
 
 	FRA_reorganize_aviation_industry_north = {
-		available = {  }
+		available = { 310 = { is_controlled_by = FRA } }
 
 		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }
 
 		remove_effect = { 
 			set_country_flag = FRA_SNCAN_formed
-			random_owned_state = {
-				limit = { 
-					OR = {
-						state = 29 
-						state = 785 
-						state = 15 
-						state = 16
-					}
-					is_fully_controlled_by = ROOT 
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			310 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1107,26 +1093,13 @@ economy_decisions = {
 		
 	}
 	FRA_reorganize_aviation_industry_west = {
-		available = {  }
+		available = { 310 = { is_controlled_by = FRA } }
 
 		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }
 
 		remove_effect = { 
 			set_country_flag = FRA_SNCAO_formed
-			random_owned_state = {
-				limit = { 
-					OR = {
-						state = 30
-						state = 14
-						state = 23
-					}
-					is_fully_controlled_by = ROOT 
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			310 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1143,28 +1116,13 @@ economy_decisions = {
 		}
 	}
 	FRA_reorganize_aviation_industry_center = {
-		available = {  }
+		available = { 310 = { is_controlled_by = FRA } }
 
 		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }
 
 		remove_effect = { 
 			set_country_flag = FRA_SNCAC_formed
-			random_owned_state = {
-				limit = { 
-					OR = {
-						state = 24
-						state = 33
-						state = 27
-						state = 26
-						state = 25
-					}
-					is_fully_controlled_by = ROOT 
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			310 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1181,28 +1139,13 @@ economy_decisions = {
 		}
 	}
 	FRA_reorganize_aviation_industry_south_east = {
-		available = {  }
+		available = { 310 = { is_controlled_by = FRA } }
 
 		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }
 
 		remove_effect = { 
 			set_country_flag = FRA_SNCASE_formed
-			random_owned_state = {
-				limit = { 
-					OR = {
-						state = 735
-						state = 32
-						state = 20
-						state = 21
-						state = 851
-					}
-					is_fully_controlled_by = ROOT 
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			310 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1219,27 +1162,13 @@ economy_decisions = {
 		}
 	}
 	FRA_reorganize_aviation_industry_south_west = {
-		available = {  }
+		available = { 310 = { is_controlled_by = FRA } }
 
 		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }
 
 		remove_effect = { 
 			set_country_flag = FRA_SNCASO_formed
-			random_owned_state = {
-				limit = { 
-					OR = {
-						state = 22
-						state = 31
-						state = 19
-						state = 25
-					}
-					is_fully_controlled_by = ROOT 
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			310 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
