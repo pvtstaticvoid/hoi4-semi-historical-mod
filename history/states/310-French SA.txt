@@ -4,13 +4,13 @@ state={
 	name="STATE_310"
 	manpower = 47341
 
-	state_category = pastoral
+	state_category = megalopolis
 
 	history={
 		owner = FRA
 		add_core_of = BRA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			12885 = {
 				naval_base = 1
 			}
