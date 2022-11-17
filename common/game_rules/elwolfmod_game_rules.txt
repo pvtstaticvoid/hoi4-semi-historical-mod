@@ -288,14 +288,14 @@ allied_engine_bonus = {
 	name = "Allied Engine Bonus"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_research"
-	default = {
+	option = {
 		name = on
 		desc = "The UK and USA receive 100% research bonuses for the engines 4 technology."
-		text = "YRecommended: !Enabled"
+		text = "Enabled"
 	}
-	option = {
+	default = {
 		name = off
-		text = "Disabled"
+		text = "YRecommended: !Disabled"
 	}
 }
 
