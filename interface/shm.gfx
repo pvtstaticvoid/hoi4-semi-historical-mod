@@ -1,8 +1,8 @@
-spriteTypes = {
+# spriteTypes = {
 
-	spriteType = {
-		name = "GFX_trait_unproven_talent"
-		texturefile = "gfx/interface/traits/personal/trait_SOV_cowed_by_stalin_army.dds"
-	}
+# 	spriteType = {
+# 		name = "GFX_trait_unproven_talent"
+# 		texturefile = "gfx/interface/traits/personal/trait_SOV_cowed_by_stalin_army.dds"
+# 	}
 
-}
+# }
