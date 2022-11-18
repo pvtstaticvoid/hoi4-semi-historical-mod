@@ -79,6 +79,21 @@ japan_closed_eco = {
 	}
 }
 
+france_closed_eco = {
+	name = "Collectivized Society (France)"
+	group = "Game Balance"
+	icon = "GFX_decision_gre_investment_decisions"
+	default = {
+		name = on
+		text = "YRecommended: !Enabled"
+		desc = "France starts the game with the Collectivized Society economy law."
+	}
+	option = {
+		name = off
+		text = "Disabled"
+	}
+}
+
 romania_closed_eco = {
 	name = "Collectivized Society (Romania)"
 	group = "Game Balance"

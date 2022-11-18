@@ -336,6 +336,28 @@ on_actions = {
 					amount = 10
 				}
 			}
+			310 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				add_resource = {
+					type = rubber
+					amount = 12
+				}
+				add_resource = {
+					type = tungsten
+					amount = 24
+				}
+				add_resource = {
+					type = steel
+					amount = 48
+				}
+				add_resource = {
+					type = chromium
+					amount = 16
+				}
+			}
 			# every_country={
 			# 	limit = { 
 			# 		is_limited_country=yes 
@@ -756,6 +778,17 @@ on_actions = {
 					}
 				}
 				ROM = {
+					add_ideas = SOV_collectivized_society
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = france_closed_eco
+						option = on
+					}
+				}
+				FRA = {
 					add_ideas = SOV_collectivized_society
 				}
 			}

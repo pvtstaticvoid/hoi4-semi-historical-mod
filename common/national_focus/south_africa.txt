@@ -2128,58 +2128,31 @@
 		available_if_capitulated = no
         search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = SAF_infrastructure_effort_Inf
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
+		available = {
+			681 = {
+				is_controlled_by = ROOT
 			}
-			random_state = {
-				limit = {
-					has_state_flag = SAF_infrastructure_effort_Inf2
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
+			719 = {
+				is_controlled_by = ROOT
 			}
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
+			681 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 				set_state_flag = SAF_infrastructure_effort_Inf
-				random_neighbor_state = { # done like this to prevent double selection of previous state
-					limit = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = SAF_infrastructure_effort_Inf2
+			}
+			719 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
+				set_state_flag = SAF_infrastructure_effort_Inf
 			}
 		}
 	}
