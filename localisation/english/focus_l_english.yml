@@ -1808,6 +1808,8 @@
  NATIONAL_FOCUS_EXCLUSIVE_INFO_DESC:0 "Mutually exclusive with"
  NATIONAL_FOCUS_EXCLUSIVE_INFO_ENTRY:0 "$FOCUS|Y$"
  NATIONAL_FOCUS_NO_CURRENT_EFFECT:0 "This focus currently has no effect. Changes in the world situation may affect this."
+ SAF_south_african_east_africa:0 "Integrate the Horn"
+ SAF_south_african_east_africa_desc:0 "With the occupation of Italian East Africa we should further integrate them into our administration too suppress any hard feelings between us."
  SAF_war_measures_act:0 "War Measures Act"
  SAF_war_measures_act_desc:0 "We cannot allow any disruption to the war effort, so we are passing new legislation to enforce total compliance with government aims. This will protect the flow of resources and allow us to focus political energy where it is needed."
  SAF_emergency_workers:0 "Emergency Workers"
