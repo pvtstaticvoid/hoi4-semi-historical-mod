@@ -1612,6 +1612,12 @@
 					expire = 0
 					generator = { 671 670 286 741 }
 				}
+				create_wargoal = {
+					target = USA
+					type = take_state_focus
+					expire = 0
+					generator = { 671 670 286 741 }
+				}
 			}
 		}
 	}
