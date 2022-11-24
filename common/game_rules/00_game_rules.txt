@@ -155,6 +155,11 @@ allow_lend_lease = {
 		desc = "RULE_ALLOW_LEND_LEASE_FREE_DESC"
 	}
 	default = {
+		name = OPTIMIZED
+		text = "YRecommended: !Optimized"
+		desc = "Countries may lend-lease equipment to anyone at any World Tension level, with the exception of a few select wars."
+	}
+	option = {
 		name = "LIMITED"
 		text = "RULE_OPTION_LIMITED"
 		desc = "RULE_ALLOW_LEND_LEASE_LIMITED_DESC"

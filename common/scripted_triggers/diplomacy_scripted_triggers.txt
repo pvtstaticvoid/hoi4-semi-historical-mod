@@ -757,6 +757,31 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 		limit = {
 			has_game_rule = {
 				rule = allow_lend_lease
+				option = OPTIMIZED
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = SOV
+						tag = JAP
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = "RLend lease may not be sent to Y[FROM.GetNameDef]R."
+				always = no
+			}
+		}
+		else = {
+			always = yes
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
 				option = LIMITED
 			}
 		}
@@ -808,6 +833,29 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 			}
 		}
 		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = OPTIMIZED
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = SOV
+					tag = JAP
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = "RLend lease may not be sent to Y[ROOT.GetNameDef]R."
+				always = no
+			}
+		}
+		else = {
+			always = yes
+		}
 	}
 	if = {
 		limit = {
