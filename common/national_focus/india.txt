@@ -454,6 +454,9 @@ focus_tree = {
 						ideology = neutrality
 						popularity = 0.15
 					}
+					set_variable = { RAJ_agrarian_society_increment = RAJ.RAJ_agrarian_society_increment }
+					set_variable = { RAJ_agrarian_society_value = RAJ.RAJ_agrarian_society_value }
+					add_dynamic_modifier = { modifier = RAJ_agrarian_society_dynamic }
 					ENG = { add_to_faction = PREV }
 				}						
 			}
@@ -587,11 +590,11 @@ focus_tree = {
 			add_corps_commander_role = {
 				character = RAJ_lakshmi_sahgal
 				traits = { }
-				skill = 3
+				skill = 5
 				female = yes
-				attack_skill = 3
+				attack_skill = 4
 				defense_skill = 2
-				planning_skill = 3
+				planning_skill = 4
 				logistics_skill = 2
 			}
 			division_template = {
@@ -920,6 +923,9 @@ focus_tree = {
 						ideology = neutrality
 						popularity = 0.15
 					}
+					set_variable = { RAJ_agrarian_society_increment = RAJ.RAJ_agrarian_society_increment }
+					set_variable = { RAJ_agrarian_society_value = RAJ.RAJ_agrarian_society_value }
+					add_dynamic_modifier = { modifier = RAJ_agrarian_society_dynamic }
 					ENG = { add_to_faction = PREV }
 				}					
 			}
@@ -1456,7 +1462,7 @@ focus_tree = {
 							basic_torpedo = 1
 							basic_medium_battery = 1
 						}
-						navy_experience = 20
+						navy_experience = 50
 						custom_effect_tooltip = RAJ_navy_funding_effect
 					}
 				}
@@ -1498,11 +1504,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 20
+			army_experience = 30
 			add_tech_bonus = {
 				name = RAJ_british_army_support
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = support_tech
 			}
 		}
@@ -1919,6 +1925,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = RAJ_lions_of_the_great_war
+			army_experience = 30
 			custom_effect_tooltip = RAJ_create_unit_sikh_tt
 			hidden_effect = {
 
@@ -2629,34 +2636,12 @@ focus_tree = {
 		
 
 		completion_reward = {
-			if = {
-				limit = {
-				    439 = {
-					    owner = {
-							}
-						}
-					}
-				}
-				439 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
+			build_railway = { #Delhi - Karachi
+				path = { 2086 2054 1908 4984 10847 1980 4110 10108 3456 }
 			}
-			if = {
-			    limit = {
-				    433 = {
-					    owner = {
-						    }
-						}
-					}
-				}
-				433 = {
-				add_building_construction = {
-				    type = infrastructure
-					level = 1
-					instant_build = yes
+			build_railway = { #Delhi - Ahmadabad - Bombay
+				path = {
+					1908 4149 12886 1103 9975 11952 7150 4187 7013 1349
 				}
 			}
 		}
@@ -2713,10 +2698,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = RAJ_industrial_expansion_IC
@@ -2802,7 +2787,7 @@ focus_tree = {
 			432 = {
 				add_resource = {
 					type = oil
-					amount = 13
+					amount = 3
 				}
 			}
 		}
@@ -2937,7 +2922,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 20
@@ -2991,10 +2976,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = RAJ_expand_mazagon_dock
@@ -3020,7 +3005,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 20
@@ -3074,10 +3059,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = RAJ_found_scindia_shipyard
@@ -3331,7 +3316,7 @@ focus_tree = {
 		id = RAJ_east_india_railways
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = RAJ_great_indian_peninsula_railway
 
@@ -3374,13 +3359,6 @@ focus_tree = {
 					}
 				}
 			}
-				430 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
 			if = {
 				limit = {
 					controls_state = 430
@@ -3389,13 +3367,6 @@ focus_tree = {
 					path = {
 						11968 9993 4616
 					}
-					}
-				}
-				288 = {
-				add_building_construction = {
-				    type = infrastructure
-					level = 2
-					instant_build = yes
 				}
 			}
 		}
@@ -3433,42 +3404,35 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-				    429 = {
-					    owner = {
-							}
-						}
-					}
+					controls_state = 429
+					controls_state = 427
 				}
-				429 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				build_railway = { #Bombay - Hyderabad - East Coast
+					path = {
+						1349 10270 4353 12142 1359 10324 8087 4472 12114 4280 7340
+					}
 				}
 			}
 			if = {
-			    limit = {
-				    438 = {
-					    owner = {
-						    }
-						}
-					}
+				limit = {
+					controls_state = 438
+					controls_state = 436
+					controls_state = 429
 				}
-				438 = {
-				add_building_construction = {
-				    type = infrastructure
-					level = 1
-					instant_build = yes
+				build_railway = { #Lucknow - Bombay
+					path = {
+						1349 7013 4072 7060 7430 10030 4950 11995 4953 5096 5040 4045 2036 12137
+					}
 				}
 			}
 		}
-	} 
+	}
 
 	focus = {
 		id = RAJ_ishapore_arsenal
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = RAJ_east_india_railways }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
@@ -3515,10 +3479,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = RAJ_ishapore_arsenal_AF
@@ -3561,6 +3525,119 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = RAJ_risk_of_famine
+		}
+	}
+	
+	focus = {
+		id = RAJ_administrative_oversight
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RAJ_clamp_down_on_corruption }
+		x = 0
+		y = 1
+		relative_position_id = RAJ_clamp_down_on_corruption
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = RAJ_enable_local_industrialization
+		}
+	}
+	
+	focus = {
+		id = RAJ_land_clearance
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RAJ_administrative_oversight }
+		mutually_exclusive = { focus = RAJ_workforce_integration }
+		x = -1
+		y = 1
+		relative_position_id = RAJ_administrative_oversight
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				every_owned_state = {
+					limit = { has_state_flag = RAJ_industrialized_this_state }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			custom_effect_tooltip = RAJ_land_clearance_effect_tt
+		}
+	}
+	
+	focus = {
+		id = RAJ_workforce_integration
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RAJ_administrative_oversight }
+		mutually_exclusive = { focus = RAJ_land_clearance }
+		x = 1
+		y = 1
+		relative_position_id = RAJ_administrative_oversight
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				every_owned_state = {
+					limit = { has_state_flag = RAJ_industrialized_this_state }
+					add_dynamic_modifier = {
+						modifier = RAJ_industrialized_personnel
+					}
+				}
+			}
+			custom_effect_tooltip = RAJ_integration_tooltip
+			add_dynamic_modifier = {
+				modifier = RAJ_industrialized_personnel
+			}
+			custom_effect_tooltip = RAJ_integration_tooltip_post
 		}
 	}
 
