@@ -336,28 +336,37 @@ on_actions = {
 					amount = 10
 				}
 			}
-			310 = {
-				add_resource = {
-					type = aluminium
-					amount = 12
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = extra_resources_FRA
+						option = sixteen
+					}
 				}
-				add_resource = {
-					type = rubber
-					amount = 12
-				}
-				add_resource = {
-					type = tungsten
-					amount = 24
-				}
-				add_resource = {
-					type = steel
-					amount = 48
-				}
-				add_resource = {
-					type = chromium
-					amount = 16
+				310 = {
+					add_resource = {
+						type = aluminium
+						amount = 12
+					}
+					add_resource = {
+						type = rubber
+						amount = 12
+					}
+					add_resource = {
+						type = tungsten
+						amount = 24
+					}
+					add_resource = {
+						type = steel
+						amount = 48
+					}
+					add_resource = {
+						type = chromium
+						amount = 16
+					}
 				}
 			}
+
 			# every_country={
 			# 	limit = { 
 			# 		is_limited_country=yes 
@@ -1503,6 +1512,40 @@ on_actions = {
 					amount = 6
 				}
 			}
+
+			PER = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1344
+				}
+			}
+
+			AFG = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 2604
+				}
+			}
+
+			TUR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 423
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 11588
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 8
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 16
+				}
+			}
+
 		}
 	}
 }

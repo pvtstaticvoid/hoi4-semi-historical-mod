@@ -62,7 +62,68 @@
 	############################
 	#### WAR PREP SECTION ######
 	############################
+focus = {
+		id = SAF_south_african_east_africa
+		icon = GFX_focus_ETH_compensation
+		prerequisite = { focus = SAF_secure_interests_in_africa }
+		x = 0
+		y = 1
+		relative_position_id = SAF_secure_interests_in_africa
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+550 = {is_controlled_by = SAF}
+908 = {is_controlled_by = SAF}
+842 = {is_controlled_by = SAF}
+841 = {is_controlled_by = SAF}
+843 = {is_controlled_by = SAF}
+840 = {is_controlled_by = SAF}
+839 = {is_controlled_by = SAF}
+838 = {is_controlled_by = SAF}
+837 = {is_controlled_by = SAF}
+844 = {is_controlled_by = SAF}
+559 = {is_controlled_by = SAF}
+836 = {is_controlled_by = SAF}
+835 = {is_controlled_by = SAF}
+271 = {is_controlled_by = SAF}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		SAF = {
+			add_state_core = 550
+			add_state_core = 908
+			add_state_core = 842
+			add_state_core = 841
+			add_state_core = 843
+			add_state_core = 840
+			add_state_core = 839
+			add_state_core = 838
+			add_state_core = 837
+			add_state_core = 844
+			add_state_core = 559
+			add_state_core = 836
+			add_state_core = 835
+			add_state_core = 271
+			}
+		}
+	}
+	
+	
+	
 	focus = {
 		id = SAF_war_measures_act
 		icon = GFX_goal_generic_demand_territory
@@ -221,7 +282,7 @@
 		prerequisite = { focus = SAF_reconstitute_the_cape_corps }
 		mutually_exclusive = { focus = SAF_outlaw_strikes }
 		x = 0
-		y = 5
+		y = 6
 		relative_position_id = SAF_war_measures_act
 
 		cost = 10
@@ -253,7 +314,7 @@
 		prerequisite = { focus = SAF_work_for_all_poor }
 		mutually_exclusive = { focus = SAF_expand_the_cape_corps }
 		x = 2
-		y = 5
+		y = 6
 		relative_position_id = SAF_war_measures_act
 
 		cost = 10
