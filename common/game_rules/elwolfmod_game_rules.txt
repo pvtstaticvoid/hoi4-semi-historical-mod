@@ -83,14 +83,14 @@ france_closed_eco = {
 	name = "Collectivized Society (France)"
 	group = "Game Balance"
 	icon = "GFX_decision_gre_investment_decisions"
-	default = {
+	option = {
 		name = on
-		text = "YRecommended: !Enabled"
+		text = "Enabled"
 		desc = "France starts the game with the Collectivized Society economy law."
 	}
-	option = {
+	default = {
 		name = off
-		text = "Disabled"
+		text = "YRecommended: !Disabled"
 	}
 }
 
