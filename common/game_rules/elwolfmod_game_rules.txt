@@ -161,17 +161,32 @@ sov_boost = {
 	}
 }
 
+extra_resources_FRA = {
+	name = "Extra Resource (France)"
+	group = "Game Balance"
+	icon = "GFX_decision_steel"
+	option = {
+		name = on
+		text = "Enabled"
+		desc = "France receives extra resources in Guiyana."
+	}
+	default = {
+		name = off
+		text = "YRecommended: !Disabled"
+	}
+}
+
 germany_research_slot = {
 	name = "Extra Research Slot (Germany)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_research"
-	default = {
-		name = on
-		text = "YRecommended: !Enabled"
-	}
 	option = {
+		name = on
+		text = "Enabled"
+	}
+	default = {
 		name = off
-		text = "Disabled"
+		text = "YRecommended: !Disabled"
 	}
 }
 
