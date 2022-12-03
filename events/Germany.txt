@@ -263,14 +263,24 @@ country_event = {
 		}
 		# pact
 		# additional 3 anti-tank bonuses!
-		# add_tech_bonus = {
-		# 	name = shm_ger_sov_treaty_at
-		# 	bonus = 1.0
-		# 	uses = 3
-		# 	technology = antitank3
-		# 	technology = antitank4
-		# 	technology = antitank5
-		# }
+
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = anti_tank_bonus
+					option = both
+				}
+			}
+			add_tech_bonus = {
+				name = shm_ger_sov_treaty_at
+				bonus = 1.0
+				uses = 3
+				technology = antitank3
+				technology = antitank4
+				technology = antitank5
+			}
+		}
+
 		custom_effect_tooltip = germany.11.a.tt
 		if = {
 			limit = {
@@ -552,14 +562,23 @@ country_event = {
 	option = {
 		name = germany.12.a		#neat
 		# additional 3 anti-tank bonuses!
-		# add_tech_bonus = {
-		# 	name = shm_ger_sov_treaty_at
-		# 	bonus = 1.0
-		# 	uses = 3
-		# 	technology = antitank3
-		# 	technology = antitank4
-		# 	technology = antitank5
-		# }
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = anti_tank_bonus
+					option = both
+				}
+			}
+			add_tech_bonus = {
+				name = shm_ger_sov_treaty_at
+				bonus = 1.0
+				uses = 3
+				technology = antitank3
+				technology = antitank4
+				technology = antitank5
+			}
+		}
+
 		every_other_country = {
 			limit = {
 				NOT = {
@@ -4988,14 +5007,23 @@ country_event = {
 			}
 		}
 		# additional 3 anti-tank bonuses!
-		# add_tech_bonus = {
-		# 	name = shm_ger_sov_treaty_at
-		# 	bonus = 1.0
-		# 	uses = 3
-		# 	technology = interwar_antitank
-		# 	technology = antitank1
-		# 	technology = antitank2
-		# }
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = anti_tank_bonus
+					option = both
+				}
+			}
+			add_tech_bonus = {
+				name = shm_ger_sov_treaty_at
+				bonus = 1.0
+				uses = 3
+				technology = interwar_antitank
+				technology = antitank1
+				technology = antitank2
+			}
+		}
+
 		# REVISIT Balance research bonus
 		give_SOV_armor_research_bonuses = yes
 	}
@@ -5033,14 +5061,23 @@ country_event = {
 			category = armor
 		}
 		# additional 3 anti-tank bonuses!
-		# add_tech_bonus = {
-		# 	name = shm_ger_sov_treaty_at
-		# 	bonus = 1.0
-		# 	uses = 3
-		# 	technology = interwar_antitank
-		# 	technology = antitank1
-		# 	technology = antitank2
-		# }
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = anti_tank_bonus
+					option = both
+				}
+			}
+			add_tech_bonus = {
+				name = shm_ger_sov_treaty_at
+				bonus = 1.0
+				uses = 3
+				technology = interwar_antitank
+				technology = antitank1
+				technology = antitank2
+			}
+		}
+
 		SOV = {
 			add_opinion_modifier = {
 				target = GER
