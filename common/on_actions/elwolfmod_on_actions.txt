@@ -176,8 +176,8 @@ on_actions = {
 				if = {
 					limit = {
 						has_game_rule = {
-							rule = german_at_bonus
-							option = on
+							rule = anti_tank_bonus
+							option = ger
 						}
 						original_tag = GER
 					}

@@ -329,14 +329,19 @@ allied_engine_bonus = {
 	}
 }
 
-german_at_bonus = {
-	name = "German Anti-Tank Bonus"
+anti_tank_bonus = {
+	name = "Anti-Tank Bonus (Germany & USSR)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_research"
 	default = {
-		name = on
+		name = both
+		desc = "Germany and the USSR receive 100% bonuses for all six anti-tank technologies, unlocked through Y\"Treaty with the USSR\"! and Y\"Molotov-Ribbentrop Pact\"!."
+		text = "YRecommended: !Both"
+	}
+	option = {
+		name = ger
 		desc = "Germany receives 100% research bonuses for the 1941 and 1942 anti-tank technologies."
-		text = "YRecommended: !Enabled"
+		text = "Germany Only"
 	}
 	option = {
 		name = off
