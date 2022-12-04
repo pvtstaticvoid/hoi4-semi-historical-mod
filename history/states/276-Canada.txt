@@ -9,9 +9,9 @@ state={
 	history={
 		owner = CAN
 		buildings = {
-			infrastructure = 4 #was: 7
+			infrastructure = 7 #was: 7 revert to 7 from 4 for wide africa
 			arms_factory = 2
-			industrial_complex = 4
+			industrial_complex = 14 #+10 for wide africa
 			air_base = 5
 		}
 		add_core_of = CAN
