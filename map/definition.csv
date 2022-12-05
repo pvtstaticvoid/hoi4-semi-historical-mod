@@ -13257,8 +13257,15 @@
 13256;226;59;117;land;true;plains;1
 
 #wide africa
+#british
 13257;142;240;105;land;false;desert;5
 13258;86;187;14;land;false;desert;5
 13259;188;248;172;land;false;desert;5
 13260;247;171;34;land;false;desert;5
 13261;79;139;98;land;false;desert;5
+#italian
+13262;229;208;181;land;false;desert;5
+13263;171;97;60;land;false;desert;5
+13264;10;47;17;land;false;desert;5
+13265;95;111;136;land;false;desert;5
+13266;102;157;176;land;false;desert;5
