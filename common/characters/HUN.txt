@@ -170,8 +170,8 @@ characters={
 				small="GFX_idea_HUN_ivan_hindy"
 			}
 		}
-		corps_commander={
-			traits={ cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer }
+		field_marshal={
+			traits={ cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer combined_arms_expert logistics_wizard thorough_planner offensive_doctrine adaptable }
 			skill=8
 			attack_skill=7
 			defense_skill=9
@@ -263,8 +263,8 @@ characters={
 				small="GFX_idea_HUN_lajos_veress"
 			}
 		}
-		corps_commander={
-			traits={ cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer }
+		field_marshal={
+			traits={ cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer combined_arms_expert expert_improviser guerilla_fighter offensive_doctrine adaptable }
 			skill=8
 			attack_skill=8
 			defense_skill=7

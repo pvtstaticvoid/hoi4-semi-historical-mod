@@ -199,7 +199,7 @@ characters={
 				small="GFX_idea_manstein"
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits = {
 				brilliant_strategist armor_officer trickster trait_engineer
 			}
@@ -244,9 +244,9 @@ characters={
 				small = "GFX_idea_manstein"
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits = {
-				brilliant_strategist armor_officer cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer
+				brilliant_strategist armor_officer cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer combined_arms_expert expert_improviser guerilla_fighter offensive_doctrine adaptable
 			}
 			skill = 8
 			attack_skill = 8
@@ -289,7 +289,7 @@ characters={
 				small="GFX_idea_heinz_guderian"
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits = {
 				brilliant_strategist career_officer armor_officer trickster panzer_leader
 			}
@@ -334,9 +334,9 @@ characters={
 				small = "GFX_idea_heinz_guderian"
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits = {
-				brilliant_strategist career_officer armor_officer cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer
+				brilliant_strategist career_officer armor_officer cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer combined_arms_expert logistics_wizard thorough_planner offensive_doctrine adaptable
 			}
 			skill = 8
 			attack_skill = 6
