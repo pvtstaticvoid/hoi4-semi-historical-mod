@@ -1546,6 +1546,117 @@ on_actions = {
 				}
 			}
 
+
+			ENG = {
+
+				# Canada
+				create_production_license = {
+					target = CAN
+					equipment = {
+						type = anti_air_equipment_1
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = CAN
+					equipment = {
+						type = motorized_equipment_1
+					}
+					cost_factor = 0
+				}
+
+				# India
+				create_production_license = {
+					target = RAJ
+					equipment = {
+						type = artillery_equipment_1
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = RAJ
+					equipment = {
+						type = anti_air_equipment_1
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = RAJ
+					equipment = {
+						type = motorized_equipment_1
+					}
+					cost_factor = 0
+				}
+
+				# South Africa
+				create_production_license = {
+					target = SAF
+					equipment = {
+						type = anti_air_equipment_1
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = SAF
+					equipment = {
+						type = motorized_equipment_1
+					}
+					cost_factor = 0
+				}
+
+				# Australia
+				create_production_license = {
+					target = AST
+					equipment = {
+						type = motorized_equipment_1
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = AST
+					equipment = {
+						type = small_plane_airframe_0
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = AST
+					equipment = {
+						type = small_plane_airframe_1
+					}
+					cost_factor = 0
+				}
+
+				# New Zealand
+				create_production_license = {
+					target = NZL
+					equipment = {
+						type = anti_air_equipment_1
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = NZL
+					equipment = {
+						type = motorized_equipment_1
+					}
+					cost_factor = 0
+				}
+
+			}
+
+			CAN = {
+				create_production_license = {
+					target = RAJ 
+					equipment = {
+						type = ship_hull_cruiser_1
+						creator = CAN
+						version_name = "CAN Heavy Cruiser I 110 (War Support)"
+					}
+					cost_factor = 0
+				}
+			}
+
 		}
 	}
 }

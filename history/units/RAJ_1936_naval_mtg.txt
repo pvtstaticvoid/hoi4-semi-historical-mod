@@ -1,0 +1,23 @@
+﻿units = {
+}
+
+instant_effect = {
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = ship_hull_cruiser_1
+	# 		creator = CAN
+	# 		version_name = "CAN Heavy Cruiser I 110 (War Support)"
+	# 	}
+	# 	name = "CAN Heavy Cruiser I 110 (War Support)"
+	# 	requested_factories = 10
+	# 	progress = 0
+	# 	amount = 1
+	# }
+	add_equipment_production = {
+		equipment = {
+			type = convoy_1
+		}
+		requested_factories = 15
+		progress = 0
+	}
+}

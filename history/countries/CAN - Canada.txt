@@ -328,9 +328,8 @@ if = {
 	### Ship Variants ###
 	# War Support Cruiser #
 	create_equipment_variant = {
-		name = "War Support Cruiser"
+		name = "CAN Heavy Cruiser I 110 (War Support)"
 		type = ship_hull_cruiser_1
-		name_group = CAN_CA_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1
@@ -361,6 +360,7 @@ if = {
 		type = ship_hull_light_1
 		name_group = CAN_DD_HISTORICAL
 		parent_version = 0
+		obsolete = yes
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = empty
