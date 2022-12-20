@@ -766,6 +766,13 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 					OR = {
 						tag = SOV
 						tag = JAP
+						tag = CHI
+						AND = {
+							original_tag = SPR
+							any_enemy_country = {
+								original_tag = SPR
+							}
+						}
 					}
 				}
 			}
@@ -846,6 +853,13 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 				OR = {
 					tag = SOV
 					tag = JAP
+					tag = CHI
+					AND = {
+						original_tag = SPR
+						any_enemy_country = {
+							original_tag = SPR
+						}
+					}
 				}
 			}
 			custom_trigger_tooltip = {
