@@ -64,7 +64,7 @@ CHI_army_reform = {
 			OR = {
 				has_idea = CHI_army_corruption_1
 				has_idea = CHI_army_corruption_2
-				has_idea = CHI_army_corruption_3
+				# has_idea = CHI_army_corruption_3
 			}
 		}
 		remove_effect = {
@@ -82,10 +82,10 @@ CHI_army_reform = {
 					add_idea = CHI_army_corruption_3
 				}
 			}
-			else_if = {
-				limit = { has_idea = CHI_army_corruption_3 }
-				remove_ideas = CHI_army_corruption_3
-			}
+			# else_if = {
+			# 	limit = { has_idea = CHI_army_corruption_3 }
+			# 	remove_ideas = CHI_army_corruption_3
+			# }
 		}
 		complete_effect = {
 			army_experience = -100						
@@ -97,29 +97,29 @@ CHI_army_reform = {
 		available = {
 			has_army_experience > 199
 			has_idea = CHI_incompetent_officers
-			if = {
-				limit = { has_idea = CHI_army_corruption_1 }
-				NOT = { has_idea = CHI_army_corruption_1 }
-			}
+			# if = {
+			# 	limit = { has_idea = CHI_army_corruption_1 }
+			# 	NOT = { has_idea = CHI_army_corruption_1 }
+			# }
 
-			if = {
-				limit = { has_idea = CHI_army_corruption_2 }
-				NOT = { has_idea = CHI_army_corruption_2 }
-			}
+			# if = {
+			# 	limit = { has_idea = CHI_army_corruption_2 }
+			# 	NOT = { has_idea = CHI_army_corruption_2 }
+			# }
 
-			if = {
-				limit = { has_idea = CHI_army_corruption_3 }
-				NOT = { has_idea = CHI_army_corruption_3 }
-			}
+			# if = {
+			# 	limit = { has_idea = CHI_army_corruption_3 }
+			# 	NOT = { has_idea = CHI_army_corruption_3 }
+			# }
 
-			if = {
-				limit = {
-					NOT = { has_idea = CHI_army_corruption_1 }
-					NOT = { has_idea = CHI_army_corruption_2 }
-					NOT = { has_idea = CHI_army_corruption_3 }
-				}
-				NOT = { has_idea = CHI_army_corruption_3 }
-			}
+			# if = {
+			# 	limit = {
+			# 		NOT = { has_idea = CHI_army_corruption_1 }
+			# 		NOT = { has_idea = CHI_army_corruption_2 }
+			# 		NOT = { has_idea = CHI_army_corruption_3 }
+			# 	}
+			# 	NOT = { has_idea = CHI_army_corruption_3 }
+			# }
 		}
 
 		cost = 0
