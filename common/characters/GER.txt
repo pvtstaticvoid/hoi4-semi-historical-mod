@@ -246,13 +246,22 @@ characters={
 		}
 		field_marshal = {
 			traits = {
-				brilliant_strategist armor_officer cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer combined_arms_expert expert_improviser guerilla_fighter offensive_doctrine adaptable
+				brilliant_strategist armor_officer 
+				organizer
+				panzer_leader
+				cavalry_leader
+				trait_engineer
+				infantry_leader
+				trickster
+				urban_assault_specialist
+				ranger
+				adaptable
 			}
-			skill = 8
-			attack_skill = 8
-			defense_skill = 3
+			skill = 9
+			attack_skill = 9
+			defense_skill = 5
 			planning_skill = 4
-			logistics_skill = 6
+			logistics_skill = 5
 			legacy_id = 10005
 			visible = {
 				has_game_rule = {
@@ -336,13 +345,22 @@ characters={
 		}
 		field_marshal = {
 			traits = {
-				brilliant_strategist career_officer armor_officer cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer combined_arms_expert logistics_wizard thorough_planner offensive_doctrine adaptable
+				brilliant_strategist career_officer armor_officer  
+				organizer
+				panzer_leader
+				cavalry_leader
+				trait_engineer
+				infantry_leader
+				trickster
+				urban_assault_specialist
+				ranger
+				adaptable
 			}
-			skill = 8
-			attack_skill = 6
-			defense_skill = 3
+			skill = 9
+			attack_skill = 9
+			defense_skill = 5
 			planning_skill = 4
-			logistics_skill = 4
+			logistics_skill = 5
 			legacy_id = 10006
 			visible = {
 				has_game_rule = {
@@ -489,6 +507,57 @@ characters={
 			planning_skill=3
 			logistics_skill=4
 			legacy_id=11
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_ger
+					option = disabled
+				}
+			}
+		}
+	}
+
+	GER_maximilian_von_weichs_pregrinded={
+		name=GER_maximilian_von_weichs
+		portraits={
+			army={
+				large=GFX_portrait_GER_maximilian_von_weichs
+				small=GFX_portrait_GER_maximilian_von_weichs_small
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=11
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_ger
+					option = enabled
+				}
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = maximilian_von_weichs
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_CombinedArms_3
+			}
+			cost = 200
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_ger
+					option = enabled
+				}
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
@@ -1283,6 +1352,41 @@ characters={
 				army_chief_offensive_2
 			}
 			cost = 100
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_ger
+					option = disabled
+				}
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	GER_franz_halder_pregrinded={
+		name=GER_franz_halder
+		portraits={
+			army={
+				small="GFX_idea_franz_halder"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = franz_halder
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_chief_offensive_3
+			}
+			cost = 200
+			visible = {
+				has_game_rule = {
+					rule = pregrinded_tank_generals_ger
+					option = enabled
+				}
+			}
 			ai_will_do = {
 				factor = 1.000
 			}
