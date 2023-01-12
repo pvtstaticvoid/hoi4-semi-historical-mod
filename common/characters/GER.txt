@@ -244,7 +244,7 @@ characters={
 				small = "GFX_idea_manstein"
 			}
 		}
-		field_marshal = {
+		corps_commander = {
 			traits = {
 				brilliant_strategist armor_officer 
 				organizer
@@ -343,7 +343,7 @@ characters={
 				small = "GFX_idea_heinz_guderian"
 			}
 		}
-		field_marshal = {
+		corps_commander = {
 			traits = {
 				brilliant_strategist career_officer armor_officer  
 				organizer
