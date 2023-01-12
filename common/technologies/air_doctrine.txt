@@ -26,11 +26,11 @@ technologies = {
 		doctrine = yes	
 		research_cost = 2.25
 		
-		categories = {
-			air_doctrine
-			strategic_destruction_tree
-			cat_strategic_destruction
-		}
+		# categories = {
+		# 	air_doctrine
+		# 	strategic_destruction_tree
+		# 	cat_strategic_destruction
+		# }
 		
 		folder = {
 			name = air_doctrine_folder
@@ -759,11 +759,11 @@ technologies = {
 		doctrine = yes	
 		research_cost = 2.25
 		
-		categories = {
-			air_doctrine
-			battlefield_support_tree
-			cat_battlefield_support
-		}
+		# categories = {
+		# 	air_doctrine
+		# 	battlefield_support_tree
+		# 	cat_battlefield_support
+		# }
 		
 		folder = {
 			name = air_doctrine_folder
@@ -1399,11 +1399,11 @@ technologies = {
 		doctrine = yes	
 		research_cost = 2.25
 		
-		categories = {
-			air_doctrine
-			operational_integrity_tree
-			cat_operational_integrity
-		}
+		# categories = {
+		# 	air_doctrine
+		# 	operational_integrity_tree
+		# 	cat_operational_integrity
+		# }
 		
 		folder = {
 			name = air_doctrine_folder
