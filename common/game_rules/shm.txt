@@ -490,6 +490,22 @@ pregrinded_infantry_generals_jap = {
 	}
 }
 
+cowed_by_stalin = {
+	name = "Cowed By Stalin"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_political_discourse"
+	option = {
+		name = enabled
+		text = "Enabled"
+		desc = "The USSR's three tank generals always get cowed by Stalin. The traits will be removed upon completion of the \"Lessons of War\" focus."
+	}
+	default = {
+		name = disabled
+		text = "YRecommended: !Disabled"
+		desc = "The USSR's three tank generals never get cowed by Stalin."
+	}
+}
+
 
 
 
