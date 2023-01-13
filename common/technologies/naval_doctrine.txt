@@ -49,11 +49,11 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3
 		
-		categories = {
-			naval_doctrine
-			fleet_in_being_tree
-			cat_fleet_in_being
-		}
+		# categories = {
+		# 	naval_doctrine
+		# 	fleet_in_being_tree
+		# 	cat_fleet_in_being
+		# }
 		
 		folder = {
 			name = naval_doctrine_folder
@@ -915,12 +915,12 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3
 		
-		categories = {
-			naval_doctrine
-			trade_interdiction_tree
-			submarine_doctrine
-			cat_trade_interdiction
-		}
+		# categories = {
+		# 	naval_doctrine
+		# 	trade_interdiction_tree
+		# 	submarine_doctrine
+		# 	cat_trade_interdiction
+		# }
 		
 		folder = {
 			name = naval_doctrine_folder
@@ -1751,10 +1751,10 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3
 		
-		categories = {
-			naval_doctrine
-			cat_base_strike
-		}
+		# categories = {
+		# 	naval_doctrine
+		# 	cat_base_strike
+		# }
 		
 		folder = {
 			name = naval_doctrine_folder

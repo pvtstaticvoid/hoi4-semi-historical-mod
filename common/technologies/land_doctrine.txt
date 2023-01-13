@@ -31,10 +31,10 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 		
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
+		# categories = {
+		# 	land_doctrine
+		# 	cat_mobile_warfare
+		# }
 		
 		ai_will_do = {
 			factor = 20 
@@ -934,10 +934,10 @@ technologies = {
 		doctrine = yes	
 		research_cost = 2.25
 		
-		categories = {
-			land_doctrine
-			cat_superior_firepower
-		}
+		# categories = {
+		# 	land_doctrine
+		# 	cat_superior_firepower
+		# }
 
 		
 		folder = {
@@ -1777,10 +1777,10 @@ technologies = {
 		doctrine = yes	
 		research_cost = 2.25
 		
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
+		# categories = {
+		# 	land_doctrine
+		# 	cat_grand_battle_plan
+		# }
 
 		
 		folder = {
@@ -2626,10 +2626,10 @@ technologies = {
 		doctrine = yes	
 		research_cost = 2.25
 		
-		categories = {
-			land_doctrine
-			cat_mass_assault
-		}
+		# categories = {
+		# 	land_doctrine
+		# 	cat_mass_assault
+		# }
 
 		
 		folder = {
