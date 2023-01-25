@@ -1,12 +1,15 @@
 ﻿focus_tree = {
 	id = canadian_focus
+	
 	country = {
 		factor = 0
+		
 		modifier = {
 			add = 10
 			tag = CAN
 			has_dlc = "Together for Victory"
 		}
+
 		#modifier = {
 		#	add = 10
 		#	original_tag = CAN
@@ -18,50 +21,60 @@
 		y = 1000
 	}
 	default = no
-	#	focus = {
-	#		id = CAN_
-	#		icon = GFX_
-	#		prerequisite = { focus = }
-	#		mutually_exclusive = { focus =  }
-	#		x = -3
-	#		y = 0
-	#		relative_position_id = 
-	#
-	#		cost = 10
-	#
-	#		ai_will_do = {
-	#			factor = 1
-	#		}
-	#
-	#		available = {
-	#
-	#		}
-	#		
-	#		bypass = {
-	#
-	#		}
-	#
-	#		cancel_if_invalid = yes
-	#		continue_if_invalid = no
-	#		available_if_capitulated = no
-	#
-	#		complete_tooltip = {
-	#
-	#		}
-	#
-	#		completion_reward = {
-	#
-	#		}
-	#	}
+
+
+
+#	focus = {
+#		id = CAN_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
+
+
 	############################
 	##### INDUSTRY SECTION #####
 	############################
+
 	focus = {
 		id = CAN_rowell_sirois_commission
 		icon = GFX_goal_generic_consumer_goods
 		x = 1
 		y = 0
+
 		cost = 10
+
 		ai_will_do = {
 			factor = 24
 			modifier = {
@@ -69,27 +82,34 @@
 				has_completed_focus = CAN_crown_corporations
 			}
 		}
+
 		available = {
+		
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			add_political_power = 120
 		}
 	}
+
 	focus = {
 		id = CAN_crown_corporations
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 2
 		y = 0
 		relative_position_id = CAN_rowell_sirois_commission
+
 		cost = 10
+
 		ai_will_do = {
 			factor = 25
 			modifier = {
@@ -97,27 +117,31 @@
 				has_completed_focus = CAN_rowell_sirois_commission
 			}
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CAN_c_d_howe
 		}
 	}
+
+
 	focus = {
 		id = CAN_national_housing_act
 		icon = GFX_goal_generic_construct_civilian
-		prerequisite = {
-			focus = CAN_rowell_sirois_commission
-		}
-		prerequisite = {
-			focus = CAN_crown_corporations
-		}
+		prerequisite = { focus = CAN_rowell_sirois_commission }
+		prerequisite = { focus = CAN_crown_corporations }
 		x = -1
 		y = 1
 		relative_position_id = CAN_crown_corporations
@@ -125,9 +149,11 @@
 		ai_will_do = {
 			factor = 75
 		}
+
 		available = {
 			controls_state = 276
 		}
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -140,6 +166,7 @@
 				}
 			}
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes

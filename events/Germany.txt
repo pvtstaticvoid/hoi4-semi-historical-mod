@@ -233,15 +233,18 @@ country_event = {
 #molotov_ribbentrop_pact
 # fire event to SOV to accept or not. adds claims
 # SOV events sends reply to GER, adds claims if they said yes, hurts relations if they say no
+
 # Molotov-Ribbentrop Pact (Soviets)
 country_event = {
 	id = germany.11
 	title = germany.11.t
 	desc = germany.11.d
 	picture = GFX_report_event_molotov_ribentrop_handshake
+
 	is_triggered_only = yes
+
 	option = {
-		name = germany.11.a		#sounds good
+		name = germany.11.a	#sounds good
 		ai_chance = {
 			factor = 90
 			modifier = {
@@ -284,219 +287,165 @@ country_event = {
 		custom_effect_tooltip = germany.11.a.tt
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 146
-				}
+				NOT = { owns_state = 146 }
 			}
-			add_state_claim = 146			#KARELIA (FIN)
+			add_state_claim = 146 #KARELIA (FIN)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 147
-				}
+				NOT = { owns_state = 147 }
 			}
-			add_state_claim = 147			#SALLA (FIN)
+			add_state_claim = 147 #SALLA (FIN)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 722
-				}
+				NOT = { owns_state = 722 }
 			}
-			add_state_claim = 722			#PETSAMO (FIN)
+			add_state_claim = 722 #PETSAMO (FIN)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 13
-				}
+				NOT = { owns_state = 13 }
 			}
-			add_state_claim = 13			#PÄRNU (EST)
+			add_state_claim = 13 #PÄRNU (EST)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 191
-				}
+				NOT = { owns_state = 191 }
 			}
-			add_state_claim = 191			#TARTU (EST)
+			add_state_claim = 191 #TARTU (EST)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 811
-				}
+				NOT = { owns_state = 811 }
 			}
-			add_state_claim = 811			#SAAREMAA (EST)
+			add_state_claim = 811 #SAAREMAA (EST)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 813
-				}
+				NOT = { owns_state = 813 }
 			}
-			add_state_claim = 813			#VIRUMAA (EST)
+			add_state_claim = 813 #VIRUMAA (EST)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 812
-				}
+				NOT = { owns_state = 812 }
 			}
-			add_state_claim = 812			#TALLIN (EST)
+			add_state_claim = 812 #TALLIN (EST)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 12
-				}
+				NOT = { owns_state = 12 }
 			}
-			add_state_claim = 12			#VIDZEME (LAT)
+			add_state_claim = 12 #VIDZEME (LAT)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 190
-				}
+				NOT = { owns_state = 190 }
 			}
-			add_state_claim = 190			#KURZEME (LAT)
+			add_state_claim = 190 #KURZEME (LAT)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 808
-				}
+				NOT = { owns_state = 808 }
 			}
-			add_state_claim = 808			#RIGA (LAT)
+			add_state_claim = 808 #RIGA (LAT)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 809
-				}
+				NOT = { owns_state = 809 }
 			}
-			add_state_claim = 809			#ZEMGALE (LAT)
+			add_state_claim = 809 #ZEMGALE (LAT)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 810
-				}
+				NOT = { owns_state = 810 }
 			}
-			add_state_claim = 810			#LATGALE (LAT)
+			add_state_claim = 810 #LATGALE (LAT)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 11
-				}
+				NOT = { owns_state = 11 }
 			}
-			add_state_claim = 11			#KAUNAS (LIT)
+			add_state_claim = 11 #KAUNAS (LIT)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 784
-				}
+				NOT = { owns_state = 784 }
 			}
-			add_state_claim = 784			#WILNO (LIT)
+			add_state_claim = 784 #WILNO (LIT)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 189
-				}
+				NOT = { owns_state = 189 }
 			}
-			add_state_claim = 189			#ZEMAITIJA (LIT)
+			add_state_claim = 189 #ZEMAITIJA (LIT)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 814
-				}
+				NOT = { owns_state = 814 }
 			}
-			add_state_claim = 814			#SUDUVA (LIT)
+			add_state_claim = 814 #SUDUVA (LIT)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 815
-				}
+				NOT = { owns_state = 815 }
 			}
-			add_state_claim = 815			#AUKSTAITIJA (LIT)
+			add_state_claim = 815 #AUKSTAITIJA (LIT)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 89
-				}
+				NOT = { owns_state = 89 }
 			}
-			add_state_claim = 89			#STANISLAWOW (POL)
+			add_state_claim = 89 #STANISLAWOW (POL)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 91
-				}
+				NOT = { owns_state = 91 }
 			}
-			add_state_claim = 91			#LWOW (POL)
+			add_state_claim = 91 #LWOW (POL)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 93
-				}
+				NOT = { owns_state = 93 }
 			}
-			add_state_claim = 93			#WOLYN (POL)
+			add_state_claim = 93 #WOLYN (POL)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 94
-				}
+				NOT = { owns_state = 94 }
 			}
-			add_state_claim = 94			#POLESIE (POL)
+			add_state_claim = 94 #POLESIE (POL)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 95
-				}
+				NOT = { owns_state = 95 }
 			}
-			add_state_claim = 95			#NOWOGRODEK (POL)
+			add_state_claim = 95 #NOWOGRODEK (POL)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 96
-				}
+				NOT = { owns_state = 96 }
 			}
-			add_state_claim = 96			#WILEJKA (POL)
+			add_state_claim = 96 #WILEJKA (POL)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 97
-				}
+				NOT = { owns_state = 97 }
 			}
-			add_state_claim = 97			#BIALYSTOK (POL)
+			add_state_claim = 97 #BIALYSTOK (POL)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 78
-				}
+				NOT = { owns_state = 78 }
 			}
-			add_state_claim = 78			#BESSARABIA (ROM)
+			add_state_claim = 78 #BESSARABIA (ROM)
 		}
 		if = {
 			limit = {
-				NOT = {
-					owns_state = 80
-				}
+				NOT = { owns_state = 80 }
 			}
-			add_state_claim = 80			#BUCOVINA (ROM)
+			add_state_claim = 80 #BUCOVINA (ROM)
 		}
 		if = {
 			limit = {
@@ -558,7 +507,9 @@ country_event = {
 	title = germany.12.t
 	desc = germany.12.d
 	picture = GFX_report_event_molotov_signing_pact
+
 	is_triggered_only = yes
+
 	option = {
 		name = germany.12.a		#neat
 		# additional 3 anti-tank bonuses!
@@ -581,36 +532,18 @@ country_event = {
 
 		every_other_country = {
 			limit = {
-				NOT = {
-					tag = GER
-				}
+				NOT = { tag = GER }
 				has_government = fascism
 			}
-			add_opinion_modifier = {
-				target = GER
-				modifier = MR_pact_fascists
-			}
+			add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
 		}
-		diplomatic_relation = {
-			country = SOV
-			relation = non_aggression_pact
-		}
-		add_opinion_modifier = {
-			target = SOV
-			modifier = MR_pact
-		}
-		# pact
+		diplomatic_relation = { country = SOV relation = non_aggression_pact }
+		add_opinion_modifier = { target = SOV modifier = MR_pact }# pact
 		USA = {
-			set_country_flag = {
-				flag = USA_MR_window
-				days = 60
-				value = 1
-			}
+			set_country_flag = { flag = USA_MR_window days = 60 value = 1 }
 		}
 		hidden_effect = {
-			country_event = {
-				id = news.32
-			}
+			country_event = { id = news.32 }
 		}
 	}
 }
@@ -621,14 +554,12 @@ country_event = {
 	title = germany.13.t
 	desc = germany.13.d
 	picture = GFX_report_event_stalin_01
+
 	is_triggered_only = yes
+
 	option = {
-		name = germany.13.a		#bah
-		add_opinion_modifier = {
-			target = SOV
-			modifier = refused_MR_pact
-		}
-		# no pact
+		name = germany.13.a	#bah
+		add_opinion_modifier = { target = SOV modifier = refused_MR_pact }# no pact
 	}
 }
 
@@ -638,7 +569,9 @@ country_event = {
 	title = germany.14.t
 	desc = germany.14.d
 	picture = GFX_report_event_german_troops
+
 	fire_only_once = yes
+
 	trigger = {
 		OR = {
 			tag = GER
@@ -649,12 +582,8 @@ country_event = {
 			}
 		}
 		has_global_flag = sov_yes_pact
-		SOU = {
-			exists = yes
-		}
-		NOT = {
-			has_war_with = SOU
-		}
+		SOU = { exists = yes }
+		NOT =  { has_war_with = SOU }
 		OR = {
 			AND = {
 				OR = {
@@ -739,9 +668,7 @@ country_event = {
 				}
 			}
 			AND = {
-				POL = {
-					has_capitulated = yes
-				}
+				POL = { has_capitulated = yes }
 				AND = {
 					OR = {
 						controls_state = 96
@@ -827,6 +754,7 @@ country_event = {
 			}
 		}
 	}
+
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -4992,51 +4920,9 @@ country_event = {
 	picture = GFX_report_event_physics_lab_01
 	is_triggered_only = yes
 	option = {
-		name = germany.75.a		#sounds good
-		GER = {
-			country_event = {
-				id = germany.76
-			}
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = sov_ger_treaty
-			}
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = sov_ger_treaty_trade
-			}
-		}
-		# additional 3 anti-tank bonuses!
-		if = {
-			limit = {
-				has_game_rule = {
-					rule = anti_tank_bonus
-					option = both
-				}
-			}
-			add_tech_bonus = {
-				name = shm_ger_sov_treaty_at
-				bonus = 1.0
-				uses = 3
-				technology = interwar_antitank
-				technology = antitank1
-				technology = antitank2
-			}
-		}
-
-		# REVISIT Balance research bonus
+		name = germany.75.a	#sounds good
 		give_SOV_armor_research_bonuses = yes
 	}
-	# option = {
-	# 	name = germany.75.b	#no way
-	# 	add_timed_idea = { idea = SOV_scientist_defect days = 365 }
-	# 	ai_chance = { factor = 0 }
-	# 	add_political_power = -10
-	# 	add_opinion_modifier = { target = GER modifier = refused_MR_pact }# no pact
-	# 	GER = {
-	# 		country_event = { days = 1 id = germany.77 }
-	# 	}
-	# }
 }
 
 # Soviets Accept German-Soviet Treaty
@@ -5047,47 +4933,7 @@ country_event = {
 	picture = GFX_report_event_physics_lab_02
 	is_triggered_only = yes
 	option = {
-		name = germany.76.a		#bah
-		# REVISIT Balance research bonus
-		add_tech_bonus = {
-			name = GER_soviet_treaty
-			ahead_reduction = 2
-			technology = basic_medium_tank
-		}
-		add_tech_bonus = {
-			name = GER_soviet_treaty
-			bonus = 1
-			uses = 2
-			category = armor
-		}
-		# additional 3 anti-tank bonuses!
-		if = {
-			limit = {
-				has_game_rule = {
-					rule = anti_tank_bonus
-					option = both
-				}
-			}
-			add_tech_bonus = {
-				name = shm_ger_sov_treaty_at
-				bonus = 1.0
-				uses = 3
-				technology = interwar_antitank
-				technology = antitank1
-				technology = antitank2
-			}
-		}
-
-		SOV = {
-			add_opinion_modifier = {
-				target = GER
-				modifier = sov_ger_treaty
-			}
-			add_opinion_modifier = {
-				target = GER
-				modifier = sov_ger_treaty_trade
-			}
-		}
+		name = germany.76.a	#bah
 	}
 }
 
@@ -5100,7 +4946,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = germany.77.a
-		#add_opinion_modifier = { target = SOV modifier = refused_MR_pact }# no pact
 	}
 }
 
@@ -5115,11 +4960,11 @@ country_event = {
 		name = germany.78.a
 		add_ideas = GER_air_innovations_2_idea
 		add_tech_bonus = {
-			name = radar_tech_bonus
-			bonus = 1
-			uses = 1
-			category = radar_tech
-		}
+				name = radar_tech_bonus
+				bonus = 1.0
+				uses = 1
+				category = radar_tech
+			}
 	}
 }
 
