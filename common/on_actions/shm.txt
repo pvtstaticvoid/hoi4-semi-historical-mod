@@ -150,6 +150,21 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
+
+			# extra italian manpower
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = extra_manpower_italy
+						option = enabled
+					}
+				}
+				ITA = {
+					add_manpower = 1000000
+				}
+			}
+
+
 			# allied engine bonus
 			every_country = {
 				if = {

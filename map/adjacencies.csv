@@ -129,6 +129,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
+2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -136,6 +137,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12730;2098;impassable;-1;-1;-1;-1;-1;;Himalayas
 12730;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 10810;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
+1996;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 12892;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
 12892;4900;impassable;-1;-1;-1;-1;-1;;Himalayas
 4435;4900;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -214,8 +216,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6691;9650;impassable;-1;-1;-1;-1;-1;;austrian alps
 9650;3684;impassable;-1;-1;-1;-1;-1;;austrian alps
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
-13228;1048;impassable;-1;-1;-1;-1;-1;;gibraltar
-13228;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
+4135;13228;impassable;-1;-1;-1;-1;-1;;gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
 4135;7153;impassable;-1;-1;-1;-1;-1;;gibraltar
 12716;1981;impassable;-1;-1;-1;-1;-1;;british_guyana
@@ -269,5 +270,4 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 142;6012;impassable;-1;-1;-1;-1;-1;;finland
 142;9140;impassable;-1;-1;-1;-1;-1;;finland
 6117;9140;impassable;-1;-1;-1;-1;-1;;finland
-
 -1;-1;;-1;-1;-1;-1;-1;-1

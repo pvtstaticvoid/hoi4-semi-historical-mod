@@ -506,6 +506,21 @@ cowed_by_stalin = {
 	}
 }
 
+extra_manpower_italy = {
+	name = "Extra Manpower (Italy)"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_civil_support"
+	default = {
+		name = enabled
+		text = "YRecommended: !Enabled"
+		desc = "Italy receives 1 million extra manpower."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+	}
+}
+
 
 
 

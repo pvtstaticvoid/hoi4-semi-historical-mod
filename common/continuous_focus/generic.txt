@@ -309,6 +309,15 @@ continuous_focus_palette = {
 	}
 
 	focus = {
+		id = continuous_recruitment_drive	
+		icon = GFX_focus_ger_oppose_hitler
+		modifier = { mobilization_speed = 1.0	}
+		#available = { NOT = { AND ={  tag = EFR date < 1940.1.1 }}   }
+		daily_cost = 1	
+		available_if_capitulated = yes
+	}
+
+	focus = {
 		id = continuous_suppression
 		
 		icon = GFX_goal_continuous_suppression

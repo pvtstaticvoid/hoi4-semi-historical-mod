@@ -15,13 +15,11 @@ state={
 		owner = RAJ
 		buildings = {
 			infrastructure = 1
-			arms_factory = 1
-			industrial_complex = 2 
 		}
 		victory_points = {
 			8010 3 
 		}
-		add_core_of = RAJ
+		add_core_of = BHU
 	}
 
 	provinces={
