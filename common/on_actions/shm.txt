@@ -330,12 +330,6 @@ on_actions = {
 					amount = 200
 				}
 			}
-			537 = {
-				add_resource = {
-					type = oil
-					amount = 10
-				}
-			}
 			if = {
 				limit = {
 					has_game_rule = {
