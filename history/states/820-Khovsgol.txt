@@ -16,7 +16,7 @@ state={
 		victory_points = {
 			1834 1 #Erdenet
 		}
-		add_core_of = SOV
+		add_core_of = MON
 	}
 	manpower=88200
 	buildings_max_level_factor=1.000

@@ -225,7 +225,6 @@ characters = {
 				cavalry_leader
 				trait_engineer
 				infantry_leader
-				commando
 				trickster
 				urban_assault_specialist
 				ranger
@@ -368,7 +367,6 @@ characters = {
 				cavalry_leader
 				trait_engineer
 				infantry_leader
-				commando
 				trickster
 				urban_assault_specialist
 				ranger
