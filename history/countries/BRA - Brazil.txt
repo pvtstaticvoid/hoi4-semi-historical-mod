@@ -172,9 +172,6 @@ recruit_character = BRA_arlindo_veiga_dos_santos
 		set_naval_oob = "BRA_1939_naval"
 	}
 }
-add_ideas = {
-	BRA_guyana_occupied
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -184,10 +181,7 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 58
-	fascism = 13
-	democratic = 15
-	communism = 14
+	neutrality = 100
 }
 
 
