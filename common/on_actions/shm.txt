@@ -151,6 +151,13 @@ on_actions = {
 	on_startup = {
 		effect = {
 
+
+			# success in ethiopia for italy
+			ITA = {
+				ITA_missiolini_progress_in_ethiopia_success_effect = yes
+				ITA_missiolini_progress_in_ethiopia_success_effect = yes
+			}
+
 			# extra italian manpower
 			if = {
 				limit = {
