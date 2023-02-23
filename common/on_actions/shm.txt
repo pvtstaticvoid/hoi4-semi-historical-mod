@@ -157,6 +157,7 @@ on_actions = {
 				ITA_missiolini_progress_in_ethiopia_success_effect = yes
 				ITA_missiolini_progress_in_ethiopia_success_effect = yes
 			}
+			clr_global_flag = second_italo_ethiopian_war_flag
 
 			# extra italian manpower
 			if = {

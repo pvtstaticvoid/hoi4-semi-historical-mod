@@ -187,7 +187,7 @@ allow_volunteers = {
 	icon = "GFX_volunteers"
 	option = {
 		name = "ALWAYS_FREE"
-		text = "Free"
+		text = "RULE_OPTION_FREE"
 		desc = "RULE_ALLOW_VOLUNTEERS_FREE_DESC"
 	}
 	default = {
@@ -631,21 +631,25 @@ SOV_ai_behavior = {
 		desc = "RULE_OPTION_LEFT_OPPOSITION_COOPERATIVE_SOV_AI_DESC"
 	}
 	option = {
+		required_dlc = "No Step Back"
 		name = RIGHT_OPPOSITION
 		text = "RULE_OPTION_RIGHT_OPPOSITION"
 		desc = "RULE_OPTION_RIGHT_OPPOSITION_SOV_AI_DESC"
 	}
 	option = {
+		required_dlc = "No Step Back"
 		name = RIGHT_OPPOSITION_COOPERATIVE
 		text = "RULE_RIGHT_OPPOSITION_COOPERATIVE"
 		desc = "RULE_OPTION_RIGHT_OPPOSITION_COOPERATIVE_SOV_AI_DESC"
 	}
 	option = {
+		required_dlc = "No Step Back"
 		name = EXILES_TSARIST
 		text = "RULE_EXILES_TSARIST"
 		desc = "RULE_OPTION_EXILES_TSARIST_SOV_AI_DESC"
 	}
 	option = {
+		required_dlc = "No Step Back"
 		name = EXILES_FASCIST
 		text = "RULE_EXILES_FASCIST"
 		desc = "RULE_OPTION_EXILES_FASCIST_SOV_AI_DESC"
@@ -658,7 +662,6 @@ SOV_ai_behavior = {
 }
 JAP_ai_behavior = {
 	name = "JAP_AI_BEHAVIOR"
-	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
 		name = DEFAULT
@@ -666,6 +669,7 @@ JAP_ai_behavior = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
+		required_dlc = "Waking the Tiger"
 		name = COMMUNIST
 		text = "RULE_OPTION_COMMUNIST"
 		desc = "RULE_OPTION_COMMUNIST_JAP_AI_DESC"
@@ -676,6 +680,7 @@ JAP_ai_behavior = {
 		desc = "RULE_OPTION_NEUTRALITY_JAP_AI_DESC"
 	}
 	option = {
+		required_dlc = "Waking the Tiger"
 		name = DEMOCRATIC
 		text = "RULE_OPTION_DEMOCRATIC"
 		desc = "RULE_DEMOCRATIC_JAP_AI_DESC"
@@ -707,37 +712,38 @@ ITA_ai_behavior = {
 		desc = "RULE_FASCIST_HISTORICAL_ITA_AI_DESC" 
 		allow_achievements = yes
 	}
-	#option = { #TODO_Manu: Kill this
-	#	name = FASCIST_ALTERNATE
-	#	text = "RULE_OPTION_FASCIST_ALTERNATE"
-	#	desc = "RULE_FASCIST_ALTERNATE_ITA_AI_DESC"
-	#}
 	option = {
+		required_dlc = "By Blood Alone"
 		name = ALT_FASCIST_BALBO
 		text = "RULE_OPTION_ALT_FASCIST_BALBO"
 		desc = "RULE_ALT_FASCIST_BALBO_ITA_AI_DESC"
 	}
 	option = {
+		required_dlc = "By Blood Alone"
 		name = ALT_FASCIST_GRANDI
 		text = "RULE_OPTION_ALT_FASCIST_GRANDI"
 		desc = "RULE_ALT_FASCIST_GRANDI_ITA_AI_DESC"
 	}
 	option = {
+		required_dlc = "By Blood Alone"
 		name = ITA_MONARCHIST_ROMAN_EMPIRE
 		text = "RULE_OPTION_ITA_MONARCHIST_ROMAN_EMPIRE"
 		desc = "RULE_OPTION_ITA_MONARCHIST_ROMAN_EMPIRE_AI_DESC"
 	}
 	option = {
+		required_dlc = "By Blood Alone"
 		name = ITA_CHRISTIAN_DEMOCRACY
 		text = "RULE_OPTION_ITA_CHRISTIAN_DEMOCRACY"
 		desc = "RULE_OPTION_ITA_CHRISTIAN_DEMOCRACY_AI_DESC"
 	}
 	option = {
+		required_dlc = "By Blood Alone"
 		name = ITA_COMMUNIST_PLAN
 		text = "RULE_OPTION_ITA_COMMUNIST_PLAN"
 		desc = "RULE_OPTION_ITA_COMMUNIST_PLAN_AI_DESC"
 	}
 	option = {
+		required_dlc = "By Blood Alone"
 		name = ITA_DEMOCRATIC_PLAN
 		text = "RULE_OPTION_ITA_DEMOCRATIC_PLAN"
 		desc = "RULE_OPTION_ITA_DEMOCRATIC_PLAN_AI_DESC"
@@ -1286,7 +1292,6 @@ MAN_ai_behavior = {
 }
 ENG_ai_behavior = {
 	name = "ENG_AI_BEHAVIOR"
-	required_dlc = "Man the Guns"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
 		name = DEFAULT
@@ -1303,32 +1308,36 @@ ENG_ai_behavior = {
 		name = DEMOCRATIC_ALTERNATE
 		text = "RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT"
 		desc = "RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT_ENG_AI_DESC"
+		required_dlc = "Man the Guns"
 	}
 	option = {
 		name = COMMUNIST
 		text = "RULE_OPTION_TRADE_UNIONS"
 		desc = "RULE_OPTION_TRADE_UNIONS_ENG_AI_DESC"
+		required_dlc = "Man the Guns"
 	}
 	option = {
 		name = NEUTRALITY
 		text = "RULE_OPTION_THE_KINGS_PARTY"
 		desc = "RULE_OPTION_THE_KINGS_PARTY_ENG_AI_DESC"
+		required_dlc = "Man the Guns"
 	}
 	option = {
 		name = FASCIST
 		text = "RULE_OPTION_ORGANIZE_THE_BLACKSHIRTS"
 		desc = "RULE_OPTION_ORGANIZE_THE_BLACKSHIRTS_ENG_AI_DESC"
+		required_dlc = "Man the Guns"
 	}
 	option = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		required_dlc = "Man the Guns"
 	}
 }
 
 USA_ai_behavior = {
 	name = "USA_AI_BEHAVIOR"
-	required_dlc = "Man the Guns"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
 		name = DEFAULT
@@ -1336,6 +1345,7 @@ USA_ai_behavior = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
+		required_dlc = "Man the Guns"
 		name = COMMUNIST
 		text = "RULE_OPTION_COMMUNIST"
 		desc = "RULE_OPTION_COMMUNIST_USA_AI_DESC"
@@ -1352,6 +1362,7 @@ USA_ai_behavior = {
 		desc = "RULE_DEMOCRATIC_ALTERNATE_USA_AI_DESC"
 	}
 	option = {
+		required_dlc = "Man the Guns"
 		name = FASCIST
 		text = "RULE_OPTION_FASCIST"
 		desc = "RULE_FASCIST_USA_AI_DESC"
@@ -1954,7 +1965,7 @@ SWI_ai_behavior = {
 	option = {
 		name = SWI_IMPERIAL
 		text = "RULE_OPTION_SWI_IMPERIAL"
-		desc = "RULE_OPTION_IMPERIAL_SWI_AI_DESC"
+		desc = "RULE_OPTION_SWI_IMPERIAL_AI_DESC"
 		allow_achievements = no
 	}
 	option = {
@@ -2190,9 +2201,69 @@ obsolete_focus_branches_visibility = {
 	required_dlc = "No Step Back"
 	group = "RULE_GROUP_GENERAL_UI"
 	default = {
+		name = SHOW
+		text = "YRecommended: !Show"
+		desc = "RULE_OPTION_SHOW_DESC_DESC"
+		allow_achievements = yes
+	}
+	option = {
 		name = HIDE
 		text = "RULE_OPTION_HIDE"
 		desc = "RULE_OPTION_HIDE_DESC"
+	}
+}
+
+ ##  ###  #   ## ###      ##  ##  #  ##  ###
+ # # #   # # #   #       #   #   # # # # #
+ ##  ##  ### #   ##       #  #   # # ##  ##
+ #   #   # # #   #         # #   # # # # #
+ #   ### # #  ## ###     ##   ##  #  # # ###
+
+peace_score_to_overlord = {
+	name = "PEACE_SCORE_TO_OVERLORD"
+	group = "RULE_GROUP_PEACE_SCORE"
+	option = {
+		name = YES
+		text = "RULE_OPTION_YES"
+		desc = "RULE_OPTION_PEACE_SCORE_TO_OVERLORD_YES_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = NO
+		text = "RULE_OPTION_NO"
+		desc = "RULE_OPTION_PEACE_SCORE_TO_OVERLORD_NO_DESC"
+	}
+}
+
+peace_score_to_faction_leader = {
+	name = "PEACE_SCORE_TO_FACTION_LEADER"
+	group = "RULE_GROUP_PEACE_SCORE"
+	option = {
+		name = YES
+		text = "RULE_OPTION_YES"
+		desc = "RULE_OPTION_PEACE_SCORE_TO_FACTION_LEADER_YES_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = NO
+		text = "RULE_OPTION_NO"
+		desc = "RULE_OPTION_PEACE_SCORE_TO_FACTION_LEADER_NO_DESC"
+	}
+}
+
+peace_score_reset_low_scores = {
+	name = "PEACE_SCORE_RESET_LOW_SCORES"
+	group = "RULE_GROUP_PEACE_SCORE"
+	option = {
+		name = YES
+		text = "RULE_OPTION_YES"
+		desc = "RULE_OPTION_PEACE_SCORE_RESET_LOW_SCORES_YES_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = NO
+		text = "RULE_OPTION_NO"
+		desc = "RULE_OPTION_PEACE_SCORE_RESET_LOW_SCORES_NO_DESC"
 	}
 }
 
