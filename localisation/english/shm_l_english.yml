@@ -28,3 +28,8 @@
 
  shm_transfer_countries.111.t:0 "[JAP.GetNameDefCap] Demands [SIA.GetNameDef]"
  shm_transfer_countries.111.desc:0 "Taking advantage of [SIA.GetAdjective] weakness in light of the recent loss of some Indochinese territories to France, [JAP.GetNameDef] has coerced the [SIA.GetAdjective] government into surrendering control over their home territories! \n\nJapanese troops have already moved to occupy all major bases in the region, and experts fear that the area could be used as a launching point for future military expeditions."
+ 
+ shm_SOV_claims_in_baltics_tt:0 "[SOV.GetNameDefCap] §Yannexes the Baltics.§!"
+ shm_SOV_secure_leningrad_tt:0 "[SOV.GetNameDefCap] §Yannexes Karjala and Salla.§!"
+ shm_SOV_secure_leningrad_tension:0 "Winter War"
+ shm_SOV_claim_on_bessarabia_tt:0 "[SOV.GetNameDefCap] §Yannexes Bessarabia and Bucovina.§!"
