@@ -4959,7 +4959,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_leningrad_polytechnical_institute
-		cost = 1
+		cost = 5
 
 		available = {
 			OR = {
@@ -5018,7 +5018,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 1
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_improve_the_stalin_line }
 
@@ -5259,7 +5259,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 1
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_the_molotov_line }
 
@@ -5402,7 +5402,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_move_industry_to_the_urals
-		cost = 1
+		cost = 5
 
 		available = {
 			219 = {
@@ -5536,7 +5536,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_improve_the_stalin_line
-		cost = 1
+		cost = 5
 
 		available = {
 			OR = {
@@ -5641,7 +5641,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_military_engineering_university
-		cost = 1
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 215 #ONEGA
@@ -5756,7 +5756,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 1
+		cost = 5
 
 		available = {
 			OR = {
