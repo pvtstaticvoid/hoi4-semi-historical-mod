@@ -160,6 +160,7 @@ if = {
 }
 
 # Don't purge tank generals, captain of industry, and stability guy.
+# Also don't purge the pregrinded advisors.
 SOV_georgy_zhukov = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
@@ -182,6 +183,12 @@ SOV_nikolay_voznesensky = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
 SOV_mikhail_kalinin = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_leonid_govorov_pregrinded = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_aleksandr_gorbatov_pregrinded = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
 
