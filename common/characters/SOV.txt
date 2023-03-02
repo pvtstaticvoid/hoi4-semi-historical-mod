@@ -224,7 +224,7 @@ characters = {
 				panzer_leader
 				cavalry_leader
 				trait_engineer
-				infantry_leader
+				# infantry_leader
 				trickster
 				urban_assault_specialist
 				ranger
@@ -366,7 +366,7 @@ characters = {
 				panzer_leader
 				cavalry_leader
 				trait_engineer
-				infantry_leader
+				# infantry_leader
 				trickster
 				urban_assault_specialist
 				ranger

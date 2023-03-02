@@ -1932,9 +1932,7 @@ focus_tree = {
 		}
 
 		available = {
-			any_enemy_country = {
-				is_major = yes
-			}
+
 		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -4658,7 +4656,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_found_the_pcdi
-		cost = 1
+		cost = 5
 
 		available = {
 
@@ -4751,11 +4749,11 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 1
+		cost = 10
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
-			# has_equipment = { train_equipment > 119 } #20 trains per factory
+			has_equipment = { train_equipment > 119 } #20 trains per factory
 			OR = {
 				threat > 0.85
 				any_enemy_country = {
@@ -4768,11 +4766,11 @@ focus_tree = {
 		}
 
 		select_effect = {
-			# add_equipment_to_stockpile = {
-			# 	type = train_equipment
-			# 	amount = SOV_industrial_relocation_trains_focus_negative
-			# 	producer = SOV
-			# }
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = SOV_industrial_relocation_trains_focus_negative
+				producer = SOV
+			}
 			#Factories are removed immediately to keep consistency with how decisions work
 			219 = { #Moscow
 				remove_building = {
@@ -4819,13 +4817,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			# hidden_effect = {
-			# 	add_equipment_to_stockpile = {
-			# 		type = train_equipment
-			# 		amount = SOV_industrial_relocation_trains_focus
-			# 		producer = SOV
-			# 	}
-			# }
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = SOV_industrial_relocation_trains_focus
+					producer = SOV
+				}
+			}
 			custom_effect_tooltip = SOV_focus_select_effect_tt
 			effect_tooltip = {
 				219 = { #Moscow
@@ -4961,7 +4959,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_leningrad_polytechnical_institute
-		cost = 1
+		cost = 5
 
 		available = {
 			OR = {
@@ -5020,7 +5018,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 1
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_improve_the_stalin_line }
 
@@ -5261,7 +5259,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 1
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_the_molotov_line }
 
@@ -5404,7 +5402,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_move_industry_to_the_urals
-		cost = 1
+		cost = 5
 
 		available = {
 			219 = {
@@ -5538,7 +5536,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_improve_the_stalin_line
-		cost = 1
+		cost = 5
 
 		available = {
 			OR = {
@@ -5643,7 +5641,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_military_engineering_university
-		cost = 1
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 215 #ONEGA
@@ -5758,7 +5756,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 1
+		cost = 5
 
 		available = {
 			OR = {
@@ -12809,7 +12807,7 @@ ai_will_do = {
 
 		completion_reward = {
 			# Estonia
-			custom_effect_tooltip = SOV_estonian_claimed_states_tt
+			# custom_effect_tooltip = SOV_estonian_claimed_states_tt
 			hidden_effect = {
 				EST = {
 					every_owned_state = {
@@ -12821,7 +12819,7 @@ ai_will_do = {
 				}
 			}
 			# Latvia
-			custom_effect_tooltip = SOV_latvian_claimed_states_tt
+			# custom_effect_tooltip = SOV_latvian_claimed_states_tt
 			hidden_effect = {
 				LAT = {
 					every_owned_state = {
@@ -12833,7 +12831,7 @@ ai_will_do = {
 				}
 			}
 			# Lithuania
-			custom_effect_tooltip = SOV_lithuanian_claimed_states_tt
+			# custom_effect_tooltip = SOV_lithuanian_claimed_states_tt
 			hidden_effect = {
 				LIT = {
 					every_owned_state = {
@@ -12844,11 +12842,29 @@ ai_will_do = {
 					}
 				}
 			}
-			#Activate targeted decisions
-			activate_targeted_decision = { target = EST decision = SOV_send_ultimatum_to_country_baltic }
-			activate_targeted_decision = { target = LAT decision = SOV_send_ultimatum_to_country_baltic }
-			activate_targeted_decision = { target = LIT decision = SOV_send_ultimatum_to_country_baltic }
+			# #Activate targeted decisions
+			# activate_targeted_decision = { target = EST decision = SOV_send_ultimatum_to_country_baltic }
+			# activate_targeted_decision = { target = LAT decision = SOV_send_ultimatum_to_country_baltic }
+			# activate_targeted_decision = { target = LIT decision = SOV_send_ultimatum_to_country_baltic }
 
+			# Annex the baltics.
+			custom_effect_tooltip = shm_SOV_claims_in_baltics_tt
+			hidden_effect = {
+				EST = {
+					set_country_flag = SOV_ultimatum_sent_flag
+				}
+				LAT = {
+					set_country_flag = SOV_ultimatum_sent_flag
+				}
+				LIT = {
+					set_country_flag = SOV_ultimatum_sent_flag
+				}
+				SOV = {
+					annex_country = { target = EST }
+					annex_country = { target = LAT }
+					annex_country = { target = LIT }
+				}
+			}
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 		}
 	}
@@ -12883,17 +12899,28 @@ ai_will_do = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			add_state_claim = 146 # Karjala
-			146 = {
-				controller = {
-					set_country_flag = SOV_ultimatum_sent_flag #Add it for AI strats reasons
-					add_timed_idea = {
-						idea = communist_pressure
-						days = 365
+			hidden_effect = {
+				add_state_claim = 146 # Karjala
+				146 = {
+					controller = {
+						set_country_flag = SOV_ultimatum_sent_flag #Add it for AI strats reasons
+						add_timed_idea = {
+							idea = communist_pressure
+							days = 365
+						}
+						# country_event = { id = finland.1 hours = 16 random_hours = 8 }
 					}
-					country_event = { id = finland.1 hours = 16 random_hours = 8 }
+				}
+				SOV = { 
+					transfer_state = 146
+					transfer_state = 147
+				}
+				news_event = {
+					id = news.12
 				}
 			}
+			custom_effect_tooltip = shm_SOV_secure_leningrad_tt
+			add_named_threat = { threat = 4.3 name = shm_SOV_secure_leningrad_tension }
 		}
 	}
 
@@ -13365,64 +13392,34 @@ ai_will_do = {
 		}
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = { #This is now generic and will target any potential (multiple) controllers for these states.
-			if = {
-				limit = { 78 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+		completion_reward = {
+			hidden_effect = {
 				add_state_claim = 78
-			}
-			if = {
-				limit = { 766 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
-				add_state_claim = 766
-			}
-			if = {
-				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
 				add_state_claim = 80
-			}
-			add_named_threat = { threat = 1 name = SOV_claim_on_bessarabia }
-			random_other_country = {
-				limit = { owns_state = 78 }
-				add_opinion_modifier = { target = SOV modifier = claimed_bessarabia }
-				set_country_flag = SOV_added_claimed_bessarabia
-				country_event = { id = romania.1 hours = 16 random_hours = 8 }
-			}
-			if = { #Done like this to prevent disgusting tooltip issues, but I hate it ok?
-				limit = {
-					any_other_country = {
-						owns_state = 78
-						NOT = {	owns_state = 80 }
-					}
-				}
-				random_other_country = {
-					limit = { 
-						owns_state = 80 
-						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
-					country_event = { id = romania.1 hours = 16 random_hours = 8 }
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						any_other_country = {
+				add_state_claim = 766
+				every_other_country = {
+					limit = {
+						OR = {
 							owns_state = 78
-							NOT = {	owns_state = 766 }
-						}
-						any_other_country = {
 							owns_state = 80
-							NOT = {	owns_state = 766 }
+							owns_state = 766
 						}
 					}
+					add_opinion_modifier = { target = SOV modifier = claimed_bessarabia }
 				}
-				random_other_country = {
-					limit = { 
-						owns_state = 766
-						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
-					country_event = { id = romania.1 hours = 16 random_hours = 8 }
+				SOV = {
+					transfer_state = 78
+					transfer_state = 80
+					transfer_state = 766
+				}
+				news_event = {
+					id = news.10
 				}
 			}
+
+			custom_effect_tooltip = shm_SOV_claim_on_bessarabia_tt
+			add_named_threat = { threat = 1 name = SOV_claim_on_bessarabia }
+
 		}
 	}
 
