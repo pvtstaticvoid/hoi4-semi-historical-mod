@@ -120,12 +120,14 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox cavalry_officer cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer }
+			traits={ 
+				organizer panzer_leader cavalry_leader trait_engineer trickster desert_fox urban_assault_specialist ranger
+			}
 			skill=8
-			attack_skill=5
-			defense_skill=9
-			planning_skill=9
-			logistics_skill=2
+			attack_skill=8
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 			visible = {
 				has_game_rule = {
@@ -145,12 +147,14 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox panzer_leader organizer}
+			traits={ 
+				organizer panzer_leader cavalry_leader trait_engineer trickster desert_fox urban_assault_specialist ranger
+			}
 			skill=6
-			attack_skill=6
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=3
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 			visible = {
 				has_game_rule = {
@@ -490,12 +494,14 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer}
+			traits={ 
+				organizer panzer_leader cavalry_leader trait_engineer trickster desert_fox urban_assault_specialist ranger
+			}
 			skill=8
 			attack_skill=8
-			defense_skill=5
-			planning_skill=7
-			logistics_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 			visible = {
 				has_game_rule = {
@@ -535,12 +541,14 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader organizer}
+			traits={ 
+				organizer panzer_leader cavalry_leader trait_engineer trickster desert_fox urban_assault_specialist ranger
+			}
 			skill=6
-			attack_skill=6
-			defense_skill=6
+			attack_skill=4
+			defense_skill=4
 			planning_skill=4
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=-1
 			visible = {
 				has_game_rule = {
