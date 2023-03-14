@@ -163,13 +163,14 @@ characters={
 		}
 		corps_commander = {
 			traits = {
-				brilliant_strategist cavalry_officer war_hero cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer
+				brilliant_strategist cavalry_officer war_hero
+				organizer panzer_leader cavalry_leader trait_engineer trickster urban_assault_specialist ranger
 			}
 			skill = 8
 			attack_skill = 7
 			defense_skill = 4
-			planning_skill = 7
-			logistics_skill = 7
+			planning_skill = 3
+			logistics_skill = 4
 			legacy_id = 100002
 			visible = {
 				has_game_rule = {
@@ -190,13 +191,14 @@ characters={
 		}
 		corps_commander = {
 			traits = {
-				brilliant_strategist war_hero panzer_leader trickster organizer
+				brilliant_strategist cavalry_officer war_hero
+				organizer panzer_leader cavalry_leader trait_engineer trickster urban_assault_specialist ranger
 			}
 			skill = 6
-			attack_skill = 5
-			defense_skill = 5
+			attack_skill = 3
+			defense_skill = 4
 			planning_skill = 3
-			logistics_skill = 5
+			logistics_skill = 4
 			legacy_id = 100003
 			visible = {
 				has_game_rule = {
@@ -433,12 +435,13 @@ characters={
 		}
 		corps_commander = {
 			traits = {
-				media_personality harsh_leader armor_officer cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer
+				media_personality harsh_leader armor_officer
+				organizer panzer_leader cavalry_leader trait_engineer trickster urban_assault_specialist ranger
 			}
 			skill = 8
-			attack_skill = 8
-			defense_skill = 7
-			planning_skill = 6
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 4
 			logistics_skill = 4
 			legacy_id = 100000
 			visible = {
@@ -493,13 +496,14 @@ characters={
 		}
 		corps_commander = {
 			traits = {
-				media_personality harsh_leader armor_officer panzer_leader organizer
+				media_personality harsh_leader armor_officer
+				organizer panzer_leader cavalry_leader trait_engineer trickster urban_assault_specialist ranger
 			}
 			skill = 6
-			attack_skill = 6
+			attack_skill = 3
 			defense_skill = 4
-			planning_skill = 7
-			logistics_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 100001
 			visible = {
 				has_game_rule = {
