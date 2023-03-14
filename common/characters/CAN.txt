@@ -107,13 +107,13 @@ characters={
 		}
 		field_marshal = {
 			traits = {
-				cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer
+				organizer panzer_leader cavalry_leader trait_engineer trickster urban_assault_specialist ranger
 			}
 			skill = 8
-			attack_skill = 7
-			defense_skill = 5
-			planning_skill = 7
-			logistics_skill = 6
+			attack_skill = 8
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = -1
 			visible = {
 				has_game_rule = {
@@ -134,12 +134,12 @@ characters={
 		}
 		field_marshal = {
 			traits = {
-				panzer_leader organizer
+				organizer panzer_leader cavalry_leader trait_engineer trickster urban_assault_specialist ranger
 			}
 			skill = 6
-			attack_skill = 6
+			attack_skill = 4
 			defense_skill = 4
-			planning_skill = 5
+			planning_skill = 4
 			logistics_skill = 4
 			legacy_id = -1
 			visible = {
@@ -206,13 +206,13 @@ characters={
 		}
 		corps_commander = {
 			traits = {
-				hill_fighter cavalry_leader panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer
+				organizer panzer_leader cavalry_leader trait_engineer trickster hill_fighter urban_assault_specialist ranger
 			}
 			skill = 8
-			attack_skill = 7
-			defense_skill = 5
+			attack_skill = 8
+			defense_skill = 4
 			planning_skill = 4
-			logistics_skill = 9
+			logistics_skill = 4
 			legacy_id = -1
 			visible = {
 				has_game_rule = {
@@ -233,13 +233,13 @@ characters={
 		}
 		corps_commander = {
 			traits = {
-				hill_fighter panzer_leader organizer
+				organizer panzer_leader cavalry_leader trait_engineer trickster hill_fighter urban_assault_specialist ranger
 			}
 			skill = 6
-			attack_skill = 5
+			attack_skill = 4
 			defense_skill = 4
-			planning_skill = 5
-			logistics_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = -1
 			visible = {
 				has_game_rule = {
