@@ -415,6 +415,26 @@ pregrinded_tank_generals_fra = {
 	}
 }
 
+pregrinded_characters_ita = {
+	name = "Pre-Grinded Characters (Italy)"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_tank"
+	option = {
+		name = enabled
+		text = "Enabled"
+		desc = "Italy receives 2 pre-grinded tank generals and 2 pre-grinded infantry generals."
+	}
+	default = {
+		name = partial
+		text = "YRecommended: !Partial"
+		desc = "Italy receives 2 partially pre-grinded tank generals and 2 partially pre-grinded infantry generals."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+	}
+}
+
 pregrinded_tank_generals_can = {
 	name = "Tank Generals (Canada)"
 	group = "Game Balance"
