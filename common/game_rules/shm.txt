@@ -459,14 +459,14 @@ pregrinded_tank_generals_hun = {
 	name = "Tank Generals (Hungary)"
 	group = "Game Balance"
 	icon = "GFX_decision_generic_tank"
-	default = {
+	option = {
 		name = enabled
-		text = "YRecommended: !Enabled"
+		text = "Enabled"
 		desc = "Hungary receives 2 pre-grinded tank generals."
 	}
-	option = {
+	default = {
 		name = partial
-		text = "Partial"
+		text = "YRecommended: !Partial"
 		desc = "Hungary receives 2 partially pre-grinded tank generals."
 	}
 	option = {
