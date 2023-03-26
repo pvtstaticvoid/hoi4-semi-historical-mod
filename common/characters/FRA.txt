@@ -192,7 +192,7 @@ characters={
 		corps_commander = {
 			traits = {
 				brilliant_strategist cavalry_officer war_hero
-				organizer panzer_leader cavalry_leader trait_engineer trickster urban_assault_specialist ranger
+				panzer_leader
 			}
 			skill = 6
 			attack_skill = 3
@@ -497,7 +497,7 @@ characters={
 		corps_commander = {
 			traits = {
 				media_personality harsh_leader armor_officer
-				organizer panzer_leader cavalry_leader trait_engineer trickster urban_assault_specialist ranger
+				panzer_leader
 			}
 			skill = 6
 			attack_skill = 3

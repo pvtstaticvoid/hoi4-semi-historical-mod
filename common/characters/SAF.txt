@@ -148,7 +148,7 @@ characters={
 		}
 		corps_commander={
 			traits={ 
-				organizer panzer_leader cavalry_leader trait_engineer trickster desert_fox urban_assault_specialist ranger
+				panzer_leader desert_fox
 			}
 			skill=6
 			attack_skill=4
@@ -542,7 +542,7 @@ characters={
 		}
 		corps_commander={
 			traits={ 
-				organizer panzer_leader cavalry_leader trait_engineer trickster desert_fox urban_assault_specialist ranger
+				panzer_leader
 			}
 			skill=6
 			attack_skill=4

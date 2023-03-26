@@ -691,7 +691,7 @@ characters = {
 				organizer panzer_leader cavalry_leader trait_engineer trickster urban_assault_specialist ranger
 			}
 			skill = 6
-			attack_skill = 4
+			attack_skill = 6
 			defense_skill = 4
 			planning_skill = 4
 			logistics_skill = 4
@@ -1035,7 +1035,7 @@ characters = {
 				organizer panzer_leader cavalry_leader trait_engineer trickster urban_assault_specialist ranger
 			}
 			skill = 6
-			attack_skill = 4
+			attack_skill = 6
 			defense_skill = 4
 			planning_skill = 4
 			logistics_skill = 4
