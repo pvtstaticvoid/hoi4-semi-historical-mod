@@ -380,6 +380,23 @@ pregrinded_tank_generals_ger = {
 	}
 }
 
+advisors_ger = {
+	name = "Buffed German Advisors"
+	group = "Game Balance"
+	icon = "GFX_decision_SWI_guisan_speech"
+	default = {
+		name = enabled
+		text = "YRecommended: !Enabled"
+		desc = "Germany gets an Armor Genius, Combined Arms Expert, and Attack Expert."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+		desc = "Germany gets vanilla advisors."
+	}
+
+}
+
 pregrinded_tank_generals_sov = {
 	name = "Tank Generals (USSR)"
 	group = "Game Balance"

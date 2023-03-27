@@ -258,10 +258,10 @@ characters={
 				adaptable
 			}
 			skill = 9
-			attack_skill = 9
-			defense_skill = 5
-			planning_skill = 4
-			logistics_skill = 5
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
 			legacy_id = 10005
 			visible = {
 				has_game_rule = {
@@ -357,10 +357,10 @@ characters={
 				adaptable
 			}
 			skill = 9
-			attack_skill = 9
-			defense_skill = 5
-			planning_skill = 4
-			logistics_skill = 5
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
 			legacy_id = 10006
 			visible = {
 				has_game_rule = {
@@ -507,12 +507,6 @@ characters={
 			planning_skill=3
 			logistics_skill=4
 			legacy_id=11
-			visible = {
-				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
-					option = disabled
-				}
-			}
 		}
 	}
 
@@ -546,12 +540,12 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				army_CombinedArms_3
+				army_CombinedArms_2
 			}
-			cost = 200
+			cost = 100
 			visible = {
 				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
+					rule = advisors_ger
 					option = enabled
 				}
 			}
@@ -1354,7 +1348,7 @@ characters={
 			cost = 100
 			visible = {
 				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
+					rule = advisors_ger
 					option = disabled
 				}
 			}
@@ -1378,12 +1372,12 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				army_chief_offensive_3
+				army_chief_offensive_2
 			}
-			cost = 200
+			cost = 100
 			visible = {
 				has_game_rule = {
-					rule = pregrinded_tank_generals_ger
+					rule = advisors_ger
 					option = enabled
 				}
 			}
