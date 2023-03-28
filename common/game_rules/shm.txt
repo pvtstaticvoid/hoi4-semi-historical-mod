@@ -411,6 +411,22 @@ pregrinded_tank_generals_sov = {
 		text = "Disabled"
 	}
 }
+advisors_sov = {
+	name = "Buffed Russian Advisors"
+	group = "Game Balance"
+	icon = "GFX_decision_SWI_guisan_speech"
+	default = {
+		name = enabled
+		text = "YRecommended: !Enabled"
+		desc = "Russia gets an Armor Genius, Combined Arms Expert, and Attack Expert."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+		desc = "Russia gets vanilla advisors."
+	}
+
+}
 
 pregrinded_tank_generals_fra = {
 	name = "Tank Generals (France)"
