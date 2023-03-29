@@ -531,11 +531,25 @@ pregrinded_tank_generals_hun = {
 pregrinded_infantry_generals_jap = {
 	name = "Infantry Generals (Japan)"
 	group = "Game Balance"
-	icon = "GFX_decision_generic_prepare_civil_war"
+	icon = "GFX_decision_generic_reorganize_irregulars"
 	default = {
 		name = enabled
 		text = "YRecommended: !Enabled"
 		desc = "Japan receives 2 pre-grinded infantry generals."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+	}
+}
+pregrinded_infantry_generals_bul = {
+	name = "Infantry Generals (Bulgaria)"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_reorganize_irregulars"
+	default = {
+		name = enabled
+		text = "YRecommended: !Enabled"
+		desc = "Bulgaria receives 1 pre-grinded infantry generals."
 	}
 	option = {
 		name = disabled
