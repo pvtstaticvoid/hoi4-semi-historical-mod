@@ -380,6 +380,23 @@ pregrinded_tank_generals_ger = {
 	}
 }
 
+advisors_ger = {
+	name = "Buffed German Advisors"
+	group = "Game Balance"
+	icon = "GFX_decision_SWI_guisan_speech"
+	default = {
+		name = enabled
+		text = "YRecommended: !Enabled"
+		desc = "Germany gets an Armor Genius, Combined Arms Expert, and Attack Expert."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+		desc = "Germany gets vanilla advisors."
+	}
+
+}
+
 pregrinded_tank_generals_sov = {
 	name = "Tank Generals (USSR)"
 	group = "Game Balance"
@@ -393,6 +410,22 @@ pregrinded_tank_generals_sov = {
 		name = disabled
 		text = "Disabled"
 	}
+}
+advisors_sov = {
+	name = "Buffed Russian Advisors"
+	group = "Game Balance"
+	icon = "GFX_decision_SWI_guisan_speech"
+	default = {
+		name = enabled
+		text = "YRecommended: !Enabled"
+		desc = "Russia gets an Armor Genius, Combined Arms Expert, and Attack Expert."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+		desc = "Russia gets vanilla advisors."
+	}
+
 }
 
 pregrinded_tank_generals_fra = {
@@ -498,11 +531,25 @@ pregrinded_tank_generals_hun = {
 pregrinded_infantry_generals_jap = {
 	name = "Infantry Generals (Japan)"
 	group = "Game Balance"
-	icon = "GFX_decision_generic_prepare_civil_war"
+	icon = "GFX_decision_generic_reorganize_irregulars"
 	default = {
 		name = enabled
 		text = "YRecommended: !Enabled"
 		desc = "Japan receives 2 pre-grinded infantry generals."
+	}
+	option = {
+		name = disabled
+		text = "Disabled"
+	}
+}
+pregrinded_infantry_generals_bul = {
+	name = "Infantry Generals (Bulgaria)"
+	group = "Game Balance"
+	icon = "GFX_decision_generic_reorganize_irregulars"
+	default = {
+		name = enabled
+		text = "YRecommended: !Enabled"
+		desc = "Bulgaria receives 1 pre-grinded infantry generals."
 	}
 	option = {
 		name = disabled

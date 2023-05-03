@@ -2244,25 +2244,8 @@ form_roman_empire_category = {
 			}
 			# Greece
 			custom_trigger_tooltip = {
-				tooltip = form_country_greece_required_states_tt
-				controls_state = 185
-				controls_state = 731
-				controls_state = 47
-				controls_state = 186
-				controls_state = 184
-				controls_state = 187
+				tooltip = "Controls Greek Crete"
 				controls_state = 182
-			}
-			# Turkey
-			custom_trigger_tooltip = {
-				tooltip = form_country_mare_nostrum_turkey_required_states_tt
-				controls_state = 341
-				controls_state = 797
-				controls_state = 340
-				controls_state = 339
-				controls_state = 342
-				controls_state = 345
-				controls_state = 344
 			}
 			# Italy
 			custom_trigger_tooltip = {
@@ -2297,17 +2280,6 @@ form_roman_empire_category = {
 				controls_state = 450
 				controls_state = 451
 				controls_state = 663
-			}
-			# Spain
-			custom_trigger_tooltip = {
-				tooltip = form_spqr_coastal_spain_required_states_tt
-				controls_state = 165
-				controls_state = 177
-				controls_state = 167
-				controls_state = 168
-				controls_state = 173
-				controls_state = 290
-
 			}
 			# France
 			custom_trigger_tooltip = {
