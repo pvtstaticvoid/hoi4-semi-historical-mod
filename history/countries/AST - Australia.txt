@@ -35,6 +35,7 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 	}
+	add_ideas = industry_liasons_spirit
 }
 if = {
 	limit = {
