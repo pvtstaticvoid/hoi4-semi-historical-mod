@@ -44,9 +44,9 @@
 #
 #		}
 #
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
+#		cancel_if_invalid = no
+#		continue_if_invalid = yes
+#		available_if_capitulated = yes
 #
 #		complete_tooltip = {
 #
@@ -81,8 +81,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -119,8 +119,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -156,8 +156,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -206,9 +206,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -242,8 +242,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -286,8 +286,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -324,9 +324,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
@@ -357,8 +357,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
@@ -399,8 +399,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
@@ -436,9 +436,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
@@ -474,8 +474,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
@@ -511,8 +511,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
@@ -549,8 +549,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
@@ -587,8 +587,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
@@ -628,8 +628,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -675,9 +675,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		# complete_tooltip = {
@@ -747,9 +747,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
@@ -799,9 +799,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		# complete_tooltip = {
@@ -872,9 +872,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
@@ -953,9 +953,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 
 		# complete_tooltip = {
 		# 	add_tech_bonus = {
@@ -1150,9 +1150,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
@@ -1209,9 +1209,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		# complete_tooltip = {
@@ -1369,8 +1369,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = {  }
 
@@ -1404,9 +1404,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		# complete_tooltip = {
@@ -1473,9 +1473,10 @@
 		}
 
 		available = {
-			any_state = {
-				is_coastal = yes
-				is_controlled_by = ROOT
+			285 = {
+				controller = {
+					is_in_faction_with = ROOT
+				}
 			}
 		}
 		
@@ -1483,42 +1484,42 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			navy_experience = 25
-			random_state = {
-				limit = {
-					has_state_flag = AST_cockatoo_island_shipyards_DY
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = Cockatoo_doe
-		}
+		# complete_tooltip = {
+		# 	navy_experience = 25
+		# 	random_state = {
+		# 		limit = {
+		# 			has_state_flag = AST_cockatoo_island_shipyards_DY
+		# 		}
+		# 		add_extra_state_shared_building_slots = 2
+		# 		add_building_construction = {
+		# 			type = dockyard
+		# 			level = 2
+		# 			instant_build = yes
+		# 		}
+		# 	}
+		# 	custom_effect_tooltip = available_designer
+		# 	show_ideas_tooltip = Cockatoo_doe
+		# }
 
 			
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				prioritize = { 285 }
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-					NOT = { state = 674 }
-				}
+			navy_experience = 100
+			285 = {
+				# prioritize = { 285 }
+				# limit = {
+				# 	is_coastal = yes
+				# 	free_building_slots = {
+				# 		building = dockyard
+				# 		size > 1
+				# 		include_locked = yes
+				# 	}
+				# 	NOT = { state = 674 }
+				# }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -1545,9 +1546,10 @@
 		}
 
 		available = {
-			any_state = {
-				is_coastal = yes
-				is_controlled_by = ROOT
+			285 = {
+				controller = {
+					is_in_faction_with = ROOT
+				}
 			}
 		}
 		
@@ -1555,41 +1557,41 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			navy_experience = 25
-			random_state = {
-				limit = {
-					has_state_flag = AST_kangaroo_point_shipyards_DY
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = evans_deakin_co
-		}
+		# complete_tooltip = {
+		# 	navy_experience = 25
+		# 	random_state = {
+		# 		limit = {
+		# 			has_state_flag = AST_kangaroo_point_shipyards_DY
+		# 		}
+		# 		add_extra_state_shared_building_slots = 2
+		# 		add_building_construction = {
+		# 			type = dockyard
+		# 			level = 2
+		# 			instant_build = yes
+		# 		}
+		# 	}
+		# 	custom_effect_tooltip = available_designer
+		# 	show_ideas_tooltip = evans_deakin_co
+		# }
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				prioritize = { 521 }
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-					NOT = { state = 674 }
-				}
+			navy_experience = 100
+			285 = {
+				# prioritize = { 521 }
+				# limit = {
+				# 	is_coastal = yes
+				# 	free_building_slots = {
+				# 		building = dockyard
+				# 		size > 1
+				# 		include_locked = yes
+				# 	}
+				# 	NOT = { state = 674 }
+				# }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -1607,12 +1609,12 @@
 		id = AST_protect_overseas_commerce
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = AST_cockatoo_island_shipyards focus = AST_kangaroo_point_shipyards }
-		mutually_exclusive = { focus = AST_fly_the_jolly_roger }
+		# mutually_exclusive = { focus = AST_fly_the_jolly_roger }
 		x = 0
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1626,18 +1628,17 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = AST_protect_overseas_commerce
-				cost_reduction = 0.25
+				cost_reduction = 0.5
 				uses = 2
-				category = fleet_in_being_tree
-				category = convoy_defense_tree
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1646,12 +1647,12 @@
 		id = AST_fly_the_jolly_roger
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = AST_cockatoo_island_shipyards focus = AST_kangaroo_point_shipyards }
-		mutually_exclusive = { focus = AST_protect_overseas_commerce }
+		# mutually_exclusive = { focus = AST_protect_overseas_commerce }
 		x = 2
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1665,17 +1666,17 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = AST_fly_the_jolly_roger
-				cost_reduction = 0.25
+				cost_reduction = 0.5
 				uses = 2
-				category = submarine_doctrine
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1688,7 +1689,7 @@
 		y = 2
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1702,9 +1703,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
@@ -1713,7 +1714,7 @@
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				category = dd_tech
+				category = naval_equipment
 			}
 		}
 	}
@@ -1726,7 +1727,7 @@
 		y = 2
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1740,9 +1741,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
@@ -1751,7 +1752,7 @@
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				category = ss_tech
+				category = naval_equipment
 			}
 		}
 	}
@@ -1764,7 +1765,7 @@
 		y = 3
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1778,9 +1779,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = {  }
 
 		completion_reward = {
@@ -1796,7 +1797,7 @@
 		y = 4
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1810,9 +1811,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
@@ -1821,8 +1822,7 @@
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				category = cl_tech
-				category = ca_tech
+				category = naval_equipment
 			}
 		}
 	}
@@ -1835,7 +1835,7 @@
 		y = 4
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1849,8 +1849,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
@@ -1858,7 +1858,7 @@
 			add_doctrine_cost_reduction = {
 				name = AST_pacific_area_navy
 				cost_reduction = 0.5
-				uses = 1
+				uses = 2
 				category = naval_doctrine
 			}
 		}
@@ -1890,9 +1890,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -1921,8 +1921,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -1963,9 +1963,9 @@
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -2031,9 +2031,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
@@ -2094,9 +2094,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
@@ -2157,9 +2157,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
@@ -2221,9 +2221,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
@@ -2313,9 +2313,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -2350,9 +2350,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -2383,9 +2383,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -2425,8 +2425,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -2457,8 +2457,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -2492,9 +2492,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = AST_volunteer_defence_corps
@@ -2523,8 +2523,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -2558,8 +2558,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -2590,8 +2590,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 
@@ -2622,8 +2622,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -2668,9 +2668,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = {  }
 
 		completion_reward = {
@@ -2797,8 +2797,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -2857,9 +2857,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -2889,8 +2889,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -2924,9 +2924,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
@@ -2994,8 +2994,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -3065,9 +3065,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -3119,8 +3119,8 @@
 			has_war_together_with = ENG
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -3180,8 +3180,8 @@
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
 
@@ -3201,58 +3201,58 @@
 			}
 		}
 
-	focus = {
-		id = AST_the_singapore_strategy
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = AST_support_the_policy_of_appeasement }
-		x = 1
-		y = 1
-		relative_position_id = AST_support_the_policy_of_appeasement
+	# focus = {
+	# 	id = AST_the_singapore_strategy
+	# 	icon = GFX_goal_generic_fortify_city
+	# 	prerequisite = { focus = AST_support_the_policy_of_appeasement }
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+	# 	cost = 10
 
-		ai_will_do = {
-			factor = 0.2
-		}
+	# 	ai_will_do = {
+	# 		factor = 0.2
+	# 	}
 
-		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
-			MAL = {
-				is_puppet_of = ENG
-			}
-		}
+	# 	available = {
+	# 		is_in_faction_with = ENG
+	# 		ENG = { has_government = ROOT }
+	# 		MAL = {
+	# 			is_puppet_of = ENG
+	# 		}
+	# 	}
 		
-		bypass = {
-			OR = {
-				NOT = {
-					OR = {
-						336 = {
-							is_owned_by = MAL
-						}
-						333 = {
-							is_owned_by = MAL
-						}
-					}
-				}
-				NOT = {
-					MAL = {
-						is_puppet_of = ENG
-					}
-				}
-			}
-		}
+	# 	bypass = {
+	# 		OR = {
+	# 			NOT = {
+	# 				OR = {
+	# 					336 = {
+	# 						is_owned_by = MAL
+	# 					}
+	# 					333 = {
+	# 						is_owned_by = MAL
+	# 					}
+	# 				}
+	# 			}
+	# 			NOT = {
+	# 				MAL = {
+	# 					is_puppet_of = ENG
+	# 				}
+	# 			}
+	# 		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
-		completion_reward = {
-			ENG = {
-				country_event = { id = tfv_australia.1 }
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		ENG = {
+	# 			country_event = { id = tfv_australia.1 }
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = AST_adopt_westminster
@@ -3282,8 +3282,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -3327,8 +3327,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -3342,150 +3342,150 @@
 		}
 	}
 
-	focus = {
-		id = AST_swpa_protector
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = AST_adopt_westminster }
-		x = 1
-		y = 3
-		relative_position_id = AST_support_the_policy_of_appeasement
+	# focus = {
+	# 	id = AST_swpa_protector
+	# 	icon = GFX_goal_generic_defence
+	# 	prerequisite = { focus = AST_adopt_westminster }
+	# 	x = 1
+	# 	y = 3
+	# 	relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+	# 	cost = 10
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				NOT = { AST = { has_completed_focus = AST_the_singapore_strategy } } #ENG can defend its own stuff!
-				factor = 0.2
-			}
-		}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			NOT = { AST = { has_completed_focus = AST_the_singapore_strategy } } #ENG can defend its own stuff!
+	# 			factor = 0.2
+	# 		}
+	# 	}
 
-		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			336 = {
-				controller = { is_in_faction_with = ROOT }
-			}
-			333 = {
-				controller = { is_in_faction_with = ROOT }
-			}
-		}
+	# 	available = {
+	# 		OR = {
+	# 			is_subject_of = ENG
+	# 			AND = {
+	# 				has_global_flag = ENG_decolonized
+	# 				is_in_faction_with = ENG
+	# 			}
+	# 		}
+	# 		336 = {
+	# 			controller = { is_in_faction_with = ROOT }
+	# 		}
+	# 		333 = {
+	# 			controller = { is_in_faction_with = ROOT }
+	# 		}
+	# 	}
 		
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
+	# 	search_filters = {  }
 
-		completion_reward = {
-			336 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
+	# 	completion_reward = {
+	# 		336 = {
+	# 			add_building_construction = {
+	# 				type = air_base
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
 
-				#Fortify entire coastline
-				add_building_construction = {
-					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
-					instant_build = yes
-				}
+	# 			#Fortify entire coastline
+	# 			add_building_construction = {
+	# 				type = bunker
+	# 				province = {
+	# 					all_provinces = yes
+	# 					limit_to_coastal = yes
+	# 				}
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			add_building_construction = {
+	# 				type = coastal_bunker
+	# 				province = {
+	# 					all_provinces = yes
+	# 					limit_to_coastal = yes
+	# 				}
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
 
-				#border inland bunker
-				add_building_construction = {
-					type = bunker
-					province = 4310
-					level = 2
-					instant_build = yes
-				}
+	# 			#border inland bunker
+	# 			add_building_construction = {
+	# 				type = bunker
+	# 				province = 4310
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
 
-				#Extra fort on naval bases
-				add_building_construction = {
-					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 2
-					instant_build = yes
-				}
+	# 			#Extra fort on naval bases
+	# 			add_building_construction = {
+	# 				type = bunker
+	# 				province = {
+	# 					all_provinces = yes
+	# 					limit_to_naval_base = yes
+	# 				}
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			add_building_construction = {
+	# 				type = coastal_bunker
+	# 				province = {
+	# 					all_provinces = yes
+	# 					limit_to_naval_base = yes
+	# 				}
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
 
-			}
+	# 		}
 
-			333 = {
-				#Fortify entire coastline
-				add_building_construction = {
-					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
-					instant_build = yes
-				}
+	# 		333 = {
+	# 			#Fortify entire coastline
+	# 			add_building_construction = {
+	# 				type = bunker
+	# 				province = {
+	# 					all_provinces = yes
+	# 					limit_to_coastal = yes
+	# 				}
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			add_building_construction = {
+	# 				type = coastal_bunker
+	# 				province = {
+	# 					all_provinces = yes
+	# 					limit_to_coastal = yes
+	# 				}
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
 
-				#Extra fort on naval bases
-				add_building_construction = {
-					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
+	# 			#Extra fort on naval bases
+	# 			add_building_construction = {
+	# 				type = bunker
+	# 				province = {
+	# 					all_provinces = yes
+	# 					limit_to_naval_base = yes
+	# 				}
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			add_building_construction = {
+	# 				type = coastal_bunker
+	# 				province = {
+	# 					all_provinces = yes
+	# 					limit_to_naval_base = yes
+	# 				}
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = AST_empire_air_training_scheme
@@ -3515,9 +3515,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = {  }
 
 		completion_reward = {
@@ -3553,9 +3553,9 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -3606,8 +3606,8 @@
 	# 		NOT = { is_subject_of = ENG }
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -3651,9 +3651,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		custom_effect_tooltip = AST_homeland_defense_tt
@@ -3730,9 +3730,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		JAP = {			
@@ -3792,8 +3792,8 @@
 	# 		has_war_with = ENG
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -3857,8 +3857,8 @@
 	# 		}
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
@@ -3904,9 +3904,9 @@
 	# 		}
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		HOL = {
@@ -3938,9 +3938,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		set_rule = { can_create_factions = yes }
@@ -3998,8 +3998,8 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -4045,9 +4045,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		create_wargoal = {
@@ -4099,8 +4099,8 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -4161,8 +4161,8 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -4215,7 +4215,7 @@
 
 	# 	cancel_if_invalid = no
 	# 	continue_if_invalid = yes
-	# 	available_if_capitulated = no
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		#Boosts fascism in Indonesia
@@ -4270,9 +4270,9 @@
 	# 	bypass = {
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		if = {
@@ -4313,9 +4313,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_ANNEXATION }
 
 	# 	completion_reward = {
@@ -4368,9 +4368,9 @@
 	# 		is_subject = no
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {			
 	# 		ENG = {
@@ -4428,8 +4428,8 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -4499,9 +4499,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
 	# 	completion_reward = {
@@ -4539,8 +4539,8 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -4573,9 +4573,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		create_wargoal = {
@@ -4627,8 +4627,8 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
@@ -4667,8 +4667,8 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
@@ -4722,9 +4722,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
 	# 	completion_reward = {
@@ -4824,7 +4824,7 @@
 
 	# 	cancel_if_invalid = no
 	# 	continue_if_invalid = yes
-	# 	available_if_capitulated = no
+	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
 	# 	completion_reward = {
@@ -4855,9 +4855,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		add_ideas = AST_direct_support
@@ -4894,8 +4894,8 @@
 	# 		is_in_faction = yes
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
@@ -4944,9 +4944,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		set_rule = { can_create_factions = yes }
@@ -4976,8 +4976,8 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
 	# 	available_if_capitulated = yes
 	# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -5013,9 +5013,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		NZL = {
@@ -5051,9 +5051,9 @@
 
 	# 	}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
 	# 		create_wargoal = {
