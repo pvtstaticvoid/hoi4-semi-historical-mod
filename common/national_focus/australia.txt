@@ -3104,19 +3104,20 @@
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			ENG = { has_war = no }
+			is_in_faction_with = ENG
+			# OR = {
+			# 	is_subject_of = ENG
+			# 	AND = {
+			# 		has_global_flag = ENG_decolonized
+			# 		is_in_faction_with = ENG
+			# 	}
+			# }
+			# ENG = { has_war = no }
 		}
 		
 		bypass = {
-			is_subject_of = ENG
-			has_war_together_with = ENG
+			# is_subject_of = ENG
+			# has_war_together_with = ENG
 		}
 
 		cancel_if_invalid = no
@@ -3129,10 +3130,12 @@
  				id = commonwealth_research
  				bonus = 0.03
 			}
-			ENG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = AST_support_the_policy_of_appeasement
+			hidden_effect = {
+				ENG = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = AST_support_the_policy_of_appeasement
+					}
 				}
 			}
 		}
@@ -3143,7 +3146,7 @@
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = AST_support_the_policy_of_appeasement }
 		relative_position_id = AST_support_the_policy_of_appeasement
-		x = -1
+		x = 0
 		y = 1
 
 		cost = 10
@@ -3157,14 +3160,15 @@
 		}
 
 		available = {
-			is_subject_of = ENG
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
+			is_in_faction_with = ENG
+			# is_subject_of = ENG
+			# OR = {
+			# 	is_subject_of = ENG
+			# 	AND = {
+			# 		has_global_flag = ENG_decolonized
+			# 		is_in_faction_with = ENG
+			# 	}
+			# }
 			OR = {
 				ENG = { has_idea = ENG_george_vi }
 				ENG = { has_country_flag = edward_viii_married_wallis_simpson }
@@ -3259,8 +3263,8 @@
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = AST_strengthen_ties_with_uk focus = AST_the_singapore_strategy }
 		x = 0
-		y = 2
-		relative_position_id = AST_support_the_policy_of_appeasement
+		y = 1
+		relative_position_id = AST_strengthen_ties_with_uk
 
 		cost = 10
 
@@ -3269,13 +3273,14 @@
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
+			is_in_faction_with = ENG
+			# OR = {
+			# 	is_subject_of = ENG
+			# 	AND = {
+			# 		has_global_flag = ENG_decolonized
+			# 		is_in_faction_with = ENG
+			# 	}
+			# }
 		}
 		
 		bypass = {
@@ -3302,9 +3307,9 @@
 		id = AST_CSIR
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = AST_adopt_westminster }
-		x = -1
-		y = 3
-		relative_position_id = AST_support_the_policy_of_appeasement
+		x = 0
+		y = 1
+		relative_position_id = AST_adopt_westminster
 
 		cost = 10
 
@@ -3313,14 +3318,15 @@
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			is_in_tech_sharing_group = commonwealth_research
+			is_in_faction_with = ENG
+			# OR = {
+			# 	is_subject_of = ENG
+			# 	AND = {
+			# 		has_global_flag = ENG_decolonized
+			# 		is_in_faction_with = ENG
+			# 	}
+			# }
+			# is_in_tech_sharing_group = commonwealth_research
 		}
 		
 		bypass = {
@@ -3492,8 +3498,8 @@
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
 		x = -1
-		y = 4
-		relative_position_id = AST_support_the_policy_of_appeasement
+		y = 1
+		relative_position_id = AST_CSIR
 
 		cost = 10
 
@@ -3502,13 +3508,14 @@
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
+			is_in_faction_with = ENG
+			# OR = {
+			# 	is_subject_of = ENG
+			# 	AND = {
+			# 		has_global_flag = ENG_decolonized
+			# 		is_in_faction_with = ENG
+			# 	}
+			# }
 		}
 		
 		bypass = {
@@ -3530,8 +3537,8 @@
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
 		x = 1
-		y = 4
-		relative_position_id = AST_support_the_policy_of_appeasement
+		y = 1
+		relative_position_id = AST_CSIR
 
 		cost = 10
 
@@ -3540,13 +3547,14 @@
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
+			is_in_faction_with = ENG
+			# OR = {
+			# 	is_subject_of = ENG
+			# 	AND = {
+			# 		has_global_flag = ENG_decolonized
+			# 		is_in_faction_with = ENG
+			# 	}
+			# }
 		}
 		
 		bypass = {
