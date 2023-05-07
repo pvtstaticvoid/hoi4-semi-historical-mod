@@ -87,7 +87,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = AST_additional_militia_training
 				cost_reduction = 0.5
@@ -129,6 +129,7 @@
 				name = AST_royal_australian_artillery
 				bonus = 1.0
 				uses = 1
+				category = infantry_weapons
 				category = artillery
 			}
 		}
@@ -259,7 +260,7 @@
 				name = AST_hmas_assault
 				bonus = 1.0
 				uses = 1
-				category = marine_tech
+				category = cat_special_forces_generic
 			}
 		}
 	}
@@ -367,10 +368,7 @@
 				name = AST_fund_owen_gun_research
 				bonus = 3.0
 				uses = 1
-				technology = tech_logistics_company
-				technology = tech_logistics_company2
-				technology = tech_logistics_company3
-				technology = tech_logistics_company4
+				category = support_tech
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = AST_cederic_hicks
@@ -410,6 +408,7 @@
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
+				category = artillery
 			}
 		}
 	}
@@ -484,7 +483,7 @@
 				name = AST_airborne_defence
 				bonus = 3.0
 				uses = 1
-				category = para_tech
+				category = cat_special_forces_generic
 			}
 		}
 	}
@@ -559,8 +558,7 @@
 				name = AST_z_special_unit
 				bonus = 3.0
 				uses = 1
-				category = marine_tech
-				category = para_tech
+				category = cat_special_forces_generic
 			}
 		}
 	}
@@ -598,10 +596,7 @@
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				technology = tech_recon
-				technology = tech_recon2
-				technology = tech_recon3
-				technology = tech_recon4
+				category = support_tech
 			}
 		}
 	}
@@ -621,7 +616,7 @@
 		}
 
 		available = {
-			is_in_faction_with = USA
+			# is_in_faction_with = USA
 		}
 		
 		bypass = {
@@ -639,10 +634,7 @@
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 2
-				technology = tech_signal_company
-				technology = tech_signal_company2
-				technology = tech_signal_company3
-				technology = tech_signal_company4
+				category = support_tech
 			}
 			if = {
 				limit = { has_dlc = "La Resistance" }
