@@ -1456,7 +1456,15 @@ on_actions = {
 			AST = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 2300
+					amount = 2082
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1350
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 5
 				}
 			}
 			NZL = {
@@ -1632,6 +1640,13 @@ on_actions = {
 				create_production_license = {
 					target = AST
 					equipment = {
+						type = small_plane_airframe_1
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = AST
+					equipment = {
 						type = small_plane_airframe_0
 					}
 					cost_factor = 0
@@ -1639,7 +1654,14 @@ on_actions = {
 				create_production_license = {
 					target = AST
 					equipment = {
-						type = small_plane_airframe_1
+						type = medium_plane_airframe_1
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = AST
+					equipment = {
+						type = medium_plane_airframe_0
 					}
 					cost_factor = 0
 				}
