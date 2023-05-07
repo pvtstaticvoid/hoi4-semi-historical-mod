@@ -245,12 +245,19 @@ operations = {
     assume_control_australia = {
 
         ai_will_do = { factor = 0 }
-		fire_only_once = yes
+		fire_only_once = no
 		targets = {AST}
 
         visible = {
 			tag = ENG
             AST = { is_ai = yes }
+            any_state = {
+                is_controlled_by = AST
+                is_core_of = AST
+                NOT = {
+                    check_variable = { THIS.id = 634.id }
+                }
+            }
         }
 
         complete_effect = {
@@ -258,18 +265,26 @@ operations = {
 				hidden_effect = {
 					news_event = { id = shm_transfer_countries.101 }
 				}
-                annex_country = {
-					transfer_troops = yes
-                    target = AST
+                every_state = {
+                    limit = {
+                        is_controlled_by = AST
+                        is_core_of = AST
+                        NOT = {
+                            check_variable = { THIS.id = 634.id }
+                        }
+                    }
+                    add_core_of = ENG
+                    transfer_state_to = ENG
+                    remove_core_of = AST
                 }
             }
-            every_state = {
-                limit = {
-                    is_core_of = AST
-                    is_controlled_by = ENG
-                }
-                add_compliance = 50
-		    }
+            # every_state = {
+            #     limit = {
+            #         is_core_of = AST
+            #         is_controlled_by = ENG
+            #     }
+            #     add_compliance = 50
+		    # }
         }
     }
 
@@ -285,6 +300,13 @@ operations = {
 				tag = AST 
 			}
             AST = { is_ai = yes }
+            any_state = {
+                is_controlled_by = AST
+                is_core_of = AST
+                NOT = {
+                    check_variable = { THIS.id = 634.id }
+                }
+            }
         }
 
         complete_effect = {
