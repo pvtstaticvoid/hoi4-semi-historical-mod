@@ -719,7 +719,7 @@
 
 	focus = {
 		id = AST_cac_boomerang
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = AST_expand_the_raaf }
 		x = 2
 		y = 1
@@ -844,7 +844,7 @@
 
 	focus = {
 		id = AST_cac_woomera
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = AST_expand_the_raaf }
 		relative_position_id = AST_expand_the_raaf
 
@@ -1122,7 +1122,7 @@
 
 	focus = {
 		id = AST_naval_bombers
-		icon = GFX_goal_generic_air_naval_bomber
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = AST_cac_woomera }
 		x = 0
 		y = 1
