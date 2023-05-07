@@ -2636,9 +2636,9 @@
 		icon = GFX_focus_AST_rats_tobruk
 		prerequisite = { focus = AST_volunteer_defence_corps }
 		prerequisite = { focus = AST_strengthen_ties_with_uk }
-		x = 4
-		y = 2
-		relative_position_id = AST_establish_advisory_war_council
+		x = 2
+		y = 1
+		relative_position_id = AST_volunteer_defence_corps
 
 		cost = 10
 
@@ -2647,14 +2647,15 @@
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
+			# OR = {
+			# 	is_subject_of = ENG
+			# 	AND = {
+			# 		has_global_flag = ENG_decolonized
+			# 		is_in_faction_with = ENG
+			# 	}
+			# }
 			#Requires UK at war in Africa
+			is_in_faction_with = ENG
 			any_country = {
 				has_war_with = ENG
 				any_state = {
@@ -2779,9 +2780,9 @@
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = AST_civil_construction_corps }
 		prerequisite = { focus = AST_squash_the_squanderbugs }
-		x = -3
-		y = 4
-		relative_position_id = AST_establish_advisory_war_council
+		x = 0
+		y = 2
+		relative_position_id = AST_civil_construction_corps
 
 		cost = 10
 
@@ -2917,7 +2918,11 @@
 		}
 
 		available = {
-
+			285 = {
+				controller = {
+					is_in_faction_with = ROOT
+				}
+			}
 		}
 		
 		bypass = {
@@ -2929,46 +2934,62 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			random_state = {
-				limit = { has_state_flag = AST_rationing_and_recycling_alu }
-				add_resource = {
-					type = aluminium
-					amount = 24
-				}
-			}
-			random_state = {
-				limit = { has_state_flag = AST_rationing_and_recycling_oil }
-				add_resource = {
-					type = oil
-					amount = 12
-				}
-			}
-		}
+		# complete_tooltip = {
+		# 	random_state = {
+		# 		limit = { has_state_flag = AST_rationing_and_recycling_alu }
+		# 		add_resource = {
+		# 			type = aluminium
+		# 			amount = 24
+		# 		}
+		# 	}
+		# 	random_state = {
+		# 		limit = { has_state_flag = AST_rationing_and_recycling_oil }
+		# 		add_resource = {
+		# 			type = oil
+		# 			amount = 12
+		# 		}
+		# 	}
+		# }
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					NOT = { state = 674 }
-				}
+			285 = {
+				# limit = {
+				# 	is_in_home_area = yes
+				# 	NOT = { state = 674 }
+				# }
 				add_resource = {
 					type = aluminium
 					amount = 24
-				}
-				set_state_flag = AST_rationing_and_recycling_alu
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					NOT = { state = 674 }
 				}
 				add_resource = {
 					type = oil
 					amount = 12
 				}
+				set_state_flag = AST_rationing_and_recycling_alu
 				set_state_flag = AST_rationing_and_recycling_oil
 			}
+			# random_owned_controlled_state = {
+			# 	limit = {
+			# 		is_in_home_area = yes
+			# 		NOT = { state = 674 }
+			# 	}
+			# 	add_resource = {
+			# 		type = aluminium
+			# 		amount = 24
+			# 	}
+			# 	set_state_flag = AST_rationing_and_recycling_alu
+			# }
+			# random_owned_controlled_state = {
+			# 	limit = {
+			# 		is_in_home_area = yes
+			# 		NOT = { state = 674 }
+			# 	}
+			# 	add_resource = {
+			# 		type = oil
+			# 		amount = 12
+			# 	}
+			# 	set_state_flag = AST_rationing_and_recycling_oil
+			# }
 		}
 	}
 
@@ -3058,7 +3079,7 @@
 		}
 
 		available = {
-			is_subject = no
+			# is_subject = no
 		}
 		
 		bypass = {
