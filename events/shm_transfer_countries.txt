@@ -23,18 +23,18 @@ country_event = {
 				news_event = { id = shm_transfer_countries.101 }
 			}
 			country_event = { id = shm_transfer_countries.10 }
-			annex_country = {
-			    target = AST
-			    transfer_troops = yes
+			every_state = {
+				limit = {
+					is_controlled_by = AST
+					is_core_of = AST
+					NOT = {
+						check_variable = { THIS.id = 634.id }
+					}
+				}
+				add_core_of = PREV
+				transfer_state_to = PREV
+				remove_core_of = AST
 			}
-
-		}
-		every_state = {
-			limit = {
-				is_core_of = AST
-				is_controlled_by = FROM
-			}
-			add_compliance = 50
 		}
 	}
 }
